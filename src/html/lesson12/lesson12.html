@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/html5.png" />
+    <title>Урок 12</title>
+</head>
+
+<body style="padding: 2rem; font-size: 24px;">
+    <h1 style="text-align: center;">HTML - Урок 12</h1>
+    <h2>HTML JavaScript</h2>
+    <p>JavaScript делает HTML-страницы более динамичными и интерактивными.</p>
+    <img src="/img/js-primer.png" alt="JS">
+    <div class="w3-padding w3-white notranslate">
+        <h2>Первый JavaScript код</h2>
+        <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">
+            Дата и время</button>
+        <p id="demo"></p>
+    </div>
+    <hr><br>
+    <div class="feed-post">
+        <h2>HTML-тег &lt;script&gt;</h2>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Тег HTML </font>
+            </font><code class="w3-codespan">&lt;script&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">используется для определения сценария на стороне клиента
+                    (JavaScript).</font>
+            </font>
+        </p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>script<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span
+                    class="jsnumbercolor" style="color:red">
+                </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                    class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                    style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Hello
+                    JavaScript!"</span>;<br>
+            </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span> </div><br>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>Немного JavaScript</h2>
+        <p>JavaScript может изменять содержимое:</p>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor"
+                    style="color:red">
+                </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                    class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                    style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Hello
+                    JavaScript!"</span>;<span class="jsnumbercolor" style="color:red">
+                </span> </span></div><br>
+        <p>JavaScript может менять стили:</p>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                    class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                    style="color:black">style</span>.<span class="jspropertycolor" style="color:black">fontSize</span> =
+                <span class="jsstringcolor" style="color:brown">"25px"</span>;<br>document.<span class="jspropertycolor"
+                    style="color:black">getElementById</span>(<span class="jsstringcolor"
+                    style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                    style="color:black">style</span>.<span class="jspropertycolor" style="color:black">color</span> =
+                <span class="jsstringcolor" style="color:brown">"red"</span>;<br>document.<span class="jspropertycolor"
+                    style="color:black">getElementById</span>(<span class="jsstringcolor"
+                    style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                    style="color:black">style</span>.<span class="jspropertycolor"
+                    style="color:black">backgroundColor</span> = <span class="jsstringcolor"
+                    style="color:brown">"yellow"</span>; </span></div><br>
+        <p>JavaScript может изменять атрибуты:</p>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor"
+                    style="color:red">
+                </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                    class="jsstringcolor" style="color:brown">"image"</span>).<span class="jspropertycolor"
+                    style="color:black">src</span> = <span class="jsstringcolor"
+                    style="color:brown">"picture.gif"</span>;<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>HTML-тег &lt;noscript&gt;</h2>
+        <p>Тег HTML &lt;noscript&gt; определяет альтернативный контент, который будет отображаться пользователям,
+            которые отключили сценарии в своем браузере или имеют браузер, который не поддерживает сценарии:</p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>script<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span
+                    class="jsnumbercolor" style="color:red">
+                </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                    class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                    style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Hello
+                    JavaScript!"</span>;<br>
+            </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>noscript<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Sorry, your browser does not support JavaScript!<span
+                class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/noscript<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span> </div><br>
+        <hr><br>
+    </div><br>
+    <div class="feed-post">
+        <div class="markdown prose w-full break-words dark:prose-invert dark">
+            <h2 style="color: darkblue;"><strong>Домашнее задание: Основы JavaScript</strong></h2>
+            <ol>
+                <li>
+                    <p>Создайте HTML-страницу, включив на ней блок <code>&lt;div&gt;</code> с <code>id="demo"</code> и
+                        элемент <code>&lt;img&gt;</code> с <code>id="image"</code>. Эти элементы будут использоваться
+                        для выполнения заданий.</p>
+                </li>
+                <li>
+                    <p>Используя JavaScript, измените содержимое блока с <code>id="demo"</code> на "Hello, JavaScript!".
+                    </p>
+                </li>
+                <li>
+                    <p>Измените стили блока с <code>id="demo"</code>, чтобы установить его размер шрифта равным 25
+                        пикселям, цвет шрифта на красный и цвет фона на желтый.</p>
+                </li>
+                <li>
+                    <p>Измените атрибут <code>src</code> элемента <code>&lt;img&gt;</code> с <code>id="image"</code> на
+                        "picture.gif" с использованием JavaScript.</p>
+                </li>
+                <li>
+                    <p>Вставьте тег <code>&lt;noscript&gt;</code> после JavaScript-кода в вашем HTML-документе. В этом
+                        теге укажите сообщение, которое будет отображаться пользователям, не поддерживающим JavaScript.
+                        Например, "Извините, ваш браузер не поддерживает JavaScript!".</p>
+                </li>
+                <li>
+                    <p>Добавьте кнопку или ссылку на вашей странице с надписью "Изменить стиль", и используйте
+                        JavaScript, чтобы при нажатии на эту кнопку изменить стиль элемента с <code>id="demo"</code> на
+                        свой выбор (например, изменить цвет фона на синий и размер шрифта на 30 пикселей).</p>
+                </li>
+                <li>
+                    <p>Внимательно прокомментируйте ваш код, объясняя, что делает каждая часть.</p>
+                </li>
+                <li>
+                    <p>Добавьте описание к вашей HTML-странице и украсьте ее, чтобы она выглядела привлекательной.</p>
+                </li>
+            </ol>
+        </div>
+    </div><br>
+    <div class="next-btn_div">
+        <button onclick='next2()' class="next-btn">Следующий блок</button>
+    </div>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(".feed-post:eq( 0 )").show();
+    $(".feed-post:eq( 1 )").show();
+
+    function next2() {
+        var notVisible = -1;
+        $('.feed-post').each(function () {
+            if ($(this).css('display') !== 'none') {
+                notVisible = notVisible + 1;
+            }
+        });
+        $(".feed-post:eq( " + (notVisible + 1) + " )").show();
+        // $(".feed-post:eq( " + (notVisible + 2) + " )").show();
+    }
+</script>
+<style>
+    .jsHigh {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .htmlHigh {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .feed-post {
+        display: none;
+    }
+
+    .next-btn {
+        background-color: rgb(73, 73, 73);
+        color: white;
+        border: none;
+        padding: 1rem;
+        font-size: large;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .next-btn_div {
+        display: flex;
+        justify-content: center;
+    }
+</style>

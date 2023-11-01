@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/html5.png" />
+    <title>Урок 10</title>
+</head>
+
+<body style="padding: 2rem; font-size: 24px;">
+    <h1 style="text-align: center;">HTML - Урок 10</h1>
+    <h2>Атрибут класса HTML</h2>
+    <p>Атрибут HTML class используется для указания класса элемента HTML. <br>
+        Несколько элементов HTML могут использовать один и тот же класс.</p>
+    <div class="w3-code notranslate htmlHigh">
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+            class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>
+            .city <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor"
+                    style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> tomato<span
+                        class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; color<span
+                    class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                        style="color:black">:</span> white<span class="cssdelimitercolor"
+                        style="color:black">;</span></span><br>&nbsp;
+                border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                        style="color:black">:</span> 2px solid black<span class="cssdelimitercolor"
+                        style="color:black">;</span></span><br>&nbsp; margin<span class="csspropertyvaluecolor"
+                    style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px<span
+                        class="cssdelimitercolor" style="color:black">;</span></span><br>
+                &nbsp; padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                        class="cssdelimitercolor" style="color:black">:</span> 20px<span class="cssdelimitercolor"
+                        style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                style="color:black">}</span> <br></span><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+                class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span
+                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>London is the capital of England.<span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+                class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span
+                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Paris is the capital of France.<span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+                class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span
+                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Tokyo is the capital of Japan.<span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>
+    </div>
+    <hr><br>
+    <div class="feed-post">
+        <h2>Несколько классов</h2>
+        <p>HTML-элементы могут принадлежать более чем одному классу.
+            Чтобы определить несколько классов, разделите имена классов пробелом, например <span class="tagcolor"
+                style="color:brown">&lt;div class="city main"&gt;</span>. Элемент будет стилизован в соответствии со
+            всеми указанными классами.</p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red">
+                    class<span class="attributevaluecolor" style="color:mediumblue">="city main"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor"
+                    style="color:red"> class<span class="attributevaluecolor"
+                        style="color:mediumblue">="city"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor"
+                    style="color:red">
+                    class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br> </div><br>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red"> class<span
+                        class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor"
+                    style="color:red">
+                    class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris is the capital of France<span
+                class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br> </div><br>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>Разные элементы могут иметь один и тот же класс</h2>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red"> class<span
+                        class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor"
+                    style="color:red">
+                    class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris is the capital of France<span
+                class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br> </div><br>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>script<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span
+                    class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br>&nbsp; <span
+                    class="jskeywordcolor" style="color:mediumblue">var</span> x = <strong>document.<span
+                        class="jspropertycolor" style="color:black">getElementsByClassName</span>(<span
+                        class="jsstringcolor" style="color:brown">"city"</span>)</strong>;<br>&nbsp; <span
+                    class="jskeywordcolor" style="color:mediumblue">for</span> (<span class="jskeywordcolor"
+                    style="color:mediumblue">var</span> i = <span class="jsnumbercolor" style="color:red">0</span>; i
+                &lt; x.<span class="jspropertycolor" style="color:black">length</span>; <span class="jsnumbercolor"
+                    style="color:red">
+                </span> i++) {<br>&nbsp;&nbsp;&nbsp; x[i].<span class="jspropertycolor"
+                    style="color:black">style</span>.<span class="jspropertycolor" style="color:black">display</span> =
+                <span class="jsstringcolor" style="color:brown">"none"</span>;<br>&nbsp; }<br>}<br></span><span
+                class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span> </div>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>Использование атрибута класса в JavaScript</h2>
+        <p>Имя класса также может использоваться JavaScript для выполнения определенных задач для определенных
+            элементов. <br>
+            JavaScript может получить доступ к элементам с определенным именем класса с помощью
+            getElementsByClassName()метода:</p><br>
+        <hr><br>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>script<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span
+                    class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br>&nbsp; <span
+                    class="jskeywordcolor" style="color:mediumblue">var</span> x = <strong>document.<span
+                        class="jspropertycolor" style="color:black">getElementsByClassName</span>(<span
+                        class="jsstringcolor" style="color:brown">"city"</span>)</strong>;<br>&nbsp; <span
+                    class="jskeywordcolor" style="color:mediumblue">for</span> (<span class="jskeywordcolor"
+                    style="color:mediumblue">var</span> i = <span class="jsnumbercolor" style="color:red">0</span>; i
+                &lt; x.<span class="jspropertycolor" style="color:black">length</span>; <span class="jsnumbercolor"
+                    style="color:red">
+                </span> i++) {<br>&nbsp;&nbsp;&nbsp; x[i].<span class="jspropertycolor"
+                    style="color:black">style</span>.<span class="jspropertycolor" style="color:black">display</span> =
+                <span class="jsstringcolor" style="color:brown">"none"</span>;<br>&nbsp; }<br>}<br></span><span
+                class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span> </div><br>
+    </div>
+    <div class="feed-post">
+        <h2>Атрибут id в HTML</h2>
+        <p>Атрибут id определяет уникальный идентификатор HTML-элемента. Значение атрибута id должно быть уникальным в
+            пределах HTML-документа.</p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                    html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+                class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor"
+                style="color:brown"><br>#myHeader <span class="cssdelimitercolor" style="color:black">{</span><span
+                    class="csspropertycolor" style="color:red"><br>&nbsp;
+                    background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                            class="cssdelimitercolor" style="color:black">:</span> lightblue<span
+                            class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; color<span
+                        class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                            style="color:black">:</span> black<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br>&nbsp; padding<span class="csspropertyvaluecolor"
+                        style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 40px<span
+                            class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                    text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                            class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                    style="color:black">}</span> <br></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span
+                    class="attributecolor" style="color:red"> id<span class="attributevaluecolor"
+                        style="color:mediumblue">="myHeader"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>My
+            Header<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span> </div><br>
+        <p>Примечание. Имя идентификатора чувствительно к регистру! <br>
+            Примечание. Имя идентификатора должно содержать хотя бы один символ, не может начинаться с цифры и не должно
+            содержать пробелов (пробелов, табуляции и т. д.).</p>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>Разница между классом и идентификатором</h2>
+        <p>Имя класса может использоваться несколькими элементами HTML, тогда как имя идентификатора должно
+            использоваться только одним элементом HTML на странице:</p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>style<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor"
+                style="color:brown"><br><span class="commentcolor" style="color:green">/* Style the element with the id
+                    "myHeader"
+                    */</span><br>
+                <strong>#myHeader</strong> <span class="cssdelimitercolor" style="color:black">{</span><span
+                    class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span
+                        class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                            style="color:black">:</span> lightblue<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br>&nbsp;
+                    color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                            style="color:black">:</span> black<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span
+                        class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                            style="color:black">:</span>
+                        40px<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br>&nbsp;&nbsp;text-align<span
+                        class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                            style="color:black">:</span> center<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                    style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* Style all
+                    elements with the class name "city" */</span><br><strong>.city
+                </strong><span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                    style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                        style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                        tomato<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor"
+                        style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span
+                            class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span
+                        class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                            style="color:black">:</span> 10px<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                    style="color:black">}</span> <br></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>
+            <br><span class="commentcolor" style="color:green">&lt;!-- An element with a unique id
+                --&gt;</span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> id<span
+                        class="attributevaluecolor" style="color:mediumblue">="myHeader"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>My
+            Cities<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><br><span class="commentcolor"
+                style="color:green">&lt;!-- Multiple elements with same class --&gt;</span><br><span
+                class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red"> class<span
+                        class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>London is the capital of England.<span
+                class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red"> class<span
+                        class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Paris is the capital of France.<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red"> class<span
+                        class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Tokyo is the capital of Japan.<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br> </div>
+    </div>
+    <div class="feed-post">
+        <h4>Закладки HTML с идентификатором и ссылками</h4>
+        <p>HTML-закладки используются, чтобы позволить читателям переходить к определенным частям веб-страницы.
+        </p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span
+                        class="attributevaluecolor" style="color:mediumblue">="#C4"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Jump to Chapter 4<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>
+        </div> <br>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span
+                        class="attributevaluecolor" style="color:mediumblue">="html_demo.html#C4"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>Jump to Chapter 4<span
+                class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>
+        </div>
+    </div><br>
+    <div class="feed-post">
+        <h4>Использование атрибута id в JavaScript</h4>
+        <p>Атрибут idтакже может использоваться JavaScript для выполнения некоторых задач для этого конкретного
+            элемента. <br>
+            JavaScript может получить доступ к элементу с определенным идентификатором с помощью getElementById()метода:
+        </p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>script<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span
+                    class="jskeywordcolor" style="color:mediumblue">function</span> displayResult()
+                {<br>&nbsp;&nbsp;document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                    class="jsstringcolor" style="color:brown">"myHeader"</span>).<span class="jspropertycolor"
+                    style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Have a nice
+                    day!"</span>;<br>}<br><span class="jsnumbercolor" style="color:red">
+                </span> </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span> </div>
+    </div><br>
+    <div class="feed-post">
+        <h4>Краткое содержание урока</h4>
+        <ul>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Атрибут HTML </font>
+                </font><code class="w3-codespan">class</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">указывает одно или несколько имен классов для элемента.
+                    </font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Классы используются CSS и JavaScript для выбора и доступа к
+                        определенным элементам.</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Атрибут </font>
+                </font><code class="w3-codespan">class</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">можно использовать в любом элементе HTML.</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Имя класса чувствительно к регистру</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Разные элементы HTML могут указывать на одно и то же имя
+                        класса.</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">JavaScript может получить доступ к элементам с определенным
+                        именем класса с помощью </font>
+                </font><code class="w3-codespan">getElementsByClassName()</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">
+                        метода</font>
+                </font>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Атрибут </font>
+                </font><code class="w3-codespan">id</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">используется для указания уникального идентификатора
+                        HTML-элемента.</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Значение атрибута </font>
+                </font><code class="w3-codespan">id</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">
+                        должно быть уникальным в пределах HTML-документа.</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Атрибут </font>
+                </font><code class="w3-codespan">id</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">
+                        используется CSS и JavaScript для стилизации/выбора определенного элемента.</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Значение атрибута </font>
+                </font><code class="w3-codespan">id</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">
+                        чувствительно к регистру</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Атрибут </font>
+                </font><code class="w3-codespan">id</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">
+                        также используется для создания HTML-закладок.</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">JavaScript может получить доступ к элементу с определенным
+                        идентификатором с помощью </font>
+                </font><code class="w3-codespan">getElementById()</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">
+                        метода</font>
+                </font>
+            </li>
+        </ul>
+    </div><br>
+    <div class="feed-post">
+        <div class="markdown prose w-full break-words dark:prose-invert dark">
+            <h2 style="color: darkblue;"><strong>Домашнее задание: Работа с атрибутами класса и id</strong></h2>
+            <ol>
+                <li>
+                    <p>Создайте HTML-страницу, на которой будет несколько различных элементов с использованием атрибута
+                        <code>class</code>. Присвойте им разные классы и стилизуйте их с помощью CSS, чтобы они имели
+                        разные цвета фона, шрифты и отступы.</p>
+                </li>
+                <li>
+                    <p>Создайте еще одну HTML-страницу с использованием атрибута <code>id</code>. Присвойте уникальный
+                        идентификатор одному из элементов, такому как заголовок (<code>&lt;h1&gt;</code>), и стилизуйте
+                        этот элемент с помощью CSS, чтобы он выглядел особенно.</p>
+                </li>
+                <li>
+                    <p>На странице с использованием атрибута <code>id</code>, добавьте ссылку, которая позволит
+                        пользователям переходить к этому элементу с других частей страницы.</p>
+                </li>
+                <li>
+                    <p>Создайте JavaScript-функцию, которая изменяет содержимое элемента с определенным <code>id</code>,
+                        например, чтобы изменить текст заголовка.</p>
+                </li>
+                <li>
+                    <p>На странице с использованием атрибута <code>class</code>, создайте элемент, например, кнопку, и
+                        добавьте JavaScript, чтобы он скрывал или показывал элементы с определенным классом.</p>
+                </li>
+                <li>
+                    <p>Сделайте каждую из ваших HTML-страниц интересной, добавьте описание, текст и графику, чтобы
+                        сделать их более привлекательными.</p>
+                </li>
+            </ol>
+        </div>
+    </div><br>
+    <div class="next-btn_div">
+        <button onclick='next2()' class="next-btn">Следующий блок</button>
+    </div>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(".feed-post:eq( 0 )").show();
+    $(".feed-post:eq( 1 )").show();
+
+    function next2() {
+        var notVisible = -1;
+        $('.feed-post').each(function () {
+            if ($(this).css('display') !== 'none') {
+                notVisible = notVisible + 1;
+            }
+        });
+        $(".feed-post:eq( " + (notVisible + 1) + " )").show();
+        // $(".feed-post:eq( " + (notVisible + 2) + " )").show();
+    }
+</script>
+<style>
+    .jsHigh {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .htmlHigh {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .feed-post {
+        display: none;
+    }
+
+    .next-btn {
+        background-color: rgb(73, 73, 73);
+        color: white;
+        border: none;
+        padding: 1rem;
+        font-size: large;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .next-btn_div {
+        display: flex;
+        justify-content: center;
+    }
+</style>

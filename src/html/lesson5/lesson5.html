@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/html5.png" />
+    <title>Урок 5</title>
+</head>
+
+<body style="padding: 2rem; font-size: 24px;">
+    <h1 style="text-align: center;">HTML - Урок 5</h1>
+    <h2>HTML -ссылки</h2>
+    <div class="w3-code notranslate htmlHigh">
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span
+                class="attributecolor" style="color:red"> href<span class="attributevaluecolor"
+                    style="color:mediumblue">="#"</span></span><span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Ссылка на страницу<span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>
+    </div>
+    <hr><br>
+    <div class="feed-post">
+        <h2>HTML-ссылки — целевой атрибут</h2>
+        <pre>
+        По умолчанию связанная страница будет отображаться в текущем окне браузера. Чтобы изменить это, необходимо указать другую цель для ссылки.
+
+        Атрибут targetуказывает, где открыть связанный документ.
+
+        Атрибут targetможет иметь одно из следующих значений:
+
+        _self- По умолчанию. Открывает документ в том же окне/вкладке, в котором он был щелкнут.
+        _blank- Открывает документ в новом окне или вкладке.
+        _parent- Открывает документ в родительском фрейме
+        _top- Открывает документ во всем окне.
+        </pre><br>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span
+                        class="attributevaluecolor" style="color:mediumblue">="#"</span>
+                    target<span class="attributevaluecolor" style="color:mediumblue">="_blank"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>Ссылка на страницу<span
+                class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>
+        </div>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>Абсолютные URL-адреса и относительные URL-адреса</h2>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Absolute URLs<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor"
+                    style="color:red"> href<span class="attributevaluecolor"
+                        style="color:mediumblue">="https://www.w3.org/"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>W3C<span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor"
+                    style="color:red"> href<span class="attributevaluecolor"
+                        style="color:mediumblue">="https://www.google.com/"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Google<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Relative
+            URLs<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor"
+                    style="color:red"> href<span class="attributevaluecolor"
+                        style="color:mediumblue">="html_images.asp"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>HTML Images<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor"
+                    style="color:red"> href<span class="attributevaluecolor"
+                        style="color:mediumblue">="/css/default.asp"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>CSS
+            Уроки<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span> </div>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>HTML-ссылки — используйте изображение в качестве ссылки</h2>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span
+                        class="attributevaluecolor" style="color:mediumblue">="default.asp"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span
+                    class="attributecolor" style="color:red"> src<span class="attributevaluecolor"
+                        style="color:mediumblue">="smiley.gif"</span> alt<span class="attributevaluecolor"
+                        style="color:mediumblue">="HTML Уроки"</span> style<span class="attributevaluecolor"
+                        style="color:mediumblue">="width:42px;height:42px;"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>
+        </div><br>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>Ссылка на адрес электронной почты</h2>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span
+                        class="attributevaluecolor"
+                        style="color:mediumblue">="mailto:someone@example.com"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Отправить email<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>
+        </div><br>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>Кнопка как ссылка</h2>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red">
+                    onclick<span class="attributevaluecolor"
+                        style="color:mediumblue">="document.location='default.asp'"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>HTML Уроки<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>Заголовки ссылок</h2>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span
+                        class="attributevaluecolor" style="color:mediumblue">="#"</span> title<span
+                        class="attributevaluecolor" style="color:mediumblue">="Загаловок ссылки"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>Ссылка на HTML Уроки<span
+                class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span> </div>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h4>Краткое содержание урока</h4>
+        <ul>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Используйте </font>
+                </font><code class="w3-codespan" style="color:red;"> &lt;a&gt; </code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">элемент для определения ссылки</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Используйте </font>
+                </font><code class="w3-codespan" style="color:red;"> href </code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">атрибут, чтобы определить адрес ссылки.</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Используйте </font>
+                </font><code class="w3-codespan" style="color:red;"> target </code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">атрибут, чтобы определить, где открыть связанный документ.
+                    </font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Используйте </font>
+                </font><code class="w3-codespan" style="color:red;"> &lt;img&gt; </code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">элемент (внутри </font>
+                </font><code class="w3-codespan" style="color:red;"> &lt;a&gt; </code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">), чтобы использовать изображение в качестве ссылки.</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Используйте </font>
+                </font><code class="w3-codespan" style="color:red;">
+                    mailto: </code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">схему внутри </font>
+                </font><code class="w3-codespan" style="color:red;">
+                    href </code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">атрибута, чтобы создать ссылку, открывающую почтовую
+                        программу пользователя.</font>
+                </font>
+            </li>
+        </ul>
+    </div><br>
+    <div class="feed-post">
+        <div class="markdown prose w-full break-words dark:prose-invert dark">
+            <h2 style="color: darkblue;"><strong>Домашнее задание: Работа с ссылками и изображениями</strong></h2>
+            <ol>
+                <li>
+                    <p>Создайте HTML-документ, который содержит следующие ссылки и элементы:</p>
+                    <ul>
+                        <li>Обычную ссылку <code>&lt;a&gt;</code> с текстом "Ссылка на страницу", ведущую на пустую
+                            страницу (используйте <code>href="#"</code>).</li>
+                        <li>Ссылку, которая открывает новое окно или вкладку браузера, с текстом "Ссылка на страницу" и
+                            атрибутом <code>target="_blank"</code>.</li>
+                        <li>Две абсолютные ссылки на страницы "W3C" и "Google".</li>
+                        <li>Две относительные ссылки на страницы "HTML Images" и "CSS Уроки".</li>
+                        <li>Используйте изображение в качестве ссылки, где изображение "smiley.gif" работает как ссылка
+                            на "HTML Уроки".</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Создайте ссылку на адрес электронной почты с текстом "Отправить email" и атрибутом
+                        <code>href="mailto:someone@example.com"</code>.</p>
+                </li>
+                <li>
+                    <p>Преобразуйте кнопку в ссылку, где при клике на кнопку "HTML Уроки" страница перенаправляется на
+                        "default.asp".</p>
+                </li>
+                <li>
+                    <p>Добавьте заголовок к ссылке с текстом "Ссылка на HTML Уроки" и атрибутом <code>title="Заголовок
+                            ссылки"</code>.</p>
+                </li>
+            </ol>
+        </div>
+    </div><br>
+    <div class="next-btn_div">
+        <button onclick='next2()' class="next-btn">Следующий блок</button>
+    </div>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(".feed-post:eq( 0 )").show();
+    $(".feed-post:eq( 1 )").show();
+
+    function next2() {
+        var notVisible = -1;
+        $('.feed-post').each(function () {
+            if ($(this).css('display') !== 'none') {
+                notVisible = notVisible + 1;
+            }
+        });
+        $(".feed-post:eq( " + (notVisible + 1) + " )").show();
+        // $(".feed-post:eq( " + (notVisible + 2) + " )").show();
+    }
+</script>
+<style>
+    .jsHigh {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .htmlHigh {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .feed-post {
+        display: none;
+    }
+
+    .next-btn {
+        background-color: rgb(73, 73, 73);
+        color: white;
+        border: none;
+        padding: 1rem;
+        font-size: large;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .next-btn_div {
+        display: flex;
+        justify-content: center;
+    }
+</style>

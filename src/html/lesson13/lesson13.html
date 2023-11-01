@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/html5.png" />
+    <title>Урок 13</title>
+</head>
+
+<body style="padding: 2rem; font-size: 24px;">
+    <h1 style="text-align: center;">HTML - Урок 13</h1>
+    <div class="CodeMirror-scroll htmlHigh" tabindex="-1" draggable="false">
+        <h2>Пути к файлам HTML</h2>
+        <p>Путь к файлу описывает расположение файла в структуре папок веб-сайта.</p>
+        <table class="ws-table-all">
+            <tbody>
+                <tr>
+                    <th style="width:320px">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Путь</font>
+                        </font>
+                    </th>
+                    <th>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Описание</font>
+                        </font>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">&lt;img src="picture.jpg"&gt;</font>
+                        </font>
+                    </td>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Файл «picture.jpg» находится в той же папке, что и
+                                текущая страница.</font>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">&lt;img src="images/picture.jpg"&gt;</font>
+                        </font>
+                    </td>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Файл «picture.jpg» находится в папке images в текущей
+                                папке.</font>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">&lt;img src="/images/picture.jpg"&gt;</font>
+                        </font>
+                    </td>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Файл «picture.jpg» находится в папке изображений в
+                                корне текущего веб-сайта.</font>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">&lt;img src="../picture.jpg"&gt;</font>
+                        </font>
+                    </td>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Файл «picture.jpg» находится в папке на один уровень
+                                выше текущей папки.</font>
+                        </font>
+                    </td>
+                </tr>
+            </tbody>
+        </table><br>
+    </div>
+    <hr><br>
+    <div class="feed-post">
+        <h2>Абсолютные и относительный пути к файлам</h2>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span
+                        class="attributevaluecolor"
+                        style="color:mediumblue">="https://front0.admin.tj/img/webacademy.jpg"</span>
+                    alt<span class="attributevaluecolor" style="color:mediumblue">="Это логотип
+                        ВебАкадемии"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div><br>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span
+                        class="attributevaluecolor" style="color:mediumblue">="/img/webacademy.jpg"</span>
+                    alt<span class="attributevaluecolor" style="color:mediumblue">="Это логотип
+                        ВебАкадемии"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>HTML — элементи шапки веб-сайта</h2>
+        <p class="intro">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Элемент HTML </font>
+            </font><code class="w3-codespan">&lt;head&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">является контейнером для следующих элементов:
+                </font>
+            </font><code class="w3-codespan">&lt;title&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">, </font>
+            </font><code class="w3-codespan">&lt;style&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">,
+                </font>
+            </font><code class="w3-codespan">&lt;meta&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">, </font>
+            </font><code class="w3-codespan">&lt;link&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">, </font>
+            </font><code class="w3-codespan">&lt;script&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">и </font>
+            </font><code class="w3-codespan">&lt;base&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">.</font>
+            </font>
+        </p>
+        <h2>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">HTML-элемент &lt;head&gt;</font>
+            </font>
+        </h2><br>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Элемент </font>
+            </font><code class="w3-codespan">&lt;head&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">представляет собой контейнер для метаданных (данных о данных) и
+                    размещается между </font>
+            </font><code class="w3-codespan">&lt;html&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">тегом и </font>
+            </font><code class="w3-codespan">&lt;body&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">тегом.</font>
+            </font>
+        </p><br>
+        <hr><br>
+        <h2>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">HTML-элемент &lt;title&gt;</font>
+            </font>
+        </h2>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Элемент </font>
+            </font><code class="w3-codespan">&lt;title&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">определяет заголовок документа. </font>
+                <font style="vertical-align: inherit;">Заголовок должен быть только текстовым и отображаться в строке
+                    заголовка браузера или на вкладке страницы.</font>
+            </font>
+        </p><br>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                    html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>
+            &nbsp;
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>title<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>A Meaningful Page
+            Title<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/title<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>
+            <br>The content of the document......<br>
+            <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>
+        </div><br>
+        <h2>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">HTML-элемент &lt;style&gt;</font>
+            </font>
+        </h2>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Этот </font>
+            </font><code class="w3-codespan">&lt;style&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">элемент используется для определения информации о стиле для одной
+                    HTML-страницы:</font>
+            </font>
+        </p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>style<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>
+                &nbsp;
+                body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                    style="color:red">background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                            class="cssdelimitercolor" style="color:black">:</span> powderblue<span
+                            class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                    class="cssdelimitercolor" style="color:black">}</span><br>&nbsp; h1 <span class="cssdelimitercolor"
+                    style="color:black">{</span><span class="csspropertycolor" style="color:red">color<span
+                        class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                            style="color:black">:</span> red<span class="cssdelimitercolor"
+                            style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                    style="color:black">}</span><br>
+                &nbsp;
+                p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                    style="color:red">color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                            class="cssdelimitercolor" style="color:black">:</span> blue<span class="cssdelimitercolor"
+                            style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                    style="color:black">}</span><br>
+            </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/style<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span> </div><br>
+        <h2>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">HTML-элемент &lt;link&gt;</font>
+            </font>
+        </h2>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Этот </font>
+            </font><code class="w3-codespan">&lt;link&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">элемент определяет связь между текущим документом и внешним
+                    ресурсом. </font>
+            </font><br><br>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Тег </font>
+            </font><code class="w3-codespan">&lt;link&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">
+                    чаще всего используется для ссылки на внешние таблицы стилей:</font>
+            </font>
+        </p><br>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span
+                        class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span
+                        class="attributevaluecolor" style="color:mediumblue">="mystyle.css"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div><br>
+        <h2>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">HTML-элемент &lt;meta&gt;</font>
+            </font>
+        </h2>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Этот </font>
+            </font><code class="w3-codespan">&lt;meta&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">элемент обычно используется для указания набора символов,
+                    описания страницы, ключевых слов, автора документа и настроек области просмотра.</font>
+            </font>
+        </p>
+        <p><b>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Определите используемый набор символов:</font>
+                </font>
+            </b></p>
+        <div class="w3-code w3-border notranslate htmlHigh">
+            <div><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red">
+                        charset<span class="attributevaluecolor" style="color:mediumblue">="UTF-8"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span></div>
+        </div>
+        <p><b>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Определите ключевые слова для поисковых систем:</font>
+                </font>
+            </b></p>
+        <div class="w3-code w3-border notranslate htmlHigh">
+            <div><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red">
+                        name<span class="attributevaluecolor" style="color:mediumblue">="keywords"</span> content<span
+                            class="attributevaluecolor" style="color:mediumblue">="HTML, CSS,
+                            JavaScript"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p><b>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Определите описание вашей веб-страницы:</font>
+                </font>
+            </b></p>
+        <div class="w3-code w3-border notranslate htmlHigh">
+            <div><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red">
+                        name<span class="attributevaluecolor" style="color:mediumblue">="description"</span>
+                        content<span class="attributevaluecolor" style="color:mediumblue">="Free Web
+                            tutorials"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <h3>Пример</h3>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> charset<span
+                        class="attributevaluecolor" style="color:mediumblue">="UTF-8"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span
+                    class="attributecolor" style="color:red"> name<span class="attributevaluecolor"
+                        style="color:mediumblue">="description"</span> content<span class="attributevaluecolor"
+                        style="color:mediumblue">="Free Web tutorials"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor"
+                    style="color:red"> name<span class="attributevaluecolor" style="color:mediumblue">="keywords"</span>
+                    content<span class="attributevaluecolor" style="color:mediumblue">="HTML, CSS,
+                        JavaScript"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor"
+                    style="color:red"> name<span class="attributevaluecolor" style="color:mediumblue">="author"</span>
+                    content<span class="attributevaluecolor" style="color:mediumblue">="John
+                        Doe"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> </div>
+    </div>
+    <div class="feed-post">
+        <h2>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">HTML-элемент &lt;script&gt;</font>
+            </font>
+        </h2>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Этот </font>
+            </font><code class="w3-codespan">&lt;script&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">элемент используется для определения JavaScript-кодов на стороне
+                    клиента.</font>
+            </font>
+        </p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>script<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span
+                    class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br><span
+                    class="jsnumbercolor" style="color:red">
+                </span> &nbsp;<span class="jsnumbercolor" style="color:red">
+                </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                    class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                    style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Hello
+                    JavaScript!"</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span> }<br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span> </div><br>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h4>Краткое содержание урока</h4>
+        <ul>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Элемент </font>
+                </font><code class="w3-codespan">&lt;head&gt;</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">представляет собой контейнер для метаданных (данных о
+                        данных).</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Элемент </font>
+                </font><code class="w3-codespan">&lt;head&gt;</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">помещается между </font>
+                </font><code class="w3-codespan">&lt;html&gt;</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">тегом и </font>
+                </font><code class="w3-codespan">&lt;body&gt;</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">тегом</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Элемент </font>
+                </font><code class="w3-codespan">&lt;title&gt;</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">является обязательным и определяет заголовок документа.
+                    </font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Этот </font>
+                </font><code class="w3-codespan">&lt;style&gt;</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">элемент используется для определения информации о стиле для
+                        одного документа.</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Тег </font>
+                </font><code class="w3-codespan">&lt;link&gt;</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">
+                        чаще всего используется для ссылки на внешние таблицы стилей.</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Этот </font>
+                </font><code class="w3-codespan">&lt;meta&gt;</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">элемент обычно используется для указания набора символов,
+                        описания страницы, ключевых слов, автора документа и настроек области просмотра.</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Этот </font>
+                </font><code class="w3-codespan">&lt;script&gt;</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">элемент используется для определения JavaScript на стороне
+                        клиента.</font>
+                </font>
+            </li>
+            <li>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Элемент </font>
+                </font><code class="w3-codespan">&lt;base&gt;</code>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">определяет базовый URL-адрес и/или цель для всех
+                        относительных URL-адресов на странице.</font>
+                </font>
+            </li>
+        </ul>
+    </div><br>
+    <div class="feed-post">
+        <div class="markdown prose w-full break-words dark:prose-invert dark">
+            <h2 style="color: darkblue;"><strong>Домашнее задание: Работа с элементами <code>&lt;head&gt;</code> в HTML</strong></h2>
+            <ol>
+                <li>
+                    <p>Создайте новый HTML-документ.</p>
+                </li>
+                <li>
+                    <p>Внутри <code>&lt;head&gt;</code> добавьте элемент <code>&lt;title&gt;</code> и установите в нем
+                        заголовок вашей страницы. Например: "Моя Заголовочная Страница".</p>
+                </li>
+                <li>
+                    <p>Добавьте элемент <code>&lt;style&gt;</code> в <code>&lt;head&gt;</code> и определите в нем
+                        некоторые стили (например, измените цвет фона и размер текста). Примените эти стили к
+                        какому-нибудь элементу внутри <code>&lt;body&gt;</code>.</p>
+                </li>
+                <li>
+                    <p>Используя элемент <code>&lt;link&gt;</code>, подключите внешний файл стилей (CSS файл) к вашей
+                        странице. Создайте этот CSS файл и определите в нем дополнительные стили. Убедитесь, что эти
+                        стили также применяются к элементам в вашем HTML-документе.</p>
+                </li>
+                <li>
+                    <p>Добавьте несколько элементов <code>&lt;meta&gt;</code> для указания набора символов (UTF-8),
+                        описания вашей страницы, ключевых слов и автора.</p>
+                </li>
+                <li>
+                    <p>Внутри <code>&lt;body&gt;</code> создайте какие-то элементы (например, заголовки, параграфы,
+                        изображения) и примените JavaScript с использованием <code>&lt;script&gt;</code> элемента для
+                        изменения их содержимого или стилей.</p>
+                </li>
+                <li>
+                    <p>Закомментируйте каждый элемент в вашем коде, чтобы пояснить, что он делает.</p>
+                </li>
+                <li>
+                    <p>Проверьте вашу страницу в браузере, убедитесь, что заголовок, стили и JavaScript работают
+                        правильно.</p>
+                </li>
+                <li>
+                    <p>Сохраните ваш файл HTML и все внешние файлы, которые вы создали (CSS файл и, если есть,
+                        изображения), в одну папку. Проверьте, что все ссылки на файлы в вашем HTML-документе корректны.
+                    </p>
+                </li>
+                <li>
+                    <p>Если возможно, поделитесь вашей работой с преподавателем или коллегами для обратной связи.</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="next-btn_div">
+        <button onclick='next2()' class="next-btn">Следующий блок</button>
+    </div>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(".feed-post:eq( 0 )").show();
+    $(".feed-post:eq( 1 )").show();
+
+    function next2() {
+        var notVisible = -1;
+        $('.feed-post').each(function () {
+            if ($(this).css('display') !== 'none') {
+                notVisible = notVisible + 1;
+            }
+        });
+        $(".feed-post:eq( " + (notVisible + 1) + " )").show();
+        // $(".feed-post:eq( " + (notVisible + 2) + " )").show();
+    }
+</script>
+<style>
+    .jsHigh {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .htmlHigh {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .feed-post {
+        display: none;
+    }
+
+    .next-btn {
+        background-color: rgb(73, 73, 73);
+        color: white;
+        border: none;
+        padding: 1rem;
+        font-size: large;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .next-btn_div {
+        display: flex;
+        justify-content: center;
+    }
+</style>

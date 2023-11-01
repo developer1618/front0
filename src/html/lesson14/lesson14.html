@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/html5.png" />
+    <title>Урок 14</title>
+</head>
+
+<body style="padding: 2rem; font-size: 24px;">
+    <h1 style="text-align: center;">HTML - Урок 14</h1>
+    <div class="CodeMirror-scroll htmlHigh" tabindex="-1" draggable="false">
+        <h2>Элементы и методы HTML- макета</h2>
+        <p>Веб-сайты часто отображают контент в нескольких столбцах.</p>
+        <img src="/img/web-maket.png" alt="Web">
+    </div>
+    <hr><br>
+    <div class="feed-post">
+        <h2>Элементы HTML-макета</h2>
+        <table style="width:100%" class="w3-hide-small">
+            <tbody>
+                <tr>
+                    <td style="width:225px;vertical-align:top">
+                        <img alt="Семантические элементы HTML5" src="/img/web-maket.gif" width="219" height="258">
+                    </td>
+                    <td style="vertical-align:top">
+                        <ul>
+                            <li> <code class="w3-codespan">&lt;header&gt;</code>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">- Определяет заголовок документа или раздела.
+                                    </font>
+                                </font>
+                            </li>
+                            <li> <code class="w3-codespan">&lt;nav&gt;</code>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">- Определяет набор навигационных ссылок
+                                    </font>
+                                </font>
+                            </li>
+                            <li> <code class="w3-codespan">&lt;section&gt;</code>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">- Определяет раздел в документе.</font>
+                                </font>
+                            </li>
+                            <li> <code class="w3-codespan">&lt;article&gt;</code>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">- Определяет независимый, самодостаточный
+                                        контент</font>
+                                </font>
+                            </li>
+                            <li> <code class="w3-codespan">&lt;aside&gt;</code>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">- Определяет контент отдельно от контента
+                                        (например, боковая панель).</font>
+                                </font>
+                            </li>
+                            <li> <code class="w3-codespan">&lt;footer&gt;</code>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">- Определяет нижний колонтитул документа или
+                                        раздела.</font>
+                                </font>
+                            </li>
+                            <li> <code class="w3-codespan">&lt;details&gt;</code>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">- Определяет дополнительные детали, которые
+                                        пользователь может открывать и закрывать по требованию.</font>
+                                </font>
+                            </li>
+                            <li> <code class="w3-codespan">&lt;summary&gt;</code>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">- Определяет заголовок для </font>
+                                </font><code class="w3-codespan">&lt;details&gt;</code>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">элемента</font>
+                                </font>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table><br>
+        <br>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>HTML- адаптивный веб-дизайн</h2>
+        <p>Адаптивный веб-дизайн — это создание веб-страниц, которые хорошо выглядят на всех устройствах! <br>
+            Адаптивный веб-дизайн автоматически подстраивается под различные размеры экрана и области просмотра.</p>
+        <img src="/img/adaptive.png" alt="IMG"><br>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>Настройка области просмотра</h2>
+        <p>
+            <font style="vertical-align: inherit;"></font><code class="w3-codespan">&lt;meta&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">
+                    Чтобы создать адаптивный веб-сайт, добавьте на все свои веб-страницы </font>
+                <font style="vertical-align: inherit;">следующий тег:</font>
+            </font>
+        </p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> name<span
+                        class="attributevaluecolor" style="color:mediumblue">="viewport"</span> content<span
+                        class="attributevaluecolor" style="color:mediumblue">="width=device-width,
+                        initial-scale=1.0"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>
+        </div><br>
+        <h3>Адаптивные изображения</h3>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red">
+                    src<span class="attributevaluecolor" style="color:mediumblue">="img_girl.jpg"</span>
+                    <strong>style<span class="attributevaluecolor"
+                            style="color:mediumblue">="width:100%;"</span></strong></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>
+        </div><br>
+        <h3>Использование свойства max-width</h3>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red">
+                    src<span class="attributevaluecolor" style="color:mediumblue">="img_girl.jpg"</span> style<span
+                        class="attributevaluecolor"
+                        style="color:mediumblue">="<strong>max-width:100%;</strong>height:auto;"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div><br>
+        <h3>Показывать разные изображения в зависимости от ширины браузера</h3>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>picture<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span
+                    class="attributecolor" style="color:red"> srcset<span class="attributevaluecolor"
+                        style="color:mediumblue">="img_smallflower.jpg"</span> media<span class="attributevaluecolor"
+                        style="color:mediumblue">="(max-width:
+                        600px)"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span
+                    class="attributecolor" style="color:red"> srcset<span class="attributevaluecolor"
+                        style="color:mediumblue">="img_flowers.jpg"</span> media<span class="attributevaluecolor"
+                        style="color:mediumblue">="(max-width:
+                        1500px)"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span
+                    class="attributecolor" style="color:red"> srcset<span class="attributevaluecolor"
+                        style="color:mediumblue">="flowers.jpg"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span
+                    class="attributecolor" style="color:red"> src<span class="attributevaluecolor"
+                        style="color:mediumblue">="img_smallflower.jpg"</span>
+                    alt<span class="attributevaluecolor" style="color:mediumblue">="Flowers"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/picture<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+        <br>
+        <h3>Адаптивный размер текста</h3>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> style<span
+                        class="attributevaluecolor"
+                        style="color:mediumblue">="<strong>font-size:10vw</strong>"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Hello World<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>
+        </div>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>Медиа-запросы</h2>
+        <p>Помимо изменения размера текста и изображений, на адаптивных веб-страницах также часто используются
+            медиа-запросы.</p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>style<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor"
+                style="color:brown"><br>.left, .right <span class="cssdelimitercolor" style="color:black">{</span><span
+                    class="csspropertycolor" style="color:red"><br>&nbsp; float<span class="csspropertyvaluecolor"
+                        style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> left<span
+                            class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                    width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                            style="color:black">:</span> 20%<span class="cssdelimitercolor"
+                            style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* The
+                        width is 20%, by default */</span><br></span><span class="cssdelimitercolor"
+                    style="color:black">}</span><br><br>.main <span class="cssdelimitercolor"
+                    style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; float<span
+                        class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                            style="color:black">:</span> left<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br>&nbsp; width<span class="csspropertyvaluecolor"
+                        style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 60%<span
+                            class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor"
+                        style="color:green">/* The width is 60%, by default */</span><br></span><span
+                    class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor"
+                    style="color:green">/* Use a media query to
+                    add a breakpoint at 800px: */</span><br>@media screen and (max-width: 800px) <span
+                    class="cssdelimitercolor" style="color:black">{</span><span class="cssselectorcolor"
+                    style="color:brown"><br>&nbsp; .left,
+                    .main, .right <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
+                            style="color:black">{</span></span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;&nbsp;
+                        width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 100%<span
+                                class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor"
+                            style="color:green">/* The width is 100%, when the viewport is 800px or smaller
+                            */</span><br>&nbsp;
+                    </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
+                            style="color:black">}</span></span><br></span><span class="cssdelimitercolor"
+                    style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>
+        </div><br>
+        <hr><br>
+    </div>
+    <br>
+    <div class="feed-post">
+        <div class="markdown prose w-full break-words dark:prose-invert dark">
+            <h2 style="color: darkblue;"><strong>Домашнее задание: Создание адаптивной веб-страницы</strong></h2>
+            <ol>
+                <li>
+                    <p>Создайте новый HTML-документ.</p>
+                </li>
+                <li>
+                    <p>В <code>&lt;head&gt;</code> вашего HTML-документа добавьте следующий код для настройки области
+                        просмотра для адаптивного веб-дизайна:</p>
+                </li>
+            </ol>
+            <pre><div class="bg-black rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 gizmo:dark:bg-token-surface-primary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>html</span><button class="flex ml-auto gizmo:ml-0 gap-2 items-center"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="icon-sm" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+        </code></div></div></pre>
+            <ol start="3">
+                <li>
+                    <p>Создайте адаптивную веб-страницу, используя семантические элементы HTML5, такие как
+                        <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>,
+                        <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code>,
+                        <code>&lt;details&gt;</code>, и <code>&lt;summary&gt;</code>. Задайте структуру страницы с
+                        использованием этих элементов.</p>
+                </li>
+                <li>
+                    <p>Вставьте несколько изображений на вашу страницу и настройте их размер так, чтобы они
+                        адаптировались к различным размерам экрана. Используйте свойства <code>width:100%;</code> и
+                        <code>max-width:100%;height:auto;</code> для изображений.</p>
+                </li>
+                <li>
+                    <p>Используйте медиа-запросы и CSS для создания адаптивной макета. Создайте стили, которые будут
+                        работать на разных размерах экрана. Например, создайте стили для разных разрешений экрана или
+                        разных устройств (смартфоны, планшеты, десктопы).</p>
+                </li>
+                <li>
+                    <p>Сделайте вашу веб-страницу адаптивной, так, чтобы она хорошо выглядела как на маленьких экранах,
+                        так и на больших.</p>
+                </li>
+                <li>
+                    <p>Проверьте вашу веб-страницу в различных браузерах и на разных устройствах, чтобы убедиться, что
+                        она выглядит хорошо и работает правильно.</p>
+                </li>
+                <li>
+                    <p>Поделитесь вашей работой с кем-то из своих коллег или преподавателем и попросите обратную связь.
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </div><br>
+    <div class="next-btn_div">
+        <button onclick='next2()' class="next-btn">Следующий блок</button>
+    </div>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(".feed-post:eq( 0 )").show();
+    $(".feed-post:eq( 1 )").show();
+
+    function next2() {
+        var notVisible = -1;
+        $('.feed-post').each(function () {
+            if ($(this).css('display') !== 'none') {
+                notVisible = notVisible + 1;
+            }
+        });
+        $(".feed-post:eq( " + (notVisible + 1) + " )").show();
+        // $(".feed-post:eq( " + (notVisible + 2) + " )").show();
+    }
+</script>
+<style>
+    .jsHigh {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .htmlHigh {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .feed-post {
+        display: none;
+    }
+
+    .next-btn {
+        background-color: rgb(73, 73, 73);
+        color: white;
+        border: none;
+        padding: 1rem;
+        font-size: large;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .next-btn_div {
+        display: flex;
+        justify-content: center;
+    }
+</style>

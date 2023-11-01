@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/html5.png" />
+    <title>Урок 11</title>
+</head>
+
+<body style="padding: 2rem; font-size: 24px;">
+    <h1 style="text-align: center;">HTML - Урок 11</h1>
+    <h2>HTML -фреймы Iframe</h2>
+    <p>HTML iframe используется для отображения веб-страницы внутри веб-страницы.</p>
+    <div class="w3-code notranslate htmlHigh">
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> src<span
+                    class="attributevaluecolor" style="color:mediumblue">="<i>url</i>"</span> title<span
+                    class="attributevaluecolor" style="color:mediumblue">="<em>description</em>"</span></span><span
+                class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>
+    </div>
+    <hr><br>
+    <div class="feed-post">
+        <h2>Iframe – установка высоты и ширины</h2>
+        <p>Используйте атрибуты heightи width, чтобы указать размер iframe. <br>
+            По умолчанию высота и ширина указаны в пикселях:</p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> src<span
+                        class="attributevaluecolor" style="color:mediumblue">="demo_iframe.htm"</span> height<span
+                        class="attributevaluecolor" style="color:mediumblue">="200"</span> width<span
+                        class="attributevaluecolor" style="color:mediumblue">="300"</span>
+                    title<span class="attributevaluecolor" style="color:mediumblue">="Iframe Example"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span> </div><br>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> src<span
+                        class="attributevaluecolor" style="color:mediumblue">="demo_iframe.htm"</span> style<span
+                        class="attributevaluecolor" style="color:mediumblue">="height:200px;width:300px;"</span>
+                    title<span class="attributevaluecolor" style="color:mediumblue">="Iframe Example"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span> </div><br>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>Iframe — удалить границу</h2>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> src<span
+                        class="attributevaluecolor" style="color:mediumblue">="demo_iframe.htm"</span> style<span
+                        class="attributevaluecolor" style="color:mediumblue">="border:none;"</span>
+                    title<span class="attributevaluecolor" style="color:mediumblue">="Iframe Example"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span> </div><br>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>Iframe — цель для ссылки</h2>
+        <p>iframe можно использовать в качестве целевого фрейма для ссылки. <br>
+            Атрибут target ссылки должен ссылаться на name атрибут iframe:</p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> src<span
+                        class="attributevaluecolor" style="color:mediumblue">="demo_iframe.htm"</span> name<span
+                        class="attributevaluecolor" style="color:mediumblue">="iframe_a"</span> title<span
+                        class="attributevaluecolor" style="color:mediumblue">="Iframe
+                        Example"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span
+                class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor"
+                    style="color:red"> href<span class="attributevaluecolor"
+                        style="color:mediumblue">="https://www.w3schools.com"</span> target<span
+                        class="attributevaluecolor" style="color:mediumblue">="iframe_a"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>W3Schools.com<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>
+        </div><br>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <div class="markdown prose w-full break-words dark:prose-invert dark">
+            <h2 style="color: darkblue;"><strong>Домашнее задание: Работа с iframe в HTML</strong></h2>
+            <ol>
+                <li>
+                    <p>Создайте HTML-страницу с использованием фрейма (iframe), который встраивает внутрь себя другую
+                        веб-страницу, например, сайт <a href="http://www.admin.tj" target="_new">www.admin.tj</a>.
+                        Установите размер фрейма, чтобы он отображал внутреннюю страницу в определенных размерах.</p>
+                </li>
+                <li>
+                    <p>Измените заголовок фрейма, используя атрибут <code>title</code>.</p>
+                </li>
+                <li>
+                    <p>На странице с фреймом, добавьте ссылку, которая перенаправляет пользователя на внешний сайт. При
+                        этом, целевой фрейм для загрузки внешнего сайта должен быть вашим фреймом.</p>
+                </li>
+                <li>
+                    <p>Добавьте на свою страницу кнопку, и сделайте так, чтобы при нажатии на нее загружалась другая
+                        веб-страница внутри вашего фрейма.</p>
+                </li>
+                <li>
+                    <p>Стилизуйте ваш фрейм с помощью CSS: измените цвет фона, шрифты или другие стили по вашему
+                        усмотрению.</p>
+                </li>
+                <li>
+                    <p>Попробуйте удалить границу фрейма и поэкспериментируйте с другими стилями.</p>
+                </li>
+                <li>
+                    <p>Внимательно прокомментируйте ваш код, объясняя, что делает каждая часть.</p>
+                </li>
+                <li>
+                    <p>Добавьте описание к вашей HTML-странице и украсьте ее, чтобы она выглядела привлекательной.</p>
+                </li>
+            </ol>
+            <p>После выполнения этого задания, ученики будут знать, как вставлять и стилизовать фреймы в HTML, а также
+                как создавать ссылки и кнопки для управления содержимым фрейма.</p>
+        </div>
+    </div>
+    <br>
+    <div class="next-btn_div">
+        <button onclick='next2()' class="next-btn">Следующий блок</button>
+    </div>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(".feed-post:eq( 0 )").show();
+    $(".feed-post:eq( 1 )").show();
+
+    function next2() {
+        var notVisible = -1;
+        $('.feed-post').each(function () {
+            if ($(this).css('display') !== 'none') {
+                notVisible = notVisible + 1;
+            }
+        });
+        $(".feed-post:eq( " + (notVisible + 1) + " )").show();
+        // $(".feed-post:eq( " + (notVisible + 2) + " )").show();
+    }
+</script>
+<style>
+    .jsHigh {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .htmlHigh {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .feed-post {
+        display: none;
+    }
+
+    .next-btn {
+        background-color: rgb(73, 73, 73);
+        color: white;
+        border: none;
+        padding: 1rem;
+        font-size: large;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .next-btn_div {
+        display: flex;
+        justify-content: center;
+    }
+</style>
