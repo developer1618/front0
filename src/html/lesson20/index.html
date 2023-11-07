@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/html5.png" />
+    <title>Урок 16</title>
+</head>
+
+<body style="padding: 2rem; font-size: 24px;">
+    <h1 style="text-align: center;">HTML - Урок 16</h1>
+    <div class="CodeMirror-scroll htmlHigh" tabindex="-1" draggable="false">
+        <h2>HTML- формы</h2>
+        <p>Форма HTML используется для сбора вводимых пользователем данных. Пользовательский ввод чаще всего
+            отправляется на сервер для обработки.</p>
+        <div class="w3-white w3-padding notranslate">
+            <form action="/action_page.php" target="_blank">
+                <label for="fname">Имя:</label><br>
+                <input type="text" id="fname" name="fname" value="Админ"><br>
+                <label for="lname">Фамилия:</label><br>
+                <input type="text" id="lname" name="lname" value="Админов"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div class="feed-post">
+        <h2>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Элемент &lt;form&gt;</font>
+            </font>
+        </h2>
+        <p>Элемент HTML &lt;form&gt; используется для создания HTML-формы для ввода данных пользователем:</p>
+        <div class="w3-example">
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>form<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                .<br>
+                <i>Элементы формы</i><br>
+                .<br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+            </div>
+        </div><br>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Элемент </font>
+            </font><code class="w3-codespan">&lt;form&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">представляет собой контейнер для различных типов элементов ввода,
+                    таких как: текстовые поля, флажки, переключатели, кнопки отправки и т. д.</font>
+            </font>
+        </p><br>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Элемент &lt;input&gt;</font>
+            </font>
+        </h2>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Элемент HTML </font>
+            </font><code class="w3-codespan">&lt;input&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">является наиболее часто используемым элементом формы.</font>
+            </font>
+        </p>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Элемент </font>
+            </font><code class="w3-codespan">&lt;input&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">может отображаться разными способами, в зависимости от </font>
+            </font><code class="w3-codespan">type</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">
+                    атрибута.</font>
+            </font>
+        </p>
+        <table class="ws-table-all">
+            <tbody>
+                <tr>
+                    <th>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Тип</font>
+                        </font>
+                    </th>
+                    <th>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Описание</font>
+                        </font>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">&lt;input type="text"&gt;</font>
+                        </font>
+                    </td>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Отображает однострочное поле ввода текста</font>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">&lt;input type="radio"&gt;</font>
+                        </font>
+                    </td>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Отображает переключатель (для выбора одного из многих
+                                вариантов)</font>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">&lt;input type="checkbox"&gt;</font>
+                        </font>
+                    </td>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Отображает флажок (для выбора нуля или более из
+                                множества вариантов)</font>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">&lt;input type="submit"&gt;</font>
+                        </font>
+                    </td>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Отображает кнопку отправки (для отправки формы)
+                            </font>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">&lt;input type="button"&gt;</font>
+                        </font>
+                    </td>
+                    <td>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Отображает кликабельную кнопку</font>
+                        </font>
+                    </td>
+                </tr>
+            </tbody>
+        </table><br>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>Текстовые поля</h2>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Определяет </font>
+            </font><code class="w3-codespan">&lt;input type="text"&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">однострочное поле ввода для ввода текста.</font>
+            </font>
+        </p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>form<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>
+            &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span
+                        class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>First name:<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                    class="attributecolor" style="color:red">
+                    type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                        class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                        class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                    class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                        style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Last
+            name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                    class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                        style="color:mediumblue">="text"</span> id<span class="attributevaluecolor"
+                        style="color:mediumblue">="lname"</span> name<span class="attributevaluecolor"
+                        style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>
+        </div><br>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Элемент &lt;label&gt;</font>
+            </font>
+        </h2>
+        <p>Тег &lt;label&gt; связывает подпись элемента формы ( &lt;input&gt; , &lt;textarea&gt; , &lt;select&gt; ) с
+            самим элементом</p>
+        <br>
+        <hr><br>
+    </div>
+    <div class="feed-post">
+        <h2>Радио-кнопки</h2>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Определяет </font>
+            </font><code class="w3-codespan">&lt;input type="radio"&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">переключатель.</font>
+            </font>
+        </p>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Радиокнопки позволяют пользователю выбрать ОДИН из ограниченного
+                    числа вариантов.</font>
+            </font>
+        </p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Choose your favorite Web language:<span
+                class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>form<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                    class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                        style="color:mediumblue">="radio"</span> id<span class="attributevaluecolor"
+                        style="color:mediumblue">="html"</span> name<span class="attributevaluecolor"
+                        style="color:mediumblue">="fav_language"</span>
+                    value<span class="attributevaluecolor" style="color:mediumblue">="HTML"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                    class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                        style="color:mediumblue">="html"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>HTML<span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                    class="attributecolor" style="color:red">
+                    type<span class="attributevaluecolor" style="color:mediumblue">="radio"</span> id<span
+                        class="attributevaluecolor" style="color:mediumblue">="css"</span> name<span
+                        class="attributevaluecolor" style="color:mediumblue">="fav_language"</span> value<span
+                        class="attributevaluecolor" style="color:mediumblue">="CSS"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                    class="attributecolor" style="color:red">
+                    for<span class="attributevaluecolor" style="color:mediumblue">="css"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>CSS<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                    class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                        style="color:mediumblue">="radio"</span> id<span class="attributevaluecolor"
+                        style="color:mediumblue">="javascript"</span>
+                    name<span class="attributevaluecolor" style="color:mediumblue">="fav_language"</span> value<span
+                        class="attributevaluecolor" style="color:mediumblue">="JavaScript"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                    class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                        style="color:mediumblue">="javascript"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>JavaScript<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div>
+    </div>
+    <div class="feed-post">
+        <h4>Флажки</h4>
+        <p>Флажки позволяют пользователю выбирать ОДИН или БОЛЬШЕ вариантов из ограниченного числа вариантов.</p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>form<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                    class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                        style="color:mediumblue">="checkbox"</span> id<span class="attributevaluecolor"
+                        style="color:mediumblue">="vehicle1"</span> name<span class="attributevaluecolor"
+                        style="color:mediumblue">="vehicle1"</span> value<span class="attributevaluecolor"
+                        style="color:mediumblue">="Bike"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp;
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span
+                        class="attributevaluecolor" style="color:mediumblue">="vehicle1"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span> I have a bike<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                    class="attributecolor" style="color:red">
+                    type<span class="attributevaluecolor" style="color:mediumblue">="checkbox"</span> id<span
+                        class="attributevaluecolor" style="color:mediumblue">="vehicle2"</span> name<span
+                        class="attributevaluecolor" style="color:mediumblue">="vehicle2"</span> value<span
+                        class="attributevaluecolor" style="color:mediumblue">="Car"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                    class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                        style="color:mediumblue">="vehicle2"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>
+            I have a car<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                    class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                        style="color:mediumblue">="checkbox"</span>
+                    id<span class="attributevaluecolor" style="color:mediumblue">="vehicle3"</span> name<span
+                        class="attributevaluecolor" style="color:mediumblue">="vehicle3"</span>
+                    value<span class="attributevaluecolor" style="color:mediumblue">="Boat"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                    class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                        style="color:mediumblue">="vehicle3"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span> I have a boat<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>
+        </div>
+    </div><br>
+    <div class="feed-post">
+        <h4>Кнопка «Отправить»</h4>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Определяет </font>
+            </font><code class="w3-codespan">&lt;input type="submit"&gt;</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">кнопку для отправки данных формы обработчику формы.</font>
+            </font>
+        </p>
+
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span
+                        class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                    class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                        style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>First
+            name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                    class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                        style="color:mediumblue">="text"</span> id<span class="attributevaluecolor"
+                        style="color:mediumblue">="fname"</span> name<span class="attributevaluecolor"
+                        style="color:mediumblue">="fname"</span>
+                    value<span class="attributevaluecolor" style="color:mediumblue">="John"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                    class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                        style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp;
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span
+                        class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                        class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span
+                        class="attributevaluecolor" style="color:mediumblue">="lname"</span> value<span
+                        class="attributevaluecolor" style="color:mediumblue">="Doe"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp;
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span
+                        class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span
+                        class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div>
+    </div><br>
+    <div class="feed-post">
+
+    </div><br>
+    <div class="feed-post">
+        <h2>Атрибут действия</h2>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Атрибут </font>
+            </font><code class="w3-codespan">action</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">определяет действие, которое будет выполнено при отправке формы.
+                </font>
+            </font>
+        </p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span
+                        class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                    class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                        style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>First
+            name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                    class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                        style="color:mediumblue">="text"</span> id<span class="attributevaluecolor"
+                        style="color:mediumblue">="fname"</span> name<span class="attributevaluecolor"
+                        style="color:mediumblue">="fname"</span>
+                    value<span class="attributevaluecolor" style="color:mediumblue">="John"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                    class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                        style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp;
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span
+                        class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                        class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span
+                        class="attributevaluecolor" style="color:mediumblue">="lname"</span> value<span
+                        class="attributevaluecolor" style="color:mediumblue">="Doe"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                    class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span><br>&nbsp;
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span
+                        class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span
+                        class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div>
+    </div><br>
+    <div class="feed-post">
+        <h2>Целевой атрибут Target</h2>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Атрибут </font>
+            </font><code class="w3-codespan">target</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">указывает, где отображать ответ, полученный после отправки формы.
+                </font>
+            </font>
+        </p>
+        <table class="ws-table-all notranslate">
+            <tbody>
+                <tr>
+                    <th style="width:20%">Значение</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>_blank</td>
+                    <td>Ответ отображается в новом окне или вкладке</td>
+                </tr>
+                <tr>
+                    <td>_self</td>
+                    <td>Ответ отображается в текущем окне</td>
+                </tr>
+                <tr>
+                    <td>_parent</td>
+                    <td>Ответ отображается в родительском фрейме</td>
+                </tr>
+                <tr>
+                    <td>_top</td>
+                    <td>Ответ отображается в полном тексте окна</td>
+                </tr>
+                <tr>
+                    <td><i>framename</i></td>
+                    <td>Ответ отображается в именованном iframe</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Пример</h3>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span
+                        class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span> target<span
+                        class="attributevaluecolor" style="color:mediumblue">="_blank"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+    </div><br>
+    <div class="feed-post">
+        <h2>Атрибут метода</h2>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Атрибут </font>
+            </font><code class="w3-codespan">method</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">указывает метод HTTP, который будет использоваться при отправке
+                    данных формы.</font>
+            </font>
+        </p>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Данные формы могут быть отправлены как переменные URL (с помощью
+                </font>
+            </font><code class="w3-codespan">method="get"</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">) или как почтовая транзакция HTTP (с помощью </font>
+            </font><code class="w3-codespan">method="post"</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">).</font>
+            </font>
+        </p>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Метод HTTP по умолчанию при отправке данных формы — GET.&nbsp;
+                </font>
+            </font>
+        </p>
+        <h3>Примеры</h3>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span
+                        class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span> method<span
+                        class="attributevaluecolor" style="color:mediumblue">="get"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span> </div>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span
+                        class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span> method<span
+                        class="attributevaluecolor" style="color:mediumblue">="post"</span></span><span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span> </div>
+        <p><b>Совет: Всегда используйте POST, если данные формы содержат конфиденциальную или личную информацию!</b></p>
+    </div><br>
+    <div class="feed-post">
+        <h2>Атрибут автозаполнения (autocomplete)</h2>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Атрибут </font>
+            </font><code class="w3-codespan">autocomplete</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">указывает, должно ли в форме быть включено или выключено
+                    автозаполнение.</font>
+            </font>
+        </p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span
+                        class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span>
+                    autocomplete<span class="attributevaluecolor" style="color:mediumblue">="on"</span></span><span
+                    class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+    </div><br>
+    <div class="feed-post">
+        <h2>Атрибут Novalidate</h2>
+        <p>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Атрибут </font>
+            </font><code class="w3-codespan">novalidate</code>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">является логическим атрибутом.</font>
+            </font>
+        </p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span
+                        class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span>
+                    novalidate</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+        <p>Если он присутствует, он указывает, что данные формы (входные данные) не должны проверяться при отправке.</p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span
+                        class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span>
+                    novalidate</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+    </div><br>
+    <div class="feed-post">
+        <h2>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Список всех атрибутов &lt;form&gt;</font>
+            </font>
+        </h2>
+        <div class="w3-responsive">
+            <table class="ws-table-all">
+                <tbody>
+                    <tr>
+                        <th>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Атрибут</font>
+                            </font>
+                        </th>
+                        <th>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Описание</font>
+                            </font>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td><a href="/tags/att_form_accept_charset.asp">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">accept-charset</font>
+                                </font>
+                            </a></td>
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Указывает кодировки символов, используемые для
+                                    отправки формы.</font>
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/tags/att_form_action.asp">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">action</font>
+                                </font>
+                            </a></td>
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Указывает, куда отправлять данные формы при
+                                    отправке формы.</font>
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/tags/att_form_autocomplete.asp">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">autocomplete</font>
+                                </font>
+                            </a></td>
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Указывает, должно ли в форме быть включено или
+                                    выключено автозаполнение.</font>
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/tags/att_form_enctype.asp">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">enctype</font>
+                                </font>
+                            </a></td>
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Указывает, как данные формы должны быть
+                                    закодированы при отправке на сервер (только для метода="post").</font>
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/tags/att_form_method.asp">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">method</font>
+                                </font>
+                            </a></td>
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Указывает метод HTTP, который будет
+                                    использоваться при отправке данных формы.</font>
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/tags/att_form_name.asp">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">name</font>
+                                </font>
+                            </a></td>
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Указывает имя формы</font>
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/tags/att_form_novalidate.asp">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">novalidate</font>
+                                </font>
+                            </a></td>
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Указывает, что форма не должна проверяться при
+                                    отправке.</font>
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/tags/att_form_rel.asp">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">rel</font>
+                                </font>
+                            </a></td>
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Указывает связь между связанным ресурсом и
+                                    текущим документом.</font>
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/tags/att_form_target.asp">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">target</font>
+                                </font>
+                            </a></td>
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Указывает, где отображать ответ, полученный после
+                                    отправки формы.</font>
+                            </font>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="feed-post">
+        <div class="markdown prose w-full break-words dark:prose-invert dark">
+            <h2 style="color: darkblue;">Домашнее задание: Для формы</h2>
+            <ol>
+                <li>
+                    <p>Создайте веб-страницу с HTML-формой для ввода данных. Ваша форма должна содержать следующие
+                        элементы:</p>
+                    <ul>
+                        <li>Текстовое поле для ввода имени (используйте <code>&lt;input type="text"&gt;</code>).</li>
+                        <li>Текстовое поле для ввода фамилии (используйте <code>&lt;input type="text"&gt;</code>).</li>
+                        <li>Группу радиокнопок для выбора любимого языка программирования (HTML, CSS, JavaScript).</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Добавьте подписи к каждому из элементов формы, используя элемент <code>&lt;label&gt;</code>.
+                        Свяжите каждую метку с соответствующим элементом формы с помощью атрибутов <code>for</code> и
+                        <code>id</code>.</p>
+                </li>
+                <li>
+                    <p>Создайте кнопку отправки формы (используйте <code>&lt;input type="submit&gt;</code>).</p>
+                </li>
+                <li>
+                    <p>Укажите атрибут <code>action</code> в вашей форме так, чтобы данные формы были отправлены на
+                        сервер (вы можете использовать какой-либо фиктивный URL в качестве значения
+                        <code>action</code>).</p>
+                </li>
+                <li>
+                    <p>Определите атрибут <code>method</code> для вашей формы. Выберите один из методов: "get" или
+                        "post". Объясните, когда лучше использовать каждый метод.</p>
+                </li>
+                <li>
+                    <p>Используйте атрибут <code>target</code> в форме для определения, где будет отображаться ответ
+                        после отправки формы. Выберите один из вариантов: "_blank", "_self", "_parent", "_top", или
+                        укажите имя фрейма, если у вас есть именованный iframe.</p>
+                </li>
+                <li>
+                    <p>Добавьте кнопку "Сбросить" в форму (используйте <code>&lt;input type="reset&gt;</code>), чтобы
+                        пользователи могли сбросить все введенные данные.</p>
+                </li>
+                <li>
+                    <p>Установите атрибут <code>novalidate</code> в форме. Объясните, какие ситуации могут потребовать
+                        отключения встроенной браузерной проверки формы.</p>
+                </li>
+                <li>
+                    <p>После заполнения формы, отправьте ее (если у вас есть серверная часть, убедитесь, что она
+                        обрабатывает данные). Если у вас нет сервера, попробуйте отправить форму на какой-либо фиктивный
+                        URL или создайте обработчик формы в JavaScript.</p>
+                </li>
+                <li>
+                    <p>Ответьте на следующие вопросы:</p>
+                </li>
+            </ol>
+        </div>
+    </div><br>
+    <div class="next-btn_div">
+        <button onclick='next2()' class="next-btn">Следующий блок</button>
+    </div>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(".feed-post:eq( 0 )").show();
+    $(".feed-post:eq( 1 )").show();
+
+    function next2() {
+        var notVisible = -1;
+        $('.feed-post').each(function () {
+            if ($(this).css('display') !== 'none') {
+                notVisible = notVisible + 1;
+            }
+        });
+        $(".feed-post:eq( " + (notVisible + 1) + " )").show();
+        // $(".feed-post:eq( " + (notVisible + 2) + " )").show();
+    }
+</script>
+<style>
+    .jsHigh {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .htmlHigh {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .feed-post {
+        display: none;
+    }
+
+    .next-btn {
+        background-color: rgb(73, 73, 73);
+        color: white;
+        border: none;
+        padding: 1rem;
+        font-size: large;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .next-btn_div {
+        display: flex;
+        justify-content: center;
+    }
+</style>
