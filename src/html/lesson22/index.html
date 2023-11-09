@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/html5.png" />
+    <title>Урок 22</title>
+</head>
+
+<body style="padding: 2rem; font-size: 24px;">
+    <h1 style="text-align: center;">HTML - Урок 22</h1>
+    <div class="CodeMirror-scroll" tabindex="-1" draggable="false">
+        <h2>HTML5 Canvas</h2>
+        <div class="sw3-panel sw3-info intro">
+            <p class="intro">HTML элемент <code class="sw3-codespan">&lt;canvas&gt;</code> используется для рисования
+                графики на веб странице.</p>
+            <p class="intro">График слева создается с помощью <code class="sw3-codespan">&lt;canvas&gt;</code>.
+                Он показывает четыре элемента: красный прямоугольник, градиентный прямоугольник, многоцветный
+                прямоугольник и многоцветный текст.</p>
+        </div>
+    </div>
+    <div class="feed-post">
+        <h2>Что такое HTML Canvas?</h2>
+        <p>HTML элемент <code class="sw3-codespan">&lt;canvas&gt;</code> используется для рисования графики, на лету, с
+            помощью JavaScript.</p>
+        <p>Элемент <code class="sw3-codespan">&lt;canvas&gt;</code> - это всего лишь контейнер для графики.
+            Вы должны использовать JavaScript, чтобы на самом деле рисовать графику.</p>
+        <p>Canvas имеет несколько методов для рисования контуров, прямоугольников, кругов, текста и добавления
+            изображений.</p>
+        <div class="sw3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>canvas<span class="attributecolor" style="color:red"> id<span
+                        class="attributevaluecolor" style="color:mediumblue">="myCanvas"</span> width<span
+                        class="attributevaluecolor" style="color:mediumblue">="200"</span> height<span
+                        class="attributevaluecolor" style="color:mediumblue">="100"</span> style<span
+                        class="attributevaluecolor" style="color:mediumblue">="border:1px solid
+                        #000000;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>/canvas<span class="tagcolor"
+                    style="color:mediumblue">&gt;</span></span>
+        </div>
+        <br>
+    </div>
+    <div class="feed-post">
+        <h2>Нарисовать линию</h2>
+        <canvas id="myCanvas2" width="200" height="100" style="border:1px solid #d3d3d3;">
+            <script>
+                var c = document.getElementById("myCanvas2");
+                var canvOK = 1;
+                try {
+                    c.getContext("2d");
+                } catch (er) {
+                    canvOK = 0;
+                }
+                if (canvOK == 1) {
+                    var ctx = c.getContext("2d");
+                    ctx.moveTo(0, 0);
+                    ctx.lineTo(200, 100);
+                    ctx.stroke();
+                }
+            </script>
+            Ваш браузер не поддерживает элемент canvas
+        </canvas>
+        <div class="sw3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span
+                    class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor"
+                    style="color:brown">"myCanvas"</span>);<br>
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor"
+                    style="color:black">getContext</span>(<span class="jsstringcolor"
+                    style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;ctx.<span class="jspropertycolor" style="color:black">moveTo</span>(<span
+                    class="jsnumbercolor" style="color:red">0</span>, <span class="jsnumbercolor"
+                    style="color:red">0</span>);<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;ctx.<span class="jspropertycolor" style="color:black">lineTo</span>(<span
+                    class="jsnumbercolor" style="color:red">200</span>, <span class="jsnumbercolor"
+                    style="color:red">100</span>);<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;ctx.<span class="jspropertycolor" style="color:black">stroke</span>();
+            </span></div>
+        <br>
+    </div>
+    <div class="feed-post">
+        <h3>Нарисовать круг</h3>
+        <canvas id="myCanvas3" width="200" height="100" style="border:1px solid #d3d3d3;">
+            <script>
+                var c = document.getElementById("myCanvas3");
+                var canvOK = 1;
+                try {
+                    c.getContext("2d");
+                } catch (er) {
+                    canvOK = 0;
+                }
+                if (canvOK == 1) {
+                    var ctx = c.getContext("2d");
+                    ctx.beginPath();
+                    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+                    ctx.stroke();
+                }
+            </script>
+            Ваш браузер не поддерживает элемент canvas
+        </canvas>
+        <div class="sw3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span
+                    class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor"
+                    style="color:brown">"myCanvas"</span>);<br>
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor"
+                    style="color:black">getContext</span>(<span class="jsstringcolor"
+                    style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;ctx.<span class="jspropertycolor"
+                    style="color:black">beginPath</span>();<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;ctx.<span class="jspropertycolor" style="color:black">arc</span>(<span
+                    class="jsnumbercolor" style="color:red">95</span>, <span class="jsnumbercolor"
+                    style="color:red">50</span>, <span class="jsnumbercolor" style="color:red">40</span>, <span
+                    class="jsnumbercolor" style="color:red">0</span>, <span class="jsnumbercolor"
+                    style="color:red">2</span> * Math.<span class="jspropertycolor"
+                    style="color:black">PI</span>);<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;ctx.<span class="jspropertycolor" style="color:black">stroke</span>();
+            </span></div>
+        <br>
+    </div>
+    <div class="feed-post">
+        <h3>Нарисовать линейный градиент</h3>
+        <canvas id="myCanvas6" width="200" height="100" style="border:1px solid #d3d3d3;">
+            <script>
+                var c = document.getElementById("myCanvas6");
+                var canvOK = 1;
+                try {
+                    c.getContext("2d");
+                } catch (er) {
+                    canvOK = 0;
+                }
+                if (canvOK == 1) {
+                    var ctx = c.getContext("2d");
+                    // Create gradient
+                    var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                    grd.addColorStop(0, "red");
+                    grd.addColorStop(1, "white");
+                    // Fill with gradient
+                    ctx.fillStyle = grd;
+                    ctx.fillRect(10, 10, 150, 80);
+                }
+            </script>
+            Ваш браузер не поддерживает элемент canvas
+        </canvas>
+        <div class="sw3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span
+                    class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor"
+                    style="color:brown">"myCanvas"</span>);<br>
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor"
+                    style="color:black">getContext</span>(<span class="jsstringcolor"
+                    style="color:brown">"2d"</span>);<br><br><span class="jsnumbercolor" style="color:red">
+                </span><span class="commentcolor" style="color:green">// Создать градиент<br></span>
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> grd = ctx.<span class="jspropertycolor"
+                    style="color:black">createLinearGradient</span>(<span class="jsnumbercolor"
+                    style="color:red">0</span>, <span class="jsnumbercolor" style="color:red">0</span>, <span
+                    class="jsnumbercolor" style="color:red">200</span>, <span class="jsnumbercolor"
+                    style="color:red">0</span>);<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;grd.<span class="jspropertycolor"
+                    style="color:black">addColorStop</span>(<span class="jsnumbercolor" style="color:red">0</span>,
+                <span class="jsstringcolor" style="color:brown">"red"</span>);<br><span class="jsnumbercolor"
+                    style="color:red">
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;grd.<span class="jspropertycolor"
+                    style="color:black">addColorStop</span>(<span class="jsnumbercolor" style="color:red">1</span>,
+                <span class="jsstringcolor" style="color:brown">"white"</span>);<br><span class="jsnumbercolor"
+                    style="color:red">
+                </span><br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Заливка
+                    градиента<br></span><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;ctx.<span class="jspropertycolor" style="color:black">fillStyle</span> =
+                grd;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;ctx.<span class="jspropertycolor"
+                    style="color:black">fillRect</span>(<span class="jsnumbercolor" style="color:red">10</span>, <span
+                    class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor"
+                    style="color:red">150</span>, <span class="jsnumbercolor" style="color:red">80</span>); </span>
+        </div>
+        <br>
+    </div>
+    <div class="feed-post">
+        <h2 style="color: darkblue;">Домашняя задания</h2>
+        <p>Задача 1: Рисование фигуры
+            Создайте HTML-страницу с элементом &lt;canvas&gt; и используйте JavaScript, чтобы нарисовать простую фигуру,
+            например, квадрат или круг, на холсте.</p>
+        <p>Задача 2: Анимация движения
+            Создайте анимацию, используя &lt;canvas&gt;, чтобы анимировать движение объекта по холсту. Например, вы
+            можете анимировать перемещение квадрата от одного края холста к другому.</p>
+        <p>Задача 3: Рисование с помощью мыши
+            Создайте &lt;canvas&gt; и позвольте пользователю рисовать на нем с помощью мыши. Пользователь должен иметь
+            возможность свободно рисовать, а также стирать рисунок.</p>
+    </div>
+    <hr><br>
+    <div class="next-btn_div">
+        <button onclick='next2()' class="next-btn">Следующий блок</button>
+    </div>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(".feed-post:eq( 0 )").show();
+    $(".feed-post:eq( 1 )").show();
+
+    function next2() {
+        var notVisible = -1;
+        $('.feed-post').each(function () {
+            if ($(this).css('display') !== 'none') {
+                notVisible = notVisible + 1;
+            }
+        });
+        $(".feed-post:eq( " + (notVisible + 1) + " )").show();
+        // $(".feed-post:eq( " + (notVisible + 2) + " )").show();
+    }
+</script>
+<style>
+    .jsHigh {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .htmlHigh {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .feed-post {
+        display: none;
+    }
+
+    .next-btn {
+        background-color: rgb(73, 73, 73);
+        color: white;
+        border: none;
+        padding: 1rem;
+        font-size: large;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .next-btn_div {
+        display: flex;
+        justify-content: center;
+    }
+</style>
