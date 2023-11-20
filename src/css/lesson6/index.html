@@ -7,65 +7,438 @@
     <link rel="icon" type="image/png" href="/img/html5.png" />
     <title>Урок 6</title>
     <link rel="stylesheet" href="/src/schoolsw3.css">
+    <script src="https://kit.fontawesome.com/e1bc2917a4.js" crossorigin="anonymous"></script>
 </head>
 
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">CSS - Урок 6</h1>
-    
+        <h2>CSS Иконки</h2>
+        <div class="sw3-row sw3-center">
+            <div class="sw3-third">
+                <i class="fa fa-cloud" style="font-size:36px;"></i>
+                <i class="fa fa-cloud" style="font-size:60px;"></i>
+                <i class="fa fa-cloud sw3-text-red" style="font-size:72px;"></i>
+            </div>
+            <div class="sw3-third">
+                <i class="fa fa-car" style="font-size:36px;"></i>
+                <i class="fa fa-car sw3-text-dark-grey" style="font-size:60px;"></i>
+                <i class="fa fa-car sw3-text-grey" style="font-size:72px;"></i>
+            </div>
+            <div class="sw3-third">
+                <i class="fa fa-thumbs-o-up" style="font-size:36px;"></i>
+                <i class="fa fa-thumbs-o-up" style="font-size:60px;"></i>
+                <i class="fa fa-thumbs-o-up sw3-text-indigo" style="font-size:72px;"></i>
+            </div>
+        </div>
+        <h5>Как установить иконки?</h5>
+        <p>Самый простой способ, чтобы установить иконки на вашу страницу HTML веб-сайта, можно из библиотеки иконок,
+            таких как Font Awesome.
+        </p>
+        <p>Добавить имя указанного класса иконки встроенного элемент HTML (<code class="sw3-codespan">&lt;i&gt;</code>
+            или
+            <code class="sw3-codespan">&lt;span&gt;</code>).</p>
+        <p>Все иконки в библиотеке иконок ниже, масштабируются вектором, которые могут быть настроены с помощью CSS
+            размер, цвет, тень и т.п..
+        </p>
         <hr>
     </header>
     <main>
         <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-    
-        <div class="feed-post">
-            <div class="markdown prose w-full break-words dark:prose-invert dark">
-                <h2 style="color: darkblue;">Домашнее задание</h2>
-                
+            <h2>Установить иконки от Font Awesome
+            </h2>
+            <p>Чтобы использовать шрифт потрясающих иконок, добавьте следующую строку внутри <code
+                    class="sw3-codespan">&lt;head&gt;</code> раздела страницы HTML:</p>
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                        html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span
+                            class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span
+                            class="attributevaluecolor"
+                            style="color:mediumblue">="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>i<span class="attributecolor" style="color:red"> class<span
+                            class="attributevaluecolor" style="color:mediumblue">="fa fa-cloud"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>i<span class="attributecolor" style="color:red"> class<span
+                            class="attributevaluecolor" style="color:mediumblue">="fa fa-heart"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>i<span class="attributecolor" style="color:red"> class<span
+                            class="attributevaluecolor" style="color:mediumblue">="fa fa-car"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>i<span class="attributecolor" style="color:red"> class<span
+                            class="attributevaluecolor" style="color:mediumblue">="fa fa-file"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>i<span class="attributecolor" style="color:red"> class<span
+                            class="attributevaluecolor" style="color:mediumblue">="fa fa-bars"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
             </div>
-        </div><br>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Установить иконки от Bootstrap
+            </h2>
+            <p>Использовать Bootstrap технологии glyphicons символы иконок,
+                добавьте следующую строку внутри раздела <code class="sw3-codespan">&lt;head&gt;</code>страницы HTML:
+            </p>
+            <p><code class="sw3-codespan">&lt;link rel="stylesheet"
+                    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;</code></p>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                        html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span
+                            class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span
+                            class="attributevaluecolor"
+                            style="color:mediumblue">="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>i<span class="attributecolor" style="color:red"> class<span
+                            class="attributevaluecolor" style="color:mediumblue">="glyphicon
+                            glyphicon-cloud"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/i<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>i<span class="attributecolor" style="color:red"> class<span
+                            class="attributevaluecolor" style="color:mediumblue">="glyphicon
+                            glyphicon-remove"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/i<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>i<span class="attributecolor" style="color:red"> class<span
+                            class="attributevaluecolor" style="color:mediumblue">="glyphicon
+                            glyphicon-user"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/i<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>i<span class="attributecolor" style="color:red"> class<span
+                            class="attributevaluecolor" style="color:mediumblue">="glyphicon
+                            glyphicon-envelope"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/i<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>i<span class="attributecolor" style="color:red"> class<span
+                            class="attributevaluecolor" style="color:mediumblue">="glyphicon
+                            glyphicon-thumbs-up"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/i<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span> </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Установить иконки от Google</h2>
+            <p>Чтобы использовать иконки в Google, добавьте следующую строку внутри раздела <code
+                    class="sw3-codespan">&lt;head&gt;</code> страницы HTML:</p>
+            <p><code class="sw3-codespan">&lt;link rel="stylesheet"
+                    href="https://fonts.googleapis.com/icon?family=Material+Icons"&gt;</code></p>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                        html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span
+                            class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span
+                            class="attributevaluecolor"
+                            style="color:mediumblue">="https://fonts.googleapis.com/icon?family=Material+Icons"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>i<span class="attributecolor" style="color:red"> class<span
+                            class="attributevaluecolor" style="color:mediumblue">="material-icons"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>cloud<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>i<span class="attributecolor" style="color:red"> class<span
+                            class="attributevaluecolor" style="color:mediumblue">="material-icons"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>favorite<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>i<span class="attributecolor" style="color:red"> class<span
+                            class="attributevaluecolor" style="color:mediumblue">="material-icons"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>attachment<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>i<span class="attributecolor" style="color:red"> class<span
+                            class="attributevaluecolor" style="color:mediumblue">="material-icons"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>computer<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>i<span class="attributecolor" style="color:red"> class<span
+                            class="attributevaluecolor" style="color:mediumblue">="material-icons"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>traffic<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span> </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>CSS Ссылки</h2>
+            <p>С помощью CSS, стили cсылок могут быть разные.</p>
+            <a href="javascript:void(0)" class="txtlink2">Текст ссылки</a>
+            <a href="javascript:void(0)" class="txtlink">Текст ссылки</a>
+            <a href="javascript:void(0)" class="button button1">Кнопка ссылки</a>
+            <a href="javascript:void(0)" class="btn">Кнопка ссылки</a>
+            <h2>Стили ссылок</h2>
+            <p>Ссылки могут быть оформлены в любом свойстве CSS, например:( <code class="sw3-codespan">color</code>,
+                <code class="sw3-codespan">font-family</code>, <code class="sw3-codespan">background</code> и т.п.).</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    a <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> hotpink<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <p>Кроме того, ссылки могут быть стилизованы по-разному в зависимости от того, в каком состоянии они
+                находятся.
+            </p>
+            <ul>
+                <li><code class="sw3-codespan">a:link</code> - по умолчанию, непосещенная ссылка</li>
+                <li><code class="sw3-codespan">a:visited</code> - пользователь посетил, посещенная ссылка</li>
+                <li><code class="sw3-codespan">a:hover</code> - курсор мыши, при наведении на ссылку</li>
+                <li><code class="sw3-codespan">a:active</code> - на данный момент, нажатая ссылка</li>
+            </ul>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    <span class="commentcolor" style="color:green">/* непросмотренная ссылка */</span><br>
+                    a:link <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> red<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    <span class="commentcolor" style="color:green">/* просмотренная ссылка */</span><br>
+                    a:visited <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> green<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    <span class="commentcolor" style="color:green">/* наведение мыши на ссылку */</span><br>
+                    a:hover <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> hotpink<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    <span class="commentcolor" style="color:green">/* активная ссылка */</span><br>
+                    a:active <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> blue<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+<h2>Оформление текста ссылки</h2>
+<p>Своиство <code class="sw3-codespan">text-decoration</code> в основном используется, чтобы удалить подчеркивание ссылок:</p>
+<div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+    a:link <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+    &nbsp;&nbsp;&nbsp;text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+    a:visited <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+    &nbsp;&nbsp;&nbsp;text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+    a:hover <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+    &nbsp;&nbsp;&nbsp;text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> underline<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+    a:active <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+    &nbsp;&nbsp;&nbsp;text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> underline<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+     </span></div>
+     <h2>Цвет фона ссылки</h2>
+     <p>Свойство <code class="sw3-codespan">background-color</code> может использоваться, чтобы указать цвет фона для ссылки:</p>
+     <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        a:link <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+        &nbsp;&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> yellow<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+        a:visited <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+        &nbsp;&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> cyan<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+        a:hover <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+        &nbsp;&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightgreen<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+        a:active <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+        &nbsp;&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> hotpink<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+         </span></div>
+         <h2>Дополнительно - кнопка ссылки
+        </h2>
+        <p>Этот пример демонстрирует более сложный пример, где сочетается несколько свойств CSS для отображения ссылки в виде блока/кнопок:
+        </p>
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            a:link, a:visited <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+            &nbsp;&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #f44336<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 14px 25px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span> <br>
+            &nbsp;&nbsp;&nbsp;text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;display<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> inline-block<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+            a:hover, a:active <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+            &nbsp;&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+             </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+<h2>CSS Списки</h2>
+<div class="sw3-row">
+    <div class="sw3-half sw3-container">
+    <h2>Неупорядоченные списки:</h2>
+    <ul style="list-style:circle">
+    <li>Кофе</li>
+    <li>Чай</li>
+    <li>Кока Кола</li>
+    </ul>
+    <ul style="list-style:square">
+    <li>Кофе</li>
+    <li>Чай</li>
+    <li>Кока Кола</li>
+    </ul>
+    </div>
+    <div class="sw3-half sw3-container">
+    <h2>Упорядоченные списки:</h2>  
+    <ol style="list-style:decimal">
+    <li>Кофе</li>
+    <li>Чай</li>
+    <li>Кока Кола</li>
+    </ol>
+    <ol style="list-style:upper-roman">
+    <li>Кофе</li>
+    <li>Чай</li>
+    <li>Кока Кола</li>
+    </ol>
+    </div>
+    </div>
+
+            <hr><br>
+        </div>
+        <div class="feed-post">
+<h2>Изображение как маркер списка
+</h2>
+<p>Свойство <code class="sw3-codespan">list-style-image</code> определяет изображение как элемент маркер, списка:</p>
+<div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+    ul <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+    &nbsp;&nbsp;&nbsp;list-style-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> url('sqpurple.gif')<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+     </span></div>
+     <h2>Удалить настройки по умолчанию</h2>
+     <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        ul <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+        &nbsp;&nbsp;&nbsp;list-style-type<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        &nbsp;&nbsp;&nbsp;margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        &nbsp;&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+         </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+<h2>Все CSS свойства списка</h2>
+<table class="sw3-table-all notranslate">
+    <tbody><tr>
+    <th style="width:20%">Свойство</th>
+    <th>Описание</th>
+    </tr>
+    <tr>
+    <td><a href="/cssref/pr_list-style.php">list-style</a></td>
+    <td>Устанавливает все свойства списка в одном объявлении</td>
+    </tr>
+    <tr>
+    <td><a href="/cssref/pr_list-style-image.php">list-style-image</a></td>
+    <td>Устанавливает изображение в качестве элемента списка, маркер</td>
+    </tr>
+    <tr>
+    <td><a href="/cssref/pr_list-style-position.php">list-style-position</a></td>
+    <td>Определяет, что элемента списка маркер должны находиться внутри или снаружи содержимого</td>
+    </tr>
+    <tr>
+    <td><a href="/cssref/pr_list-style-type.php">list-style-type</a></td>
+    <td>Указывает тип элемента списка, маркер</td>
+    </tr>
+    </tbody></table>
+            <hr><br>
+        </div>
         <div class="next-btn_div">
             <button onclick='next2()' class="next-btn">Следующий блок</button>
         </div>
     </main>
-    
+
     <footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             $(".feed-post:eq( 0 )").show();
             $(".feed-post:eq( 1 )").show();
-        
+
             function next2() {
                 var notVisible = -1;
                 $('.feed-post').each(function () {
@@ -83,21 +456,23 @@
                 padding: 1rem;
                 border-radius: 1rem;
             }
-        
+
             .htmlHigh {
                 background-color: #f1f1f1;
                 padding: 1rem;
                 border-radius: 1rem;
             }
+
             .cssHigh {
                 background-color: #f1f1f1;
                 padding: 1rem;
                 border-radius: 1rem;
             }
+
             .feed-post {
                 display: none;
             }
-        
+
             .next-btn {
                 background-color: rgb(73, 73, 73);
                 color: white;
@@ -107,12 +482,13 @@
                 border-radius: 1rem;
                 cursor: pointer;
             }
-        
+
             .next-btn_div {
                 display: flex;
                 justify-content: center;
             }
         </style>
-        </footer>
+    </footer>
 </body>
+
 </html>

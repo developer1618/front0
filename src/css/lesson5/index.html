@@ -7,65 +7,585 @@
     <link rel="icon" type="image/png" href="/img/html5.png" />
     <title>Урок 5</title>
     <link rel="stylesheet" href="/src/schoolsw3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
 </head>
 
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">CSS - Урок 5</h1>
-    
+        <h2>CSS Шрифты</h2>
+        <p>Выбор правильного шрифта для вашего сайта очень важен!</p>
+        <h2>Общие семейства шрифтов</h2>
+        <ol>
+            <li><strong>Serif</strong> шрифты - имеют небольшую обводку по краям каждой буквы. Они создают ощущение
+                официальности и элегантности.</li>
+            <li><strong>Sans-serif</strong> шрифты - имеют чистые линии (без мелких штрихов). Они создают современный и
+                минималистичный внешний вид.</li>
+            <li><strong>Monospace</strong> шрифты - все буквы имеют одинаковую фиксированную ширину. Они создают
+                механический вид.</li>
+            <li><strong>Cursive</strong> шрифты - имитируют человеческий почерк.</li>
+            <li><strong>Fantasy</strong> шрифты - это декоративные/игривые шрифты.</li>
+        </ol>
+        <h4>Разница между шрифтами с засечками и без засечек</h4>
+        <img src="/img/serif.gif" alt="Serif">
         <hr>
     </header>
     <main>
         <div class="feed-post">
-        
+            <h2>Все CSS свойства шрифтов</h2>
+            <table class="sw-table-all notranslate">
+                <tbody>
+                    <tr>
+                        <th style="width:20%">Общее семейство шрифтов</th>
+                        <th style="width:30%">Примеры названий шрифтов</th>
+                    </tr>
+                    <tr>
+                        <td>Serif</td>
+                        <td><span style="font-size:150%;font-family:'Times New Roman',serif">Times New Roman</span><br>
+                            <span style="font-size:150%;font-family:Georgia,serif">Georgia</span><br>
+                            <span style="font-size:150%;font-family:Garamond,serif">Garamond</span><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sans-serif</td>
+                        <td><span style="font-size:150%;font-family:Arial,sans-serif">Arial</span><br>
+                            <span style="font-size:150%;font-family:Verdana,sans-serif">Verdana</span><br>
+                            <span style="font-size:150%;font-family:Helvetica,sans-serif">Helvetica</span><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Monospace</td>
+                        <td><span style="font-size:150%;font-family:'Courier New',monospace">Courier New</span><br>
+                            <span style="font-size:150%;font-family:'Lucida Console',monospace">Lucida
+                                Console</span><br>
+                            <span style="font-size:150%;font-family:Monaco,monospace">Monaco</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cursive</td>
+                        <td><span style="font-size:150%;font-family:'Brush Script MT',cursive">Brush Script
+                                MT</span><br>
+                            <span style="font-size:150%;font-family:'Lucida Handwriting',cursive">Lucida
+                                Handwriting</span><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fantasy</td>
+                        <td><span style="font-size:150%;font-family:Copperplate,fantasy">Copperplate</span><br>
+                            <span style="font-size:150%;font-family:Papyrus,fantasy">Papyrus</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS свойство font-family</h2>
+            <p>В CSS мы используем свойство <code class="sw3-codespan">font-family</code> для указания шрифта текста.
+            </p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .p1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; font-family<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> "Times
+                            New Roman", Times, serif<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br><br>
+                    .p2 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; font-family<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> Arial,
+                            Helvetica, sans-serif<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br><br>
+                    .p3 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; font-family<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            "Lucida Console", "Courier New", monospace<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
+
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Безопасные шрифты</h2>
+            <p>Веб-безопасные шрифты - это шрифты, которые универсально устанавливаются во всех браузерах и устройствах.
+            </p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>font-family<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            Tahoma, Verdana, sans-serif<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
+            <h2>Лучшие веб-безопасные шрифты для HTML и CSS</h2>
+            <ul>
+                <li>Arial (без засечек)</li>
+                <li>Verdana (без засечек)</li>
+                <li>Tahoma (без засечек)</li>
+                <li>Helvetica (без засечек)</li>
+                <li>Trebuchet MS (без засечек)</li>
+                <li>Times New Roman (с засечками)</li>
+                <li>Georgia (с засечками)</li>
+                <li>Garamond (с засечками)</li>
+                <li>Courier New (моноширинный)</li>
+                <li>Brush Script MT (рукописный)</li>
+            </ul>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Резервные шрифты</h2>
+            <p>Ниже приведены некоторые часто используемые резервные копии шрифтов, организованные по 5 общим семействам
+                шрифтов:</p>
+            <ul>
+                <li><strong>С засечками</strong></li>
+                <li><strong>Без засечек</strong></li>
+                <li><strong>Моноширинные</strong></li>
+                <li><strong>Курсивные</strong></li>
+                <li><strong>Фэнтезийные</strong></li>
+            </ul>
+            <h2>Шрифты с засечками</h2>
+            <table class="sw3-table-all notranslate">
+                <tbody>
+                    <tr>
+                        <th style="width:50%">font-family</th>
+                        <th>Пример текста</th>
+                        <th style="width:5%">Код</th>
+                    </tr>
+                    <tr>
+                        <td>"Times New Roman", Times, serif</td>
+                        <td>
+                            <h2 style="font-family: 'Times New Roman', Times, serif">Это заголовок</h2>
+                            <p style="font-family: 'Times New Roman', Times, serif">Это параграф.</p>
+                        </td>
+                        <td><a target="_blank" class="sw3-btn btnsmall"
+                                href="tryit.php?filename=trycss_font_fb_tts">Попробовать</a></td>
+                    </tr>
+                    <tr>
+                        <td>Georgia, serif</td>
+                        <td>
+                            <h2 style="font-family:Georgia,serif">Это заголовок</h2>
+                            <p style="font-family: Georgia, serif">Это параграф.</p>
+                        </td>
+                        <td><a target="_blank" class="sw3-btn btnsmall"
+                                href="tryit.php?filename=trycss_font_fb_gs">Попробовать</a></td>
+                    </tr>
+                    <tr>
+                        <td>Garamond, serif</td>
+                        <td>
+                            <h2 style="font-family:Garamond, serif">Это заголовок</h2>
+                            <p style="font-family:Garamond, serif">Это параграф.</p>
+                        </td>
+                        <td><a target="_blank" class="sw3-btn btnsmall"
+                                href="tryit.php?filename=trycss_font_fb_gas">Попробовать</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Шрифты без засечек</h2>
+            <table class="sw3-table-all notranslate">
+                <tbody>
+                    <tr>
+                        <th style="width:50%">font-family</th>
+                        <th>Пример текста</th>
+                        <th style="width:5%">Код</th>
+                    </tr>
+                    <tr>
+                        <td>Arial, Helvetica, sans-serif</td>
+                        <td>
+                            <h2 style="font-family: Arial, Helvetica, sans-serif;">Это заголовок</h2>
+                            <p style="font-family: Arial, Helvetica, sans-serif;">Это параграф.</p>
+                        </td>
+                        <td><a target="_blank" class="sw3-btn btnsmall"
+                                href="tryit.php?filename=trycss_font_fb_ahs">Попробовать</a></td>
+                    </tr>
+                    <tr>
+                        <td>Tahoma, Verdana, sans-serif</td>
+                        <td>
+                            <h2 style="font-family: Tahoma, Verdana, sans-serif">Это заголовок</h2>
+                            <p style="font-family: Tahoma, Verdana, sans-serif">Это параграф.</p>
+                        </td>
+                        <td><a target="_blank" class="sw3-btn btnsmall"
+                                href="tryit.php?filename=trycss_font_fb_tvs">Попробовать</a></td>
+                    </tr>
+                    <tr>
+                        <td>"Trebuchet MS", Helvetica, sans-serif</td>
+                        <td>
+                            <h2 style="font-family: 'Trebuchet MS', Helvetica, sans-serif">Это заголовок</h2>
+                            <p style="font-family: 'Trebuchet MS', Helvetica, sans-serif">Это параграф.</p>
+                        </td>
+                        <td><a target="_blank" class="sw3-btn btnsmall"
+                                href="tryit.php?filename=trycss_font_fb_ths">Попробовать</a></td>
+                    </tr>
+                    <tr>
+                        <td>Georgia, Verdana, sans-serif</td>
+                        <td>
+                            <h2 style="font-family:Verdana,Geneva,sans-serif">Это заголовок</h2>
+                            <p style="font-family:Verdana,Geneva,sans-serif">Это параграф.</p>
+                        </td>
+                        <td><a target="_blank" class="sw3-btn btnsmall"
+                                href="tryit.php?filename=trycss_font_fb_vgs">Попробовать</a></td>
+                    </tr>
+                </tbody>
+            </table>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Стиль шрифтов</h2>
+            <h5>Font Style</h5>
+            <p>Свойство <code class="sw3-codespan">font-style</code> в основном используется для указания курсивного
+                текста.</p>
+            <ul>
+                <li>normal - Текст отображается нормально</li>
+                <li>italic - Текст отображается курсивом</li>
+                <li>oblique - Текст "наклоняется" (косой очень похож на курсив, но менее поддерживается)</li>
+            </ul>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    p.normal <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;font-style<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            normal<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>p.italic <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;font-style<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> italic<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br>
+                    <br>p.oblique <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp; font-style<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> oblique<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
+            <h2>Font Weight</h2>
+            <p>Свойство <code class="sw3-codespan">font-weight</code> задает вес шрифта:</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    p.normal <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; font-weight<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            normal<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>p.thick <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp; font-weight<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> bold<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
+            <h2>Font Variant
+            </h2>
+            <p>Свойство <code class="sw3-codespan">font-variant</code> указывает, должен ли текст отображаться шрифтом с
+                маленькими заглавными буквами.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    p.normal <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;font-variant<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            normal<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>p.small <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp; font-variant<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> small-caps<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-    
-        <div class="feed-post">
-            <div class="markdown prose w-full break-words dark:prose-invert dark">
-                <h2 style="color: darkblue;">Домашнее задание</h2>
-                
+            <h2>CSS Размер шрифтов</h2>
+            <h5>Font Size</h5>
+            <p>Свойство <code class="sw3-codespan">font-size</code> задает размер текста.
+            </p>
+            <h2>Установить размер шрифта в пикселях
+            </h2>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;font-size<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            40px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>h2 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;font-size<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            30px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;font-size<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            14px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <h2>Установить размер шрифта в Em
+            </h2>
+            <p>Чтобы пользователи могли изменять размер текста (в меню браузера), многие разработчики используют em
+                вместо пикселей.
+
+                <br> 1em равен текущему размеру шрифта. Размер текста по умолчанию в браузерах равен 16px. Таким
+                образом, размер 1em по умолчанию равен 16px.
+
+                <br> Размер можно рассчитать от пикселей до em по следующей формуле: pixels/16=em</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; font-size<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            2.5em<span class="cssdelimitercolor" style="color:black">;</span></span> <span
+                            class="commentcolor" style="color:green">/* 40px/16=2.5em */</span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>h2 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;font-size<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            1.875em<span class="cssdelimitercolor" style="color:black">;</span></span> <span
+                            class="commentcolor" style="color:green">/* 30px/16=1.875em */</span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; font-size<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            0.875em<span class="cssdelimitercolor" style="color:black">;</span></span> <span
+                            class="commentcolor" style="color:green">/* 14px/16=0.875em */</span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <h2>Адаптивный размер шрифта
+            </h2>
+            <p>Размер текста можно задать с помощью vw единицы измерения, что означает ""viewport width" - ширина
+                видового экрана". </p>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> style<span
+                            class="attributevaluecolor"
+                            style="color:mediumblue">="<strong>font-size:10vw</strong>"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Привет Мир<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>
             </div>
-        </div><br>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Google шрифты</h2>
+            <p>Если вы не хотите использовать какие-либо стандартные шрифты в HTML, вы можете использовать Google Fonts.
+
+                <br> Шрифты Google бесплатны в использовании и имеют более 1000 шрифтов на выбор.</p>
+            <p>Просто добавьте специальную ссылку таблицы стилей в разделе &lt;head&gt;, а затем обратитесь к шрифту в
+                CSS.</p>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><strong><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span
+                            class="attributecolor" style="color:red"> rel<span class="attributevaluecolor"
+                                style="color:mediumblue">="stylesheet"</span>
+                            href<span class="attributevaluecolor"
+                                style="color:mediumblue">="https://fonts.googleapis.com/css?family=Sofia"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span></strong><br><span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>style<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor"
+                    style="color:brown"><br>body <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp;
+                        font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> "Sofia", sans-serif<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br> </div>
+            <div class="sw3-code notranslate">
+                <h1 style="font-family:'Sofia';">Font Sofia</h1>
+                <p style="font-family:'Sofia';">Lorem ipsum dolor sit amet.</p>
+                <p style="font-family:'Sofia';">123456790</p>
+            </div>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><strong><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span
+                            class="attributecolor" style="color:red"> rel<span class="attributevaluecolor"
+                                style="color:mediumblue">="stylesheet"</span>
+                            href<span class="attributevaluecolor"
+                                style="color:mediumblue">="https://fonts.googleapis.com/css?family=Audiowide"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span></strong><br><span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>style<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor"
+                    style="color:brown"><br>body <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp;
+                        font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> "Audiowide", sans-serif<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+            <div class="sw3-code notranslate">
+                <h1 style="font-family:'Audiowide';">Font Audiowide</h1>
+                <p style="font-family:'Audiowide';">Lorem ipsum dolor sit amet.</p>
+                <p style="font-family:'Audiowide';">123456790</p>
+            </div>
+            <h2>Используйте несколько шрифтов Google
+            </h2>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><strong><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span
+                            class="attributecolor" style="color:red"> rel<span class="attributevaluecolor"
+                                style="color:mediumblue">="stylesheet"</span>
+                            href<span class="attributevaluecolor"
+                                style="color:mediumblue">="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span></strong><br><span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>style<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor"
+                    style="color:brown"><br>
+                    h1.a <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red">font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> "Audiowide", sans-serif<span
+                                class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>h1.b <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red">font-family<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> "Sofia",
+                            sans-serif<span class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>h1.c <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red">font-family<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> "Trirong", serif<span class="cssdelimitercolor"
+                                style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br> </div>
+                        <div class="sw3-code notranslate">
+                            <h1 class="a">Font Audiowide</h1>
+                            <h1 class="b">Font Sofia</h1>
+                            <h1 class="c">Font Trirong</h1>
+                            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+<h2>Включение эффектов шрифтов
+</h2>
+<p>Google также включил различные эффекты шрифтов, которые вы можете использовать.</p>
+<p>Сначала добавьте <code class="sw3-codespan">effect=<em>effectname</em></code> в Google API, затем добавьте специальное имя класса к элементу, который будет использовать специальный эффект. Имя класса всегда начинается <code class="sw3-codespan">font-effect-</code> и заканчивается на <code class="sw3-codespan"><em>effectname</em></code>.</p>
+<div class="sw3-code notranslate htmlHigh">
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><strong><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> 
+    href<span class="attributevaluecolor" style="color:mediumblue">="https://fonts.googleapis.com/css?family=Sofia&amp;effect=fire"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></strong><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; 
+    font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> "Sofia", sans-serif<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 30px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="font-effect-fire"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>София в огне<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> </div>
+    <div class="sw3-code notranslate">
+        <h1 style="font-family:'Sofia',sans-serif;font-size:50px;" class="font-effect-fire">София в огне</h1>
+        </div>
+        <div class="sw3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><strong><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> 
+            href<span class="attributevaluecolor" style="color:mediumblue">="https://fonts.googleapis.com/css?family=Sofia&amp;effect=neon|outline|emboss|shadow-multiple"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></strong><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; 
+            font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> "Sofia", sans-serif<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 30px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="font-effect-fire"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Неоновый эффект<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="font-effect-outline"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Эффект контура<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="font-effect-emboss"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Эффект тиснения<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="font-effect-shadow-multiple"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Эффект множественной тени<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> </div>
+            <div class="sw3-code notranslate">
+                <h1 style="font-family:'Sofia',sans-serif;font-size:50px;" class="font-effect-neon">Неоновый эффект</h1>
+                <h1 style="font-family:'Sofia',sans-serif;font-size:50px;" class="font-effect-outline">Эффект контура</h1>
+                <h1 style="font-family:'Sofia',sans-serif;font-size:50px;" class="font-effect-emboss">Эффект тиснения</h1>
+                <h1 style="font-family:'Sofia',sans-serif;font-size:50px;" class="font-effect-shadow-multiple">Эффект множественной тени</h1>
+                </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+<h2>CSS Сочетание шрифтов</h2>
+<p>Отличные сочетания шрифтов необходимы для отличного дизайна.</p>
+<p>1. Комплимент
+    Всегда можно найти пары шрифтов, которые дополняют друг друга.
+    
+    Отличная комбинация шрифтов должна гармонировать, не будучи слишком похожей или слишком разной.
+    
+   <br> 2. Используйте суперсемейства шрифтов
+    Суперсемейство шрифтов - это набор шрифтов, предназначенных для совместной работы. Таким образом, использование разных шрифтов в одном и том же суперсемействе безопасно.
+    
+    Например, суперсемейство Lucida содержит следующие шрифты: Lucida Sans, Lucida Serif, Lucida Typewriter Sans, Lucida Typewriter Serif и Lucida Math.
+    
+    <br>3. Контраст-король
+    Два слишком похожих шрифта часто конфликтуют. Однако контрасты, сделанные правильно, выявляют лучшее в каждом шрифте.
+    
+    Пример: Сочетание serif с sans-serif хорошо известная комбинация.
+    
+    Сильное суперсемейство включает в себя как засечки, так и без засечек вариации одного и того же шрифта (например, Lucida и Lucida Sans).
+    
+   <br> 4. Выберите только одного босса
+    Один шрифт должен быть боссом. Это устанавливает иерархию шрифтов на вашей странице. Этого можно добиться, варьируя размер, вес и цвет.</p>
+    <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> Verdana, 
+        sans-serif<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 16px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> gray<span class="cssdelimitercolor" style="color:black">;</span></span> <br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>h1 
+        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> Georgia, serif<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 60px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
+        color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+<h2>CSS Стенография шрифтов</h2>
+<p>Чтобы сократить код, также можно указать все отдельные свойства шрифта в одном свойстве.</p>
+<ul>
+    <li><code class="sw3-codespan">font-style</code></li>
+    <li><code class="sw3-codespan">font-variant</code></li>
+    <li><code class="sw3-codespan">font-weight</code></li>
+    <li><code class="sw3-codespan">font-size/line-height</code></li>
+    <li><code class="sw3-codespan">font-family</code></li>
+    </ul>
+    <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        p.a
+        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+        &nbsp;
+        font<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px Arial, sans-serif<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        </span><span class="cssdelimitercolor" style="color:black">}</span><br>
+        <br>
+        p.b
+        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+        &nbsp;
+        font<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> italic small-caps bold 12px/30px Georgia, serif<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        </span><span class="cssdelimitercolor" style="color:black">}</span>
+         </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>CSS Все свойства шрифта</h2>
+            <table class="sw3-table-all notranslate">
+                <tbody><tr>
+                <th style="width:25%">Свойство</th>
+                <th>Описание</th>
+                </tr>
+                <tr>
+                <td><a href="../cssref/pr_font_font.php">font</a></td>
+                <td>Устанавливает все свойства шрифта в одном объявлении</td>
+                </tr>
+                <tr>
+                <td><a href="../cssref/pr_font_font-family.php">font-family</a></td>
+                <td>Задает семейство шрифтов для текста</td>
+                </tr>
+                <tr>
+                <td><a href="../cssref/pr_font_font-size.php">font-size</a></td>
+                <td>Задает размер шрифта текста</td>
+                </tr>
+                <tr>
+                <td><a href="../cssref/pr_font_font-style.php">font-style</a></td>
+                <td>Задает стиль шрифта для текста</td>
+                </tr>
+                <tr>
+                <td><a href="../cssref/pr_font_font-variant.php">font-variant</a></td>
+                <td>Указывает, должен ли текст отображаться шрифтом с маленькими заглавными буквами</td>
+                </tr>
+                <tr>
+                <td><a href="../cssref/pr_font_weight.php">font-weight</a></td>
+                <td>Задает вес шрифта</td>
+                </tr>
+                </tbody></table>
+            <hr><br>
+        </div>
+
         <div class="next-btn_div">
             <button onclick='next2()' class="next-btn">Следующий блок</button>
         </div>
     </main>
-    
+
     <footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             $(".feed-post:eq( 0 )").show();
             $(".feed-post:eq( 1 )").show();
-        
+
             function next2() {
                 var notVisible = -1;
                 $('.feed-post').each(function () {
@@ -83,22 +603,23 @@
                 padding: 1rem;
                 border-radius: 1rem;
             }
-        
+
             .htmlHigh {
                 background-color: #f1f1f1;
                 padding: 1rem;
                 border-radius: 1rem;
             }
+
             .cssHigh {
                 background-color: #f1f1f1;
                 padding: 1rem;
                 border-radius: 1rem;
             }
-        
+
             .feed-post {
                 display: none;
             }
-        
+
             .next-btn {
                 background-color: rgb(73, 73, 73);
                 color: white;
@@ -108,12 +629,16 @@
                 border-radius: 1rem;
                 cursor: pointer;
             }
-        
+
             .next-btn_div {
                 display: flex;
                 justify-content: center;
             }
+            h1.a {font-family: "Audiowide", sans-serif;}
+h1.b {font-family: "Sofia", sans-serif;}
+h1.c {font-family: "Trirong", serif;}
         </style>
-        </footer>
+    </footer>
 </body>
+
 </html>

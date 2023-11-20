@@ -12,60 +12,529 @@
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">CSS - Урок 4</h1>
-    
+        <h2>CSS Форматирование текста</h2>
+        <p>CSS обладает множеством свойств для форматирования текста.</p>
+        <div style="width:100%;border:1px solid gray;padding:8px;">
+            <h1 style="text-align:center;text-transform:uppercase;color:#4CAF50;">форматирование</h1>
+            <p style="text-indent:50px;text-align:justify;letter-spacing:3px;">Этот текст оформлен с помощью некоторых
+                свойств форматирования текста. Заголовок использует свойства text-align (выравнивание текста)
+                text-transform (преобразование текста) и color (цвет). Параграф имеет отступ, выравнивание и
+                пространство между символами. Подчеркивание снимается с цветной ссылки <a
+                    style="text-decoration:none;color:#008CBA;" target="_blank"
+                    href="tryit.php?filename=trycss_text">"Попробуйте сами"</a> ссылка.</p>
+        </div>
         <hr>
     </header>
     <main>
         <div class="feed-post">
-        
+            <h2>Цвет текста</h2>
+            <p>Свойство <code class="sw3-codespan">color</code> используется для определения цвета текста. С помощью
+                CSS, цвет указан чаще всего:</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            blue<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            green<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <h2>Цвет текста и цвет фона</h2>
+            <p>В этом примере мы определяем как свойство <code class="sw3-codespan">background-color</code>, так и
+                свойство <code class="sw3-codespan">color</code>:</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            lightgrey<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> blue<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> white<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            blue<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; color<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> white<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Выравнивание текста</h2>
+            <ul>
+                <li><code class="sw3-codespan">text-align</code></li>
+                <li><code class="sw3-codespan">text-align-last</code></li>
+                <li><code class="sw3-codespan">direction</code></li>
+                <li><code class="sw3-codespan">unicode-bidi</code></li>
+                <li><code class="sw3-codespan">vertical-align</code></li>
+            </ul>
+            <h2>Горизонтальное выравнивание текста</h2>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-align<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            center<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>h2 <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;text-align<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            left<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>h3 <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;text-align<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            right<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <p>Когда, для свойства <code class="sw3-codespan">text-align</code> установлено выравнивание по ширине
+                значение "justify", каждая строка растягивается так, чтобы каждая строка имела одинаковую ширину, а
+                левое и правое поля были прямыми (как в журналах и газетах):</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;text-align<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            justify<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <h2>Выравнивание последней строки текста</h2>
+            <p>Свойство <code class="sw3-codespan">text-align-last</code> указывает, как выровнять последнюю строку
+                текста.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    p.a
+                    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;
+                        text-align-last<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> right<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>p.b
+                    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;
+                        text-align-last<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> center<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>p.c
+                    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;text-align-last<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> justify<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <h2>Направление текста</h2>
+            <p>Свойства <code class="sw3-codespan">direction</code> и <code class="sw3-codespan">unicode-bidi</code>
+                можно использовать для изменения направления текста элемента:</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;direction<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            rtl<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        unicode-bidi<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> bidi-override<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <h2>Вертикальное выравнивание текста</h2>
+            <p>Свойство <code class="sw3-codespan">vertical-align</code> задает выравнивание элемента по вертикали.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    img.a <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; vertical-align<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            baseline<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>img.b <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;
+                        vertical-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> text-top<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>img.c <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; vertical-align<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            text-bottom<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br><br>img.d <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                        vertical-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> sub<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    img.e <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; vertical-align<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            super<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Оформление текста</h2>
+            <p>В этой главе вы узнаете о следующих свойствах:</p>
+            <ul>
+                <li><code class="sw3-codespan">text-decoration-line</code></li>
+                <li><code class="sw3-codespan">text-decoration-color</code></li>
+                <li><code class="sw3-codespan">text-decoration-style</code></li>
+                <li><code class="sw3-codespan">text-decoration-thickness</code></li>
+                <li><code class="sw3-codespan">text-decoration</code></li>
+            </ul>
+            <h2>Добавить декоративную строку к тексту</h2>
+            <p>Свойство <code class="sw3-codespan">text-decoration-line</code> используется для добавления декоративной
+                строки к тексту.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-decoration-line<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            overline<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>h2 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-decoration-line<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            line-through<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br>
+                    <br>h3 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-decoration-line<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            underline<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>p <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                        text-decoration-line<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span>
+                            overline underline<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>Указать цвет для декоративной линии</h2>
+            <p>Свойство <code class="sw3-codespan">text-decoration-color</code> используется для установки цвета линии
+                оформления.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-decoration-line<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            overline<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        text-decoration-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span>
+                            red<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>h2 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-decoration-line<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            line-through<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        text-decoration-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span>
+                            blue<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>h3 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-decoration-line<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            underline<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        text-decoration-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span>
+                            green<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>p <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                        text-decoration-line<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span>
+                            overline underline<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; text-decoration-color<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> purple<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
+            <h2>Указать стиль для линии оформления</h2>
+            <p>Свойство <code class="sw3-codespan">text-decoration-style</code> используется для установки стиля линии
+                оформления.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-decoration-line<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            underline<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        text-decoration-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span>
+                            solid<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>h2 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-decoration-line<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            underline<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        text-decoration-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> double<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>h3 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-decoration-line<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            underline<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        text-decoration-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> dotted<span
+                                class="cssdelimitercolor" style="color:black">;</span></span> <br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>p.ex1 <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-decoration-line<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            underline<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        text-decoration-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> dashed<span
+                                class="cssdelimitercolor" style="color:black">;</span></span> <br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>p.ex2 <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-decoration-line<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            underline<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        text-decoration-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> wavy<span
+                                class="cssdelimitercolor" style="color:black">;</span></span> <br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>p.ex3 <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-decoration-line<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            underline<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        text-decoration-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> red<span
+                                class="cssdelimitercolor" style="color:black">;</span></span> <br>&nbsp;
+                        text-decoration-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> wavy<span
+                                class="cssdelimitercolor" style="color:black">;</span></span> <br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <h2>Указать толщину для декоративной линии
+            </h2>
+            <p>Свойство <code class="sw3-codespan">text-decoration-thickness</code> используется для установки толщины
+                декоративной линии.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-decoration-line<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            underline<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        text-decoration-thickness<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> auto<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>h2 <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                        text-decoration-line<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span>
+                            underline<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        text-decoration-thickness<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 5px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>h3 <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                        text-decoration-line<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> underline<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        text-decoration-thickness<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 25%<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>p <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;
+                        text-decoration-line<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> underline<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        text-decoration-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> red<span
+                                class="cssdelimitercolor" style="color:black">;</span></span> <br>&nbsp;
+                        text-decoration-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> double<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        text-decoration-thickness<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 5px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span> <br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <h2>Сокращенное свойство</h2>
+            <ul>
+                <li><code class="sw3-codespan">text-decoration-line</code> (требуемый)</li>
+                <li><code class="sw3-codespan">text-decoration-color</code> (необязательный)</li>
+                <li><code class="sw3-codespan">text-decoration-style</code> (необязательный)</li>
+                <li><code class="sw3-codespan">text-decoration-thickness</code> (необязательный)</li>
+            </ul>
+            <br>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-decoration<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            underline<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>h2 <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                        text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> underline red<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>h3 <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                        text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> underline
+                            red double<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br><br>p <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                        text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> underline red double 5px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Преобразование текста</h2>
+            <p>Свойство <code class="sw3-codespan">text-transform</code> используется для указания прописных и строчных
+                букв в тексте.</p>
+            <p>Его можно использовать для преобразования всего в прописные или строчные буквы или для заглавной буквы
+                первой буквы каждого слова:</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    p.uppercase <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;text-transform<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> uppercase<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br>
+                    <br>p.lowercase <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;text-transform<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> lowercase<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br>
+                    <br>p.capitalize <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;text-transform<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> capitalize<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Интервал текста</h2>
+            <h5>CSS Отступ текста, интервал между буквами, высота строки, интервал между словами и пробел</h5>
+            <ul>
+                <li><code class="sw3-codespan">text-indent</code></li>
+                <li><code class="sw3-codespan">letter-spacing</code></li>
+                <li><code class="sw3-codespan">line-height</code></li>
+                <li><code class="sw3-codespan">word-spacing</code></li>
+                <li><code class="sw3-codespan">white-space</code></li>
+            </ul>
+            <h2>Отступ текста</h2>
+            <p>Свойство <code class="sw3-codespan">text-indent</code> используется для указания отступа первой строки
+                текста:</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-indent<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            50px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <h2>Интервал между буквами</h2>
+            <p>Свойство <code class="sw3-codespan">letter-spacing</code> используется для указания пробела между
+                символами в тексте.</p>
+            <p>В следующем примере показано, как увеличить или уменьшить пробел между символами:</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; letter-spacing<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            5px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>h2 <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;letter-spacing<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            -2px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <h2>Высота линии
+            </h2>
+            <p>Свойство <code class="sw3-codespan">line-height</code> используется для указания пробела между строками:
+            </p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    p.small <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; line-height<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            0.8<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>p.big <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;
+                        line-height<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 1.8<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <h2>Интервал между словами</h2>
+            <p>Свойство <code class="sw3-codespan">word-spacing</code> используется для указания пробела между словами в
+                тексте.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    p.one <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;word-spacing<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            10px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>p.two <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;word-spacing<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            -2px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <h2>Пустое пространство</h2>
+            <p>Свойство <code class="sw3-codespan">white-space</code> определяет, как обрабатывается пробел внутри
+                элемента.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; white-space<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            nowrap<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Тень текста</h2>
+            <p>Свойство <code class="sw3-codespan">text-shadow</code> добавляет тень к тексту.</p>
+            <p>В простейшем случае вы указываете только горизонтальную тень (2 пикселя) и вертикальную тень (2 пикселя):
+            </p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1
+                    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;text-shadow<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 2px 2px red<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> white<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; text-shadow<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 2px 2px 4px #000000<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span>
+                </span></div>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> white<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; text-shadow<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 1px 1px 2px black, 0 0 25px blue, 0
+                            0 5px darkblue<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span>
+                </span></div>
             <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-    
-        <div class="feed-post">
-            <div class="markdown prose w-full break-words dark:prose-invert dark">
-                <h2 style="color: darkblue;">Домашнее задание</h2>
-                
-            </div>
         </div><br>
         <div class="next-btn_div">
             <button onclick='next2()' class="next-btn">Следующий блок</button>
         </div>
     </main>
-    
+
     <footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             $(".feed-post:eq( 0 )").show();
             $(".feed-post:eq( 1 )").show();
-        
+
             function next2() {
                 var notVisible = -1;
                 $('.feed-post').each(function () {
@@ -83,22 +552,23 @@
                 padding: 1rem;
                 border-radius: 1rem;
             }
-        
+
             .htmlHigh {
                 background-color: #f1f1f1;
                 padding: 1rem;
                 border-radius: 1rem;
             }
+
             .cssHigh {
                 background-color: #f1f1f1;
                 padding: 1rem;
                 border-radius: 1rem;
             }
-        
+
             .feed-post {
                 display: none;
             }
-        
+
             .next-btn {
                 background-color: rgb(73, 73, 73);
                 color: white;
@@ -108,12 +578,13 @@
                 border-radius: 1rem;
                 cursor: pointer;
             }
-        
+
             .next-btn_div {
                 display: flex;
                 justify-content: center;
             }
         </style>
-        </footer>
+    </footer>
 </body>
+
 </html>
