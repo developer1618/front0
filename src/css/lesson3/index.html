@@ -5,66 +5,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/img/html5.png" />
-    <title>Урок 1</title>
+    <title>Урок 3</title>
+    <link rel="stylesheet" href="/src/schoolsw3.css">
 </head>
 
 <body style="padding: 2rem; font-size: 24px;">
     <header>
-        <h1 style="text-align: center;">CSS - Урок 1</h1>
-    
-        <hr>
+        <h1 style="text-align: center;">CSS - Урок 3</h1>
+        <h2>CSS Высота и ширина</h2>
+        <div class="sw3-panel sw3-info intro">
+            <p class="intro">CSS Свойства <code class="sw3-codespan">height</code> и <code
+                    class="sw3-codespan">width</code> используются для установки высоты и ширины элемента.</p>
+            <p class="intro">CSS Свойство <code class="sw3-codespan">max-width</code> используется для установки
+                максимальной ширины элемента.</p>
+        </div><br>
+        <h5>CSS Примеры высоты и ширины</h5>
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                    style="color:red"><br>&nbsp;&nbsp;height<span class="csspropertyvaluecolor"
+                        style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                        200px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; width<span
+                        class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                            style="color:black">:</span> 50%<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br>&nbsp; background-color<span
+                        class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                            style="color:black">:</span> powderblue<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                    style="color:black">}</span> </span></div><br>
+                    <div class="sw3-theme-border" style="width:50%;height:200px;padding:10px;background-color:powderblue;color:black;">Этот элемент имеет высоту 200 пикселей и ширину 50%</div>
+        <hr><br>
     </header>
     <main>
         <div class="feed-post">
-        
+<h2>CSS Бокс модель</h2>
+<p>
+    <br>Все HTML элементы могут рассматриваться как блоки. Термин в CSS "бокс модель" используется, когда речь идет о дизайне и верстке.
+    <br>Блочная модель CSS - по сути коробка, которая обертывает каждый элемент HTML. Она состоит из: полей, границ, отступов и контента. На рисунке ниже показана модель коробки:
+</p>
+<div class="sw3-boxmodel">
+    <div class="outline sw3-theme">
+    <div class="border">
+    <div class="content"></div>
+    </div>
+    </div>
+    </div>
+<ul>
+    <li><b>Контент</b> - Содержимое коробки, где появляются текст и изображения</li>
+    <li><b>Отступы</b> - Очищает область вокруг содержимого. Отступы прозрачные</li>
+    <li><b>Границы</b> - Граница, которая идет вокруг отступа и содержания</li>
+    <li><b>Поля</b> - Очищает область за пределами коробки. Поля прозрачные</li>
+    </ul><br>
+    <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+        &nbsp;&nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 300px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        &nbsp;&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px solid green<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        &nbsp;&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        &nbsp;&nbsp;&nbsp;margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+         </span></div><br>
+
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Контур</h2>
+            <p>Outline - это линия, проведенная за пределами границы элемента.</p>
+            <div style="width:98%;border:2px solid black;outline:#04AA6D solid 10px;padding:20px;margin:auto;text-align:center">
+                Этот элемент имеет черную рамку и зеленый контур шириной 10 пикселей.
+                </div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Свойство outline</h2>
+            <p>Свойство outline - это линия, которая рисуется вокруг элементов, ЗА ПРЕДЕЛАМИ границ, чтобы элемент "выделялся".
+            </p>
+            <div class="sw3-boxmodel">
+                <div class="outline sw3-theme">
+                <div class="border">
+                <div class="content"></div>
+                </div>
+                </div>
+                </div><br>
+                <ul>
+                    <li><code class="sw3-codespan">outline-style</code></li>
+                    <li><code class="sw3-codespan">outline-color</code></li>
+                    <li><code class="sw3-codespan">outline-width</code></li>
+                    <li><code class="sw3-codespan">outline-offset</code></li>
+                    <li><code class="sw3-codespan">outline</code></li>
+                    </ul>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+<h2>CSS Ширина контура
+</h2>
+<p>Свойство <code class="sw3-codespan">outline-width</code> задает ширину контура и может иметь одно из следующих значений:</p>
+<ul>
+    <li>Тонкий (обычно 1px)</li>
+    <li>Средний (обычно 3px)</li>
+    <li>Толстый (обычно 5px)</li>
+    <li>Конкретный размер в ( px, pt, cm, em, и т.д.)</li>
+    </ul><br>
+    <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        p.ex1
+        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        &nbsp;&nbsp;outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        &nbsp;
+        outline-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> thin<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>p.ex2
+        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        &nbsp;
+        outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        &nbsp;&nbsp;outline-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> medium<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>p.ex3
+        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        &nbsp;
+        outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        &nbsp;&nbsp;outline-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> thick<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+        p.ex4
+        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+        &nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        &nbsp;&nbsp;outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        &nbsp;
+        outline-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 4px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        </span><span class="cssdelimitercolor" style="color:black">}</span>
+         </span></div><br>
+    <p style="border: 1px solid black;outline-style:solid;outline-color:red;outline-width:thin;padding:2px 4px;">Тонкий контур.</p>
+    <p style="border: 1px solid black;outline-style:solid;outline-color:red;outline-width:medium;padding:2px 4px;">Средний контур.</p>
+    <p style="border: 1px solid black;outline-style:solid;outline-color:red;outline-width:thick;padding:2px 4px;">Толстый контур.</p>
+    <p style="border: 1px solid black;outline-style:solid;outline-color:red;outline-width:4px;padding:2px 4px;">Контур толщиной 4 пикселя.</p>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+<h2>CSS outline-color</h2>
+<p>Свойство <code class="sw3-codespan">outline-color</code> используется для установки цвета контура.</p>
+<div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+    p.ex1
+    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+    &nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 2px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+    outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+    &nbsp;&nbsp;outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+    </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>p.ex2
+    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+    &nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 2px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+    outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> dotted<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+    &nbsp;
+    outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> blue<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+    </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>p.ex3
+    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+    &nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 2px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> outset<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+    &nbsp;&nbsp;outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> grey<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+    </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+    <br>
+    <p style="border: 2px solid black;outline-style:solid;outline-color:red;padding: 2px 4px;">Сплошной красный контур.</p>
+    <p style="border: 2px solid black;outline-style:dotted;outline-color:blue;padding: 2px 4px;">Пунктирный синий контур.</p>
+    <p style="border: 2px solid black;outline-style:outset;outline-color:grey;padding: 2px 4px;">Начальный серый контур.</p>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+<h2>HEX Значение</h2>
+<p>Цвет контура также можно задать с помощью шестнадцатеричного значения (HEX):
+</p>
+<div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+    p.ex1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #ff0000<span class="cssdelimitercolor" style="color:black">;</span></span> 
+    <span class="commentcolor" style="color:green">/* красный */</span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+    <h2>RGB Значение</h2>
+    <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        p.ex1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> rgb(255, 0, 0)<span class="cssdelimitercolor" style="color:black">;</span></span> 
+        <span class="commentcolor" style="color:green">/* красный */</span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        <br><h2>HSL Значение</h2>
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            p.ex1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; outline-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; outline-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> hsl(0, 100%, 50%)<span class="cssdelimitercolor" style="color:black">;</span></span> 
+            <span class="commentcolor" style="color:green">/* красный */</span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div><br>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+<h2>CSS Контур стенография
+</h2>
+<p>Свойство <code class="sw3-codespan">outline</code> - это сокращенное свойство для настройки следующих отдельных свойств контура:</p>
+<div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+    p.ex1
+    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">outline<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> dashed<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.ex2
+    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">outline<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> dotted red<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.ex3
+    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">outline<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 5px solid yellow<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>p.ex4
+    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">outline<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> thick ridge pink<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div><br>
+    <p style="outline: dashed;padding: 2px 4px;">Пунктирный контур.</p>
+    <p style="outline: dotted red;padding: 2px 4px;">Пунктирный красный контур.</p>
+    <p style="outline: 5px solid yellow;padding: 2px 4px;">Сплошной желтый контур размером 5 пикселей.</p>
+    <p style="outline: ridge thick pink;padding: 2px 4px;">Толстый розовый контур хребта.</p>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+<h2>CSS Смещение контура</h2>
+<p>Свойство <code class="sw3-codespan">outline-offset</code> добавляет пробел между контуром и краем/границей элемента. Пространство между элементом и его контуром является прозрачным.</p>
+<div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+    p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 30px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; outline<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 
+    1px solid red<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
+    outline-offset<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+     </span></div><br>
+     <p style="margin:30px;border:1px solid black;outline:1px solid red;outline-offset:15px;">
+        Этот параграф имеет контур размером 15 пикселей за пределами границы.</p>
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 30px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 
+            yellow<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; outline<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 
+            1px solid red<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
+            outline-offset<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+             </span></div>
+             <p style="margin:30px;background:yellow;border:1px solid black;outline:1px solid red;outline-offset:15px;color:black;">
+                Этот параграф имеет контур размером 15 пикселей за пределами границы.</p>
             <hr><br>
         </div>
-    
-        <div class="feed-post">
-            <div class="markdown prose w-full break-words dark:prose-invert dark">
-                <h2 style="color: darkblue;">Домашнее задание</h2>
-                
-            </div>
-        </div><br>
+
         <div class="next-btn_div">
             <button onclick='next2()' class="next-btn">Следующий блок</button>
         </div>
     </main>
-    
+
     <footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             $(".feed-post:eq( 0 )").show();
             $(".feed-post:eq( 1 )").show();
-        
+
             function next2() {
                 var notVisible = -1;
                 $('.feed-post').each(function () {
@@ -82,17 +242,23 @@
                 padding: 1rem;
                 border-radius: 1rem;
             }
-        
+
             .htmlHigh {
                 background-color: #f1f1f1;
                 padding: 1rem;
                 border-radius: 1rem;
             }
-        
+
+            .cssHigh {
+                background-color: #f1f1f1;
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+
             .feed-post {
                 display: none;
             }
-        
+
             .next-btn {
                 background-color: rgb(73, 73, 73);
                 color: white;
@@ -102,12 +268,13 @@
                 border-radius: 1rem;
                 cursor: pointer;
             }
-        
+
             .next-btn_div {
                 display: flex;
                 justify-content: center;
             }
         </style>
-        </footer>
+    </footer>
 </body>
+
 </html>

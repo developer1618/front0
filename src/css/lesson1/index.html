@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/img/html5.png" />
     <title>Урок 1</title>
+    <link rel="stylesheet" href="/src/schoolsw3.css">
 </head>
 
 <body style="padding: 2rem; font-size: 24px;">
@@ -257,164 +258,677 @@
         </div>
 
         <div class="feed-post">
-<h2>Все простые селекторы CSS</h2>
-<div class="sw3-responsive htmlHigh">
-    <table class="sw3-table-all notranslate">
-    <tbody><tr>
-    <th style="width:20%">Селектор</th>
-    <th style="width:20%">Пример</th>
-    <th>Пример описание</th>
-    </tr>
-    <tr>
-    <td><a href="/cssref/sel_class.php">.<i>class</i></a></td>
-    <td class="notranslate">.intro</td>
-    <td>Выбирает все элементы с помощью class="intro"</td>
-    </tr>
-    <tr>
-    <td><a href="/cssref/sel_id.php">#<i>id</i></a></td>
-    <td class="notranslate">#firstname</td>
-    <td>Выбирает элемент с помощью id="firstname"</td>
-    </tr>
-    <tr>
-    <td><a href="/cssref/sel_all.php">*</a></td>
-    <td class="notranslate">*</td>
-    <td>Выбирает все элементы</td>
-    </tr>
-    <tr>
-    <td><i><a href="/cssref/sel_element.php">element</a></i></td>
-    <td class="notranslate">p</td>
-    <td>Выбирает все элементы &lt;p&gt;</td>
-    </tr>
-    <tr>
-    <td><i><a href="/cssref/sel_element_comma.php">element,element,..</a></i></td>
-    <td class="notranslate">div, p</td>
-    <td>Выбирает все элементы &lt;div&gt; и &lt;p&gt;</td>
-    </tr>
-    </tbody></table>
-    </div>
+            <h2>Все простые селекторы CSS</h2>
+            <div class="sw3-responsive htmlHigh">
+                <table class="sw3-table-all notranslate">
+                    <tbody>
+                        <tr>
+                            <th style="width:20%">Селектор</th>
+                            <th style="width:20%">Пример</th>
+                            <th>Пример описание</th>
+                        </tr>
+                        <tr>
+                            <td><a href="/cssref/sel_class.php">.<i>class</i></a></td>
+                            <td class="notranslate">.intro</td>
+                            <td>Выбирает все элементы с помощью class="intro"</td>
+                        </tr>
+                        <tr>
+                            <td><a href="/cssref/sel_id.php">#<i>id</i></a></td>
+                            <td class="notranslate">#firstname</td>
+                            <td>Выбирает элемент с помощью id="firstname"</td>
+                        </tr>
+                        <tr>
+                            <td><a href="/cssref/sel_all.php">*</a></td>
+                            <td class="notranslate">*</td>
+                            <td>Выбирает все элементы</td>
+                        </tr>
+                        <tr>
+                            <td><i><a href="/cssref/sel_element.php">element</a></i></td>
+                            <td class="notranslate">p</td>
+                            <td>Выбирает все элементы &lt;p&gt;</td>
+                        </tr>
+                        <tr>
+                            <td><i><a href="/cssref/sel_element_comma.php">element,element,..</a></i></td>
+                            <td class="notranslate">div, p</td>
+                            <td>Выбирает все элементы &lt;div&gt; и &lt;p&gt;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <hr><br>
         </div>
         <div class="feed-post">
-<h2>CSS Подключение</h2>
-<p>Существует три способа усновки каскадной таблицы стилей CSS:</p>
-<ul>
-    <li>Внешний CSS</li>
-    <li>Внутренний CSS</li>
-    <li>Встроенный CSS</li>
-</ul>
-<h2>Внешний CSS</h2>
-<p>С помощью внешней таблицы стилей вы можете изменить внешний вид всего веб сайта, изменив только один файл!</p>
+            <h2>CSS Подключение</h2>
+            <p>Существует три способа усновки каскадной таблицы стилей CSS:</p>
+            <ul>
+                <li>Внешний CSS</li>
+                <li>Внутренний CSS</li>
+                <li>Встроенный CSS</li>
+            </ul>
+            <h2>Внешний CSS</h2>
+            <p>С помощью внешней таблицы стилей вы можете изменить внешний вид всего веб сайта, изменив только один
+                файл!</p>
 
-    <p>Каждая HTML страница должна содержать ссылку на внешний файл таблицы стилей внутри элемента &lt;link&gt; в разделе &lt;head&gt;.</p>
-    <div class="sw3-code notranslate htmlHigh">
-        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span class="attributevaluecolor" style="color:mediumblue">="mystyle.css"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Это заголовок<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Это параграф.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
-        <p>Внешняя таблица стилей может быть написана в любом текстовом редакторе и должна быть сохранена с расширением .css.
+            <p>Каждая HTML страница должна содержать ссылку на внешний файл таблицы стилей внутри элемента &lt;link&gt;
+                в разделе &lt;head&gt;.</p>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                        html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span
+                            class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span
+                            class="attributevaluecolor" style="color:mediumblue">="mystyle.css"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Это заголовок<span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Это параграф.<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+            <p>Внешняя таблица стилей может быть написана в любом текстовом редакторе и должна быть сохранена с
+                расширением .css.
 
-            <br>Внешний файл .css не должен содержать никаких HTML тегов.
-            
-            <br>Вот этот файл "mystyle.css" и выглядит он, вот так:</p>
+                <br>Внешний файл .css не должен содержать никаких HTML тегов.
+
+                <br>Вот этот файл "mystyle.css" и выглядит он, вот так:</p>
             <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-                body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightblue<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> navy<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;margin-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
-                 </span></div>
-                 <h2>Внутренний CSS</h2>
-                 <p>Внутренняя таблица стилей может использоваться, если одна HTML страница имеет уникальный стиль.</p>
-                 <p>Внутренний стиль определяется внутри элемента &lt;style&gt;, внутри секции &lt;head&gt;.</p>
-                 <div class="sw3-code notranslate htmlHigh">
-                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; 
-                    background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> linen<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> maroon<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
-                    margin-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 40px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> <br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
-                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Это заголовок<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Это параграф.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
-                    <h2>Встроенный CSS</h2>
-                    <p>Встроенный стиль может быть использован для применения уникального стиля для одного элемента.
+                    body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            lightblue<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>h1 <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            navy<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;margin-left<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 20px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span>
+                </span></div>
+            <h2>Внутренний CSS</h2>
+            <p>Внутренняя таблица стилей может использоваться, если одна HTML страница имеет уникальный стиль.</p>
+            <p>Внутренний стиль определяется внутри элемента &lt;style&gt;, внутри секции &lt;head&gt;.</p>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                        html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor"
+                    style="color:brown"><br>body <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp;
+                        background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> linen<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>h1 <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                        color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> maroon<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        margin-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 40px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> <br></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Это заголовок<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Это параграф.<span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+            <h2>Встроенный CSS</h2>
+            <p>Встроенный стиль может быть использован для применения уникального стиля для одного элемента.
 
-                        <br>Чтобы использовать встроенные стили, добавьте атрибут "style" к соответствующему элементу, атрибут стиля может содержать любое свойство CSS.</p>
-                        <div class="sw3-code notranslate htmlHigh">
-                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
-                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> style<span class="attributevaluecolor" style="color:mediumblue">="color:blue;text-align:center;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Это заголовок<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red"> style<span class="attributevaluecolor" style="color:mediumblue">="color:red;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Это параграф.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
-                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
-                            <h2>Несколько стилей CSS</h2>
-                            <p>Если некоторые свойства были определены для одного и того же селектора (элемента) в разных таблицах стилей, то будет использовано значение из последней прочитанной таблицы стилей.</p>
+                <br>Чтобы использовать встроенные стили, добавьте атрибут "style" к соответствующему элементу, атрибут
+                стиля может содержать любое свойство CSS.</p>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                        html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> style<span
+                            class="attributevaluecolor"
+                            style="color:mediumblue">="color:blue;text-align:center;"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Это заголовок<span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red"> style<span
+                            class="attributevaluecolor" style="color:mediumblue">="color:red;"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Это параграф.<span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+            <h2>Несколько стилей CSS</h2>
+            <p>Если некоторые свойства были определены для одного и того же селектора (элемента) в разных таблицах
+                стилей, то будет использовано значение из последней прочитанной таблицы стилей.</p>
 
             <hr><br>
         </div>
         <div class="feed-post">
-<h2>CSS Комментарии</h2>
-<p>Комментарии используются для объяснения кода и могут помочь при редактировании исходного кода на более позднем этапе.
+            <h2>CSS Комментарии</h2>
+            <p>Комментарии используются для объяснения кода и могут помочь при редактировании исходного кода на более
+                позднем этапе.
 
-    <br>Комментарии игнорируются браузерами.
-    </p>
-    <p>CSS комментарий помещается внутри файла элемента <code class="sw3-codespan">&lt;style&gt;</code>, и начинается с <code class="sw3-codespan">/*</code> и заканчивается <code class="sw3-codespan">*/</code>:</p>
-    <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-        <span class="commentcolor" style="color:green">/* Это однострочный комментарий */</span><br>p
-        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
-        &nbsp;
-        color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>
-        </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+                <br>Комментарии игнорируются браузерами.
+            </p>
+            <p>CSS комментарий помещается внутри файла элемента <code class="sw3-codespan">&lt;style&gt;</code>, и
+                начинается с <code class="sw3-codespan">/*</code> и заканчивается <code class="sw3-codespan">*/</code>:
+            </p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    <span class="commentcolor" style="color:green">/* Это однострочный комментарий */</span><br>p
+                    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;
+                        color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> red<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-<h2>HTML и CSS комментарии</h2>
-<p>Из учебника по HTML вы узнали, что вы можете добавлять комментарии к своему источнику HTML с помощью синтаксиса
-    <code class="sw3-codespan">&lt;!--...--&gt;</code>.</p>
-    <p>В следующем примере мы используем комбинацию комментариев HTML и CSS:    </p>
-    <div class="sw3-code notranslate htmlHigh">
-        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
-        &nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* Установите цвет текста на красный */</span><br></span><span class="cssdelimitercolor" style="color:black">}</span> <br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
-        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Мой заголовок<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="commentcolor" style="color:green">&lt;!-- Эти параграфы будут красными --&gt;</span><br>
-        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Привет Мир!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Этот параграф стилизован под CSS.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Комментарии CSS не отображаются в выходных данных.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-         </div>
+            <h2>HTML и CSS комментарии</h2>
+            <p>Из учебника по HTML вы узнали, что вы можете добавлять комментарии к своему источнику HTML с помощью
+                синтаксиса
+                <code class="sw3-codespan">&lt;!--...--&gt;</code>.</p>
+            <p>В следующем примере мы используем комбинацию комментариев HTML и CSS: </p>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                        html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor"
+                    style="color:brown"><br>p <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>
+                        &nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> red<span
+                                class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor"
+                            style="color:green">/* Установите цвет текста на красный */</span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> <br></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Мой заголовок<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="commentcolor"
+                    style="color:green">&lt;!-- Эти параграфы будут красными --&gt;</span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Привет Мир!<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Этот параграф стилизован под
+                CSS.<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Комментарии CSS не отображаются в выходных
+                данных.<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            </div>
             <hr><br>
         </div>
         <div class="feed-post">
-<h2>CSS Цвета</h2>
-<p>В CSS цвет может быть задан с помощью названия цвета:</p>
-<div class="sw3-row sw3-center" style="margin:0 -16px;line-height:80px;color:white;">
-    <div class="sw3-col l3 m6 sw3-padding">
-    <div style="background-color:tomato;">Tomato</div>
-    </div>
-    <div class="sw3-col l3 m6 sw3-padding">
-    <div style="background-color:orange;">Orange</div>
-    </div>
-    <div class="sw3-col l3 m6 sw3-padding">
-    <div style="background-color:dodgerblue;">DodgerBlue</div>
-    </div>
-    <div class="sw3-col l3 m6 sw3-padding">
-    <div style="background-color:mediumseagreen;">MediumSeaGreen</div>
-    </div>
-    <div class="sw3-col l3 m6 sw3-padding">
-    <div style="background-color:gray;">Gray</div>
-    </div>
-    <div class="sw3-col l3 m6 sw3-padding">
-    <div style="background-color:slateblue;">SlateBlue</div>
-    </div>
-    <div class="sw3-col l3 m6 sw3-padding">
-    <div style="background-color:violet;">Violet</div>
-    </div>
-    <div class="sw3-col l3 m6 sw3-padding">
-    <div style="background-color:lightgray;color:#444444">LightGray</div>
-    </div>
-    </div>
-
+            <h2>CSS Цвета</h2>
+            <p>В CSS цвет может быть задан с помощью названия цвета:</p>
+            <div class="sw3-row sw3-center" style="margin:0 -16px;line-height:80px;color:white;">
+                <div class="sw3-col l3 m6 sw3-padding">
+                    <div style="background-color:tomato;">Tomato</div>
+                </div>
+                <div class="sw3-col l3 m6 sw3-padding">
+                    <div style="background-color:orange;">Orange</div>
+                </div>
+                <div class="sw3-col l3 m6 sw3-padding">
+                    <div style="background-color:dodgerblue;">DodgerBlue</div>
+                </div>
+                <div class="sw3-col l3 m6 sw3-padding">
+                    <div style="background-color:mediumseagreen;">MediumSeaGreen</div>
+                </div>
+                <div class="sw3-col l3 m6 sw3-padding">
+                    <div style="background-color:gray;">Gray</div>
+                </div>
+                <div class="sw3-col l3 m6 sw3-padding">
+                    <div style="background-color:slateblue;">SlateBlue</div>
+                </div>
+                <div class="sw3-col l3 m6 sw3-padding">
+                    <div style="background-color:violet;">Violet</div>
+                </div>
+                <div class="sw3-col l3 m6 sw3-padding">
+                    <div style="background-color:lightgray;color:#444444">LightGray</div>
+                </div>
+            </div><br>
+            <h2>CSS Цвет фона</h2>
+            <p>Вы можете установить цвет фона для HTML элементов:</p>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> style<span
+                            class="attributevaluecolor"
+                            style="color:mediumblue">="background-color:DodgerBlue;"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Привет Мир<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span
+                        class="attributecolor" style="color:red"> style<span class="attributevaluecolor"
+                            style="color:mediumblue">="background-color:Tomato;"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Lorem
+                ipsum...<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span> </div><br>
+            <div style="background-color:dodgerblue; text-align:center;color:white;font-size:24px;">Привет Мир</div><br>
+            <div class="sw3-container" style="background-color:tomato;color:white;"><br>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat.
+                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                ex ea commodo consequat.<br><br>
+            </div><br>
+            <h2>CSS Цвет текста</h2>
+            <p>Вы можете установить цвет текста:</p>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> style<span
+                            class="attributevaluecolor" style="color:mediumblue">="color:Tomato;"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Привет Мир<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span
+                        class="attributecolor" style="color:red"> style<span class="attributevaluecolor"
+                            style="color:mediumblue">="color:DodgerBlue;"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Lorem
+                ipsum...<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span
+                        class="attributecolor" style="color:red"> style<span class="attributevaluecolor"
+                            style="color:mediumblue">="color:MediumSeaGreen;"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Ut wisi
+                enim...<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span> </div><br>
+            <h3 style="color:tomato">Привет Мир</h3><br>
+            <p style="color:dodgerblue">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><br>
+            <p style="color:mediumseagreen">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p><br>
+            <h2>CSS Цвет границ</h2>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> style<span
+                            class="attributevaluecolor" style="color:mediumblue">="border:2px
+                            solid Tomato;"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Привет
+                Мир<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span
+                        class="attributecolor" style="color:red"> style<span class="attributevaluecolor"
+                            style="color:mediumblue">="border:2px
+                            solid DodgerBlue;"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Привет
+                Мир<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span
+                        class="attributecolor" style="color:red"> style<span class="attributevaluecolor"
+                            style="color:mediumblue">="border:2px
+                            solid Violet;"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Привет
+                Мир<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span> </div><br>
+            <h2 style="border: 2px solid Tomato;">Привет Мир</h2><br>
+            <h2 style="border: 2px solid DodgerBlue;">Привет Мир</h2><br>
+            <h2 style="border: 2px solid Violet;">Привет Мир</h2><br>
             <hr><br>
         </div>
         <div class="feed-post">
-
-
+            <h2>CSS Фон цвет</h2>
+            <div
+                style="width:100%;border:1px solid gray;padding:8px;background:#e1efbb url('https://www.schoolsw3.com/css/mountain.jpg');">
+                <p style="margin-right:150px;">С помощью CSS свойства <code class="sw3-codespan">background</code>
+                    определяют фон, эффекты для элементов.</p>
+                <p>В этих главах вы узнаете о следующих свойствах фона CSS:</p>
+                <ul>
+                    <li>background-color</li>
+                    <li>background-image</li>
+                    <li>background-repeat</li>
+                    <li>background-attachment</li>
+                    <li>background-position</li>
+                </ul>
+            </div>
+            <h2>CSS background-color</h2>
+            <p>Свойство <code class="sw3-codespan">background-color</code> задает цвет фона элемента.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            lightblue<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <h2>Другие элементы</h2>
+            <p>Вы можете установить цвет фона для любых HTML элементов:</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            green<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            lightblue<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            yellow<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <h2>Непрозрачность / Прозрачность</h2>
+            <p>Свойство <code class="sw3-codespan">opacity</code> определяет непрозрачность/прозрачность элемента.
+                Оно может принимать значение от 0.0 до 1.0. Чем меньше значение, тем прозрачнее:</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            green<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;opacity<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 0.3<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div><br>
+            <div class="sw3-cell-row">
+                <div class="sw3-cell sw3-mobile sw3-center">
+                    <div style="background-color:#4CAF50;opacity:1;padding:50px;color:black">
+                        <p>opacity 1</p>
+                    </div>
+                </div>
+                <div class="sw3-cell sw3-mobile sw3-center">
+                    <div style="background-color:#4CAF50;opacity:0.6;padding:50px;color:black">
+                        <p>opacity 0.6</p>
+                    </div>
+                </div>
+                <div class="sw3-cell sw3-mobile sw3-center">
+                    <div style="background-color:#4CAF50;opacity:0.3;padding:50px;color:black">
+                        <p>opacity 0.3</p>
+                    </div>
+                </div>
+                <div class="sw3-cell sw3-mobile sw3-center">
+                    <div style="background-color:#4CAF50;opacity:0.1;padding:50px;color:black">
+                        <p>opacity 0.1</p>
+                    </div>
+                </div>
+            </div><br>
+            <h2>Прозрачность с RGBA</h2>
+            <p>Если вы не хотите применять непрозрачность к дочерним элементам, как в нашем примере выше, используйте
+                RGBA значение цвета. В следующем примере устанавливается прозрачность для цвета фона, а не для текста:
+            </p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            rgba(0, 128, 0, 0.3) <span class="commentcolor" style="color:green">/* Зеленый фон с
+                                непрозрачностью 30% */</span><br></span></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div><br>
+            <div class="sw3-cell-row">
+                <div class="sw3-cell sw3-mobile sw3-center">
+                    <div style="background:rgb(76, 175, 80);padding:50px;color:black">
+                        <p>100% opacity</p>
+                    </div>
+                </div>
+                <div class="sw3-cell sw3-mobile sw3-center">
+                    <div style="background:rgba(76, 175, 80,0.6);padding:50px;color:black">
+                        <p>60% opacity</p>
+                    </div>
+                </div>
+                <div class="sw3-cell sw3-mobile sw3-center">
+                    <div style="background:rgba(76, 175, 80,0.3);padding:50px;color:black">
+                        <p>30% opacity</p>
+                    </div>
+                </div>
+                <div class="sw3-cell sw3-mobile sw3-center">
+                    <div style="background:rgba(76, 175, 80,0.1);padding:50px;color:black">
+                        <p>10% opacity</p>
+                    </div>
+                </div>
+            </div><br>
+            <h2>CSS Фон изображение</h2>
+            <p>Свойство <code class="sw3-codespan">background-image</code> указывает изображение, которое будет
+                использоваться в качестве фона изображения.</p>
+            <p>По умолчанию изображение повторяется, поэтому оно покрывает весь элемент целиком.
+            </p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;background-image<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            url("paper.jpg")<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
+            <h2>CSS Фон повторение</h2>
+            <p>По умолчанию свойство <code class="sw3-codespan">background-image</code> повторяет изображение как по
+                горизонтали, так и по вертикали.</p>
+            <p>Некоторые изображения следует повторять только по горизонтали а некоторые по вертикали, иначе они будут
+                выглядеть странно, вот так:</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    body<span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> url("gradient_bg.png")<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;background-repeat<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> repeat-x<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    body<span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> url("img_tree.png")<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;background-repeat<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> no-repeat<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div><br>
+            <h2>CSS background-position</h2>
+            <p>Свойство <code class="sw3-codespan">background-position</code> используется для указания положения
+                фонового изображения.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    body<span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;background-image<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            url("img_tree.png")<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;background-repeat<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> no-repeat<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;background-position<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> right top<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <h2>CSS Фон вложенный</h2>
+            <p>Свойство <code class="sw3-codespan">background-attachment</code> указывает, должно ли фоновое изображение
+                прокручиваться или быть фиксированным (не будет прокручиваться вместе с остальной частью страницы):</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    body
+                    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> url("img_tree.png")<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;background-repeat<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> no-repeat<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;background-position<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> right
+                            top<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp; background-attachment<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> fixed<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <br>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    body
+                    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> url("img_tree.png")<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;background-repeat<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> no-repeat<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;background-position<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> right
+                            top<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp; background-attachment<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> scroll<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <br>
+            <h2>CSS Фон стенография</h2>
+            <p>Чтобы сократить код, можно также указать все свойства фона в одном единственном свойстве. Это называется
+                свойство background</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            #ffffff<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span>
+                            url("img_tree.png")<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; background-repeat<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> no-repeat<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;
+                        background-position<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> right top<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <p>Вы можете использовать свойство стенографии <code class="sw3-codespan">background</code>:</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            #ffffff url("img_tree.png") no-repeat right top<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-
-
-            <hr><br>
-        </div>
-        <div class="feed-post">
-
-
+            <p>Все свойства фона CSS</p>
+            <table class="sw3-table-all notranslate">
+                <tbody>
+                    <tr>
+                        <th style="width:30%">Свойство</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td><a href="../cssref/css3_pr_background.php">background</a></td>
+                        <td>Устанавливает все свойства фона в одном объявлении</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../cssref/pr_background-attachment.php">background-attachment</a></td>
+                        <td>Устанавливает, является ли фоновое изображение фиксированным или прокручивается вместе с
+                            остальной частью страницы</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../cssref/css3_pr_background-clip.php">background-clip</a></td>
+                        <td>Задает область рисования фона</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../cssref/pr_background-color.php">background-color</a></td>
+                        <td>Задает цвет фона элемента</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../cssref/pr_background-image.php">background-image</a></td>
+                        <td>Задает фоновое изображение для элемента</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../cssref/css3_pr_background-origin.php">background-origin</a></td>
+                        <td>Задает, где расположено фоновое изображение(я).</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../cssref/pr_background-position.php">background-position</a></td>
+                        <td>Задает начальное положение фонового изображения</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../cssref/pr_background-repeat.php">background-repeat</a></td>
+                        <td>Задает способ повторения фонового изображения</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../cssref/css3_pr_background-size.php">background-size</a></td>
+                        <td>Задает размер фонового изображения(й)</td>
+                    </tr>
+                </tbody>
+            </table>
             <hr><br>
         </div>
         <div class="next-btn_div">
