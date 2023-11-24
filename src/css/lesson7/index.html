@@ -12,60 +12,388 @@
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">CSS - Урок 7</h1>
-    
+        <h2>Свойство дисплей</h2>
+        <p>Свойство display указывается, если/как элемент.
+            <br> Каждый элемент HTML имеет значение по умолчанию в зависимости от типа элемента. Значение по умолчанию
+            для большинства элементов display устанавливается block или inline</p>
+        <h3>Блочные элементы</h3>
+        <p>Блочный элемент всегда начинается с новой строки и занимает всю ширину доступного (простирается влево и
+            вправо насколько это возможно).</p>
+        <div class="sw3-theme-border" style="border-width:3px;border-style:solid;">
+            Элемент <code class="sw3-codespan">&lt;div&gt;</code> является элементом уровня блока.</div>
+        <ul>
+            <li><code class="sw3-codespan">&lt;div&gt;</code></li>
+            <li><code class="sw3-codespan">&lt;h1&gt;</code> - <code class="sw3-codespan">&lt;h6&gt;</code></li>
+            <li><code class="sw3-codespan">&lt;p&gt;</code></li>
+            <li><code class="sw3-codespan">&lt;form&gt;</code></li>
+            <li><code class="sw3-codespan">&lt;header&gt;</code></li>
+            <li><code class="sw3-codespan">&lt;footer&gt;</code></li>
+            <li><code class="sw3-codespan">&lt;section&gt;</code></li>
+        </ul>
+        <h3>Встроенные элементы</h3>
+        <p>Встроенный элемент не начинается с новой строки и занимает столько ширина, сколько необходимо.</p>
+        <ul>
+            <li><code class="sw3-codespan">&lt;span&gt;</code></li>
+            <li><code class="sw3-codespan">&lt;a&gt;</code></li>
+            <li><code class="sw3-codespan">&lt;img&gt;</code></li>
+        </ul>
         <hr>
     </header>
     <main>
         <div class="feed-post">
-        
+            <h2>Переопределить display значение по умолчанию</h2>
+            <p>Как уже говорилось, каждый элемент имеет значение по умолчанию. Однако, Вы можете переопределить его.
+
+                <br>Изменение встроенного элемента в блочный элемент, или наоборот, полезно для создания страницы
+                выглядеть определенным образом, и по-прежнему следовать веб-стандартам.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    li <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> inline<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div><br>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    span <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> block<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <p>Скрытие элемента может быть сделано путем установки свойство display с none. Элемент будет скрыт и
+                страница будет отображаться как будто элемент не существует:</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1.hidden <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> none<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div><br>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1.hidden <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;visibility<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> hidden<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-    
-        <div class="feed-post">
-            <div class="markdown prose w-full break-words dark:prose-invert dark">
-                <h2 style="color: darkblue;">Домашнее задание</h2>
-                
+            <h2>CSS Позиционирование</h2>
+            <div class="sw3-panel sw3-info intro">
+                <p class="intro">Свойство <code class="sw3-codespan">position</code> определяет тип метода
+                    позиционирования и используется для элемента, имеет значения (<code
+                        class="sw3-codespan">static</code>, <code class="sw3-codespan">relative</code>,
+                    <code class="sw3-codespan">fixed</code> или <code class="sw3-codespan">absolute</code>).</p>
             </div>
-        </div><br>
+            <ul>
+                <li><code class="sw3-codespan">static</code> статическая позиция</li>
+                <li><code class="sw3-codespan">relative</code> относительная позиция</li>
+                <li><code class="sw3-codespan">fixed</code> фиксированная позиция</li>
+                <li><code class="sw3-codespan">absolute</code> абсолютная позиция</li>
+            </ul><br>
+            <p>Затем элементы устанавливаются с помощью свойств <code class="sw3-codespan">top</code>, <code
+                    class="sw3-codespan">right</code>,
+                <code class="sw3-codespan">bottom</code> и <code class="sw3-codespan">left</code>.
+                Однако, это свойство не будет работать, если свойство <code class="sw3-codespan">position</code>
+                установлено одно.
+                <code class="sw3-codespan">position</code> также работает по-разному, в зависимости от значения позиции.
+            </p>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Позиция статистическая</h2>
+            <p>Элемент HTML <code class="sw3-codespan">position: static;</code> расположены статический по умолчанию.
+            </p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div.static <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> static<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Позиция относительная</h2>
+            <p>Элемент с <code class="sw3-codespan">position: relative;</code> позиционируется относительно своего
+                нормального положения.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div.relative <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> relative<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;left<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 30px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Позиция фиксированная</h2>
+            <p>Элемент с <code class="sw3-codespan">position: fixed;</code> позиционируется относительно окна просмотра,
+                что означает, что он всегда остается в том же месте, даже если страница прокручивается.
+                Свойства <code class="sw3-codespan">top</code>, <code class="sw3-codespan">right</code>, <code
+                    class="sw3-codespan">bottom</code> и
+                <code class="sw3-codespan">left</code> используются для установки элемента.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div.fixed <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> fixed<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;bottom<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;right<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 300px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Позиция абсолютная</h2>
+            <p>Элемент с <code class="sw3-codespan">position: absolute;</code> позиционируется абсолютно ближайшего
+                позиционированного предка
+                (позиционируется абсолютно окна просмотра, вместо фиксированного).</p>
+            <div class="sw3-theme-border"
+                style="border-width:3px;border-style:solid;position: relative;width:400px;height:200px;">
+                Элемент &lt;div&gt; имент position: relative;
+                <div class="sw3-theme-border sw3-margin-bottom"
+                    style="border-width:3px;border-style:solid;position:absolute;top:80px;right:0;width:200px;height:100px;">
+                    Элемент &lt;div&gt; имент position: absolute;
+                </div>
+            </div>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div.relative <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> relative<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 400px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;height<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 200px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    div.absolute <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> absolute<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;top<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 80px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;right<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 200px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;height<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 100px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Позиция липкая</h2>
+            <p>Элемент <code class="sw3-codespan">position: sticky;</code> позиционируется в зависимости от положения
+                прокрутки пользователя.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div.sticky <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp; position<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> -webkit-sticky<span class="cssdelimitercolor"
+                                style="color:black">;</span></span> <span class="commentcolor" style="color:green">/*
+                            Safari */</span><br>&nbsp; position<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            sticky<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; top<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 0<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; background-color<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> green<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;
+                        border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 2px solid #4CAF50<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <h2>Расположение текста в изображении</h2>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div.static <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> absolute<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>CSS Перекрытие</h2>
+            <div class="sw3-panel sw3-info intro">
+                <p class="intro">Свойство <code class="sw3-codespan">z-index</code> определяет порядок стека элемента.
+                </p>
+            </div>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    img
+                    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;
+                        position<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> absolute<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;left<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 0px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;
+                        top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 0px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>
+                        &nbsp;
+                        z-index<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> -1<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div><br>
+
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>CSS overflow</h2>
+            <p>Свойство <code class="sw3-codespan">overflow</code> добавляет полосы прокрутки, если содержимое элемента
+                является слишком большим,
+                чтобы поместиться в заданном районе.</p>
+            <p>Свойство <code class="sw3-codespan">overflow</code> имеет следующие значения:</p>
+            <ul>
+                <li><code class="sw3-codespan">visible</code> видимый - По умолчанию. Переполнение не обрезается. Оно
+                    отображается за элементом блока</li>
+                <li><code class="sw3-codespan">hidden</code> скрытый - Переполнение обрезается и остальной контент не
+                    будет видим</li>
+                <li><code class="sw3-codespan">scroll</code> прокручиваемый - Переполнение обрезается и добавляются
+                    полоса прокрутки, чтобы увидеть остальное содержимое</li>
+                <li><code class="sw3-codespan">auto</code> автоматический - Если переполнение обрезается, полоса
+                    прокрутки должна быть добавлены, чтобы увидеть остальное содержимое</li>
+            </ul>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 200px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;height<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 50px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            #eee<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;overflow<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> visible<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Переполнение скрытое</h2>
+            <p>Значение <code class="sw3-codespan">hidden</code> обрезает переполнение и скрывает остальное содержимое:
+            </p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;overflow<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> hidden<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <h2>Переполнение с прокруткой</h2>
+            <p>Установка значения <code class="sw3-codespan">scroll</code> обрезается переполнение и добавляется полоса
+                прокрутки для прокрутки внутри блока.
+                Обратите внимание, что можно добавить полосы прокрутки по горизонтали и вертикали (даже если Вам это не
+                надо):</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;overflow<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> scroll<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <h2>Переполнение автоматическое</h2>
+            <p>Значение <code class="sw3-codespan">auto</code> аналогично <code class="sw3-codespan">scroll</code>,
+                только добавляет полосы прокрутки,
+                когда Вам это необходимо:</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;&nbsp;overflow<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            auto<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Переполнение по горизонтали и вертикали</h2>
+            <p>Свойства <code class="sw3-codespan">overflow-x</code> и <code class="sw3-codespan">overflow-y</code>
+                может изменить переполнение содержимого по горизонтали или по вертикали (одновременно):</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;overflow-x<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> hidden<span
+                                class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor"
+                            style="color:green">/* Скрыть горизонтальную полосу прокрутки */</span><br>
+                        &nbsp;&nbsp;&nbsp;overflow-y<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> scroll<span
+                                class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor"
+                            style="color:green">/* Добавить вертикальную полосу прокрутки */</span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <hr><br>
+        </div>
         <div class="next-btn_div">
             <button onclick='next2()' class="next-btn">Следующий блок</button>
         </div>
     </main>
-    
+
     <footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             $(".feed-post:eq( 0 )").show();
             $(".feed-post:eq( 1 )").show();
-        
+
             function next2() {
                 var notVisible = -1;
                 $('.feed-post').each(function () {
@@ -83,22 +411,23 @@
                 padding: 1rem;
                 border-radius: 1rem;
             }
-        
+
             .htmlHigh {
                 background-color: #f1f1f1;
                 padding: 1rem;
                 border-radius: 1rem;
             }
+
             .cssHigh {
                 background-color: #f1f1f1;
                 padding: 1rem;
                 border-radius: 1rem;
             }
-        
+
             .feed-post {
                 display: none;
             }
-        
+
             .next-btn {
                 background-color: rgb(73, 73, 73);
                 color: white;
@@ -108,12 +437,13 @@
                 border-radius: 1rem;
                 cursor: pointer;
             }
-        
+
             .next-btn_div {
                 display: flex;
                 justify-content: center;
             }
         </style>
-        </footer>
+    </footer>
 </body>
+
 </html>

@@ -12,49 +12,187 @@
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">CSS - Урок 8</h1>
-    
-        <hr>
+    <h2>CSS Поплавок</h2>
+    <div class="sw3-panel sw3-info">
+        <p class="intro">Cвойство <code class="sw3-codespan">float</code> указывает, является ли элемент поплавком.</p>
+        <p class="intro">Cвойство <code class="sw3-codespan">clear</code> используется для управления поведением плавающего элемента.</p>
+        </div>
+        <h2>Cвойство поплавок</h2>
+        <p>Свойство <code class="sw3-codespan">float</code> может использоваться, чтобы обернуть текст вокруг изображения.</p>
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            img <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+            &nbsp;&nbsp;&nbsp;float<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> right<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0 0 10px 10px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+             </span></div>
+             <h2>Пример - float: left;</h2>
+             <p>В следующем примере указано, что изображение должно располагаться слева в тексте:</p>
+             <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                img <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; float<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> left<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+
+        <hr><br>
     </header>
     <main>
         <div class="feed-post">
-        
+        <h2>Пример - Плавающих нет</h2>
+        <p>В следующем примере изображение будет отображаться именно там, где оно встречается в тексте (float: none;):</p>
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            img <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; float<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <h2>Свойство clear</h2>
+           <p>Свойство clear указывает ,какие элементы могут плавать рядом с очищенным элементом и с какой стороны. <br>
+            Свойство clear может иметь одно из следующих значений:</p>
+            <ul>
+                <li>none - разрешает плавающие элементы с обеих сторон. Это значение по умолчанию</li>
+                <li>left - слева не допускаются плавающие элементы</li>
+                <li>right- с правой стороны не допускаются плавающие элементы</li>
+                <li>both - плавающие элементы не допускаются ни с левой, ни с правой стороны</li>
+                <li>inherit - элемент наследует чистое значение своего родителя</li>
+                </ul>
+                <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;clear<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> left<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+                    <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                        .clearfix <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;overflow<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> auto<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-    
-        <div class="feed-post">
-            <div class="markdown prose w-full break-words dark:prose-invert dark">
-                <h2 style="color: darkblue;">Домашнее задание</h2>
-                
+        <h2>CSS Выравнивание</h2>
+        <div class="sw3-dark-grey sw3-padding-48 sw3-display-container">
+            <span class="sw3-display-topmiddle sw3-hide-small" style="margin-top:16px">▲</span>
+            <span class="sw3-display-bottommiddle sw3-hide-small" style="margin-bottom:16px">▼</span>
+            <div class="sw3-center sw3-display-container" style="background-color:#1abc9c;color:white; max-width:400px; margin:auto;padding: 15px">
+            <span class="sw3-display-left sw3-hide-small" style="left:-30px">◀</span>
+            <span class="sw3-display-right sw3-hide-small" style="right:-30px">►</span>
+            <h2>Выравнивание<br> горизонтально и вертикально</h2>
             </div>
-        </div><br>
+            </div><br>
+            <h2>Выравнить блок по центру</h2>
+            <p>Выравнить блок <code class="sw3-codespan">&lt;div&gt;</code> по горизонтали по центру,
+                нужно установить поле автоматически <code class="sw3-codespan">margin: auto;</code></p>
+                <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .center <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                    &nbsp;&nbsp;&nbsp;margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> auto<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    &nbsp;&nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 50%<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    &nbsp;&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px solid green<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    &nbsp;&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 10px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+                    <div style="margin:0 auto;width:50%;border:3px solid green;padding:10px;">
+                        <p>Блок по центру.</p>
+                        </div>
+                        <h2>Выравнить текст по центру</h2>
+                        <p>Простое выравнивание текста по центру внутри элемента, используется свойство со значениемtext-align: center;</p>
+                        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                            .center <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                            &nbsp;&nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                            &nbsp;&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px solid green<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+                             </span></div>
+                             <div style="text-align:center;border:3px solid green">
+                                <p>Текст по центру.</p>
+                                </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+        <h2>Выравнить изображение по центру
+        </h2>
+        <p>Установить изображение по центру, нужно использовать автоматические поля <code class="sw3-codespan">margin: auto;</code>
+            и установить видимость блока <code class="sw3-codespan">display: block;</code>:</p>
+            <hr><br>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                img <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                &nbsp;&nbsp;&nbsp;display<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> block<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                &nbsp;&nbsp;&nbsp;margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> auto<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                &nbsp;&nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 40%<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+                 </span></div>
+                 <img src="https://www.schoolsw3.com/css/paris.jpg" alt="Paris" style="width:45%;display:block;margin:0 auto">
+        </div>
+        <div class="feed-post">
+        <h2>Выравнить - используя позицию
+        </h2>
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            .right <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+            &nbsp;&nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> absolute<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;right<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 300px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 10px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+             </span></div><br>
+             <div style="position:relative;margin-bottom:180px">
+                <div style="position: absolute;right: 0px;width: 300px;border: 3px solid #73AD21;padding: 10px;">
+                <p>В мои молодые годы, мой отец дал мне совет, который раз, до сих пор, прокручивается в моей голове.</p>
+                </div>
+                </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+        <h2>Выравнивание - используя поплавок
+        </h2>
+        <p>Другой метод для выравнивания элементов заключается с использованием свойства float :
+        </p>
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            .right<span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+            &nbsp;&nbsp;&nbsp;float<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> right<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 300px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 10px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+             </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+        <h2>Выравнивание по центру - используя отступы
+        </h2>
+        <p>Есть много способов в CSS, чтобы установить элемент по центру по вертикали.
+            Простое решение состоит в использовании верхнего и нижнего отступов с помощью свойства <code class="sw3-codespan">padding</code>:</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                .center <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                &nbsp;&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 70px 0<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                &nbsp;&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px solid green<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+                 </span></div>
+            <div style="border:3px solid green;padding:70px 2px;">
+                <p>Вертикальное выравнивание по центру.</p>
+                </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+        <h2>Выравнивание по центру - используя высоту строк
+        </h2>
+        <p>Есть еще одна хитрость, заключается в использовании свойства высоты строк line-height со значением height.
+        </p>
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            .center <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+            &nbsp;&nbsp;&nbsp;line-height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 200px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 200px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px solid green<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+            <span class="commentcolor" style="color:green">/* Если текст содержит несколько строк, добавьте следующие: */</span><br>
+            .center p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+            &nbsp;&nbsp;&nbsp;line-height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1.5<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;display<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> inline-block<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;vertical-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> middle<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+             </span></div>
+             <div style="line-height:200px; height:200px;border:3px solid green;text-align:center;">
+                <p style=" line-height:1.2; display:inline-block; vertical-align:middle;">Вертикально и горизонтально по центру.</p>
+                </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+        <h2>Выравнивание по центру - используя трансформацию
+        </h2>
+        <p>Если свойства padding и line-height не вариант, третьим решением является использование выравнивания, свойство трансформация transform:</p>
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            .center <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"> <br>
+            &nbsp;&nbsp;&nbsp;height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 200px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> relative<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px solid green<span class="cssdelimitercolor" style="color:black">;</span></span> <br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+            .center p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+            &nbsp;&nbsp;&nbsp;margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> absolute<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 50%<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 50%<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp;transform<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> translate(-50%, -50%)<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+             </span></div><br>
+             <div style="line-height:200px; height:200px;border:3px solid green;text-align:center;">
+                <p style=" line-height:1.2; display:inline-block; vertical-align:middle;">Вертикально и горизонтально по центру.</p>
+                </div>
+            <hr><br>
+        </div>
         <div class="next-btn_div">
             <button onclick='next2()' class="next-btn">Следующий блок</button>
         </div>
