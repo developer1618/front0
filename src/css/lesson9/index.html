@@ -12,60 +12,927 @@
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">CSS - Урок 9</h1>
-    
+        <h2>CSS Комбинаторы</h2>
+        <p>Комбинатор - это то, что объясняет взаимосвязь между селекторами.</p>
+        <ul>
+            <li>селектор потомок <code class="sw3-codespan">пространство</code></li>
+            <li>селектор ребенок <code class="sw3-codespan">&gt;</code></li>
+            <li>селектор смежный брат <code class="sw3-codespan">+</code></li>
+            <li>селектор общий брат <code class="sw3-codespan">~</code></li>
+        </ul>
         <hr>
     </header>
     <main>
         <div class="feed-post">
-        
+            <h2>Селектор потомок</h2>
+            <p>Селектор потомок сопоставляется всем элементам, которые являются потомками указанного элемента.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            yellow<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <hr><br>
+            <h2>Селектор ребенок
+            </h2>
+            <p>Селектор ребенок выбирает все элементы, которые являются непосредственными детьми указанного элемента.
+            </p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div &gt; p <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            yellow<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <h2>Селектор соседний брат
+            </h2>
+            <p>Селектор соседний брат выбирает все элементы, которые являются смежными элементами указанного элемента.
+                <br>
+
+                Дочерние элементы должны иметь тот же родительский элемент, "соседний" значит "сразу же после".</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div + p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            yellow<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <h2>Селектор общий брат
+            </h2>
+            <p>Селектор общий брат выбирает все элементы, которые являются элементами указанного элемента.
+            </p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div ~ p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            yellow<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+        </div>
+        <div class="feed-post">
+            <h2>CSS Псевдо-классы</h2>
+            <p>Псевдо-класс используется для определения особого состояния элемента.</p>
+            <ul>
+                <li>Стиля элемента при наведении курсора мыши</li>
+                <li>Стиля посещенных и непосещенных ссылок</li>
+                <li>Стиля элемента, для получения фокуса</li>
+            </ul>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    <span class="commentcolor" style="color:green">/* непросмотренная ссылка */</span><br>
+                    a:link <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> #FF0000<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    <span class="commentcolor" style="color:green">/* просмотренная ссылка */</span><br>
+                    a:visited <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> #00FF00<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    <span class="commentcolor" style="color:green">/* наведение мыши на ссылку */</span><br>
+                    a:hover <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> #FF00FF<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    <span class="commentcolor" style="color:green">/* активная ссылка */</span><br>
+                    a:active <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> #0000FF<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Псевдо-элементы</h2>
+            <p>Псевдо-элемент используется для оформления указанной части элемента.
+            </p>
+            <ul>
+                <li>Стиля первой буквы или линии элемента</li>
+                <li>Вставки содержимого до или после элемента</li>
+            </ul>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    p::first-line <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> #ff0000<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp;font-variant<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> small-caps<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div><br>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1::before <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;content<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> url(smiley.gif)<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div><br>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    h1::after <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp;content<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> url(smiley.gif)<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Правило !important
+            </h2>
+            <p>Правило <code class="sw3-codespan">!important</code> в CSS используется для придания большей важности
+                свойству/значению, чем обычно.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    #myid <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            blue<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>.myclass <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;
+                        background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> gray<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>p <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                        background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> red <span
+                                class="cssimportantcolor" style="color:red;font-weight:bold;">!important</span><span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Математические функции
+            </h2>
+            <p class="intro">Math функции CSS позволяют использовать математические выражения в качестве значений
+                свойств. На данной странице вы узнаете о функциях <code class="sw3-codespan">calc()</code>, <code
+                    class="sw3-codespan">max()</code> и <code class="sw3-codespan">min()</code>.</p>
+            <p>Функция <code class="sw3-codespan">calc()</code> выполняет вычисление, которое будет использоваться в
+                качестве значения свойства.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    #div1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; position<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            absolute<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 50px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; width<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            calc(100% - 100px)<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> yellow<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; padding<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 5px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span>
+                </span></div><br>
+            <p>Функция <code class="sw3-codespan">max()</code> использует наибольшее значение из списка значений,
+                разделенных запятыми, в качестве значения свойства.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    #div1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            yellow<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        height<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 100px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> max(50%, 300px)<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <p>Функция <code class="sw3-codespan">min()</code> использует наименьшее значение из списка значений,
+                разделенных запятыми, в качестве значения свойства.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    #div1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            yellow<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        height<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 100px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> min(50%, 300px)<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Панель навигации</h2>
+            <p>Самостоятельное работа (нужно создать 2 вида меню по вертикали и по горизонтали)</p>
+            <img src="/img/main-menu.png" alt="Menu">
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Горизонтальная навигация
+            </h2>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>ul<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span
+                        class="attributecolor" style="color:red"> href<span class="attributevaluecolor"
+                            style="color:mediumblue">="#home"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Дом<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>li<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor"
+                        style="color:red"> href<span class="attributevaluecolor"
+                            style="color:mediumblue">="#news"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Новости<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>li<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor"
+                        style="color:red"> href<span class="attributevaluecolor"
+                            style="color:mediumblue">="#contact"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Контакты<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>li<span class="attributecolor" style="color:red"> style<span
+                            class="attributevaluecolor" style="color:mediumblue">="float:right"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span
+                        class="attributecolor" style="color:red">
+                        class<span class="attributevaluecolor" style="color:mediumblue">="active"</span> href<span
+                            class="attributevaluecolor" style="color:mediumblue">="#about"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>О Нас<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ul<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span> </div><br>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    ul <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; list-style-type<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            none<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;margin<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 0<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; padding<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp; overflow<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span>
+                            hidden<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> #333<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>li <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                        float<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> left<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>li a <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; display<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            block<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> white<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; text-align<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> center<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;
+                        padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 14px 16px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> none<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br><span class="commentcolor" style="color:green">/* Измените цвет ссылки на #111 (черный) при
+                        наведении курсора */</span><br>li a:hover <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                        background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span>
+                            #111<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div><br>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .active <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            #4CAF50<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Вертикальная панель навигации
+            </h2>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>ul<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span
+                        class="attributecolor" style="color:red"> href<span class="attributevaluecolor"
+                            style="color:mediumblue">="#home"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Дом<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>li<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor"
+                        style="color:red"> href<span class="attributevaluecolor"
+                            style="color:mediumblue">="#news"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Новости<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>li<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor"
+                        style="color:red"> href<span class="attributevaluecolor"
+                            style="color:mediumblue">="#contact"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Контакты<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>li<span class="attributecolor" style="color:red"> style<span
+                            class="attributevaluecolor" style="color:mediumblue">="float:right"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span
+                        class="attributecolor" style="color:red">
+                        class<span class="attributevaluecolor" style="color:mediumblue">="active"</span> href<span
+                            class="attributevaluecolor" style="color:mediumblue">="#about"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>О Нас<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ul<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span> </div><br>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    ul <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; list-style-type<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            none<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; padding<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; width<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span>
+                            200px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> #f1f1f1<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>li a <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; display<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            block<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> #000<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; padding<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 8px 16px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; text-decoration<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> none<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br><br>
+                    <span class="commentcolor" style="color:green">/* Изменить цвет ссылки при наведении курсора
+                        */</span><br>li a:hover <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp;
+                        background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> #555<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;color<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> white<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div><br>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .active <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            #4CAF50<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> white<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+            <h2>CSS Выпадающие списки</h2>
+            <p>Самостоятельное работа (нужно создать Выпадающие меню)</p>
+            <img src="/img/dropdawn_menu.png" alt="Menu">
             <hr><br>
         </div>
-    
         <div class="feed-post">
-            <div class="markdown prose w-full break-words dark:prose-invert dark">
-                <h2 style="color: darkblue;">Домашнее задание</h2>
+            <div class="htmlHigh"><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+                        class<span class="attributevaluecolor" style="color:mediumblue">="dropdown"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red">
+                        class<span class="attributevaluecolor" style="color:mediumblue">="dropbtn"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span
+                    style="color:black;">Выпадающее Меню</span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+                        class<span class="attributevaluecolor"
+                            style="color:mediumblue">="dropdown-content"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span
+                        class="attributecolor" style="color:red"> href<span class="attributevaluecolor"
+                            style="color:mediumblue">="#"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span style="color:black;">Ссылка
+                    1</span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span
+                            class="attributevaluecolor" style="color:mediumblue">="#"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span style="color:black;">Ссылка
+                    2</span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span
+                        class="attributecolor" style="color:red"> href<span class="attributevaluecolor"
+                            style="color:mediumblue">="#"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span style="color:black;">Ссылка 3</span><span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span> </div><br>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    &lt;style&gt;<br><span class="commentcolor" style="color:green">/* Стиль Выпадающей Кнопки
+                        */</span><br>.dropbtn <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp;
+                        background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> #4CAF50<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp;
+                        color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> white<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp;
+                        padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 16px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp;
+                        font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 16px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp;
+                        border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> none<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp;
+                        cursor<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> pointer<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    <span class="commentcolor" style="color:green">/* контейнер &lt;div&gt; - необходим для размещения
+                        выпадающего содержимого */</span><br>
+                    .dropdown <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;&nbsp; position<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            relative<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; display<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span>
+                            inline-block<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* Выпадающей
+                        контент (по умолчанию скрыт) */</span><br>
+                    .dropdown-content <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp; display<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> none<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; position<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span>
+                            absolute<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; background-color<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> #f9f9f9<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp;
+                        min-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 160px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp;
+                        box-shadow<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span>
+                            0px 8px 16px 0px rgba(0,0,0,0.2)<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; z-index<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 1<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* Ссылки
+                        внутри выпадающего списка */</span><br>
+                    .dropdown-content a <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp; color<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> black<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp;
+                        padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 12px 16px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp;
+                        text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> none<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp;
+                        display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> block<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor"
+                        style="color:green">/* Изменить цвет выпадающих ссылок при наведении */</span><br>
+                    .dropdown-content a:hover <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red">background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            #f1f1f1</span></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* Показать
+                        выпадающее меню при наведении */</span><br>.dropdown:hover .dropdown-content <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;&nbsp;
+                        display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> block<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor"
+                        style="color:green">/* Изменить цвет фона выпадающего
+                        кнопка при отображении выпадающего списка */</span><br>.dropdown:hover .dropbtn <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;&nbsp;
+                        background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> #3e8e41<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>&lt;/style&gt;<br><br> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>CSS Галерея изображений</h2>
+            <p>Самостоятельное работа (Галерея)</p>
+            <img src="/img/gallary.png" alt="Gallary">
+
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <div class="sw3-code notranslate htmlHigh">
                 
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>style<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor"
+                    style="color:brown"><br>
+                    div.gallery <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp; margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 5px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 1px solid #ccc<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp; float<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> left<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 180px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>
+                    div.gallery:hover <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 1px solid #777<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>
+                    div.gallery img <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 100%<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp; height<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> auto<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>
+                    div.desc <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;&nbsp; padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 15px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;&nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> center<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/style<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+                        class<span class="attributevaluecolor" style="color:mediumblue">="gallery"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> target<span
+                            class="attributevaluecolor" style="color:mediumblue">="_blank"</span> href<span
+                            class="attributevaluecolor" style="color:mediumblue">="fjords.jpg"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span
+                            class="attributevaluecolor" style="color:mediumblue">="5terre.jpg"</span> alt<span
+                            class="attributevaluecolor" style="color:mediumblue">="Пять земли"</span> width<span
+                            class="attributevaluecolor" style="color:mediumblue">="300"</span> height<span
+                            class="attributevaluecolor" style="color:mediumblue">="200"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+                        class<span class="attributevaluecolor" style="color:mediumblue">="desc"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Добавьте описание изображения
+                здесь<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+                        class<span class="attributevaluecolor" style="color:mediumblue">="gallery"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> target<span
+                            class="attributevaluecolor" style="color:mediumblue">="_blank"</span> href<span
+                            class="attributevaluecolor" style="color:mediumblue">="forest.jpg"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span
+                            class="attributevaluecolor" style="color:mediumblue">="forest.jpg"</span> alt<span
+                            class="attributevaluecolor" style="color:mediumblue">="Лес"</span> width<span
+                            class="attributevaluecolor" style="color:mediumblue">="300"</span> height<span
+                            class="attributevaluecolor" style="color:mediumblue">="200"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+                        class<span class="attributevaluecolor" style="color:mediumblue">="desc"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Добавьте описание изображения
+                здесь<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+                        class<span class="attributevaluecolor" style="color:mediumblue">="gallery"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> target<span
+                            class="attributevaluecolor" style="color:mediumblue">="_blank"</span> href<span
+                            class="attributevaluecolor" style="color:mediumblue">="lights.jpg"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span
+                            class="attributevaluecolor" style="color:mediumblue">="lights.jpg"</span> alt<span
+                            class="attributevaluecolor" style="color:mediumblue">="Северное сияние"</span> width<span
+                            class="attributevaluecolor" style="color:mediumblue">="300"</span> height<span
+                            class="attributevaluecolor" style="color:mediumblue">="200"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+                        class<span class="attributevaluecolor" style="color:mediumblue">="desc"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Добавьте описание изображения
+                здесь<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+                        class<span class="attributevaluecolor" style="color:mediumblue">="gallery"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> target<span
+                            class="attributevaluecolor" style="color:mediumblue">="_blank"</span> href<span
+                            class="attributevaluecolor" style="color:mediumblue">="mountains.jpg"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span
+                            class="attributevaluecolor" style="color:mediumblue">="mountains.jpg"</span> alt<span
+                            class="attributevaluecolor" style="color:mediumblue">="Горы"</span> width<span
+                            class="attributevaluecolor" style="color:mediumblue">="300"</span> height<span
+                            class="attributevaluecolor" style="color:mediumblue">="200"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+                        class<span class="attributevaluecolor" style="color:mediumblue">="desc"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Добавьте описание изображения
+                здесь<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <br>
             </div>
-        </div><br>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>CSS Формы</h2>
+            <p> (Форма)</p>
+            <img src="/img/form.png" alt="Form">
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <div class="CodeMirror-scroll cssHigh" tabindex="-1">
+                <div class="CodeMirror-sizer"
+                    style="margin-left: 0px; margin-bottom: -17px; border-right-width: 13px; min-height: 1160px; padding-right: 17px; padding-bottom: 0px;">
+                    <div style="position: relative; top: 0px;">
+                        <div class="CodeMirror-lines">
+                            <div style="position: relative; outline: none;">
+                                <div class="CodeMirror-measure"></div>
+                                <div class="CodeMirror-measure"></div>
+                                <div style="position: relative; z-index: 1;"></div>
+                                <div class="CodeMirror-cursors" style="">
+                                    <div class="CodeMirror-cursor" style="left: 193.719px; top: 594px; height: 18px;">
+                                        &nbsp;</div>
+                                </div>
+                                <div class="CodeMirror-code" style="">
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp; &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">form</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">action</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"/action_page.php"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp; &nbsp; &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">label</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">for</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"fname"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span><span class="cm-m-xml">Имя</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">label</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp; &nbsp; &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">input</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">type</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"text"</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">id</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"fname"</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">name</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"firstname"</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">placeholder</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"Ваше Имя.."</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp; &nbsp; &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">label</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">for</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"lname"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span><span class="cm-m-xml">Фамилия</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">label</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp; &nbsp; &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">input</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">type</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"text"</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">id</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"lname"</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">name</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"lastname"</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">placeholder</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"Ваша Фамилия.."</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp; &nbsp; &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">label</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">for</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"country"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span><span class="cm-m-xml">Страна</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">label</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp; &nbsp; &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">select</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">id</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"country"</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">name</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"country"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">option</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">value</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"australia"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span><span class="cm-m-xml">Австралия</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">option</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">option</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">value</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"canada"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span><span class="cm-m-xml">Канада</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">option</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">option</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">value</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"usa"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span><span class="cm-m-xml">США</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">option</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp; &nbsp; &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">select</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp; &nbsp;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp; &nbsp; &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">input</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">type</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"submit"</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">value</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"ОТПРАВИТЬ"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp; &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">form</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><br>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">style</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp;</span><span class="cm-m-css cm-tag">input</span><span class="cm-m-css">[</span><span class="cm-m-css cm-tag">type</span><span class="cm-m-css">=</span><span class="cm-m-css cm-tag">text</span><span class="cm-m-css">], </span><span class="cm-m-css cm-tag">select</span><span class="cm-m-css"> {</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">width</span><span class="cm-m-css">: </span><span class="cm-m-css cm-number">100%</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">padding</span><span class="cm-m-css">: </span><span class="cm-m-css cm-number">12px</span><span class="cm-m-css"> </span><span class="cm-m-css cm-number">20px</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">margin</span><span class="cm-m-css">: </span><span class="cm-m-css cm-number">8px</span><span class="cm-m-css"> </span><span class="cm-m-css cm-number">0</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">display</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">inline-block</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">border</span><span class="cm-m-css">: </span><span class="cm-m-css cm-number">1px</span><span class="cm-m-css"> </span><span class="cm-m-css cm-atom">solid</span><span class="cm-m-css"> </span><span class="cm-m-css cm-atom">#ccc</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">border-radius</span><span class="cm-m-css">: </span><span class="cm-m-css cm-number">4px</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">box-sizing</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">border-box</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css">  }</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp;</span><span class="cm-m-css cm-tag">input</span><span class="cm-m-css">[</span><span class="cm-m-css cm-tag">type</span><span class="cm-m-css">=</span><span class="cm-m-css cm-tag">submit</span><span class="cm-m-css">] {</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">width</span><span class="cm-m-css">: </span><span class="cm-m-css cm-number">100%</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">background-color</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">#4CAF50</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">color</span><span class="cm-m-css">: </span><span class="cm-m-css cm-keyword">white</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">padding</span><span class="cm-m-css">: </span><span class="cm-m-css cm-number">14px</span><span class="cm-m-css"> </span><span class="cm-m-css cm-number">20px</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">margin</span><span class="cm-m-css">: </span><span class="cm-m-css cm-number">8px</span><span class="cm-m-css"> </span><span class="cm-m-css cm-number">0</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">border</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">none</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">border-radius</span><span class="cm-m-css">: </span><span class="cm-m-css cm-number">4px</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">cursor</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">pointer</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css">  }</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp;</span><span class="cm-m-css cm-tag">input</span><span class="cm-m-css">[</span><span class="cm-m-css cm-tag">type</span><span class="cm-m-css">=</span><span class="cm-m-css cm-tag">submit</span><span class="cm-m-css">]:</span><span class="cm-m-css cm-variable-3">hover</span><span class="cm-m-css"> {</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">background-color</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">#45a049</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css">  }</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp;</span><span class="cm-m-css cm-tag">div</span><span class="cm-m-css"> {</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">border-radius</span><span class="cm-m-css">: </span><span class="cm-m-css cm-number">5px</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">background-color</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">#f2f2f2</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">padding</span><span class="cm-m-css">: </span><span class="cm-m-css cm-number">20px</span><span class="cm-m-css">;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css">  }</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">style</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre>
+                                    <pre
+                                        class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 1160px;">
+                </div>
+                <div class="CodeMirror-gutters" style="display: none; height: 1173px;"></div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Домашная работа (Простой макет сайта)</h2>
+            <img src="/img/maket.png" alt="Maket">
+        </div>
         <div class="next-btn_div">
             <button onclick='next2()' class="next-btn">Следующий блок</button>
         </div>
     </main>
-    
+
     <footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             $(".feed-post:eq( 0 )").show();
             $(".feed-post:eq( 1 )").show();
-        
+
             function next2() {
                 var notVisible = -1;
                 $('.feed-post').each(function () {
@@ -83,22 +950,23 @@
                 padding: 1rem;
                 border-radius: 1rem;
             }
-        
+
             .htmlHigh {
                 background-color: #f1f1f1;
                 padding: 1rem;
                 border-radius: 1rem;
             }
+
             .cssHigh {
                 background-color: #f1f1f1;
                 padding: 1rem;
                 border-radius: 1rem;
             }
-        
+
             .feed-post {
                 display: none;
             }
-        
+
             .next-btn {
                 background-color: rgb(73, 73, 73);
                 color: white;
@@ -108,12 +976,13 @@
                 border-radius: 1rem;
                 cursor: pointer;
             }
-        
+
             .next-btn_div {
                 display: flex;
                 justify-content: center;
             }
         </style>
-        </footer>
+    </footer>
 </body>
+
 </html>
