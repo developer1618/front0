@@ -12,49 +12,116 @@
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">CSS - Урок 11</h1>
-    
+    <h2>CSS3 Медиа запросы</h2>
+    <h3>Синтаксис медиа запросов</h3>
+    <p>Медиа запрос носителя состоит из типа носителя и может содержать один или несколько выражения, которые разрешаются в true или false.</p>
+    <div class="sw3-code sw3-border notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        @media не|только <i>тип носителя</i> и (<i>форма самовыражения</i>) <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><i><br>
+        &nbsp;&nbsp;&nbsp; CSS-Код;<br></i></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
         <hr>
     </header>
     <main>
         <div class="feed-post">
-        
+        <h2>Простые примеры медиа-запросов</h2>
+        <p>Один из способов использовать медиа запросы - иметь альтернативный раздел CSS прямо в вашей таблице стилей.</p>
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            @media screen and (min-width: 480px) <span class="cssdelimitercolor" style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>
+            &nbsp;&nbsp;&nbsp; body <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightgreen<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp;&nbsp;&nbsp; </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+             </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+        <h2>CSS3 Примеры медиа запросов
+        </h2>
+        <p>
+            Рассмотрим еще несколько примеров использования медиа запросов. <br>
+            Медиа запросы - популярный метод установки адаптированной таблицы стилей на различные устройства.
+            Чтобы продемонстрировать простой пример, мы можем изменить цвет фона для разных устройств:
+        </p>
+        <img src="/img/mqcap.jpg" alt="Response">
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            <span class="commentcolor" style="color:green">/* Установите цвет фона body tan */</span><br>
+            body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> tan<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+            <span class="commentcolor" style="color:green">/* На экраны, которые 992px или меньше, установить цвет фона blue */</span><br>
+            @media screen and (max-width: 992px) <span class="cssdelimitercolor" style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>&nbsp; body <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red"><br>
+            &nbsp;&nbsp;&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> blue<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+            <span class="commentcolor" style="color:green">/* На экранах с разрешением не более 600 пикселей, установите цвет фона olive */</span><br>
+            @media screen and (max-width: 600px) <span class="cssdelimitercolor" style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>&nbsp; body <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red"><br>
+            &nbsp;&nbsp;&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> olive<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+             </span></div>
+
             <hr><br>
         </div>
         <div class="feed-post">
-        
+        <h2>CSS3 Гибкий бокс
+        </h2>
+        <p>До модуля компоновки Flexbox существовало четыре режима компоновки:
+        </p>
+        <ul>
+            <li>Блок для разделов веб-страницы</li>
+            <li>Встроенный, для текста</li>
+            <li>Таблица, для двумерных табличных данных</li>
+            <li>Позиционированный, для явного расположения элемента</li>
+            </ul>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> 
+                class<span class="attributevaluecolor" style="color:mediumblue">="flex-container"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="tagcolor" style="color:mediumblue">&gt;</span></span>1<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="tagcolor" style="color:mediumblue">&gt;</span></span>2<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="tagcolor" style="color:mediumblue">&gt;</span></span>3<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                 </div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+        <h2>CSS3 Flexbox контейнер
+        </h2>
+        <p>Как мы указывали в предыдущей главе, это гибкий контейнер (синяя область) с тремя гибкими элементами:
+        </p>
+        <ul>
+            <li><a href="#flex-direction"><code class="sw3-codespan">flex-direction</code></a></li>
+            <li><a href="#flex-wrap"><code class="sw3-codespan">flex-wrap</code></a></li>
+            <li><a href="#flex-flow"><code class="sw3-codespan">flex-flow</code></a></li>
+            <li><a href="#justify-content"><code class="sw3-codespan">justify-content</code></a></li>
+            <li><a href="#align-items"><code class="sw3-codespan">align-items</code></a></li>
+            <li><a href="#align-content"><code class="sw3-codespan">align-content</code></a></li>
+            </ul>
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            .flex-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; 
+            display<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> flex<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+
             <hr><br>
         </div>
         <div class="feed-post">
-        
+        <h2>CSS3 Flexbox элементы
+        </h2>
+        <p>Прямые дочерние элементы гибкого контейнера автоматически становятся гибкими элементами (flex).
+        </p>
+        <ul>
+            <li><a href="#order"><code class="sw3-codespan">order</code></a></li>
+            <li><a href="#flex-grow"><code class="sw3-codespan">flex-grow</code></a></li>
+            <li><a href="#flex-shrink"><code class="sw3-codespan">flex-shrink</code></a></li>
+            <li><a href="#flex-basis"><code class="sw3-codespan">flex-basis</code></a></li>
+            <li><a href="#flex"><code class="sw3-codespan">flex</code></a></li>
+            <li><a href="#align-self"><code class="sw3-codespan">align-self</code></a></li>
+            </ul>
+            <div class="sw3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="flex-container"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="tagcolor" style="color:mediumblue">&gt;</span></span>1<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="tagcolor" style="color:mediumblue">&gt;</span></span>2<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="tagcolor" style="color:mediumblue">&gt;</span></span>3<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br>&nbsp; 
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="tagcolor" style="color:mediumblue">&gt;</span></span>4<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                 </div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
+        <h2>Адаптивный Flexbox
+        </h2>
+        <p>Вы узнали из главы CSS Медиа-запросы, в которой вы можете использовать медиа-запросы для создания различных макетов для разных размеров экрана и устройств.</p>
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            .flex-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> flex<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; flex-direction<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> row<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+            <br><span class="commentcolor" style="color:green">/* Адаптивный макет - создает макет с одним столбцом вместо макета с двумя столбцами
+             */</span><br>@media (max-width: 800px) <span class="cssdelimitercolor" style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>&nbsp; .flex-container <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp; 
+            flex-direction<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> column<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
             <hr><br>
         </div>
     
-        <div class="feed-post">
-            <div class="markdown prose w-full break-words dark:prose-invert dark">
-                <h2 style="color: darkblue;">Домашнее задание</h2>
-                
-            </div>
-        </div><br>
         <div class="next-btn_div">
             <button onclick='next2()' class="next-btn">Следующий блок</button>
         </div>
