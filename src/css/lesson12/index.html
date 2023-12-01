@@ -19,25 +19,27 @@
         <p>Адаптивный веб дизайн - делает вашу веб страницу, чтобы она хорошо выглядела на всех устройствах.
 
             <br>Адаптивный веб дизайн - использует только HTML и CSS.
-            
+
             <br>Адаптивный веб дизайн - это не программа и не JavaScript.
-            
-            </p><br>
-            <div class="sw3-row-padding" style="text-align:center;font-weight:bold;font-size:90%;margin:-8px -16px 24px -16px">
-                <div class="sw3-col m6 s12">
+
+        </p><br>
+        <div class="sw3-row-padding"
+            style="text-align:center;font-weight:bold;font-size:90%;margin:-8px -16px 24px -16px">
+            <div class="sw3-col m6 s12">
                 <img src="https://www.schoolsw3.com/css/rwd_desktop.png" style="border:2px solid #dddddd;"><br>
                 Компьютер
-                </div>
-                <div class="sw3-col m4 s12">
+            </div>
+            <div class="sw3-col m4 s12">
                 <img src="https://www.schoolsw3.com/css/rwd_tablet.png" style="border:2px solid #dddddd;"><br>
                 Планшет
-                </div>
-                <div class="sw3-col m2 s12">
+            </div>
+            <div class="sw3-col m2 s12">
                 <img src="https://www.schoolsw3.com/css/rwd_phone.png" style="border:2px solid #dddddd;"><br>
                 Телефон
-                </div>
-                </div><br>
-            <iframe src="https://www.schoolsw3.com/css/tryresponsive_col-s.htm" style="background-color:white;border:6px solid #eee;width:100%;height:585px;margin-bottom:-6px"></iframe>
+            </div>
+        </div><br>
+        <iframe src="https://www.schoolsw3.com/css/tryresponsive_col-s.htm"
+            style="background-color:white;border:6px solid #eee;width:100%;height:585px;margin-bottom:-6px"></iframe>
 
         <hr>
     </header>
@@ -49,160 +51,325 @@
             </h3>
             <p>Область просмотра - это видимая область веб страницы пользователя.
 
-                <br>Область просмотра зависит от устройства и будет меньше на мобильном телефоне, чем на экране компьютера.
-                
-                <br>Раньше веб страницы были предназначены только для экранов компьютеров, веб страницы должны были иметь статический дизайн и фиксированный размер и это было общим для планшетов и мобильных телефонов.
-                
-                <br>Затем, когда мы начали серфинг в интернете с помощью планшетов и мобильных телефонов, фиксированный размер веб страниц был слишком велик, чтобы соответствовать области просмотра. Чтобы исправить это, браузеры на этих устройствах уменьшили всю веб страницу до размера экрана.
-                
-                </p><br>
-                <h3>Настройка области просмотра
-                </h3>
-                <p>HTML5 ввел метод, позволяющий веб дизайнерам управлять видовым экраном через тег
-                    <code class="sw3-codespan">&lt;meta&gt;</code>.</p>
-                    <p>Необходимо включить следующий элемент <code class="sw3-codespan">&lt;meta&gt;</code>, установить во все ваших веб страницах:</p>
-                    <div class="sw3-code sw3-border notranslate htmlHigh">
-                        <div><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> name<span class="attributevaluecolor" style="color:mediumblue">="viewport"</span> content<span class="attributevaluecolor" style="color:mediumblue">="width=device-width, initial-scale=1.0"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></div>
-                         </div>
-                         <p>Тег <code class="sw3-codespan">&lt;meta&gt;</code> содержит инструкцию <code class="sw3-codespan">viewport</code> браузера
-                            для управления размерами и масштабированием страницы.</p>
-                            <p>Часть <code class="sw3-codespan">width=device-width</code> задает ширину страницы следить за шириной экран - устройства (которая будет меняться в зависимости от устройства).</p>
-                            <p>Часть <code class="sw3-codespan">initial-scale=1.0</code> задает начальный уровень масштабирования при первой загрузке страницы браузером.</p>
-                            <p>Вот пример веб страницы <em>без</em> метатега <code class="sw3-codespan">viewport</code>
-                                и та же веб страница <em>с</em> метатегом <code class="sw3-codespan">viewport</code>:</p>
-                                <div class="sw3-row" style="text-align:center;">
-                                    <div class="sw3-half">
-                                    <a href="#"><img src="https://www.schoolsw3.com/css/img_viewport1.png" class="sw3-hover-shadow viewport"><br><br><b>Без метатега viewport</b></a><br><br>
-                                    </div>
-                                    <div class="sw3-half">
-                                    <a href="#"><img src="https://www.schoolsw3.com/css/img_viewport2.png" class="sw3-hover-shadow viewport"><br><br><b>С метатегом viewport</b></a><br><br>
-                                    </div>  
-                                    </div>
+                <br>Область просмотра зависит от устройства и будет меньше на мобильном телефоне, чем на экране
+                компьютера.
+
+                <br>Раньше веб страницы были предназначены только для экранов компьютеров, веб страницы должны были
+                иметь статический дизайн и фиксированный размер и это было общим для планшетов и мобильных телефонов.
+
+                <br>Затем, когда мы начали серфинг в интернете с помощью планшетов и мобильных телефонов, фиксированный
+                размер веб страниц был слишком велик, чтобы соответствовать области просмотра. Чтобы исправить это,
+                браузеры на этих устройствах уменьшили всю веб страницу до размера экрана.
+
+            </p><br>
+            <h3>Настройка области просмотра
+            </h3>
+            <p>HTML5 ввел метод, позволяющий веб дизайнерам управлять видовым экраном через тег
+                <code class="sw3-codespan">&lt;meta&gt;</code>.</p>
+            <p>Необходимо включить следующий элемент <code class="sw3-codespan">&lt;meta&gt;</code>, установить во все
+                ваших веб страницах:</p>
+            <div class="sw3-code sw3-border notranslate htmlHigh">
+                <div><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red">
+                            name<span class="attributevaluecolor" style="color:mediumblue">="viewport"</span>
+                            content<span class="attributevaluecolor" style="color:mediumblue">="width=device-width,
+                                initial-scale=1.0"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span></div>
+            </div>
+            <p>Тег <code class="sw3-codespan">&lt;meta&gt;</code> содержит инструкцию <code
+                    class="sw3-codespan">viewport</code> браузера
+                для управления размерами и масштабированием страницы.</p>
+            <p>Часть <code class="sw3-codespan">width=device-width</code> задает ширину страницы следить за шириной
+                экран - устройства (которая будет меняться в зависимости от устройства).</p>
+            <p>Часть <code class="sw3-codespan">initial-scale=1.0</code> задает начальный уровень масштабирования при
+                первой загрузке страницы браузером.</p>
+            <p>Вот пример веб страницы <em>без</em> метатега <code class="sw3-codespan">viewport</code>
+                и та же веб страница <em>с</em> метатегом <code class="sw3-codespan">viewport</code>:</p>
+            <div class="sw3-row" style="text-align:center;">
+                <div class="sw3-half">
+                    <a href="#"><img src="https://www.schoolsw3.com/css/img_viewport1.png"
+                            class="sw3-hover-shadow viewport"><br><br><b>Без метатега viewport</b></a><br><br>
+                </div>
+                <div class="sw3-half">
+                    <a href="#"><img src="https://www.schoolsw3.com/css/img_viewport2.png"
+                            class="sw3-hover-shadow viewport"><br><br><b>С метатегом viewport</b></a><br><br>
+                </div>
+            </div>
             <hr><br>
         </div>
         <div class="feed-post">
-        <h2>CSS Адаптивная сетка
-        </h2>
-        <h3>Что такое вид-сетки?
-        </h3>
-        <p>Многие веб страницы основаны на "вид сетки", означает, что страница разделена на столбцы:
-        </p>
-        <img src="/img/table.png" alt="Table" width="1024"><br>
-        <p>Отзывчивый вид сетки имеет 12 столбцов, общая ширина 100 пикселей, и она будет сокращаться и расширяться по мере изменения размера окна браузера.</p><br>
-        <h2>Построение адаптивного вида сетки
-        </h2>
-        <p>Сначала убедитесь, что все HTML-элементы имеют свойство <code class="sw3-codespan">box-sizing</code> установлено значение 
-            <code class="sw3-codespan">border-box</code>.
-            Это гарантирует, что отступы и границы включены в общую ширину и высоту элементов.</p>
+            <h2>CSS Адаптивная сетка
+            </h2>
+            <h3>Что такое вид-сетки?
+            </h3>
+            <p>Многие веб страницы основаны на "вид сетки", означает, что страница разделена на столбцы:
+            </p>
+            <img src="/img/table.png" alt="Table" width="1024"><br>
+            <p>Отзывчивый вид сетки имеет 12 столбцов, общая ширина 100 пикселей, и она будет сокращаться и расширяться
+                по мере изменения размера окна браузера.</p><br>
+            <h2>Построение адаптивного вида сетки
+            </h2>
+            <p>Сначала убедитесь, что все HTML-элементы имеют свойство <code class="sw3-codespan">box-sizing</code>
+                установлено значение
+                <code class="sw3-codespan">border-box</code>.
+                Это гарантирует, что отступы и границы включены в общую ширину и высоту элементов.</p>
             <div class="sw3-code sw3-border notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-                * <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp; box-sizing<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> border-box<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
-                 </span></div><br>
-                 <div class="sw3-row-padding" style="margin:0 -9px">
-                    <div class="sw3-col s3 sw3-light-grey sw3-border sw3-display-container" style="height:70px"><div class="sw3-display-middle">25%</div></div>
-                    <div class="sw3-col s9 sw3-light-grey sw3-border sw3-display-container" style="height:70px"><div class="sw3-display-middle">75%</div></div>
-                    </div><br>
-                    <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-                        .menu <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25%<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; float<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> left<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>
-                        .main <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 75%<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; float<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> left<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br> </span></div>
-                        <br>
-                        <p>Приведенный выше пример подходит, если веб страница содержит только два столбца.
+                    * <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;&nbsp; box-sizing<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            border-box<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span>
+                </span></div><br>
+            <div class="sw3-row-padding" style="margin:0 -9px">
+                <div class="sw3-col s3 sw3-light-grey sw3-border sw3-display-container" style="height:70px">
+                    <div class="sw3-display-middle">25%</div>
+                </div>
+                <div class="sw3-col s9 sw3-light-grey sw3-border sw3-display-container" style="height:70px">
+                    <div class="sw3-display-middle">75%</div>
+                </div>
+            </div><br>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .menu <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;&nbsp; width<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            25%<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp;
+                        float<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> left<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    .main <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;&nbsp; width<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            75%<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp;
+                        float<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> left<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br> </span></div>
+            <br>
+            <p>Приведенный выше пример подходит, если веб страница содержит только два столбца.
 
-                            <br>Тем не менее, мы хотим использовать отзывчивый вид сетки с 12 столбцами, чтобы иметь больше контроля над веб страницей.
-                            
-                           <br> Сначала мы должны вычислить процент для одного столбца: 100 процентов / 12 столбцов = 8.33 процентов.</p>
-                           <p>Тогда мы сделаем отдельный класс для каждого из 12 столбцов, <code class="sw3-codespan">class="col-"</code> и номер 
-                            определит количество столбцов в разделе:</p>
-                            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-                                .col-1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 8.33%<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>.col-2 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 16.66%<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>.col-3 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25%<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>
-                                .col-4 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 33.33%<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>.col-5 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 41.66%<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>.col-6 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 50%<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>
-                                .col-7 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 58.33%<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>.col-8 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 66.66%<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>.col-9 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 75%<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>
-                                .col-10 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 83.33%<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>.col-11 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 91.66%<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span><br>.col-12 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 
-                                100%<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+                <br>Тем не менее, мы хотим использовать отзывчивый вид сетки с 12 столбцами, чтобы иметь больше контроля
+                над веб страницей.
+
+                <br> Сначала мы должны вычислить процент для одного столбца: 100 процентов / 12 столбцов = 8.33
+                процентов.</p>
+            <p>Тогда мы сделаем отдельный класс для каждого из 12 столбцов, <code
+                    class="sw3-codespan">class="col-"</code> и номер
+                определит количество столбцов в разделе:</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .col-1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 8.33%<span
+                                class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>.col-2 <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 16.66%<span class="cssdelimitercolor"
+                                style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br>.col-3 <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 25%<span class="cssdelimitercolor"
+                                style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br>
+                    .col-4 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 33.33%<span
+                                class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>.col-5 <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 41.66%<span class="cssdelimitercolor"
+                                style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br>.col-6 <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 50%<span class="cssdelimitercolor"
+                                style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br>
+                    .col-7 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 58.33%<span
+                                class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>.col-8 <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 66.66%<span class="cssdelimitercolor"
+                                style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br>.col-9 <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red">width<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 75%<span class="cssdelimitercolor"
+                                style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br>
+                    .col-10 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 83.33%<span
+                                class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>.col-11 <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 91.66%<span
+                                class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>.col-12 <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red">width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span>
+                            100%<span class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        <h2>CSS Адаптивные медиа запросы
-        </h2>
-        <p>Медиа запрос - это CSS исполнение, представленный в CSS3.
+            <h2>CSS Адаптивные медиа запросы
+            </h2>
+            <p>Медиа запрос - это CSS исполнение, представленный в CSS3.
 
-           <br> Используется правило @media для включения блока свойств CSS, только если определенно условие true.
-           <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-            @media only screen and (max-width: 600px) <span class="cssdelimitercolor" style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>&nbsp;&nbsp;&nbsp; body <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red"><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightblue<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>
-             </span></div>
+                <br> Используется правило @media для включения блока свойств CSS, только если определенно условие true.
+                <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                        @media only screen and (max-width: 600px) <span class="cssdelimitercolor"
+                            style="color:black">{</span><span class="cssselectorcolor"
+                            style="color:brown"><br>&nbsp;&nbsp;&nbsp; body <span class="cssdelimitercolor"
+                                style="color:black"><span class="cssdelimitercolor"
+                                    style="color:black">{</span></span><span class="csspropertycolor"
+                                style="color:red"><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-color<span
+                                    class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                        class="cssdelimitercolor" style="color:black">:</span> lightblue<span
+                                        class="cssdelimitercolor"
+                                        style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; </span><span
+                                class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
+                                    style="color:black">}</span></span><br></span><span class="cssdelimitercolor"
+                            style="color:black">}</span><br>
+                    </span></div>
             </p>
             <hr><br>
         </div>
         <div class="feed-post">
-        <h2>Типичные устройства точка прерывания
-        </h2>
-        <p>Есть много экранов и устройств с разной высотой и шириной, поэтому трудно создать точную точку прерывания для каждого устройства. Для простоты можно ориентироваться на пять групп:
-        </p>
-        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-            <span class="commentcolor" style="color:green">/* Очень маленькие устройства (телефоны, 600px и ниже) */</span><br>
-            @media only screen and (max-width: 600px) <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">...</span><span class="cssdelimitercolor" style="color:black">}</span> <br><br>
-            <span class="commentcolor" style="color:green">/* Маленькие устройства (портретные планшеты и большие телефоны, 600px и выше) 
-            */</span><br>@media only screen and (min-width: 600px) <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">...</span><span class="cssdelimitercolor" style="color:black">}</span> <br><br>
-            <span class="commentcolor" style="color:green">/* Средние устройства (альбомные планшеты, 768px и выше) */</span><br>
-            @media only screen and (min-width: 768px) <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">...</span><span class="cssdelimitercolor" style="color:black">}</span> <br><br>
-            <span class="commentcolor" style="color:green">/* Большие устройства (ноутбуки / настольные компьютеры, 992px и выше) */</span><br>
-            @media only screen and (min-width: 992px) <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">...</span><span class="cssdelimitercolor" style="color:black">}</span> <br><br>
-            <span class="commentcolor" style="color:green">/* Очень большие устройства (большие ноутбуки и настольные компьютеры, 1200px и выше) */</span><br>
-            @media only screen and (min-width: 1200px) <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">...</span><span class="cssdelimitercolor" style="color:black">}</span>
-             </span></div>
+            <h2>Типичные устройства точка прерывания
+            </h2>
+            <p>Есть много экранов и устройств с разной высотой и шириной, поэтому трудно создать точную точку прерывания
+                для каждого устройства. Для простоты можно ориентироваться на пять групп:
+            </p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    <span class="commentcolor" style="color:green">/* Очень маленькие устройства (телефоны, 600px и
+                        ниже) */</span><br>
+                    @media only screen and (max-width: 600px) <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red">...</span><span
+                        class="cssdelimitercolor" style="color:black">}</span> <br><br>
+                    <span class="commentcolor" style="color:green">/* Маленькие устройства (портретные планшеты и
+                        большие телефоны, 600px и выше)
+                        */</span><br>@media only screen and (min-width: 600px) <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red">...</span><span
+                        class="cssdelimitercolor" style="color:black">}</span> <br><br>
+                    <span class="commentcolor" style="color:green">/* Средние устройства (альбомные планшеты, 768px и
+                        выше) */</span><br>
+                    @media only screen and (min-width: 768px) <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red">...</span><span
+                        class="cssdelimitercolor" style="color:black">}</span> <br><br>
+                    <span class="commentcolor" style="color:green">/* Большие устройства (ноутбуки / настольные
+                        компьютеры, 992px и выше) */</span><br>
+                    @media only screen and (min-width: 992px) <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red">...</span><span
+                        class="cssdelimitercolor" style="color:black">}</span> <br><br>
+                    <span class="commentcolor" style="color:green">/* Очень большие устройства (большие ноутбуки и
+                        настольные компьютеры, 1200px и выше) */</span><br>
+                    @media only screen and (min-width: 1200px) <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red">...</span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        <h2>Ориентация: Книжная/Альбомная
-        </h2>
-        <p>Медиа запросы также могут быть использованы для изменения формата страницы в зависимости от ориентация браузера.
-        </p>
-        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-            @media only screen and (orientation: landscape) <span class="cssdelimitercolor" style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>
-            &nbsp;&nbsp;&nbsp; body <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red"><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightblue<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
-             </span></div>
+            <h2>Ориентация: Книжная/Альбомная
+            </h2>
+            <p>Медиа запросы также могут быть использованы для изменения формата страницы в зависимости от ориентация
+                браузера.
+            </p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    @media only screen and (orientation: landscape) <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>
+                        &nbsp;&nbsp;&nbsp; body <span class="cssdelimitercolor" style="color:black"><span
+                                class="cssdelimitercolor" style="color:black">{</span></span><span
+                            class="csspropertycolor" style="color:red"><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color<span
+                                class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                    style="color:black">:</span> lightblue<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; </span><span
+                            class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
+                                style="color:black">}</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span>
+                </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        <h2>Скрыть элементы с помощью медиа запросов
-        </h2>
-        <p>Другим распространенным использованием медиа запросов является скрытие элементов на экранах разного размера:
-        </p>
-        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-            <span class="commentcolor" style="color:green">/* Если размер экрана 600 пикселей в ширину или меньше, скройте элемент */</span><br>
-            @media only screen and (max-width: 600px) <span class="cssdelimitercolor" style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>&nbsp; div.example <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red"><br>
-            &nbsp;&nbsp;&nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>
-             </span></div>
+            <h2>Скрыть элементы с помощью медиа запросов
+            </h2>
+            <p>Другим распространенным использованием медиа запросов является скрытие элементов на экранах разного
+                размера:
+            </p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    <span class="commentcolor" style="color:green">/* Если размер экрана 600 пикселей в ширину или
+                        меньше, скройте элемент */</span><br>
+                    @media only screen and (max-width: 600px) <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>&nbsp;
+                        div.example <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
+                                style="color:black">{</span></span><span class="csspropertycolor" style="color:red"><br>
+                            &nbsp;&nbsp;&nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> none<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; </span><span
+                            class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
+                                style="color:black">}</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br>
+                </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        <h2>Изменение размера шрифта с помощью медиа запросов
-        </h2>
-        <p>Вы также можете использовать медиа запросы для изменения размера шрифта элемента на различных размерах экранов:
-        </p>
-        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-            <span class="commentcolor" style="color:green">/* Если размер экрана 601px или кроме того, установите размер шрифта &lt;div&gt; в 80px */</span><br>
-            @media only screen and (min-width: 601px) <span class="cssdelimitercolor" style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>&nbsp; div.example <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red"><br>
-            &nbsp;&nbsp;&nbsp; font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 80px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
-            <span class="commentcolor" style="color:green">/* Если размер экрана 600px или менее, установите размер шрифта &lt;div&gt; в 30px */</span><br>
-            @media only screen and (max-width: 600px) <span class="cssdelimitercolor" style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>&nbsp; div.example <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red"><br>
-            &nbsp;&nbsp;&nbsp; font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 30px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>
-             </span></div>
+            <h2>Изменение размера шрифта с помощью медиа запросов
+            </h2>
+            <p>Вы также можете использовать медиа запросы для изменения размера шрифта элемента на различных размерах
+                экранов:
+            </p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    <span class="commentcolor" style="color:green">/* Если размер экрана 601px или кроме того,
+                        установите размер шрифта &lt;div&gt; в 80px */</span><br>
+                    @media only screen and (min-width: 601px) <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>&nbsp;
+                        div.example <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
+                                style="color:black">{</span></span><span class="csspropertycolor" style="color:red"><br>
+                            &nbsp;&nbsp;&nbsp; font-size<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                                80px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
+                                style="color:black">}</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br><br>
+                    <span class="commentcolor" style="color:green">/* Если размер экрана 600px или менее, установите
+                        размер шрифта &lt;div&gt; в 30px */</span><br>
+                    @media only screen and (max-width: 600px) <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>&nbsp;
+                        div.example <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
+                                style="color:black">{</span></span><span class="csspropertycolor" style="color:red"><br>
+                            &nbsp;&nbsp;&nbsp; font-size<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                                30px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
+                                style="color:black">}</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br>
+                </span></div>
             <hr><br>
         </div>
-        
+
         <div class="next-btn_div">
             <button onclick='next2()' class="next-btn">Следующий блок</button>
         </div>
     </main>
-    
+
     <footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             $(".feed-post:eq( 0 )").show();
             $(".feed-post:eq( 1 )").show();
-        
+
             function next2() {
                 var notVisible = -1;
                 $('.feed-post').each(function () {
@@ -220,22 +387,23 @@
                 padding: 1rem;
                 border-radius: 1rem;
             }
-        
+
             .htmlHigh {
                 background-color: #f1f1f1;
                 padding: 1rem;
                 border-radius: 1rem;
             }
+
             .cssHigh {
                 background-color: #f1f1f1;
                 padding: 1rem;
                 border-radius: 1rem;
             }
-        
+
             .feed-post {
                 display: none;
             }
-        
+
             .next-btn {
                 background-color: rgb(73, 73, 73);
                 color: white;
@@ -245,12 +413,13 @@
                 border-radius: 1rem;
                 cursor: pointer;
             }
-        
+
             .next-btn_div {
                 display: flex;
                 justify-content: center;
             }
         </style>
-        </footer>
+    </footer>
 </body>
+
 </html>

@@ -12,49 +12,142 @@
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">CSS - Урок 13</h1>
-    
+    <h2>CSS Адаптивные изображения</h2>
+    <h3>Использование свойства width</h3>
+    <p>Если свойство width и max-width установлено значение 100 процентов, изображение будет отзывчивым и масштабироваться вверх и вниз:</p>
+    <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        img <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100%<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> auto<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+         </span></div><br>
+         <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            img <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp; max-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100%<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> auto<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+             </span></div><br>
+             
         <hr>
     </header>
     <main>
         <div class="feed-post">
-        
+            <h2>Фоновые изображения</h2>
+            <p>1.Если свойство <code class="sw3-codespan">background-size</code> имеет значение <code class="sw3-codespan">"contain"</code>, то 
+               фоновое изображение будет масштабироваться и пытаться соответствовать области содержимого.
+               Однако изображение сохранит пропорции (пропорциональные отношения между шириной и высотой изображения):</p>
+               <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                   div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100%<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 400px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                   &nbsp;&nbsp;&nbsp; background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> url('img_flowers.jpg')<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                   &nbsp;&nbsp;&nbsp; background-repeat<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> no-repeat<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                   &nbsp;&nbsp;&nbsp; background-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> contain<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                   &nbsp;&nbsp;&nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid red<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+                    </span></div>
+                    <p>2.Если свойство <code class="sw3-codespan">background-size</code> имеет значение <code class="sw3-codespan">100% 100%</code>,
+                        фоновое изображение растянется на всю область содержимого:</p>
+                        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                            div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100%<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                            &nbsp;&nbsp;&nbsp; height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 400px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                            &nbsp;&nbsp;&nbsp; background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> url('img_flowers.jpg')<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                            &nbsp;&nbsp;&nbsp; background-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100% 100%<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid red<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+                             </span></div>
+                             <p>3.Если свойство <code class="sw3-codespan">background-size</code> имеет значение "cover", фоновое изображение будет масштабироваться 
+                                чтобы охватить всю область содержимого. Заметьте что значение "cover" сохраняет аспект 
+                                соотношение, и некоторая часть фонового изображения может быть обрезана:</p>
+                                <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                                    div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100%<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                                    &nbsp;&nbsp;&nbsp; height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 400px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                                    &nbsp;&nbsp;&nbsp; background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> url('img_flowers.jpg')<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                                    &nbsp;&nbsp;&nbsp; background-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> cover<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                                    &nbsp;&nbsp;&nbsp; border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid red<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+        <h2>Изображения для различных устройств
+        </h2>
+        <p>Большое изображение может быть идеальным и на большом компьютере экрана, но бесполезный на маленьком устройстве. Зачем загружать большие изображения, если тебе все равно нужно уменьшить масштаб? Для уменьшения нагрузки или по другим причинам можно использовать медиа запросы для отображения различных изображений на разных устройствах.</p>
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            <span class="commentcolor" style="color:green">/* Для ширины меньше 400px: */</span><br>body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+            &nbsp;&nbsp;&nbsp; background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 
+            url('img_smallflower.jpg')<span class="cssdelimitercolor" style="color:black">;</span></span> <br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* Для ширины 400px и больше: */</span><br>
+            @media only screen and (min-width: 400px) <span class="cssdelimitercolor" style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>&nbsp;&nbsp;&nbsp; body <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red"> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> url('img_flowers.jpg')<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+             </span></div><br>
+             <p>Можно использовать медиа запрос <code class="sw3-codespan">min-device-width</code>, вместо <code class="sw3-codespan">min-width</code>, который проверяет ширину устройства, а не ширину браузера. Тогда изображение не изменится при изменении размера окна браузера:</p>
+             <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                <span class="commentcolor" style="color:green">/* Для устройств меньше 400px: */</span><br>body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                &nbsp;&nbsp;&nbsp; background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> url('img_smallflower.jpg')<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+                <span class="commentcolor" style="color:green">/* Для устройств 400px и больше: */</span><br>
+                @media only screen and (min-device-width: 400px) <span class="cssdelimitercolor" style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>&nbsp;&nbsp;&nbsp; body <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red"><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> url('img_flowers.jpg')<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+                 </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+        <h2>CSS Адаптивное видео
+        </h2>
+        <p>Если свойство <code class="sw3-codespan">width</code> установлено на 100 процентов, видеоплеер будет 
+            отзывчивый и масштабироваться вверх и вниз:</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                video <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100%<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> auto<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+                 </span></div><br>
+                 <h2>Использование свойства max-width
+                </h2>
+                <p>Если свойство <code class="sw3-codespan">max-width</code> имеет значение 100 процентов, видео-плеер будет уменьшаться, если он должен,
+                    но никогда не масштабируйте, больше чем свой первоначальный размер:
+                    </p>
+                    <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                        video <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp; max-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100%<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> auto<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+                         </span></div><br>
+                         <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                            video <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100%<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> auto<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+                             </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+        <h2>CSS Сетка - Контейнер</h2>
+        <p>Чтобы HTML элемент вел себя как контейнер сетки, необходимо задать для свойства <code class="sw3-codespan">display</code>
+            значение <code class="sw3-codespan"><em>grid</em></code> или <code class="sw3-codespan"><em>inline-grid</em></code>.</p>
+            <h3>Свойство grid-template-columns</h3>
+            <p>Свойство <code class="sw3-codespan">grid-template-columns</code> определяет 
+                количество столбцов в макете сетки, и это может определить ширину каждого столбца.</p>
+                <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; grid-template-columns<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> auto auto auto auto<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+                     </span></div><br>
+                     <h2>Свойство grid-template-rows</h2>
+                     <p>Свойство <code class="sw3-codespan">grid-template-rows</code> определяет высоту каждой строки.</p>
+                     <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                        .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; grid-template-rows<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 80px 200px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+                         </span></div>
+                         <h2>Свойство align-content</h2>
+                         <p>Свойство <code class="sw3-codespan">align-content</code> используется для <em>вертикального</em> выровнивания всей сетки внутри контейнера.</p>
+                         <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">.grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 400px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; align-content<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+                         </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+        <h2>CSS Сетка - Пункт</h2>
+        <h3>Свойство grid-column</h3>
+        <p>Свойство <code class="sw3-codespan">grid-column</code> определяет, на которые столбец(ы) размещается элемент.</p>
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            .item1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; grid-column<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1 / 5<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+        <h2>Свойство grid-area
+        </h2>
+        <p>Свойство <code class="sw3-codespan">grid-area</code> может использоваться как сокращенное свойство для 
+            свойств <code class="sw3-codespan">grid-row-start</code>,<code class="sw3-codespan">grid-column-start</code>,
+            <code class="sw3-codespan">grid-row-end </code> и <code class="sw3-codespan">grid-column-end</code>.</p>
+            <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                .item1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; grid-area<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1 / 2 / 5 / 6<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+                 </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-        
+        <h2>Именование элементов сетки
+        </h2>
+        <p>Свойство <code class="sw3-codespan">grid-area</code> также можно использовать для присвоения имен элементам сетки.</p>
+        <div class="sw3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+            .item1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; grid-area<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> myArea<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>.grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+            &nbsp; grid-template-areas<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 'myArea myArea myArea myArea myArea'<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+             </span></div>
             <hr><br>
         </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-    
-        <div class="feed-post">
-            <div class="markdown prose w-full break-words dark:prose-invert dark">
-                <h2 style="color: darkblue;">Домашнее задание</h2>
-                
-            </div>
-        </div><br>
         <div class="next-btn_div">
             <button onclick='next2()' class="next-btn">Следующий блок</button>
         </div>
