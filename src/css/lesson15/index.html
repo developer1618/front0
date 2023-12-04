@@ -5,67 +5,669 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/img/html5.png" />
-    <title>Урок 15</title>
+    <title>Тестирование CSS</title>
     <link rel="stylesheet" href="/src/schoolsw3.css">
 </head>
 
 <body style="padding: 2rem; font-size: 24px;">
     <header>
-        <h1 style="text-align: center;">CSS - Урок 15</h1>
-    
-        <hr>
+        <h1 style="text-align: center;">Тестирование CSS</h1>
+        <h2>1. Что означает CSS?</h2>
+        <div style="position:relative;width:100%;">
+            <div id="altcontainer">
+
+                <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span
+                    class="checkmark"></span>
+                <label class="radiocontainer" for="3">1. Красочные таблицы стилей
+                </label>
+                <br><input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span
+                    class="checkmark"></span>
+                <label class="radiocontainer" for="1">2. Каскадные таблицы стилей
+                </label>
+                <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span
+                    class="checkmark"></span>
+                <label class="radiocontainer" for="2">3. Творческие таблицы стилей
+                </label>
+                <br><input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4"><span
+                    class="checkmark"></span>
+                <label class="radiocontainer" for="4">4. Компьютерные таблицы стилей
+                </label>
+            </div>
+        </div>
+        <hr><br>
     </header>
     <main>
         <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-        <div class="feed-post">
-        
-            <hr><br>
-        </div>
-    
-        <div class="feed-post">
-            <div class="markdown prose w-full break-words dark:prose-invert dark">
-                <h2 style="color: darkblue;">Домашнее задание</h2>
-                
+            <h2>2. Какой правильный HTML код для ссылки на внешнюю таблицу стилей?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+
+                    <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span
+                        class="checkmark"></span>
+                    <label class="radiocontainer" for="1">1. &lt;link rel=''stylesheet'' type=''text/css''
+                        href=''mystyle.css''&gt;
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span
+                        class="checkmark"></span>
+                    <label class="radiocontainer" for="2">2. &lt;stylesheet&gt;mystyle.css&lt;/stylesheet&gt;
+                    </label>
+                    <br><input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span
+                        class="checkmark"></span>
+                    <label class="radiocontainer" for="3">3. &lt;style src=''mystyle.css''&gt;
+                    </label>
+                </div>
             </div>
-        </div><br>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>3. Где в HTML документе правильно ссылаться на внешнюю таблицу стилей?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+
+                    <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span
+                        class="checkmark"></span>
+                    <label class="radiocontainer" for="3">1. В конце документа
+                    </label>
+                    <br><input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span
+                        class="checkmark"></span>
+                    <label class="radiocontainer" for="1">2. В разделе &lt;head&gt;
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span
+                        class="checkmark"></span>
+                    <label class="radiocontainer" for="2">3. В разделе &lt;body&gt;
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>4. Какой HTML тег используется для определения внутренней таблицы стилей?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+
+                    <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span
+                        class="checkmark"></span>
+                    <label class="radiocontainer" for="2">1. &lt;script&gt;
+                    </label>
+                    <br><input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span
+                        class="checkmark"></span>
+                    <label class="radiocontainer" for="1">2. &lt;style&gt;
+                    </label>
+                    <br><input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span
+                        class="checkmark"></span>
+                    <label class="radiocontainer" for="3">3. &lt;css&gt;
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>5. Какой атрибут HTML используется для определения встроенных стилей?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+
+                    <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span
+                        class="checkmark"></span>
+                    <label class="radiocontainer" for="2">1. font
+                    </label>
+                    <br><input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span
+                        class="checkmark"></span>
+                    <label class="radiocontainer" for="1">2. class
+                    </label>
+                    <br><input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4"><span
+                        class="checkmark"></span>
+                    <label class="radiocontainer" for="4">3. styles
+                    </label>
+                    <br><input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span
+                        class="checkmark"></span>
+                    <label class="radiocontainer" for="3">4. style
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>6. Какой синтаксис CSS является правильным?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">1. body {color: black;}
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4">
+                    <label class="radiocontainer" for="4">2. {body;color:black;}
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">3. body:color=black;
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">4. {body:color=black;}
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>7. Как вставить комментарий в CSS-файл?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4">
+                    <label class="radiocontainer" for="4">1. // Это комментарий
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">2. /* Это комментарий */
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">3. // Это комментарий //
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">4. ' Это комментарий
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>8. Какое свойство используется для изменения цвета фона?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">1. color
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">2. background-color
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">3. bgcolor
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2 id="qtext">9. Как добавить цвет фона для всех элементов &lt;h1&gt;?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">1. h1 {background-color:#FFFFFF;}
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">2. h1.all {background-color:#FFFFFF;}
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">3. all.h1 {background-color:#FFFFFF;}
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>10. Какое свойство CSS используется для изменения цвета текста элемента?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">1. fgcolor
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">2. color
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">3. text-color
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>11. Какое свойство CSS управляет размером текста?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">1. text-size
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">2. text-style
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4">
+                    <label class="radiocontainer" for="4">3. font-style
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">4. font-size
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2 id="qtext">12. Какой правильный синтаксис CSS для выделения всех элементов &lt;p&gt; жирным шрифтом?
+            </h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">1. p {font-weight:bold;}
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">2. p {text-size:bold;}
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4">
+                    <label class="radiocontainer" for="4">3. &lt;p style=''text-size:bold;''&gt;
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">4. &lt;p style=''font-size:bold;''&gt;
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>13. Как вы показываете гиперссылки без подчеркивания?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">1. a {text-decoration:no-underline;}
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">2. a {underline:none;}
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">3. a {text-decoration:no-underline;}
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4">
+                    <label class="radiocontainer" for="4">4. a {text-decoration:none;}
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>14. Как сделать так, чтобы каждое слово в тексте начиналось с заглавной буквы?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">1. Вы не можете сделать это с помощью CSS
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4">
+                    <label class="radiocontainer" for="4">2. text-style:capitalize
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">3. transform:capitalize
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">4. text-transform:capitalize
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>15. Какое свойство используется для изменения шрифта элемента?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">1. font-style
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">2. font-family
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">3. font-weight
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>16. Как сделать текст жирным шрифтом?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">1. font-weight:bold;
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">2. style:bold;
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">3. font:bold;
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>17. Как вы отображаете такую границу:
+                <br>Верхняя граница = 10 пикселей
+                <br>Нижняя граница = 5 пикселей
+                <br>Левая граница = 20 пикселей
+                <br>Правая граница = 1 пиксель?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">1. border-width:10px 5px 20px 1px;
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4">
+                    <label class="radiocontainer" for="4">2. border-width:5px 20px 10px 1px;
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">3. border-width:10px 1px 5px 20px;
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">4. border-width:10px 20px 5px 1px;
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>18. Какое свойство используется для изменения левого поля элемента?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">1. margin-left
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">2. indent
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">3. padding-left
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>19. При использовании свойства padding; разрешается ли использовать отрицательные значения?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">1. Да
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">2. Нет
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>20. Как составить список, в котором элементы перечислены квадратами?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">1. list-type: square;
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">2. list-style-type: square;
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">3. list: square
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>21. Как выбрать элемент с идентификатором 'demo'?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">1. .demo
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">2. #demo
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">3. demo
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4">
+                    <label class="radiocontainer" for="4">4. *demo
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>22. Как вы выбираете элементы с именем класса 'test'?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">1. test
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">2. #test
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4">
+                    <label class="radiocontainer" for="4">3. *test
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">4. .test
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>23. Как выбрать все элементы p внутри элемента div?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">1. div p
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">2. div.p
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">3. div + p
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>24. Как вы группируете селекторы?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">1. Отделите каждый селектор знаком плюс
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">2. Отделите каждый селектор пробелом
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">3. Отделите каждый селектор запятой
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>25. Какое значение по умолчанию свойства position?</h2>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1">
+                    <label class="radiocontainer" for="1">1. absolute
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4">
+                    <label class="radiocontainer" for="4">2. fixed
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2">
+                    <label class="radiocontainer" for="2">3. static
+                        <span
+                            class="checkmark"></span>
+                    </label>
+                    <br><input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3">
+                    <label class="radiocontainer" for="3">4. relative
+                        <span
+                            class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <hr><br>
+        </div>
+
         <div class="next-btn_div">
             <button onclick='next2()' class="next-btn">Следующий блок</button>
         </div>
     </main>
-    
+
     <footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             $(".feed-post:eq( 0 )").show();
             $(".feed-post:eq( 1 )").show();
-        
+
             function next2() {
                 var notVisible = -1;
                 $('.feed-post').each(function () {
@@ -83,22 +685,23 @@
                 padding: 1rem;
                 border-radius: 1rem;
             }
-        
+
             .htmlHigh {
                 background-color: #f1f1f1;
                 padding: 1rem;
                 border-radius: 1rem;
             }
+
             .cssHigh {
                 background-color: #f1f1f1;
                 padding: 1rem;
                 border-radius: 1rem;
             }
-        
+
             .feed-post {
                 display: none;
             }
-        
+
             .next-btn {
                 background-color: rgb(73, 73, 73);
                 color: white;
@@ -108,12 +711,13 @@
                 border-radius: 1rem;
                 cursor: pointer;
             }
-        
+
             .next-btn_div {
                 display: flex;
                 justify-content: center;
             }
         </style>
-        </footer>
+    </footer>
 </body>
+
 </html>

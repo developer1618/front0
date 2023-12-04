@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Protected Area"
-AuthUserFile /home/s/shohtour/admin.tj/public_html/front0/src/css/lesson16/.htpasswd
-Require valid-user
