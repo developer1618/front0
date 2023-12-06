@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/html5.png" />
+    <title>Урок 13</title>
+    <link rel="stylesheet" href="/src/schoolsw3.css">
+</head>
+
+<body style="padding: 2rem; font-size: 24px;">
+    <header>
+        <h1 style="text-align: center;">JS - Урок 13</h1>
+        
+        <hr>
+    </header>
+    <main>
+        <div class="feed-post">
+
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            
+            <hr><br>
+        </div>
+        
+        <div class="next-btn_div">
+            <button onclick='next2()' class="next-btn">Следующий блок</button>
+        </div>
+    </main>
+    <footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(".feed-post:eq( 0 )").show();
+            $(".feed-post:eq( 1 )").show();
+
+            function next2() {
+                var notVisible = -1;
+                $('.feed-post').each(function () {
+                    if ($(this).css('display') !== 'none') {
+                        notVisible = notVisible + 1;
+                    }
+                });
+                $(".feed-post:eq( " + (notVisible + 1) + " )").show();
+                // $(".feed-post:eq( " + (notVisible + 2) + " )").show();
+            }
+        </script>
+        <style>
+            .jsHigh {
+                background-color: #f1f1f1;
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+
+            .htmlHigh {
+                background-color: #f1f1f1;
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+
+            .cssHigh {
+                background-color: #f1f1f1;
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+
+            .feed-post {
+                display: none;
+            }
+
+            .next-btn {
+                background-color: rgb(73, 73, 73);
+                color: white;
+                border: none;
+                padding: 1rem;
+                font-size: large;
+                border-radius: 1rem;
+                cursor: pointer;
+            }
+
+            .next-btn_div {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/html5.png" />
+    <title>Урок 1</title>
+    <link rel="stylesheet" href="/src/schoolsw3.css">
+</head>
+
+<body style="padding: 2rem; font-size: 24px;">
+    <header>
+        <h1 style="text-align: center;">JS - Урок 1</h1>
+        <h2>JavaScript Введение</h2>
+        <p>Несколько примеров того, что может делать JavaScript.</p>
+        <h2>JavaScript может изменять содержимое HTML</h2>
+        <p>Одним из многих методов JavaScript HTML является <code class="w3-codespan">getElementById()</code>.</p>
+        <p>Пример ниже "находит" элемент HTML (с id = "demo") и меняет его содержимое (innerHTML) на "Привет
+            JavaScript":</p>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                    class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                    style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Привет
+                    JavaScript"</span>; </span></div>
+        <hr>
+    </header>
+    <main>
+        <div class="feed-post">
+            <h2>JavaScript может изменять значения атрибутов HTML</h2>
+            <p>В этом примере JavaScript изменяет значение <code class="w3-codespan">src</code> атрибута (source) <code
+                    class="w3-codespan">&lt;img&gt;</code> тега:</p>
+            <div class="w3-padding-16 w3-white notranslate" style="text-align:center">
+                <button onclick="document.getElementById('myImage').src='/img/pic_bulbon.gif'">Включи свет</button>
+                <img id="myImage" border="0" src="/img/pic_bulboff.gif" style="width:100px">
+                <button onclick="document.getElementById('myImage').src='/img/pic_bulboff.gif'">Выключи свет</button>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript может изменять стили HTML (CSS)
+            </h2>
+            <p>Изменение стиля HTML элемента - это вариант изменения атрибута HTML:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                        class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                        style="color:black">style</span>.<span class="jspropertycolor"
+                        style="color:black">fontSize</span> = <span class="jsstringcolor"
+                        style="color:brown">"35px"</span>; </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript может скрывать элементы HTML
+            </h2>
+            <p>Скрыть элементы HTML можно, изменив <code class="w3-codespan">display</code> стиль:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                        class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                        style="color:black">style</span>.<span class="jspropertycolor"
+                        style="color:black">display</span> = <span class="jsstringcolor"
+                        style="color:brown">"none"</span>; </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript может отображать элементы HTML
+            </h2>
+            <p>Отображение скрытых HTML элементов также можно выполнить, изменив <code
+                    class="w3-codespan">display</code> стиль:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                        class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                        style="color:black">style</span>.<span class="jspropertycolor"
+                        style="color:black">display</span> = <span class="jsstringcolor"
+                        style="color:brown">"block"</span>; </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Где установить?</h2>
+            <h3>Тег &lt;script&gt;</h3>
+            <p>В HTML, JavaScript код вставляется между <code class="w3-codespan">&lt;script&gt;</code> и <code
+                    class="w3-codespan">&lt;/script&gt;</code> теги.</p>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>script<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>
+                    document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                        class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                        style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Мой
+                        Первый JavaScript"</span>;<br>
+                </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript в &lt;head&gt;</h2>
+            <p>В этом примере JavaScript <code class="w3-codespan">function</code> помещается в <code
+                    class="w3-codespan">&lt;head&gt;</code> раздел HTML страницы.</p>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                        html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+                <p><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>script<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>
+                        <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span>&nbsp;&nbsp;document.<span class="jspropertycolor"
+                            style="color:black">getElementById</span>(<span class="jsstringcolor"
+                            style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                            style="color:black">innerHTML</span> = <span class="jsstringcolor"
+                            style="color:brown">"Параграф изменён."</span>;<br><span class="jsnumbercolor"
+                            style="color:red">
+                        </span>}<br>
+                    </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span></p>
+                <p><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>A Web Page<span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span
+                            class="attributecolor" style="color:red"> id<span class="attributevaluecolor"
+                                style="color:mediumblue">="demo"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>A Paragraph<span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="button"</span> onclick<span class="attributevaluecolor"
+                                style="color:mediumblue">="myFunction()"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Попробовать<span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span></p>
+                <p><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </p>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript в &lt;body&gt;</h2>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                        html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+                <br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>A Web Page<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red"> id<span
+                            class="attributevaluecolor" style="color:mediumblue">="demo"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>A Paragraph<span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red">
+                        type<span class="attributevaluecolor" style="color:mediumblue">="button"</span> onclick<span
+                            class="attributevaluecolor" style="color:mediumblue">="myFunction()"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Попробовать<span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/button<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>script<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>
+                    <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br><span
+                        class="jsnumbercolor" style="color:red">
+                    </span>&nbsp; document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                        class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                        style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Параграф
+                        изменён."</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span>}<br>
+                </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Внешний JavaScript
+            </h2>
+            <p>Скрипты также можно размещать во внешних файлах:
+            </p>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red">
+                        src<span class="attributevaluecolor" style="color:mediumblue">="myScript.js"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor"
+                    style="color:black"></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span> </div><br>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br><span
+                        class="jsnumbercolor" style="color:red">
+                    </span>&nbsp; document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                        class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                        style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Параграф
+                        изменён."</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span>}<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Преимущества внешнего JavaScript</h2>
+            <p>Размещение скриптов во внешних файлах имеет ряд преимуществ:
+            </p>
+            <ul>
+                <li>Он разделяет HTML и код</li>
+                <li>Это упрощает чтение и поддержку HTML и JavaScript</li>
+                <li>Кэшированные файлы JavaScript могут ускорить загрузку страницы</li>
+            </ul><br>
+            <h2>Внешние ссылки</h2>
+            <p>На внешние скрипты можно ссылаться с помощью полного URL-адреса или пути относительно текущей веб
+                страницы.
+            </p>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red">
+                        src<span class="attributevaluecolor"
+                            style="color:mediumblue">="https://www.admin.tj/js/myScript1.js"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor"
+                    style="color:black"></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+<h2>JavaScript Вывод</h2>
+<h3>Возможности вывода JavaScript</h3>
+<p>JavaScript может "отображать" данные по-разному:</p>
+<ul>
+    <li>Запись в элемент HTML с использованием <code class="w3-codespan">innerHTML</code>.</li>
+    <li>Запись в вывод HTML с использованием <code class="w3-codespan">document.write()</code>.</li>
+    <li>Запись в окно предупреждения с использованием <code class="w3-codespan">window.alert()</code>.</li>
+    <li>Запись в консоль браузера с использованием <code class="w3-codespan">console.log()</code>.</li>
+    </ul>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+<h2>Использование innerHTML</h2>
+<p>Чтобы получить доступ к элементу HTML, JavaScript может использовать этот <code class="w3-codespan">document.getElementById(id)</code> метод.</p>
+<p>Атрибут <code class="w3-codespan">id</code> определяет HTML элемент.
+    Свойство <code class="w3-codespan">innerHTML</code> определяет содержание HTML:</p>
+    <div class="w3-code notranslate htmlHigh">
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        <br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Моя первая веб страница<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Мой первый параграф<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="demo"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        <br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>
+        document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsnumbercolor" style="color:red">5</span> + <span class="jsnumbercolor" style="color:red">6</span>;<br>
+        </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        <br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+         </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+<h2>Использование document.write()</h2>
+<p>Для тестирования удобно использовать <code class="w3-codespan">document.write()</code>:</p>
+<div class="w3-code notranslate htmlHigh">
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Моя первая веб страница<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Мой первый параграф.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>document.<span class="jspropertycolor" style="color:black">write</span>(<span class="jsnumbercolor" style="color:red">5</span> + <span class="jsnumbercolor" style="color:red">6</span>);<br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+     </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+<h2>Использование window.alert()</h2>
+<p>Вы можете использовать окно предупреждения для отображения данных:</p>
+<div class="w3-code notranslate htmlHigh">
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Моя первая веб страница<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Мой первый параграф<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>window.<span class="jspropertycolor" style="color:black">alert</span>(<span class="jsnumbercolor" style="color:red">5</span> + <span class="jsnumbercolor" style="color:red">6</span>);<br>
+    </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+     </div>
+     <p>Вы можете пропустить <code class="w3-codespan">window</code> ключевое слово.</p>
+     <div class="w3-code notranslate htmlHigh">
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Моя первая веб страница<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Мой первый параграф<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        <br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>alert(<span class="jsnumbercolor" style="color:red">5</span> + <span class="jsnumbercolor" style="color:red">6</span>);<br>
+        </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        <br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+         </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+<h2>Использование console.log()</h2>
+<p>В целях отладки вы можете вызвать <code class="w3-codespan">console.log()</code> метод в браузере для отображения данных.</p>
+<div class="w3-code notranslate htmlHigh">
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>
+    console.<span class="jspropertycolor" style="color:black">log</span>(<span class="jsnumbercolor" style="color:red">5</span> + <span class="jsnumbercolor" style="color:red">6</span>);<br>
+    </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+     </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+<h2>Печать на JavaScript</h2>]
+<p>JavaScript не имеет объекта печати или методов печати.
+
+    <br>Вы не можете получить доступ к устройствам вывода из JavaScript.
+    
+    <br>Единственное исключение - вы можете вызвать window.print() метод в браузере, чтобы распечатать содержимое текущего окна.</p>
+    <div class="w3-code notranslate htmlHigh">
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> onclick<span class="attributevaluecolor" style="color:mediumblue">="window.print()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Распечатайте эту страницу<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+         </div>
+            <hr><br>
+        </div>
+
+        <div class="next-btn_div">
+            <button onclick='next2()' class="next-btn">Следующий блок</button>
+        </div>
+    </main>
+    <footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(".feed-post:eq( 0 )").show();
+            $(".feed-post:eq( 1 )").show();
+
+            function next2() {
+                var notVisible = -1;
+                $('.feed-post').each(function () {
+                    if ($(this).css('display') !== 'none') {
+                        notVisible = notVisible + 1;
+                    }
+                });
+                $(".feed-post:eq( " + (notVisible + 1) + " )").show();
+                // $(".feed-post:eq( " + (notVisible + 2) + " )").show();
+            }
+        </script>
+        <style>
+            .jsHigh {
+                background-color: #f1f1f1;
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+
+            .htmlHigh {
+                background-color: #f1f1f1;
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+
+            .cssHigh {
+                background-color: #f1f1f1;
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+
+            .feed-post {
+                display: none;
+            }
+
+            .next-btn {
+                background-color: rgb(73, 73, 73);
+                color: white;
+                border: none;
+                padding: 1rem;
+                font-size: large;
+                border-radius: 1rem;
+                cursor: pointer;
+            }
+
+            .next-btn_div {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </footer>
+</body>
+
+</html>

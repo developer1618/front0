@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/html5.png" />
+    <title>Урок 2</title>
+    <link rel="stylesheet" href="/src/schoolsw3.css">
+</head>
+
+<body style="padding: 2rem; font-size: 24px;">
+    <header>
+        <h1 style="text-align: center;">JS - Урок 2</h1>
+        <h2>JavaScript Заявления</h2>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+            <span class="jskeywordcolor" style="color:mediumblue">var</span> x, y, z;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// Заявление 1<br></span>
+            x = <span class="jsnumbercolor" style="color:red">5</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// Заявление 2<br></span>
+            y = <span class="jsnumbercolor" style="color:red">6</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// Заявление 3<br></span>
+            z = x + y;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// Заявление 4<br></span><span class="jsnumbercolor" style="color:red">
+            </span> </span></div><br>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Привет Андрей"</span>; </span></div>
+        <hr>
+    </header>
+    <main>
+        <div class="feed-post">
+<h2>JavaScript Пробелы</h2>
+<p>JavaScript игнорирует несколько пробелов. Вы можете добавить в сценарий пустое пространство, чтобы сделать его более читабельным.</p>
+<div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> person = <span class="jsstringcolor" style="color:brown">"Андрей"</span>;<br>
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> person=<span class="jsstringcolor" style="color:brown">"Андрей"</span>;<span class="jsnumbercolor" style="color:red">
+    </span> </span></div>
+    <p>Хорошая практика - ставить пробелы вокруг операторов (= + - * /):</p>
+    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+        <span class="jskeywordcolor" style="color:mediumblue">var</span> x = y + z; </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Длина строки и Разрыв строк</h2>
+            <p>Для лучшей читаемости программисты избегают написание кода длиннее 80 символов.
+                <br>Если заявление JavaScript не помещается в одну строку, лучше всего его прервать после оператора:</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> =<br><span class="jsstringcolor" style="color:brown">"Привет Андрей!"</span>; </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Блоки кода
+            </h2>
+            <p>JavaScript заявления могут быть сгруппированны в блоки кода внутри фигурных скобок {...}.
+
+                <br>Блоки кода предназначены для определения заявлений, которые должны выполняться вместе.
+                
+                <br>Место, где вы найдете инструкции, сгруппированные в блоки, - называются функциями JavaScript:</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br><span class="jsnumbercolor" style="color:red">
+                    </span>&nbsp;&nbsp;document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo1"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Привет Андрей!"</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span>&nbsp;&nbsp;document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo2"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Как ты?"</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span>}<br><span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Синтаксис
+            </h2>
+            <p>JavaScript синтаксис - это набор правил, по которым создаются программы JavaScript:</p>
+            <div class="w3-code w3-large w3-border notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> x, y, z;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// Объявление переменных<br></span>
+                x = <span class="jsnumbercolor" style="color:red">5</span>; y = <span class="jsnumbercolor" style="color:red">6</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// Присвоение значений<br></span>
+                z = x + y;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// Вычисление значений
+                 </span></span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Литералы
+            </h2>
+            <p>Два наиболее важных правила синтаксиса для фиксированных значений:
+            </p>
+            <p>1.Числа записываются с десятичными знаками или без них:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                10.50</span><br><br><span class="jsnumbercolor" style="color:red">
+                1001</span>  </span></div>
+                <p>2.Строки - это текст, заключенный в двойные или одинарные кавычки:
+                </p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jsstringcolor" style="color:brown">"Щипунов Андрей"</span><br><br>
+                    <span class="jsstringcolor" style="color:brown">'Щипунов Андрей'</span><span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Переменные
+            </h2>
+            <p>В языке программирования переменные используются для хранения значений данных.
+
+                <br>JavaScript использует var ключевое слово для объявления переменных.
+                
+                <br>Знак равенства используется для присваивания значений переменных.
+                
+                <br>В этом примере x определяется как переменная. Затем x присваивается значение 6:</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> x;<br><br>
+                    x = <span class="jsnumbercolor" style="color:red">6</span>;  </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Операторы
+            </h2>
+            <p>JavaScript использует <strong>арифметические операторы</strong> ( <code class="w3-codespan">+</code> <code class="w3-codespan">-</code> <code class="w3-codespan">*</code> <code class="w3-codespan">/</code> ) для <strong>вычисления</strong> значений:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+            </span>(<span class="jsnumbercolor" style="color:red">5</span> + <span class="jsnumbercolor" style="color:red">6</span>) * <span class="jsnumbercolor" style="color:red">10</span><br><span class="jsnumbercolor" style="color:red">
+            </span> </span></div>
+            <p>JavaScript использует <strong>оператор присваивания</strong> ( <code class="w3-codespan">=</code> ) для <strong>присвоения</strong> значений переменным:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> x, y;<br>x = <span class="jsnumbercolor" style="color:red">5</span>;<br>
+                y = <span class="jsnumbercolor" style="color:red">6</span>; </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Выражения
+            </h2>
+            <p>Выражение - это комбинация значений, переменных и операторов, вычисляющая значение.
+            </p>
+            <p>Например, 5 * 10 означает 50:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                5</span> * <span class="jsnumbercolor" style="color:red">10</span> <span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+                <p>Например, "Щипунов" + " " + "Андрей", оценивается как "Щипунов Андрей":
+                </p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jsstringcolor" style="color:brown">"Щипунов"</span> + <span class="jsstringcolor" style="color:brown">" "</span> + <span class="jsstringcolor" style="color:brown">"Андрей"</span><span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Комментарии
+            </h2>
+            <p>Не все JavaScript операторы "выполняются".
+
+                <br>Код после двойных косых черточек // или между /* и */ рассматривается как комментарий.
+                
+                <br>Комментарии игнорируются и не выполняются:</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <span class="jsnumbercolor" style="color:red">5</span>;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// Я буду выполненный<br></span><br><span class="jsnumbercolor" style="color:red">
+                    </span><span class="commentcolor" style="color:green">// var x = 6;&nbsp;&nbsp; Я НЕ буду выполненный </span></span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Идентификаторы
+            </h2>
+            <p>Идентификаторы - это имена.
+
+                <br>В JavaScript идентификаторы используются для именования переменных (и ключевых слов, и функций, и меток).
+                
+                <br>Правила для юридических имен во многом одинаковы для большинства языков программирования.
+                
+                <br>В JavaScript первый символ должен быть буквой, знаком подчеркивания (_) или знаком доллара ($).
+                
+                <br>Последующие символы могут быть буквами, цифрами, знаками подчеркивания или долларами.</p>
+                <p>Цифры не могут быть в качестве первого символа.
+                    <br>Таким образом, JavaScript может легко отличить идентификаторы от чисел.</p>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Чувствителен к регистру
+            </h2>
+            <p>JavaScript идентификаторы чувствительны к регистру.
+            </p>
+            <p>Переменные <code class="w3-codespan">lastName</code> и <code class="w3-codespan">lastname</code> - это две разные переменные:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> lastname, lastName;<br>lastName = <span class="jsstringcolor" style="color:brown">"Андрей"</span>;<br>lastname = <span class="jsstringcolor" style="color:brown">"Сергей"</span>;<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript и Верблюжий регистр
+            </h2>
+            <p>Исторически сложилось так, что программисты использовали разные способы объединения нескольких слов в одно имя переменной:
+            </p>
+            <p>Дефисы:
+
+                <br>first-name, last-name, master-card, inter-city.
+                
+                <br>Использование дефисов в JavaScript запрещено. Они зарезервированы для вычитания.
+                
+                <br>Нижнее подчеркивание:
+                
+                <br>first_name, last_name, master_card, inter_city.
+                
+                <br>Верхний регистр верблюда (регистр Паскаля):
+                
+                <br>FirstName, LastName, MasterCard, InterCity.
+                
+                <br>Нижний регистр верблюда:
+                
+                <br>Программисты JavaScript обычно используют верблюжий регистр, который начинается со строчной буквы:
+                
+                <br>firstName, lastName, masterCard, interCity.</p>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+        <h2>JavaScript Набор символов
+        </h2>
+        <p>JavaScript использует набор символов Unicode.
+
+            <br>Unicode охватывает (почти) все символы, знаки препинания и символы в мире.
+            
+            <br>Для более подробного ознакомления, пожалуйста, ознакомьтесь с нашим полным справочником по Unicode.</p>
+        <hr><br>
+        </div>
+        
+        <div class="next-btn_div">
+            <button onclick='next2()' class="next-btn">Следующий блок</button>
+        </div>
+    </main>
+    <footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(".feed-post:eq( 0 )").show();
+            $(".feed-post:eq( 1 )").show();
+
+            function next2() {
+                var notVisible = -1;
+                $('.feed-post').each(function () {
+                    if ($(this).css('display') !== 'none') {
+                        notVisible = notVisible + 1;
+                    }
+                });
+                $(".feed-post:eq( " + (notVisible + 1) + " )").show();
+                // $(".feed-post:eq( " + (notVisible + 2) + " )").show();
+            }
+        </script>
+        <style>
+            .jsHigh {
+                background-color: #f1f1f1;
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+
+            .htmlHigh {
+                background-color: #f1f1f1;
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+
+            .cssHigh {
+                background-color: #f1f1f1;
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+
+            .feed-post {
+                display: none;
+            }
+
+            .next-btn {
+                background-color: rgb(73, 73, 73);
+                color: white;
+                border: none;
+                padding: 1rem;
+                font-size: large;
+                border-radius: 1rem;
+                cursor: pointer;
+            }
+
+            .next-btn_div {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </footer>
+</body>
+
+</html>
