@@ -12,51 +12,286 @@
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">JS - Урок 3</h1>
-        
+        <h2>JavaScript Переменные</h2>
+        <p>Существует 3 способа объявить переменную JavaScript:
+
+            <br>С помощью var
+            <br>С помощью let
+            <br>С помощью const
+            <br>В этой главе используется var.
+
+            <br>Ключевые слова let и const объясняются в следующих главах.</p>
         <hr>
     </header>
     <main>
         <div class="feed-post">
+            <h2>Переменные</h2>
+            <p>JavaScript переменные - это контейнеры для хранения значений данных.
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <span class="jsnumbercolor"
+                        style="color:red">5</span>;<br><span class="jskeywordcolor" style="color:mediumblue">var</span>
+                    y = <span class="jsnumbercolor" style="color:red">6</span>;<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> z = x + y;<span
+                        class="jsnumbercolor" style="color:red">
+                    </span> </span></div><br>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> price1 = <span
+                        class="jsnumbercolor" style="color:red">5</span>;<br><span class="jskeywordcolor"
+                        style="color:mediumblue">var</span> price2 = <span class="jsnumbercolor"
+                        style="color:red">6</span>;<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> total = price1 + price2;<br><span
+                        class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Типы данных</h2>
+            <p>В JavaScript есть 8 основных типов данных.</p>
+            <ul>
+                <li><code>number</code> для любых чисел: целочисленных или чисел с плавающей точкой; целочисленные
+                    значения ограничены диапазоном <code>±(2<sup>53</sup>-1)</code>.</li>
+                <br>
+                <li><code>bigint</code> для целых чисел произвольной длины.</li>
+                <br>
+                <li><code>string</code> для строк. Строка может содержать ноль или больше символов, нет отдельного
+                    символьного типа.</li>
+                <br>
+                <li><code>boolean</code> для <code>true</code>/<code>false</code>.</li>
+                <br>
+                <li><code>null</code> для неизвестных значений – отдельный тип, имеющий одно значение <code>null</code>.
+                </li>
+                <br>
+                <li><code>undefined</code> для неприсвоенных значений – отдельный тип, имеющий одно значение
+                    <code>undefined</code>.</li>
+                <br>
+                <li><code>symbol</code> для уникальных идентификаторов.</li>
+            </ul>
+            <div class="jsHigh">
+                <h3>Число</h3>
+                <code class=" language-javascript"><code class="token keyword">let</code> n <code
+                        class="token operator">=</code> <code class="token number">123</code><code
+                        class="token punctuation">;</code><br>
+                    n <code class="token operator">=</code> <code class="token number">12.345</code><code
+                        class="token punctuation">;</code></code>
+            </div><br>
+            <div class="jsHigh">
+                <h3>BigInt</h3>
+                <code class=" language-javascript"><code class="token comment">// символ "n" в конце означает, что это
+                        BigInt</code>
+                    <br><code class="token keyword">const</code> bigInt <code class="token operator">=</code> <code
+                        class="token number">1234567890123456789012345678901234567890n</code><code
+                        class="token punctuation">;</code></code>
+            </div><br>
+            <div class="jsHigh">
+                <h3>Строка</h3>
+                <code class=" language-javascript"><code class="token keyword">let</code> str <code
+                        class="token operator">=</code> <code class="token string">"Привет"</code><code
+                        class="token punctuation">;</code>
+                    <br><code class="token keyword">let</code> str2 <code class="token operator">=</code> <code
+                        class="token string">'Одинарные кавычки тоже подойдут'</code><code
+                        class="token punctuation">;</code>
+                    <br><code class="token keyword">let</code> phrase <code class="token operator">=</code> <code
+                        class="token template-string"><code class="token template-punctuation string">`</code><code
+                            class="token string">Обратные кавычки позволяют встраивать переменные </code><code
+                            class="token interpolation"><code
+                                class="token interpolation-punctuation punctuation">${</code>str<code
+                                class="token interpolation-punctuation punctuation">}</code></code><code
+                            class="token template-punctuation string">`</code></code><code
+                        class="token punctuation">;</code></code>
+            </div><br>
+            <div class="jsHigh">
+                <h3>Булевый (логический) тип</h3>
+                <code class=" language-javascript"><code class="token keyword">let</code> nameFieldChecked <code
+                        class="token operator">=</code> <code class="token boolean">true</code><code
+                        class="token punctuation">;</code> <code class="token comment">// да, поле отмечено</code>
+                    <br><code class="token keyword">let</code> ageFieldChecked <code class="token operator">=</code>
+                    <code class="token boolean">false</code><code class="token punctuation">;</code> <code
+                        class="token comment">// нет, поле не отмечено</code></code>
+            </div><br>
+            <div class="jsHigh">
+                <h3>Значение «null»</h3>
+                <code class=" language-javascript"><code class="token keyword">let</code> age <code
+                        class="token operator">=</code> <code class="token keyword">null</code><code
+                        class="token punctuation">;</code></code>
+            </div><br>
+            <div class="jsHigh">
+                <h3>Значение «undefined»</h3>
+                <code class=" language-javascript"><code class="token keyword">let</code> age<code
+                        class="token punctuation">;</code>
 
+                    <br><code class="token function">alert</code><code class="token punctuation">(</code>age<code
+                        class="token punctuation">)</code><code class="token punctuation">;</code> <code
+                        class="token comment">// выведет "undefined"</code></code>
+            </div><br>
+            <div class="jsHigh">
+                <h3>Объекты и символы</h3>
+                <code class=" language-javascript"><code class="token keyword">let</code> user <code
+                        class="token operator">=</code> <code class="token punctuation">{</code> <br><code
+                        class="token comment"></code>
+                    name<code class="token operator">:</code> <code class="token string">"John"</code><code
+                        class="token punctuation">,</code> <br><code class="token comment">"name" хранится
+                        значение "John"</code>
+                    age<code class="token operator">:</code> <code class="token number">30</code> <br><code
+                        class="token comment">"age" хранится значение 30</code>
+                    <code class="token punctuation">}</code><code class="token punctuation">;</code></code>
+            </div><br>
+            <div class="jsHigh">
+                <h3>Оператор typeof</h3>
+                <code class=" language-javascript"><code class="token keyword">typeof</code> <code
+                        class="token keyword">undefined</code> <code class="token comment">// "undefined"</code>
+
+                    <br><code class="token keyword">typeof</code> <code class="token number">0</code> <code
+                        class="token comment">// "number"</code>
+
+                    <br><code class="token keyword">typeof</code> <code class="token number">10n</code> <code
+                        class="token comment">// "bigint"</code>
+
+                    <br><code class="token keyword">typeof</code> <code class="token boolean">true</code> <code
+                        class="token comment">// "boolean"</code>
+
+                    <br><code class="token keyword">typeof</code> <code class="token string">"foo"</code> <code
+                        class="token comment">// "string"</code>
+
+                    <br><code class="token keyword">typeof</code> <code class="token function">Symbol</code><code
+                        class="token punctuation">(</code><code class="token string">"id"</code><code
+                        class="token punctuation">)</code> <code class="token comment">// "symbol"</code>
+
+                    <br><em class="block-highlight"><code class="token keyword">typeof</code> Math <code
+                            class="token comment">// "object" (1)</code></em>
+
+                    <br><em class="block-highlight"><code class="token keyword">typeof</code> <code
+                            class="token keyword">null</code> <code class="token comment">// "object" (2)</code></em>
+
+                    <br><em class="block-highlight"><code class="token keyword">typeof</code> alert <code
+                            class="token comment">// "function" (3)</code></em></code>
+            </div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>JavaScript Знак доллара $</h2>
+<p>Помните, что идентификаторы (имена переменных) JavaScript должны начинаться с:</p>
+<ul>
+    <li>Буква (AZ или az)</li>
+    <li>Знак доллара ($)</li>
+    <li>Или подчеркивание (_)</li>
+    </ul>
+    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+        <span class="jskeywordcolor" style="color:mediumblue">var</span> $$$ = <span class="jsstringcolor" style="color:brown">"Привет, мир"</span>;<br>
+        <span class="jskeywordcolor" style="color:mediumblue">var</span> $ = <span class="jsnumbercolor" style="color:red">2</span>;<br>
+        <span class="jskeywordcolor" style="color:mediumblue">var</span> $myMoney = <span class="jsnumbercolor" style="color:red">5</span>;<br><span class="jsnumbercolor" style="color:red">
+        </span> </span></div><br>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+            <span class="jskeywordcolor" style="color:mediumblue">var</span> _lastName = <span class="jsstringcolor" style="color:brown">"Щипунов"</span>;<br>
+            <span class="jskeywordcolor" style="color:mediumblue">var</span> _x = <span class="jsnumbercolor" style="color:red">2</span>;<br>
+            <span class="jskeywordcolor" style="color:mediumblue">var</span> _100 = <span class="jsnumbercolor" style="color:red">5</span>;<br><span class="jsnumbercolor" style="color:red">
+            </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>JavaScript Let</h2>
+    <div class="w3-info jsHigh">
+        <p>Ключевое слово  <code class="w3-codespan">let</code> было введено в <a href="js_es6.php">ES6 (2015)</a>.</p>
+        <p>Переменные, определенные с помощью <code class="w3-codespan">let</code>, не могут быть повторно объявлены.</p>
+        <p>Переменные, определенные с помощью <code class="w3-codespan">let</code>, должны быть объявлены перед использованием.</p>
+        <p>Переменные, определенные с помощью <code class="w3-codespan">let</code>, иметь область действия блока.</p>
+    </div><br>
+    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+        <span class="jskeywordcolor" style="color:mediumblue">let</span> x = <span class="jsstringcolor" style="color:brown">"Андрей Щипунов"</span>;<br><span class="jsnumbercolor" style="color:red">
+        </span><br>
+        <span class="jskeywordcolor" style="color:mediumblue">let</span> x = <span class="jsnumbercolor" style="color:red">0</span>;<br><br><span class="jsnumbercolor" style="color:red">
+        </span><span class="commentcolor" style="color:green">// Синтаксическая ошибка: "x" уже объявлен<br></span><span class="jsnumbercolor" style="color:red">
+        </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>JavaScript const</h2>
+<div class="w3-info jsHigh">
+    <p>Ключевое слово <code class="w3-codespan">const</code> было введено в <a href="js_es6.php">ES6 (2015)</a>.</p>
+    <p>Переменные, определенные с помощью <code class="w3-codespan">const</code>, не могут быть повторно объявлены.</p>
+    <p>Переменные, определенные с помощью <code class="w3-codespan">const</code>, не может быть переназначены.</p>
+    <p>Переменные, определенные с помощью <code class="w3-codespan">const</code>, имеют область действия блока.</p>
+    </div><br>
+    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+        <span class="jskeywordcolor" style="color:mediumblue">const</span> PI = <span class="jsnumbercolor" style="color:red">3.141592653589793</span>;<br>
+        PI = <span class="jsnumbercolor" style="color:red">3.14</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// Это приведет к ошибке<br></span>
+        PI = PI + <span class="jsnumbercolor" style="color:red">10</span>;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// Это также приведет к ошибке
+         </span></span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>JavaScript Функции</h2>
+<p>JavaScript функция - это блок кода, предназначенный для выполнения определенной задачи.
+    <br> JavaScript функция выполняется, когда ее вызывают (вызвает) "что-то".
+    </p>
+    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+        <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction(p1, p2) {<br><span class="jsnumbercolor" style="color:red">
+        </span>&nbsp; <span class="jskeywordcolor" style="color:mediumblue">return</span> p1 * p2;&nbsp;&nbsp;<span class="jsnumbercolor" style="color:red">
+        </span><span class="commentcolor" style="color:green">// Функция возвращает произведение p1 и p2<br></span><span class="jsnumbercolor" style="color:red">
+        </span>}<br><span class="jsnumbercolor" style="color:red">
+        </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>JavaScript Вызов функции
+</h2>
+<p>Код внутри функции будет выполняться, когда "что-то" вызывает (вызывается) функцию:
+</p>
+<ul>
+    <li>Когда происходит событие (когда пользователь нажимает кнопку)</li>
+    <li>Когда он вызывает (вызывается) из JavaScript кода</li>
+    <li>Автоматически (вызывается самостоятельно)</li>
+    </ul>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>JavaScript Возврат функции
+</h2>
+<p>Когда, JavaScript достигает оператора return, функция прекращает выполнение.
+
+    <br>Если функция была вызвана оператором, JavaScript "вернет" выполнение кода после вызова оператора.
+    
+    <br>Функции всегда вычисляют возвращаемое значение. Возвращаемое значение "возвращается" обратно "вызывающему":</p>
+    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+        <span class="jskeywordcolor" style="color:mediumblue">var</span> x = myFunction(<span class="jsnumbercolor" style="color:red">4</span>, <span class="jsnumbercolor" style="color:red">3</span>);&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Функция вызывается, возвращаемое значение будет в конечном итоге в x<br></span><br>
+        <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction(a, b) {<br><span class="jsnumbercolor" style="color:red">
+        </span>&nbsp; <span class="jskeywordcolor" style="color:mediumblue">return</span> a * b;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span class="jsnumbercolor" style="color:red">
+        </span><span class="commentcolor" style="color:green">// Функция возвращает произведение a и b<br></span><span class="jsnumbercolor" style="color:red">
+        </span>}<br><span class="jsnumbercolor" style="color:red">
+        </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>Функции, используемые как значения переменных
+</h2>
+<p>Функции можно использовать так же, как и переменные, во всех типах формул, назначений и вычислений.
+</p>
+<div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = toCelsius(<span class="jsnumbercolor" style="color:red">77</span>);<br><span class="jskeywordcolor" style="color:mediumblue">var</span> text = <span class="jsstringcolor" style="color:brown">"Температура "</span> + x + <span class="jsstringcolor" style="color:brown">" по цельсию"</span>;<span class="jsnumbercolor" style="color:red">
+    </span> </span></div>
+    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+        <span class="jskeywordcolor" style="color:mediumblue">var</span>
+        text = <span class="jsstringcolor" style="color:brown">"Температура "</span> + toCelsius(<span class="jsnumbercolor" style="color:red">77</span>) + <span class="jsstringcolor" style="color:brown">" по цельсию"</span>;<span class="jsnumbercolor" style="color:red">
+        </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>Локальные переменные
+</h2>
+<p>Переменные, объявленные в JavaScript функции, становятся ЛОКАЛЬНЫМИ для функции.
+
+    <br>Доступ к локальным переменным возможен только из функции.</p>
+    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+    </span><span class="commentcolor" style="color:green">// код здесь, нельзя использовать carName<br></span><br>
+    <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br><span class="jsnumbercolor" style="color:red">
+    </span>&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">var</span> carName = <span class="jsstringcolor" style="color:brown">"Вольво"</span>;<br><span class="jsnumbercolor" style="color:red">
+    </span>&nbsp;&nbsp;<span class="commentcolor" style="color:green">// код здесь, можно использовать carName<br></span><span class="jsnumbercolor" style="color:red">
+    </span>}<br><br><span class="jsnumbercolor" style="color:red">
+    </span><span class="commentcolor" style="color:green">// код здесь, нельзя использовать carName
+     </span></span></div>
             <hr><br>
         </div>
-        <div class="feed-post">
-            
-            <hr><br>
-        </div>
-        
+
         <div class="next-btn_div">
             <button onclick='next2()' class="next-btn">Следующий блок</button>
         </div>

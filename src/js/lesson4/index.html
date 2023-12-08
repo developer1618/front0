@@ -12,32 +12,264 @@
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">JS - Урок 4</h1>
-        
+        <h2>JavaScript Объекты
+        </h2>
+        <h3>Объекты, свойства и методы из реальной жизни
+        </h3>
+        <p>В реальной жизни автомобиль - это объект.
+
+           <br> Автомобиль имеет такие свойства, как вес и цвет, а также методы, такие как старт и стоп:</p>
+           <div class="w3-responsive">
+            <table class="w3-table-all" style="margin:64px 16px; display: flex; justify-content: space-around;">
+            <tbody><tr>
+            <th style="width:370px">
+            Объект
+            </th>
+            <th>
+            Свойства
+            </th>
+            <th>
+            Методы
+            </th>
+            </tr>
+            <tr>
+            <td>
+            <img src="/img/camaro.png" style="width:368px;height:230px;margin-left:-68px;margin-top:-40px">
+            </td>
+            <td>
+            <br>car.name = Camaro<br><br>
+            car.model = 500<br><br>
+            car.weight = 1850kg<br><br>
+            car.color = черный
+            </td>
+            <td>
+            <br>car.start()<br><br>
+            car.drive()<br><br>
+            car.brake()
+            <br><br>car.stop()</td>
+            </tr>
+            </tbody></table>
+            </div><br>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> car = {type:<span class="jsstringcolor" style="color:brown">"Camaro"</span>, model:<span class="jsstringcolor" style="color:brown">"500"</span>, color:<span class="jsstringcolor" style="color:brown">"черный"</span>};<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
         <hr>
     </header>
     <main>
         <div class="feed-post">
+<h2>Определение объекта
+</h2>
+<p>Ниже, определяется (создается) JavaScript объект с помощью объекта литералов:
+</p>
+<div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> person = {<br><span class="jsnumbercolor" style="color:red">
+    </span>&nbsp; firstName: <span class="jsstringcolor" style="color:brown">"Щипунов"</span>,<br><span class="jsnumbercolor" style="color:red">
+    </span>&nbsp; lastName: <span class="jsstringcolor" style="color:brown">"Андрей"</span>,<br><span class="jsnumbercolor" style="color:red">
+    </span>&nbsp;&nbsp;age: <span class="jsnumbercolor" style="color:red">50</span>,<br><span class="jsnumbercolor" style="color:red">
+    </span>&nbsp;&nbsp;eyeColor: <span class="jsstringcolor" style="color:brown">"зеленый"</span><br><span class="jsnumbercolor" style="color:red">
+    </span>};<span class="jsnumbercolor" style="color:red">
+    </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Ключевое слово <span class="jsstringcolor" style="color:brown">this</span>
+            </h2>
+<p>В определении функции this относится к "владельцу" функции.
+
+    <br>В приведенном выше примере this - является объектом person, которому "принадлежит" функция fullName.
+    
+    <br>Другими словами, this.firstName означает firstName, свойство этого объекта.</p>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript События
+            </h2>
+            <p>События HTML - это "вещи", которые происходят с элементами HTML.
+
+                <br>Когда JavaScript используется на HTML страницах, JavaScript может "реагировать" на эти события.</p>
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> onclick<span class="attributevaluecolor" style="color:mediumblue">="document.getElementById('demo').innerHTML = Date()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Время такое?<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                     </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Строки
+            </h2>
+            <p>JavaScript строки используются для хранения и манипулирования текстом.
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> answer1 = <span class="jsstringcolor" style="color:brown">"Все' в порядке"</span>;<br>
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> answer2 = <span class="jsstringcolor" style="color:brown">"Его зовут 'Андрей'"</span>;<br>
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> answer3 = <span class="jsstringcolor" style="color:brown">'Его зовут "Андрей"'</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h3>Длина строки
+            </h3>
+            <p>Чтобы узнать длину строки, используйте встроенное <code class="w3-codespan">length</code> свойство:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> txt = <span class="jsstringcolor" style="color:brown">"ABCDEFGHIJKLMNOPQRSTUVWXYZ"</span>;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> sln = txt.<span class="jspropertycolor" style="color:black">length</span>; </span></div>
 
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Специальные символы
+            </h2>
+            <p>Поскольку строки должны быть записаны в кавычках, JavaScript неправильно поймет эту строку:
+            </p>
+            <div class="w3-example">
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <span class="jsstringcolor" style="color:brown">"Мы так называемые "</span>Викинги<span class="jsstringcolor" style="color:brown">" с севера."</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span> </span></div></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Строки могут быть объектами
+            </h2>
+            Обычно JavaScript строки представляют собой примитивные значения, созданные из литералов:
+<br> var firstName = "Щипунов";
+<br>Но строки, также могут быть определены как объекты с ключевым словом new:
+<br>var firstName = new String("Щипунов");
+<div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <span class="jsstringcolor" style="color:brown">"Андрей"</span>;<br>
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> y = <span class="jskeywordcolor" style="color:mediumblue">new</span> String(<span class="jsstringcolor" style="color:brown">"Щипунов"</span>);<br><br><span class="jsnumbercolor" style="color:red">
+    </span><span class="commentcolor" style="color:green">// typeof x вернет строку<br></span><span class="commentcolor" style="color:green">// typeof y вернет объект </span></span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Методы строк
+            </h2>
+            <p>Примитивные значения, такие как "Щипунов Андрей", не могут иметь свойств или методов (потому что они не являются объектами).
+                <br>Но с помощью JavaScript методы и свойства также доступны для примитивных значений, поскольку JavaScript обрабатывает примитивные значения как объекты при выполнении методов и свойств.</p>
+<p>Свойство length возвращает длину строки:</p>
+<div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> txt = <span class="jsstringcolor" style="color:brown">"АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"</span>;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> sln = txt.<span class="jspropertycolor" style="color:black">length</span>; </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Поиск строки в строке
+            </h2>
+            <p>В <code class="w3-codespan">search()</code> методе ищет строку для указанного значения и возвращает позицию матча:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> str = <span class="jsstringcolor" style="color:brown">"Пожалуйста, найдите, где происходит 'размещение'!"</span>;<br>
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> pos = str.<span class="jspropertycolor" style="color:black">search</span>(<span class="jsstringcolor" style="color:brown">"размещение"</span>);<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Метод slice()
+            </h2>
+            <p>Метод slice() извлекает часть строки и возвращает извлеченную часть в новой строке.
+
+                <br>Метод принимает 2 параметра: начальную позицию и конечную позицию (конец не включен).
+                
+                <br>В этом примере часть строки вырезается из позиции 7 в позицию 12 (13-1):</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> str = <span class="jsstringcolor" style="color:brown">"Яблоко, Банан, Киви"</span>;<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> res = str.<span class="jspropertycolor" style="color:black">slice</span>(<span class="jsnumbercolor" style="color:red">7</span>, <span class="jsnumbercolor" style="color:red">13</span>);<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Метод substring()
+            </h2>
+            <p>Метод substring() похоже на slice().
+
+                <br>Разница в том, что substring() не может принимать отрицательные индексы.</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> str = <span class="jsstringcolor" style="color:brown">"Яблоко, Банан, Киви"</span>;<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> res = str.<span class="jspropertycolor" style="color:black">substring</span>(<span class="jsnumbercolor" style="color:red">7</span>, <span class="jsnumbercolor" style="color:red">13</span>);<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Метод substr()
+            </h2>
+            <p>Метод substr() похоже на slice().
+                <br>Разница в том, что второй параметр указывает длину извлеченной части.</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> str = <span class="jsstringcolor" style="color:brown">"Яблоко, Банан, Киви"</span>;<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> res = str.<span class="jspropertycolor" style="color:black">substr</span>(<span class="jsnumbercolor" style="color:red">7</span>, <span class="jsnumbercolor" style="color:red">6</span>);<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Замена содержимого строки
+            </h2>
+            <p>Метод replace() заменяет указанное значение с другим значением в строке:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                str = <span class="jsstringcolor" style="color:brown">"Пожалуйста, посетите Microsoft!"</span>;<br>
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> n = str.<span class="jspropertycolor" style="color:black">replace</span>(<span class="jsstringcolor" style="color:brown">"Microsoft"</span>, <span class="jsstringcolor" style="color:brown">"Schoolsw3"</span>);<br><span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Преобразование в верхний и нижний регистр
+            </h2>
+            <p>Строка преобразуется в верхний регистр с помощью toUpperCase():
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> text1 = <span class="jsstringcolor" style="color:brown">"Привет, мир!"</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// Строка<br></span>
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> text2 = text1.<span class="jspropertycolor" style="color:black">toUpperCase</span>();&nbsp;&nbsp;<span class="commentcolor" style="color:green">// text2 к text1, преобразованный в верхний
+                 </span></span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Метод concat()
+            </h2>
+            <p>Метод concat() объединяет две или более строк:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> text1 = <span class="jsstringcolor" style="color:brown">"Привет"</span>;<br>
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> text2 = <span class="jsstringcolor" style="color:brown">"Мир"</span>;<br>
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> text3 = text1.<span class="jspropertycolor" style="color:black">concat</span>(<span class="jsstringcolor" style="color:brown">" "</span>, text2);<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Метод trim()
+            </h2>
+            <p>Метод trim() удаляет пробельные символы с обеих сторон строки:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> str = <span class="jsstringcolor" style="color:brown">"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Привет, мир!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "</span>;<br>alert(str.<span class="jspropertycolor" style="color:black">trim</span>()); </span></div>
+
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Метод charAt()
+            </h2>
+            <p>Метод <code class="w3-codespan">charAt()</code> возвращает символ по указанному индексу (позиции) в строке:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> str = <span class="jsstringcolor" style="color:brown">"ПРИВЕТ МИР"</span>;<br>
+                str.<span class="jspropertycolor" style="color:black">charAt</span>(<span class="jsnumbercolor" style="color:red">0</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращается П
+                 </span></span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Метод charCodeAt()
+            </h2>
+            <p>Метод charCodeAt() возвращает юникод символа в заданном индексе в строке:
+
+                <br>Метод возвращает код UTF-16 (целое число от 0 до 65535).</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> str = <span class="jsstringcolor" style="color:brown">"ПРИВЕТ МИР"</span>;<br><br>
+                    str.<span class="jspropertycolor" style="color:black">charCodeAt</span>(<span class="jsnumbercolor" style="color:red">0</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращается 1055
+                     </span></span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Преобразование строки в массив
+            </h2>
+            <p>Строку можно преобразовать в массив с помощью split() <code class="w3-codespan">split()</code>:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> txt = <span class="jsstringcolor" style="color:brown">"a,b,c,d,e"</span>;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Строка<br></span>
+                txt.<span class="jspropertycolor" style="color:black">split</span>(<span class="jsstringcolor" style="color:brown">","</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Разделение на запятые<br></span>
+                txt.<span class="jspropertycolor" style="color:black">split</span>(<span class="jsstringcolor" style="color:brown">" "</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Разделение на пробелы<br></span>
+                txt.<span class="jspropertycolor" style="color:black">split</span>(<span class="jsstringcolor" style="color:brown">"|"</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Разделение на трубы
+                 </span></span></div>
             <hr><br>
         </div>
         <div class="feed-post">
