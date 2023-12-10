@@ -12,48 +12,263 @@
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">JS - Урок 5</h1>
-        <h2>JavaScript Поиск строк</h2>
+        <h2>JavaScript Методы</h2>
+        <h3>Метод toString()</h3>
+        <p>Метод <code class="w3-codespan">toString()</code> возвращает число в виде строки.</p>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+            <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <span class="jsnumbercolor" style="color:red">123</span>;<br>
+            x.<span class="jspropertycolor" style="color:black">toString</span>();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 123 из переменной x<br></span><span class="jsnumbercolor" style="color:red">
+            </span>(<span class="jsnumbercolor" style="color:red">123</span>).<span class="jspropertycolor" style="color:black">toString</span>();&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 123 из литерала 123<br></span><span class="jsnumbercolor" style="color:red">
+            </span>(<span class="jsnumbercolor" style="color:red">100</span> + <span class="jsnumbercolor" style="color:red">23</span>).<span class="jspropertycolor" style="color:black">toString</span>();&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 123 из выражения 100 + 23
+             </span></span></div>
         <hr>
     </header>
     <main>
         <div class="feed-post">
+<h2>Метод toExponential()</h2>
+<p>Метод <code class="w3-codespan">toExponential()</code> возвращает строку с округленным числом,
+    записанным с использованием экспоненциальной записи.</p>
+    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+        <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <span class="jsnumbercolor" style="color:red">9.656</span>;<br>
+        x.<span class="jspropertycolor" style="color:black">toExponential</span>(<span class="jsnumbercolor" style="color:red">2</span>);&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 9.66e+0<br></span>
+        x.<span class="jspropertycolor" style="color:black">toExponential</span>(<span class="jsnumbercolor" style="color:red">4</span>);&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 9.6560e+0<br></span>
+        x.<span class="jspropertycolor" style="color:black">toExponential</span>(<span class="jsnumbercolor" style="color:red">6</span>);&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 9.656000e+0
+         </span></span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Метод toFixed()
+            </h2>
+            <p>Метод <code class="w3-codespan">toFixed()</code> возвращает строку с числом,
+                записанным с указанным количеством десятичных знаков:</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <span class="jsnumbercolor" style="color:red">9.656</span>;<br>
+                    x.<span class="jspropertycolor" style="color:black">toFixed</span>(<span class="jsnumbercolor" style="color:red">0</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 10<br></span>
+                    x.<span class="jspropertycolor" style="color:black">toFixed</span>(<span class="jsnumbercolor" style="color:red">2</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 9.66<br></span>
+                    x.<span class="jspropertycolor" style="color:black">toFixed</span>(<span class="jsnumbercolor" style="color:red">4</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 9.6560<br></span>
+                    x.<span class="jspropertycolor" style="color:black">toFixed</span>(<span class="jsnumbercolor" style="color:red">6</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 9.656000
+                     </span></span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Метод toPrecision()
+            </h2>
+            <p>Метод <code class="w3-codespan">toPrecision()</code> возвращает строку с числом, записанным с указанной длиной:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <span class="jsnumbercolor" style="color:red">9.656</span>;<br>
+                x.<span class="jspropertycolor" style="color:black">toPrecision</span>();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// возвращает 9.656<br></span>
+                x.<span class="jspropertycolor" style="color:black">toPrecision</span>(<span class="jsnumbercolor" style="color:red">2</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// возвращает 9.7<br></span>
+                x.<span class="jspropertycolor" style="color:black">toPrecision</span>(<span class="jsnumbercolor" style="color:red">4</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// возвращает 9.656<br></span>
+                x.<span class="jspropertycolor" style="color:black">toPrecision</span>(<span class="jsnumbercolor" style="color:red">6</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// возвращает 9.65600
+                 </span></span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Метод valueOf()
+            </h2>
+            <p>Метод <code class="w3-codespan">valueOf()</code> возвращает число как число.</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <span class="jsnumbercolor" style="color:red">123</span>;<br>
+                x.<span class="jspropertycolor" style="color:black">valueOf</span>();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 123  из переменной x<br></span><span class="jsnumbercolor" style="color:red">
+                </span>(<span class="jsnumbercolor" style="color:red">123</span>).<span class="jspropertycolor" style="color:black">valueOf</span>();&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 123 из литерала 123<br></span><span class="jsnumbercolor" style="color:red">
+                </span>(<span class="jsnumbercolor" style="color:red">100</span> + <span class="jsnumbercolor" style="color:red">23</span>).<span class="jspropertycolor" style="color:black">valueOf</span>();&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 123 из выражения 100 + 23
+                 </span></span></div>
+                 <p>В JavaScript число может быть примитивным значением (typeof = number) или объектом (typeof = object).
 
+                    <br>Этот valueOf() метод используется внутри JavaScript для преобразования объектов Number в примитивные значения.
+                    
+                    <br>Нет причин использовать это в вашем коде.
+                
+                    <br>Все типы данных JavaScript имеют valueOf() и toString() метод.</p>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Преобразование переменных в числа
+            </h2>
+            <p>Есть 3 метода JavaScript, которые можно использовать для преобразования переменных в числа:
+            </p>
+            <ul>
+                <li>Метод <code class="w3-codespan">Number()</code></li>
+                <li>Метод <code class="w3-codespan">parseInt()</code></li>
+                <li>Метод <code class="w3-codespan">parseFloat()</code></li>
+                </ul>
+                <p>Эти методы не являются цифровыми методами, но глобальные методы JavaScript.
+                </p>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Глобальные методы
+            </h2>
+            <p>Глобальные методы JavaScript можно использовать для всех типов данных JavaScript.
+            </p>
+            <table class="w3-table-all notranslate">
+                <tbody><tr>
+                <th style="width:25%">Метод</th>
+                <th>Описание</th>
+                </tr>
+                <tr>
+                <td>Number()</td>
+                <td>Возвращает число, преобразованное из его аргумента.</td>
+                </tr>
+                <tr>
+                <td>parseFloat()</td>
+                <td>Анализирует его аргумент и возвращает число с плавающей запятой</td>
+                </tr>
+                <tr>
+                <td>parseInt()</td>
+                <td>Анализирует его аргумент и возвращает целое число</td>
+                </tr>
+                </tbody></table>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Метод Number()
+            </h2>
+            <p>Метод <code class="w3-codespan">Number()</code> можно использовать для преобразования переменных JavaScript в числа:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                Number(<span class="jskeywordcolor" style="color:mediumblue">true</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span class="commentcolor" style="color:green">// возвращает 1<br></span>Number(<span class="jskeywordcolor" style="color:mediumblue">false</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 0<br></span>Number(<span class="jsstringcolor" style="color:brown">"10"</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span class="commentcolor" style="color:green">// возвращает 10<br></span>Number(<span class="jsstringcolor" style="color:brown">"&nbsp; 10"</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 10<br></span>
+                Number(<span class="jsstringcolor" style="color:brown">"10&nbsp; "</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 10<br></span>
+                Number(<span class="jsstringcolor" style="color:brown">" 10&nbsp; "</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 10<br></span>
+                Number(<span class="jsstringcolor" style="color:brown">"10.33"</span>);&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span class="commentcolor" style="color:green">// возвращает 10.33<br></span>Number(<span class="jsstringcolor" style="color:brown">"10,33"</span>);&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span class="commentcolor" style="color:green">// возвращает 
+                NaN<br></span>Number(<span class="jsstringcolor" style="color:brown">"10 33"</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// возвращает NaN <br></span>Number(<span class="jsstringcolor" style="color:brown">"Андрей"</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span class="commentcolor" style="color:green">// возвращает NaN
+                 </span></span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Метод Number(), используемый для дат
+            </h2>
+            <p>Метод <code class="w3-codespan">Number()</code> также можно преобразовать дату в число:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                Number(<span class="jskeywordcolor" style="color:mediumblue">new</span> 
+                Date(<span class="jsstringcolor" style="color:brown">"2017-09-30"</span>)); &nbsp; &nbsp;<span class="commentcolor" style="color:green">// возвращает 1506729600000<br></span><span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Метод parseInt()
+            </h2>
+            <p>Метод <code class="w3-codespan">parseInt()</code> анализирует строку и возвращает целое число.
+                Разрешены пробелы. Возвращается только первое число:</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    parseInt(<span class="jsstringcolor" style="color:brown">"10"</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 10<br></span>
+                    parseInt(<span class="jsstringcolor" style="color:brown">"10.33"</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 10<br></span>
+                    parseInt(<span class="jsstringcolor" style="color:brown">"10 20 30"</span>);&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 10<br></span>
+                    parseInt(<span class="jsstringcolor" style="color:brown">"10 год"</span>);&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 10<br></span>parseInt(<span class="jsstringcolor" style="color:brown">"год 10"</span>);&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает NaN&nbsp;
+                     </span></span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Метод parseFloat()
+            </h2>
+            <p>Метод <code class="w3-codespan">parseFloat()</code> анализирует строку и возвращает число.
+                Разрешены пробелы. Возвращается только первое число:</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    parseFloat(<span class="jsstringcolor" style="color:brown">"10"</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает 10<br></span>
+                    parseFloat(<span class="jsstringcolor" style="color:brown">"10.33"</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// возвращает 10.33<br></span>
+                    parseFloat(<span class="jsstringcolor" style="color:brown">"10 20 30"</span>);&nbsp;&nbsp;<span class="commentcolor" style="color:green">// возвращает 10<br></span>
+                    parseFloat(<span class="jsstringcolor" style="color:brown">"10 год"</span>);&nbsp;&nbsp;<span class="commentcolor" style="color:green">// возвращает 10<br></span>parseFloat(<span class="jsstringcolor" style="color:brown">"год 10"</span>);&nbsp;&nbsp;<span class="commentcolor" style="color:green">// возвращает NaN
+                     </span></span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Свойства Number
+            </h2>
+            <table class="w3-table-all notranslate">
+                <tbody><tr>
+                <th style="width:25%">Свойство</th>
+                <th>Описание</th>
+                </tr>
+                <tr>
+                <td>MAX_VALUE</td>
+                <td>Возвращает максимально возможное число в JavaScript.</td>
+                </tr>
+                <tr>
+                <td>MIN_VALUE</td>
+                <td>Возвращает минимальное возможное число в JavaScript</td>
+                </tr>
+                <tr>
+                <td>POSITIVE_INFINITY</td>
+                <td>Представляет бесконечность (возвращается при переполнении)</td>
+                </tr>
+                <tr>
+                <td>NEGATIVE_INFINITY</td>
+                <td>Представляет отрицательную бесконечность (возвращается при переполнении)</td>
+                </tr>
+                <tr>
+                <td>NaN</td>
+                <td>Представляет значение "Не Число"</td>
+                </tr>
+                </tbody></table>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript MIN_VALUE и MAX_VALUE
+            </h2>
+            <p>Свойство <code class="w3-codespan">MAX_VALUE</code> возвращает максимально возможное число в JavaScript.</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> x = Number.<span class="jspropertycolor" style="color:black">MAX_VALUE</span>;<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+                <p>Свойство <code class="w3-codespan">MIN_VALUE</code> возвращает минимальное возможное число в JavaScript.</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = Number.<span class="jspropertycolor" style="color:black">MIN_VALUE</span>;<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                        <span class="jskeywordcolor" style="color:mediumblue">var</span> x = Number.<span class="jspropertycolor" style="color:black">MIN_VALUE</span>;<span class="jsnumbercolor" style="color:red">
+                        </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript POSITIVE_INFINITY
+            </h2>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> x = Number.<span class="jspropertycolor" style="color:black">POSITIVE_INFINITY</span>;<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+                <p>Свойство POSITIVE_INFINITY возвращается при переполнении:</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <span class="jsnumbercolor" style="color:red">1</span> / <span class="jsnumbercolor" style="color:red">0</span>;<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript NEGATIVE_INFINITY
+            </h2>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> x = Number.<span class="jspropertycolor" style="color:black">NEGATIVE_INFINITY</span>;<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+                <p>Свойство NEGATIVE_INFINITY возвращается при переполнении:
+                </p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = -<span class="jsnumbercolor" style="color:red">1</span> / <span class="jsnumbercolor" style="color:red">0</span>;<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript NaN - не число
+            </h2>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> x = Number.<span class="jskeywordcolor" style="color:mediumblue">NaN</span>;<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+                <p>Свойство NaN зарезервированное слово JavaScript, указывающее, что число не является допустимым числом.
+
+                    <br>Попытка выполнить арифметику с нечисловой строкой приведет к NaN (Не Число):</p>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                        <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <span class="jsnumbercolor" style="color:red">100</span> / <span class="jsstringcolor" style="color:brown">"Яблоко"</span>;&nbsp;<span class="jsnumbercolor" style="color:red">
+                        </span><span class="commentcolor" style="color:green">// x будет NaN (Не Число)<br></span><span class="jsnumbercolor" style="color:red">
+                        </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Числовые свойства нельзя использовать с переменными
+            </h2>
+            <p>Числовые свойства принадлежат оболочке числового объекта JavaScript под названием Number.
+
+               <br> Доступ к этим свойствам можно получить только как Number.MAX_VALUE.
+                
+                <br>Использование myNumber.MAX_VALUE, где myNumber переменная, выражение или значение, вернет undefined:
+                </p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <span class="jsnumbercolor" style="color:red">6</span>;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> y = x.<span class="jspropertycolor" style="color:black">MAX_VALUE</span>;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// y становится неопределенным
+                     </span></span></div>
             <hr><br>
         </div>
         

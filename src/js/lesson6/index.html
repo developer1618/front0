@@ -12,48 +12,318 @@
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">JS - Урок 6</h1>
-        
+        <h2>JavaScript Массивы
+        </h2>
+        <p>JavaScript Массивы - используются для хранения нескольких значений в одной переменной.
+        </p>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+            <span class="jskeywordcolor" style="color:mediumblue">var</span> cars = [<span class="jsstringcolor" style="color:brown">"Сааб"</span>, <span class="jsstringcolor" style="color:brown">"Вольво"</span>, <span class="jsstringcolor" style="color:brown">"БМВ"</span>];<span class="jsnumbercolor" style="color:red">
+            </span> </span></div>
         <hr>
     </header>
     <main>
         <div class="feed-post">
+<h2>Что такое массив?
+</h2>
+<p>Массив - это специальная переменная, которая может одновременно содержать более одного значения.
+
+    <br>Если у вас есть список элементов (например, список названий автомобилей), хранение автомобилей в отдельных переменных может выглядеть следующим образом:</p>
+    <div class="w3-code w3-border notranslate jsHigh"><span class="jscolor" style="color:black">
+        <span class="jskeywordcolor" style="color:mediumblue">var</span> car1 = <span class="jsstringcolor" style="color:brown">"Сааб"</span>;<br>
+        <span class="jskeywordcolor" style="color:mediumblue">var</span> car2 = <span class="jsstringcolor" style="color:brown">"Вольво"</span>;<br>
+        <span class="jskeywordcolor" style="color:mediumblue">var</span> car3 = <span class="jsstringcolor" style="color:brown">"БМВ"</span>;<span class="jsnumbercolor" style="color:red">
+        </span> </span></div>
+        <p>Однако что, если вы хотите просмотреть машины и найти конкретную? А если бы у вас было не 3 машины, а 300?
+
+           <br> Решение - массива!
+            
+            <br>Массив может содержать много значений под одним именем, и вы можете получить доступ к значениям, указав номер индекса.</p>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Создание массива
+            </h2>
+            <p>Использование литерала массива - это самый простой способ создать массив JavaScript.
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> cars = [<span class="jsstringcolor" style="color:brown">"Сааб"</span>, <span class="jsstringcolor" style="color:brown">"Вольво"</span>, <span class="jsstringcolor" style="color:brown">"БМВ"</span>];<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+                <p>Пробелы и перенос строки не важны. Объявление может занимать несколько строк:
+                </p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> cars = [<br><span class="jsnumbercolor" style="color:red">
+                    </span>&nbsp;&nbsp;<span class="jsstringcolor" style="color:brown">"Сааб"</span>,<br><span class="jsnumbercolor" style="color:red">
+                    </span>&nbsp; <span class="jsstringcolor" style="color:brown">"Вольво"</span>,<br><span class="jsnumbercolor" style="color:red">
+                    </span>&nbsp; <span class="jsstringcolor" style="color:brown">"БМВ"</span><br><span class="jsnumbercolor" style="color:red">
+                    </span>]; </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Использование ключевого слова new
+            </h2>
+            <p>В следующем примере также создается массив и присваиваются ему значения:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> cars = <span class="jskeywordcolor" style="color:mediumblue">new</span> Array(<span class="jsstringcolor" style="color:brown">"Сааб"</span>, <span class="jsstringcolor" style="color:brown">"Вольво"</span>, <span class="jsstringcolor" style="color:brown">"БМВ"</span>);<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Доступ к элементам массива
+            </h2>
+            <p>Вы получаете доступ к элементу массива, ссылаясь на номер индекса.
+
+               <br> Этот оператор обращается к значению первого элемента в cars:
+                
+                </p>
+                <div class="w3-example">
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> name = cars[<span class="jsnumbercolor" style="color:red">0</span>];<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    </div><br>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                        <span class="jskeywordcolor" style="color:mediumblue">var</span> cars = [<span class="jsstringcolor" style="color:brown">"Сааб"</span>, <span class="jsstringcolor" style="color:brown">"Вольво"</span>, <span class="jsstringcolor" style="color:brown">"БМВ"</span>];<br>
+                        document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = cars[<span class="jsnumbercolor" style="color:red">0</span>];  </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Изменение элемента массива
+            </h2>
+            <p>Оператор изменяет значение первого элемента в cars:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                cars[<span class="jsnumbercolor" style="color:red">0</span>] = <span class="jsstringcolor" style="color:brown">"Опель"</span>;<span class="jsnumbercolor" style="color:red">
+                </span> </span></div><br>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> cars = [<span class="jsstringcolor" style="color:brown">"Сааб"</span>, <span class="jsstringcolor" style="color:brown">"Вольво"</span>, <span class="jsstringcolor" style="color:brown">"БМВ"</span>];<br>
+                    cars[<span class="jsnumbercolor" style="color:red">0</span>] = <span class="jsstringcolor" style="color:brown">"Опель"</span>;<br>document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = cars[<span class="jsnumbercolor" style="color:red">0</span>];  </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Получить весь массив
+            </h2>
+            <p>С помощью JavaScript весь массив можно получить, сославшись на имя массива:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> cars = [<span class="jsstringcolor" style="color:brown">"Сааб"</span>, <span class="jsstringcolor" style="color:brown">"Вольво"</span>, <span class="jsstringcolor" style="color:brown">"БМВ"</span>];<br>
+                document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = cars;<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Массивы - объекты
+            </h2>
+            <p>Массивы - особый тип объектов. Оператор typeof в JavaScript возвращает "объект" для массивов.
+
+               <br> Но JavaScript массивы лучше всего описывать как массивы.
+                
+               <br> Массивы используют числа для доступа к своим "элементам". В этом примере person[0] возвращает Щипунов:
+                
+                </p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> person = [<span class="jsstringcolor" style="color:brown">"Щипунов"</span>, <span class="jsstringcolor" style="color:brown">"Андрей"</span>, <span class="jsnumbercolor" style="color:red">46</span>];<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    <p>Объекты используют имена для доступа к своим "участникам". В этом примере person.firstName возвращает Щипунов:</p>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                        <span class="jskeywordcolor" style="color:mediumblue">var</span> person = {firstName:<span class="jsstringcolor" style="color:brown">"Щипунов"</span>, lastName:<span class="jsstringcolor" style="color:brown">"Андрей"</span>, age:<span class="jsnumbercolor" style="color:red">46</span>};<span class="jsnumbercolor" style="color:red">
+                        </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Элементы массива могут быть объектами
+            </h2>
+            <p>JavaScript переменные могут быть объектами. Массивы - это особые виды объектов.
+
+                <br>Из-за этого в одном массиве могут быть переменные разных типов.
+                
+                <br>Вы можете иметь объекты в массиве. Вы можете иметь функции в массиве. Вы можете иметь массивы в массиве:
+                
+                </p>
+                <div class="w3-code w3-border notranslate jsHigh"><span class="jscolor" style="color:black"><div>
+                    myArray[<span class="jsnumbercolor" style="color:red">0</span>] = Date.<span class="jspropertycolor" style="color:black">now</span>;<br>
+                    myArray[<span class="jsnumbercolor" style="color:red">1</span>] = myFunction;<br>
+                    myArray[<span class="jsnumbercolor" style="color:red">2</span>] = myCars;</div>
+                     </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Свойства и методы массива
+            </h2>
+            <p>Настоящая сила массивов JavaScript - это встроенные свойства и методы массива:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> x = cars.<span class="jspropertycolor" style="color:black">length</span>;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Свойство length возвращает количество элементов<br></span>
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> y = cars.<span class="jspropertycolor" style="color:black">sort</span>();&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Метод sort() сортирует массивы
+                 </span></span></div>
 
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Свойство length
+            </h2>
+            <p>Свойство length массива возвращает длину массива (количество элементов массива).
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+                fruits.<span class="jspropertycolor" style="color:black">length</span>;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// длина плодов 4
+                 </span></span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Доступ к первому элементу массива
+            </h2>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> first = fruits[<span class="jsnumbercolor" style="color:red">0</span>];<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+                <h3>Доступ к последнему элементу массива
+                </h3>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> last = fruits[fruits.<span class="jspropertycolor" style="color:black">length</span> - <span class="jsnumbercolor" style="color:red">1</span>];<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Зацикливание элементов массива
+            </h2>
+            <p>Самый безопасный способ перебрать массив - использовать for цикл:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits, text, fLen, i;<br>fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+                fLen = fruits.<span class="jspropertycolor" style="color:black">length</span>;<br><br>text = <span class="jsstringcolor" style="color:brown">"&lt;ul&gt;"</span>;<br><span class="jskeywordcolor" style="color:mediumblue">for</span> (i = <span class="jsnumbercolor" style="color:red">0</span>; i &lt; fLen; i++) {<br>&nbsp;&nbsp;text += <span class="jsstringcolor" style="color:brown">"&lt;li&gt;"</span> + fruits[i] + <span class="jsstringcolor" style="color:brown">"&lt;/li&gt;"</span>;<br>}<br>text <span class="jsnumbercolor" style="color:red">
+                </span>+= <span class="jsstringcolor" style="color:brown">"&lt;/ul&gt;"</span>;<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+                <p>Вы также можете использовать Array.forEach() функцию:
+                </p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits, text;<br>fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br><span class="jsnumbercolor" style="color:red">
+                    </span><br>text = <span class="jsstringcolor" style="color:brown">"&lt;ul&gt;"</span>;<br>fruits.<span class="jspropertycolor" style="color:black">forEach</span>(myFunction);<br>text += <span class="jsstringcolor" style="color:brown">"&lt;/ul&gt;"</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span><br><span class="jskeywordcolor" style="color:mediumblue">function</span> 
+                    myFunction(value) {<br>&nbsp; 
+                    text += <span class="jsstringcolor" style="color:brown">"&lt;li&gt;"</span> + value + <span class="jsstringcolor" style="color:brown">"&lt;/li&gt;"</span>;<br>} </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Добавление элементов массива
+            </h2>
+            <p>Самый простой способ добавить новый элемент в массив - использовать push() метод:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+                fruits.<span class="jspropertycolor" style="color:black">push</span>(<span class="jsstringcolor" style="color:brown">"Лимон"</span>);&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// добавляет к фруктам новый элемент(Лимон) </span></span></div>
+                <p>Новый элемент также можно добавить в массив с помощью length свойства:
+                </p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+                    fruits[fruits.<span class="jspropertycolor" style="color:black">length</span>] = <span class="jsstringcolor" style="color:brown">"Лимон"</span>;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// добавляет новый элемент (Лимон) к фруктам </span></span></div><br>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                        <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+                        fruits[<span class="jsnumbercolor" style="color:red">6</span>] = <span class="jsstringcolor" style="color:brown">"Лимон"</span>;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// добавляет новый элемент (Лимон) к фруктам </span></span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Ассоциативные массивы
+            </h2>
+            <p>Многие языки программирования поддерживают массивы с именованными индексами.
+
+                <br>Массивы с именованными индексами называются ассоциативными массивами (или хэшами).
+                
+                <br>JavaScript не поддерживает массивы с именованными индексами.
+                
+                <br>В JavaScript массивы всегда используют нумерованные индексы.
+                
+                </p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> person = [];<br>
+                    person[<span class="jsnumbercolor" style="color:red">0</span>] = <span class="jsstringcolor" style="color:brown">"Щипунов"</span>;<br>
+                    person[<span class="jsnumbercolor" style="color:red">1</span>] = <span class="jsstringcolor" style="color:brown">"Андрей"</span>;<br>
+                    person[<span class="jsnumbercolor" style="color:red">2</span>] = <span class="jsnumbercolor" style="color:red">46</span>;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> x = person.<span class="jspropertycolor" style="color:black">length</span>;&nbsp;&nbsp;&nbsp;&nbsp; <span class="jsnumbercolor" style="color:red">
+                    </span><span class="commentcolor" style="color:green">// person.length вернет 3<br></span><span class="jskeywordcolor" style="color:mediumblue">var</span> y = person[<span class="jsnumbercolor" style="color:red">0</span>];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="jsnumbercolor" style="color:red">
+                    </span><span class="commentcolor" style="color:green">// person[0] вернет "Щипунов" </span></span></div>
+                    <p>Если вы используете именованные индексы, JavaScript переопределит массив в стандартный объект.
+                        <br>После этого некоторые методы и свойства массива будут давать неверные результаты.</p>
+                        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                            <span class="jskeywordcolor" style="color:mediumblue">var</span> person = [];<br>
+                            person[<span class="jsstringcolor" style="color:brown">"firstName"</span>] = <span class="jsstringcolor" style="color:brown">"Щипунов"</span>;<br>
+                            person[<span class="jsstringcolor" style="color:brown">"lastName"</span>] = <span class="jsstringcolor" style="color:brown">"Андрей"</span>;<br>
+                            person[<span class="jsstringcolor" style="color:brown">"age"</span>] = <span class="jsnumbercolor" style="color:red">46</span>;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> x = person.<span class="jspropertycolor" style="color:black">length</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// person.length вернет 
+                            0<br></span><span class="jskeywordcolor" style="color:mediumblue">var</span> y = person[<span class="jsnumbercolor" style="color:red">0</span>];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="jsnumbercolor" style="color:red">
+                            </span><span class="commentcolor" style="color:green">// person[0] вернет undefined </span></span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Разница между массивами и объектами
+            </h2>
+            <p>В JavaScript массивы используют нумерованные индексы.
+                <br>В JavaScript объекты используют именованные индексы.
+                <br> Массивы - это особый вид объектов с пронумерованными индексами.
+                </p>
+                <h2>Когда использовать массивы? Когда использовать объекты?
+                </h2>
+                <ul>
+                    <li>JavaScript не поддерживает ассоциативные массивы.</li>
+                    <li>Вы должны использовать <strong>объекты</strong>, если хотите, чтобы имена элементов были <strong>строками (текстом)</strong>.</li>
+                    <li>Вы должны использовать <strong>массивы</strong>, если хотите, чтобы имена элементов были <strong>числами</strong>.</li>
+                    </ul>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Избегайте new Array()
+            </h2>
+            <p>Нет необходимости использовать встроенный в JavaScript конструктор new Array().
+
+                <br>Вместо этого используйте []
+                
+                <br>Эти два разных оператора создают новый пустой массив с именем points:
+                
+                </p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> points = <span class="jskeywordcolor" style="color:mediumblue">new</span> Array();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Плохо<br></span>
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> points = [];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Хорошо
+                     </span></span></div>
+                     <p>Эти два разных оператора создают новый массив, содержащий 6 чисел:
+                     </p>
+                     <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                        <span class="jskeywordcolor" style="color:mediumblue">var</span> points = <span class="jskeywordcolor" style="color:mediumblue">new</span> Array(<span class="jsnumbercolor" style="color:red">40</span>, <span class="jsnumbercolor" style="color:red">100</span>, <span class="jsnumbercolor" style="color:red">1</span>, <span class="jsnumbercolor" style="color:red">5</span>, <span class="jsnumbercolor" style="color:red">25</span>, <span class="jsnumbercolor" style="color:red">10</span>); <span class="commentcolor" style="color:green">// Плохо<br></span>
+                        <span class="jskeywordcolor" style="color:mediumblue">var</span> points = [<span class="jsnumbercolor" style="color:red">40</span>, <span class="jsnumbercolor" style="color:red">100</span>, <span class="jsnumbercolor" style="color:red">1</span>, <span class="jsnumbercolor" style="color:red">5</span>, <span class="jsnumbercolor" style="color:red">25</span>, <span class="jsnumbercolor" style="color:red">10</span>];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">//  Хорошо
+                         </span></span></div>
+                         <p>Ключевое слово new только усложняет код. Это также может привести к неожиданным результатам:
+                         </p>
+                         <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                            <span class="jskeywordcolor" style="color:mediumblue">var</span> points = <span class="jskeywordcolor" style="color:mediumblue">new</span> Array(<span class="jsnumbercolor" style="color:red">40</span>, <span class="jsnumbercolor" style="color:red">100</span>);&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Создает массив из двух элементов (40 и 100) </span></span></div>
+                            <p>Что, если я удалю один из элементов?
+                            </p>
+                            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                                <span class="jskeywordcolor" style="color:mediumblue">var</span> points = <span class="jskeywordcolor" style="color:mediumblue">new</span> Array(<span class="jsnumbercolor" style="color:red">40</span>);&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Создает массив из 40 неопределенных элементов !!!!! </span></span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
-            <hr><br>
-        </div>
-        <div class="feed-post">
-            
+            <h2>Как распознать массив?
+            </h2>
+            <p>Распространенный вопрос: как узнать, является ли переменная массивом?
+
+                <br>Проблема в том, что оператор JavaScript typeof возвращает "object":
+                
+                </p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br><br>
+                    <span class="jskeywordcolor" style="color:mediumblue">typeof</span> fruits;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает объект </span></span></div>
+                    <p>Оператор typeof возвращает объект, потому что массив JavaScript является объектом.
+                    </p>
+                    <p>Для решения этой проблемы ECMAScript 5 определяет новый метод Array.isArray():
+                    </p>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                        Array.<span class="jspropertycolor" style="color:black">isArray</span>(fruits);&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает true </span></span></div>
+                        <p>Для решения этой проблемы вы можете создать свою собственную isArray() функцию:
+                        </p>
+                        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                            <span class="jskeywordcolor" style="color:mediumblue">function</span> isArray(x) {<br>&nbsp; <span class="jskeywordcolor" style="color:mediumblue">return</span> x.<span class="jspropertycolor" style="color:black">constructor</span>.<span class="jspropertycolor" style="color:black">toString</span>().<span class="jspropertycolor" style="color:black">indexOf</span>(<span class="jsstringcolor" style="color:brown">"Array"</span>) &gt; -<span class="jsnumbercolor" style="color:red">1</span>;<br>} </span></div>
+                            <p>Оператор instanceof возвращает истину , если объект создается с помощью данного конструктора:
+                            </p>
+                            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                                <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br><span class="jsnumbercolor" style="color:red">
+                                </span><br>fruits <span class="jskeywordcolor" style="color:mediumblue">instanceof</span> Array;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает true </span></span></div>
             <hr><br>
         </div>
         
