@@ -12,48 +12,279 @@
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">JS - Урок 8</h1>
-        
+        <h2>JavaScript Объекты датa
+        </h2>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+            <span class="jskeywordcolor" style="color:mediumblue">var</span> d = <span class="jskeywordcolor" style="color:mediumblue">new</span> Date(<span class="jsstringcolor" style="color:brown">"October 13, 2014 11:13:00"</span>);<span class="jsnumbercolor" style="color:red">
+            </span> </span></div>
         <hr>
     </header>
     <main>
         <div class="feed-post">
+<h2>JavaScript Метод получения датa</h2>
+<table class="w3-table-all notranslate">
+    <tbody><tr>
+    <th>Методы</th>
+    <th>Описание</th>
+    </tr>
+    <tr>
+    <td>getFullYear()</td>
+    <td>Получите <strong>год</strong> в виде четырехзначного числа (yyyy)</td>
+    </tr>
+    <tr>
+    <td>getMonth()</td>
+    <td>Получите <strong>месяц</strong> в виде числа (0-11)</td>
+    </tr>
+    <tr>
+    <td>getDate()</td>
+    <td>Получите <strong>день</strong> в виде числа (1-31)</td>
+    </tr>
+    <tr>
+    <td>getHours()</td>
+    <td>Получите <strong>час</strong> (0-23)</td>
+    </tr>
+    <tr>
+    <td>getMinutes()</td>
+    <td>Получите <strong>минуту</strong> (0-59)</td>
+    </tr>
+    <tr>
+    <td>getSeconds()</td>
+    <td>Получите <strong>секунду</strong> (0-59)</td>
+    </tr>
+    <tr>
+    <td>getMilliseconds()</td>
+    <td>Получите <strong>миллисекунду</strong> (0-999)</td>
+    </tr>
+    <tr>
+    <td>getTime()</td>
+    <td>Получите время (миллисекунды с 1 января 1970 г.)</td>
+    </tr>
+    <tr>
+    <td>getDay()</td>
+    <td>Получите день недели в виде числа (0-6)</td>
+    </tr>
+    <tr>
+    <td>Date.now()</td>
+    <td>Получите время. ECMAScript 5.</td>
+    </tr>
+    </tbody></table>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Метод установки датa
+            </h2>
+            <p>Методы установки даты позволяют вам устанавливать значения даты (годы, месяцы, дни, часы, минуты, секунды, миллисекунды) для объекта Date (дата).
+            </p>
+            <table class="w3-table-all notranslate">
+                <tbody><tr>
+                <th>Методы</th>
+                <th>Описание</th>
+                </tr>
+                <tr>
+                <td>setDate()</td>
+                <td>Установите день в виде числа (1-31)</td>
+                </tr>
+                <tr>
+                <td>setFullYear()</td>
+                <td>Установите год (при желании месяц и день)</td>
+                </tr>
+                <tr>
+                <td>setHours()</td>
+                <td>Установите час (0-23)</td>
+                </tr>
+                <tr>
+                <td>setMilliseconds()</td>
+                <td>Установите миллисекунды (0-999)</td>
+                </tr>
+                <tr>
+                <td>setMinutes()</td>
+                <td>Установите минуты (0-59)</td>
+                </tr>
+                <tr>
+                <td>setMonth()</td>
+                <td>Установите месяц (0-11)</td>
+                </tr>
+                <tr>
+                <td>setSeconds()</td>
+                <td>Установите секунды (0-59)</td>
+                </tr>
+                <tr>
+                <td>setTime()</td>
+                <td>Установите время (миллисекунды с 1 января 1970 г.)</td>
+                </tr>
+                </tbody></table>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Случайные (рандомные) целые числа
+            </h2>
+            <p>Math.random() используется с Math.floor() может использоваться для возврата случайных целых чисел.
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                Math.<span class="jspropertycolor" style="color:black">floor</span>(Math.<span class="jspropertycolor" style="color:black">random</span>() * <span class="jsnumbercolor" style="color:red">10</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// возвращает случайное целое число от 0 до 9
+                 </span></span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Правильная рандомная (случайная) функция
+            </h2>
+            <p>Как видно из приведенных выше примеров, было бы неплохо создать правильную рандомную (случайную) функцию, которая будет использоваться для всех рандомных (случайных) целочисленных целей.
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">function</span> getRndInteger(min, max) {<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">return</span> Math.<span class="jspropertycolor" style="color:black">floor</span>(Math.<span class="jspropertycolor" style="color:black">random</span>() * (max - min) ) + min;<br><span class="jsnumbercolor" style="color:red">
+                </span>}<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+                <p>Эта функция JavaScript всегда возвращает случайное число от min до max (оба включены):
+                </p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">function</span> getRndInteger(min, max) {<br><span class="jsnumbercolor" style="color:red">
+                    </span>&nbsp; <span class="jskeywordcolor" style="color:mediumblue">return</span> Math.<span class="jspropertycolor" style="color:black">floor</span>(Math.<span class="jspropertycolor" style="color:black">random</span>() * (max - min + <span class="jsnumbercolor" style="color:red">1</span>) ) + min;<br><span class="jsnumbercolor" style="color:red">
+                    </span>}<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Булевы
+            </h2>
+            <p>JavaScript Логическое значение представляет одно из двух значений: true или false.
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                Boolean(<span class="jsnumbercolor" style="color:red">10</span> &gt; <span class="jsnumbercolor" style="color:red">9</span>)&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает true
+                 </span></span></div><br>
+                 <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <span class="jsnumbercolor" style="color:red">0</span>;<br>
+                    Boolean(x);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// возвращает false
+                     </span></span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Логические значения могут быть объектами
+            </h2>
+            Обычно логические значения JavaScript представляют собой примитивные значения, созданные из литералов:
+
+<br>var x = false;
+
+<br>Но логические значения также могут быть определены как объекты с ключевым словом new:
+
+<br>var y = new Boolean(false);
+<div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <span class="jskeywordcolor" style="color:mediumblue">false</span>;<br>
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> y = <span class="jskeywordcolor" style="color:mediumblue">new</span> Boolean(<span class="jskeywordcolor" style="color:mediumblue">false</span>);<br><br><span class="jsnumbercolor" style="color:red">
+    </span><span class="commentcolor" style="color:green">//
+    typeof x возвращает логическое значение<br></span><span class="jsnumbercolor" style="color:red">
+    </span><span class="commentcolor" style="color:green">//
+    typeof y возвращает объект 
+     </span></span></div>
 
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Операторы сравнение и логические
+            </h2>
+            <p>JavaScript Операторы сравнение и логические используются для проверки true или false.
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">if</span> (age &lt; <span class="jsnumbercolor" style="color:red">18</span>) text = <span class="jsstringcolor" style="color:brown">"Слишком молод"</span>;<span class="jsnumbercolor" style="color:red">
+                </span> </span></div><br>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    age = Number(age);<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">if</span> (isNaN(age)) {<br><span class="jsnumbercolor" style="color:red">
+                    </span>&nbsp;&nbsp;voteable = <span class="jsstringcolor" style="color:brown">"Введено не число"</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span>} <span class="jskeywordcolor" style="color:mediumblue">else</span> {<br><span class="jsnumbercolor" style="color:red">
+                    </span>&nbsp; voteable = (age &lt; <span class="jsnumbercolor" style="color:red">18</span>) ? <span class="jsstringcolor" style="color:brown">"Слишком молод"</span> : <span class="jsstringcolor" style="color:brown">"Достаточно взрослый"</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span>}<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div><br>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                        age = Number(age);<br>
+                        <span class="jskeywordcolor" style="color:mediumblue">if</span> (isNaN(age)) {<br><span class="jsnumbercolor" style="color:red">
+                        </span>&nbsp;&nbsp;voteable = <span class="jsstringcolor" style="color:brown">"Введено не число"</span>;<br><span class="jsnumbercolor" style="color:red">
+                        </span>} <span class="jskeywordcolor" style="color:mediumblue">else</span> {<br><span class="jsnumbercolor" style="color:red">
+                        </span>&nbsp; voteable = (age &lt; <span class="jsnumbercolor" style="color:red">18</span>) ? <span class="jsstringcolor" style="color:brown">"Слишком молод"</span> : <span class="jsstringcolor" style="color:brown">"Достаточно взрослый"</span>;<br><span class="jsnumbercolor" style="color:red">
+                        </span>}<span class="jsnumbercolor" style="color:red">
+                        </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Операторы if...else
+            </h2>
+            <p>Условные операторы используются для выполнения разных действий в зависимости от разных условий.
+            </p>
+            <ul>
+                <li>Используйте <code class="w3-codespan">if</code>, чтобы указать блок кода, который нужно выполнить, если указанное условие true (истинно)</li>
+                <li>Используйте <code class="w3-codespan">else</code>, чтобы указать блок кода, который будет выполнен, если то же условие false (ложно)</li>
+                <li>Используйте <code class="w3-codespan">else if</code>, чтобы указать новое условие для проверки, если первое условие false (ложно)</li>
+                <li>Используйте <code class="w3-codespan">switch</code>, чтобы указать много альтернативных блоков кода, которые должны быть выполнены</li>
+                </ul>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">if</span> (hour &lt; <span class="jsnumbercolor" style="color:red">18</span>) {<br><span class="jsnumbercolor" style="color:red">
+                    </span>&nbsp;&nbsp;greeting = <span class="jsstringcolor" style="color:brown">"Добрый день"</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span>}
+                    <span class="jskeywordcolor" style="color:mediumblue">else</span> {<br><span class="jsnumbercolor" style="color:red">
+                    </span>&nbsp; greeting = <span class="jsstringcolor" style="color:brown">"Добрый вечер"</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span>}<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div><br>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                        <span class="jskeywordcolor" style="color:mediumblue">if</span> (time &lt; <span class="jsnumbercolor" style="color:red">10</span>) {<br><span class="jsnumbercolor" style="color:red">
+                        </span>&nbsp; greeting = <span class="jsstringcolor" style="color:brown">"Доброе утро"</span>;<br><span class="jsnumbercolor" style="color:red">
+                        </span>}
+                        <span class="jskeywordcolor" style="color:mediumblue">else</span> <span class="jskeywordcolor" style="color:mediumblue">if</span> (time &lt; <span class="jsnumbercolor" style="color:red">20</span>)&nbsp;{<br><span class="jsnumbercolor" style="color:red">
+                        </span>&nbsp; greeting = <span class="jsstringcolor" style="color:brown">"Добрый день"</span>;<br><span class="jsnumbercolor" style="color:red">
+                        </span>}
+                        <span class="jskeywordcolor" style="color:mediumblue">else</span>&nbsp;{<br><span class="jsnumbercolor" style="color:red">
+                        </span>&nbsp; greeting = <span class="jsstringcolor" style="color:brown">"Добрый вечер"</span>;<br><span class="jsnumbercolor" style="color:red">
+                        </span>}<span class="jsnumbercolor" style="color:red">
+                        </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Оператор switch</h2>
+            <p>Оператор switch используется для выполнения различных действий, основанных на различных условиях.
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">switch</span> (<span class="jskeywordcolor" style="color:mediumblue">new</span> Date().<span class="jspropertycolor" style="color:black">getDay</span>()) {<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">case</span> <span class="jsnumbercolor" style="color:red">0</span>:<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp; &nbsp;&nbsp;day = <span class="jsstringcolor" style="color:brown">"Воскресенье"</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">break</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">case</span> <span class="jsnumbercolor" style="color:red">1</span>:<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp; &nbsp; day = <span class="jsstringcolor" style="color:brown">"Понедельник"</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">break</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">case</span> <span class="jsnumbercolor" style="color:red">2</span>:<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp; &nbsp;&nbsp; day = <span class="jsstringcolor" style="color:brown">"Вторник"</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp; <span class="jskeywordcolor" style="color:mediumblue">break</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">case</span> <span class="jsnumbercolor" style="color:red">3</span>:<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp; &nbsp; day = <span class="jsstringcolor" style="color:brown">"Среда"</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp; <span class="jskeywordcolor" style="color:mediumblue">break</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">case</span> <span class="jsnumbercolor" style="color:red">4</span>:<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp; &nbsp; day = <span class="jsstringcolor" style="color:brown">"Четверг"</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">break</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">case</span> <span class="jsnumbercolor" style="color:red">5</span>:<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp; &nbsp; day = <span class="jsstringcolor" style="color:brown">"Пятница"</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp; <span class="jskeywordcolor" style="color:mediumblue">break</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">case</span> <span class="jsnumbercolor" style="color:red">6</span>:<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp; &nbsp;&nbsp;day = <span class="jsstringcolor" style="color:brown">"Суббота"</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>}<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
-            <hr><br>
-        </div>
-        <div class="feed-post">
-            
-            <hr><br>
-        </div>
-        <div class="feed-post">
-            
-            <hr><br>
-        </div>
-        <div class="feed-post">
-            
-            <hr><br>
-        </div>
-        <div class="feed-post">
-            
-            <hr><br>
-        </div>
-        <div class="feed-post">
-            
+            <h2>Ключевое слово default
+            </h2>
+            <p>Ключевое слово default указывает код для запуска, если нет ни одного совпадения:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">switch</span> (<span class="jskeywordcolor" style="color:mediumblue">new</span> Date().<span class="jspropertycolor" style="color:black">getDay</span>()) {<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;
+                <span class="jskeywordcolor" style="color:mediumblue">case</span> <span class="jsnumbercolor" style="color:red">6</span>:<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp; &nbsp; text = <span class="jsstringcolor" style="color:brown">"Сегодня суббота"</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">break</span>; <br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">case</span> <span class="jsnumbercolor" style="color:red">0</span>:<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp; text = <span class="jsstringcolor" style="color:brown">"Сегодня воскресенье"</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp; <span class="jskeywordcolor" style="color:mediumblue">break</span>; <br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;
+                <span class="jskeywordcolor" style="color:mediumblue">default</span>: <br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;&nbsp; text = <span class="jsstringcolor" style="color:brown">"С нетерпением жду выходных"</span>;<br>}<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
             <hr><br>
         </div>
         

@@ -14,50 +14,326 @@
         <h1 style="text-align: center;">JS - Урок 7</h1>
         <h2>JavaScript Методы массива
         </h2>
+        <p>JavaScript метод toString() преобразует массив в строку значений массива (разделенных запятыми):
+        </p>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor"
+                    style="color:brown">"Банан"</span>, <span class="jsstringcolor"
+                    style="color:brown">"Апельсин"</span>, <span class="jsstringcolor"
+                    style="color:brown">"Яблоко"</span>, <span class="jsstringcolor"
+                    style="color:brown">"Манго"</span>];<br>
+                document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                    class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                    style="color:black">innerHTML</span> = fruits.<span class="jspropertycolor"
+                    style="color:black">toString</span>();<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+        <p>Метод join() также объединяет все элементы массива в строку.
+            <br> Он ведет себя так же как и метод toString(), но в дополнение можно указать разделитель:
+        </p>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor"
+                    style="color:brown">"Банан"</span>, <span class="jsstringcolor"
+                    style="color:brown">"Апельсин"</span>, <span class="jsstringcolor"
+                    style="color:brown">"Яблоко"</span>, <span class="jsstringcolor"
+                    style="color:brown">"Манго"</span>];<br>
+                document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                    class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                    style="color:black">innerHTML</span> = fruits.<span class="jspropertycolor"
+                    style="color:black">join</span>(<span class="jsstringcolor" style="color:brown">" * "</span>);<span
+                    class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+
         <hr>
     </header>
     <main>
         <div class="feed-post">
+            <h2>Выталкивание</h2>
+            <p>Метод pop() удаляет последний элемент из массива:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span
+                        class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Апельсин"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Яблоко"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Манго"</span>];<br>
+                    fruits.<span class="jspropertycolor" style="color:black">pop</span>();&nbsp;&nbsp;<span
+                        class="commentcolor" style="color:green">// Удаляет последний элемент ("Манго") из fruits
+                    </span></span></div>
+            <p>Метод pop() возвращает значение, которое "выскочило":
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span
+                        class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Апельсин"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Яблоко"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Манго"</span>];<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = fruits.<span
+                        class="jspropertycolor" style="color:black">pop</span>();&nbsp;&nbsp;<span class="commentcolor"
+                        style="color:green">// значение x "Манго" </span></span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Толкать</h2>
+            <p>Метод push() добавляет новый элемент в массив (в конце):
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span
+                        class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Апельсин"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Яблоко"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Манго"</span>];<br>
+                    fruits.<span class="jspropertycolor" style="color:black">push</span>(<span class="jsstringcolor"
+                        style="color:brown">"Киви"</span>);&nbsp;&nbsp;<span class="commentcolor"
+                        style="color:green">//Добавляет новый элемен ("Киви") к fruits </span></span></div>
+            <p>Метод push() возвращает новую длину массива:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span
+                        class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Апельсин"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Яблоко"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Манго"</span>];<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> x =
+                    fruits.<span class="jspropertycolor" style="color:black">push</span>(<span class="jsstringcolor"
+                        style="color:brown">"Киви"</span>);&nbsp;&nbsp;<span class="commentcolor" style="color:green">//
+                        значение x равно 5 </span></span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Сдвиг элементов
+            </h2>
+            <p>Сдвиг эквивалентен выталкиванию, работая с первым элементом вместо последнего.
 
+                <br>Метод shift() удаляет первый элемент массива и "сдвигает" все другие элементы к более низкому
+                индексу.
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span
+                        class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Апельсин"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Яблоко"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Манго"</span>];<br>
+                    fruits.<span class="jspropertycolor" style="color:black">shift</span>();&nbsp;&nbsp;<span
+                        class="commentcolor" style="color:green">// Удаляет первый элемент "Банан" из fruits
+                    </span></span></div>
+            <p>Метод shift() возвращает строку, которая была "сдвинута":
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span
+                        class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Апельсин"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Яблоко"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Манго"</span>];<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = fruits.<span
+                        class="jspropertycolor" style="color:black">shift</span>();&nbsp;&nbsp;<span
+                        class="commentcolor" style="color:green">// значение x равно "Банан"
+                    </span></span></div>
+            <p>Метод unshift() добавляет новый элемент в массиве (в начале), и "смещает" старые элементы:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span
+                        class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Апельсин"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Яблоко"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Манго"</span>];<br>
+                    fruits.<span class="jspropertycolor" style="color:black">unshift</span>(<span class="jsstringcolor"
+                        style="color:brown">"Лимон"</span>);&nbsp;&nbsp;<span class="commentcolor"
+                        style="color:green">// Добавляет новый элемент "Лимон" к fruits
+                    </span></span></div>
+            <p>Метод unshift() возвращает новую длину массива.
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span
+                        class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Апельсин"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Яблоко"</span>, <span class="jsstringcolor"
+                        style="color:brown">"Манго"</span>];<br>
+                    fruits.<span class="jspropertycolor" style="color:black">unshift</span>(<span class="jsstringcolor"
+                        style="color:brown">"Лимон"</span>);&nbsp;&nbsp;<span class="commentcolor"
+                        style="color:green">// Возвращает 5
+                    </span></span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>Смена элементов</h2>
+<p>Доступ к элементам массива осуществляется по их порядковому номеру:
+</p>
+<div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+    fruits[<span class="jsnumbercolor" style="color:red">0</span>] = <span class="jsstringcolor" style="color:brown">"Киви"</span>; &nbsp;&nbsp;<span class="commentcolor" style="color:green">// Изменяет первый элемент фруктов на "Киви" </span></span></div>
+    <p>Свойство length обеспечивает простой способ для добавления нового элемента в массив:
+    </p>
+    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+        <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+        fruits[fruits.<span class="jspropertycolor" style="color:black">length</span>] = <span class="jsstringcolor" style="color:brown">"Киви"</span>;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Добавляет "Киви" к фруктам </span></span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>Удаление элементов</h2>
+<p>Поскольку массивы JavaScript являются объектами, элементы можно удалять с помощью delete JavaScript оператора:</p>
+<div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+    <span class="jskeywordcolor" style="color:mediumblue">delete</span> fruits[<span class="jsnumbercolor" style="color:red">0</span>];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="jsnumbercolor" style="color:red">
+    </span><span class="commentcolor" style="color:green">// Изменяет первый элемент в фруктах на <strong>undefined</strong> </span></span></div>
+    <p>Использование delete может оставить неопределенные дыры в массиве. Вместо этого используйте pop() или shift().
+    </p>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>Объединение массива</h2>
+<p>Метод splice() может быть использован для добавления новых элементов в массив:
+</p>
+<div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+    fruits.<span class="jspropertycolor" style="color:black">splice</span>(<span class="jsnumbercolor" style="color:red">2</span>, <span class="jsnumbercolor" style="color:red">0</span>, <span class="jsstringcolor" style="color:brown">"Лимон"</span>, <span class="jsstringcolor" style="color:brown">"Киви"</span>);<span class="jsnumbercolor" style="color:red">
+    </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>Использование splice()</h2>
+<p>Благодаря умной настройке параметров вы можете использовать splice() для удаления элементов, не оставляя "дыр" в массиве:</p>
+<div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+    fruits.<span class="jspropertycolor" style="color:black">splice</span>(<span class="jsnumbercolor" style="color:red">0</span>, <span class="jsnumbercolor" style="color:red">1</span>);&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Удаляет первый элемент фруктов
+     </span></span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>Слияние (конкатенация) массивов</h2>
+<p>Метод concat() создает новый массив путем слияния (конкатенации) существующих массивов:
+</p>
+<div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> myGirls = [<span class="jsstringcolor" style="color:brown">"Cecilie"</span>, <span class="jsstringcolor" style="color:brown">"Lone"</span>];<br>
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> myBoys = [<span class="jsstringcolor" style="color:brown">"Emil"</span>, <span class="jsstringcolor" style="color:brown">"Tobias"</span>, <span class="jsstringcolor" style="color:brown">"Linus"</span>];<br>
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> myChildren = myGirls.<span class="jspropertycolor" style="color:black">concat</span>(myBoys);&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Конкатенирует (объединяет) myGirls и myBoys
+     </span></span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>Нарезка массива</h2>
+<p>Метод slice() нарезает из куска массива в новый массив.
+</p>
+<div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Лимон"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> citrus = fruits.<span class="jspropertycolor" style="color:black">slice</span>(<span class="jsnumbercolor" style="color:red">1</span>);<span class="jsnumbercolor" style="color:red">
+    </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>Автоматический toString()</h2>
+<p>JavaScript автоматически преобразует массив в строку, разделенную запятыми, когда ожидается примитивное значение.
+
+    <br>Это всегда так, когда вы пытаетесь вывести массив.</p>
+    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+        <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+        document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = fruits.<span class="jspropertycolor" style="color:black">toString</span>();<span class="jsnumbercolor" style="color:red">
+        </span> </span></div><br>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+            <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+            document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = fruits;<span class="jsnumbercolor" style="color:red">
+            </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>Сортировка массива
+</h2>
+<p>Метод sort() сортирует массив по алфавиту:
+</p>
+<div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+    fruits.<span class="jspropertycolor" style="color:black">sort</span>();&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Сортирует элементы фруктов
+     </span></span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>Реверс массива
+</h2>
+<p>Метод reverse() реверсирует элементы в массиве.
+    <br>Реверсировать означает перенаправить, т.е. изменить направление в обратном порядке.
+    </p>
+    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+        <span class="jskeywordcolor" style="color:mediumblue">var</span> fruits = [<span class="jsstringcolor" style="color:brown">"Банан"</span>, <span class="jsstringcolor" style="color:brown">"Апельсин"</span>, <span class="jsstringcolor" style="color:brown">"Яблоко"</span>, <span class="jsstringcolor" style="color:brown">"Манго"</span>];<br>
+        fruits.<span class="jspropertycolor" style="color:black">sort</span>();&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Сначала сортируем элементы фруктов<br></span>
+        fruits.<span class="jspropertycolor" style="color:black">reverse</span>();&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Затем происходит реверс (обратный порядок) элементов </span></span></div>
             <hr><br>
         </div>
-        
+        <div class="feed-post">
+<h2>Сортировка чисел</h2>
+<p>По умолчанию метод sort() сортирует значения как строки.
+
+    <br>Это хорошо работает для строк ("Яблоко" стоит перед "Банан").
+    
+    <br>Однако, если числа отсортированы как строки, "25" больше, чем "100", потому что "2" больше, чем "1".
+    
+    <br>Из-за этого метода sort() при сортировке чисел дает неверный результат.
+    
+    <br>Вы можете исправить это, предоставив функцию return:</p>
+    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+        <span class="jskeywordcolor" style="color:mediumblue">var</span> points = [<span class="jsnumbercolor" style="color:red">40</span>, <span class="jsnumbercolor" style="color:red">100</span>, <span class="jsnumbercolor" style="color:red">1</span>, <span class="jsnumbercolor" style="color:red">5</span>, <span class="jsnumbercolor" style="color:red">25</span>, <span class="jsnumbercolor" style="color:red">10</span>];<br>
+        points.<span class="jspropertycolor" style="color:black">sort</span>(<span class="jskeywordcolor" style="color:mediumblue">function</span>(a, b){<span class="jskeywordcolor" style="color:mediumblue">return</span> a - b});<span class="jsnumbercolor" style="color:red">
+        </span> </span></div>
+        <p>Используйте тот же прием для сортировки массива по убыванию:
+        </p>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+            <span class="jskeywordcolor" style="color:mediumblue">var</span> points = [<span class="jsnumbercolor" style="color:red">40</span>, <span class="jsnumbercolor" style="color:red">100</span>, <span class="jsnumbercolor" style="color:red">1</span>, <span class="jsnumbercolor" style="color:red">5</span>, <span class="jsnumbercolor" style="color:red">25</span>, <span class="jsnumbercolor" style="color:red">10</span>];<br>
+            points.<span class="jspropertycolor" style="color:black">sort</span>(<span class="jskeywordcolor" style="color:mediumblue">function</span>(a, b){<span class="jskeywordcolor" style="color:mediumblue">return</span> b - a});<span class="jsnumbercolor" style="color:red">
+            </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Функция возврата
+            </h2>
+            <p>Цель функции return - определить альтернативный порядок сортировки.
+
+                <br>Функция return должна возвращать отрицательное, нулевое или положительное значение в зависимости от аргументов:
+                
+                </p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">function</span>(a, b){<span class="jskeywordcolor" style="color:mediumblue">return</span> a - b}<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    <p>Когда метод sort() сравнивает два значения, она отправляет значения в функцию возврата и сортирует значения в соответствии с возвращенным (отрицательным, нулевым, положительным) значением.
+
+                       <br> Если результат отрицательный a, сортировка производится раньше b.
+                        
+                       <br> Если результат положительный b, сортировка производится раньше a.
+                        
+                       <br> Если результат равен 0, то порядок сортировки двух значений не изменяется.</p>
+                       <div class="w3-code notranslate htmlHigh">
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> onclick<span class="attributevaluecolor" style="color:mediumblue">="myFunction1()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> Сортировать по алфавиту<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> 
+                        onclick<span class="attributevaluecolor" style="color:mediumblue">="myFunction2()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Сортировка по цифрам<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="demo"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                        <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span class="jskeywordcolor" style="color:mediumblue">var</span> points = [<span class="jsnumbercolor" style="color:red">40</span>, <span class="jsnumbercolor" style="color:red">100</span>, <span class="jsnumbercolor" style="color:red">1</span>, <span class="jsnumbercolor" style="color:red">5</span>, <span class="jsnumbercolor" style="color:red">25</span>, <span class="jsnumbercolor" style="color:red">10</span>];<br>
+                        document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = points;<br><br><span class="jskeywordcolor" style="color:mediumblue">function</span> 
+                        myFunction1() {<br>&nbsp;&nbsp;points.<span class="jspropertycolor" style="color:black">sort</span>();<br>&nbsp;&nbsp;document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> <span class="jsnumbercolor" style="color:red">
+                        </span>= points;<br>}<br><br><span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction2() {<br>&nbsp; points.<span class="jspropertycolor" style="color:black">sort</span>(<span class="jskeywordcolor" style="color:mediumblue">function</span>(a, b){<span class="jskeywordcolor" style="color:mediumblue">return</span> 
+                        a - b});<br>&nbsp;&nbsp;document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = points;<br>}<br>
+                        </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Сортировка массива в случайном порядке
+            </h2>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> points = [<span class="jsnumbercolor" style="color:red">40</span>, <span class="jsnumbercolor" style="color:red">100</span>, <span class="jsnumbercolor" style="color:red">1</span>, <span class="jsnumbercolor" style="color:red">5</span>, <span class="jsnumbercolor" style="color:red">25</span>, <span class="jsnumbercolor" style="color:red">10</span>];<br>
+                points.<span class="jspropertycolor" style="color:black">sort</span>(<span class="jskeywordcolor" style="color:mediumblue">function</span>(a, b){<span class="jskeywordcolor" style="color:mediumblue">return</span> <span class="jsnumbercolor" style="color:red">0.5</span> - Math.<span class="jspropertycolor" style="color:black">random</span>()});<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Сортировка объектов массива
+            </h2>
+            <p>JavaScript массивы содержат объекты:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> cars = [<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;<span class="jsnumbercolor" style="color:red">
+                </span>{type:<span class="jsstringcolor" style="color:brown">"Вольво"</span>, year:<span class="jsnumbercolor" style="color:red">2016</span>},<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;<span class="jsnumbercolor" style="color:red">
+                </span>{type:<span class="jsstringcolor" style="color:brown">"Сааб"</span>, year:<span class="jsnumbercolor" style="color:red">2001</span>},<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;<span class="jsnumbercolor" style="color:red">
+                </span>{type:<span class="jsstringcolor" style="color:brown">"БМВ"</span>, year:<span class="jsnumbercolor" style="color:red">2010</span>}<br>]; </span></div>
+            <hr><br>
+        </div>
+
         <div class="next-btn_div">
             <button onclick='next2()' class="next-btn">Следующий блок</button>
         </div>

@@ -12,48 +12,164 @@
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">JS - Урок 9</h1>
-        
+        <h2>JavaScript Циклы
+        </h2>
+        <p>Циклы удобны, если вы хотите запускать один и тот же код снова и снова, каждый раз с другим значением.
+        </p>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+            text += cars[<span class="jsnumbercolor" style="color:red">0</span>] + <span class="jsstringcolor" style="color:brown">"&lt;br&gt;"</span>; <br>text += cars[<span class="jsnumbercolor" style="color:red">1</span>] + <span class="jsstringcolor" style="color:brown">"&lt;br&gt;"</span>; <br>
+            text += cars[<span class="jsnumbercolor" style="color:red">2</span>] + <span class="jsstringcolor" style="color:brown">"&lt;br&gt;"</span>; <br>text += cars[<span class="jsnumbercolor" style="color:red">3</span>] + <span class="jsstringcolor" style="color:brown">"&lt;br&gt;"</span>; <br>
+            text += cars[<span class="jsnumbercolor" style="color:red">4</span>] + <span class="jsstringcolor" style="color:brown">"&lt;br&gt;"</span>; <br>text += cars[<span class="jsnumbercolor" style="color:red">5</span>] + <span class="jsstringcolor" style="color:brown">"&lt;br&gt;"</span>;<span class="jsnumbercolor" style="color:red">
+            </span> </span></div>
+            <br>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> i;<br><span class="jskeywordcolor" style="color:mediumblue">for</span> (i = <span class="jsnumbercolor" style="color:red">0</span>; i &lt; cars.<span class="jspropertycolor" style="color:black">length</span>; i++) { <br>&nbsp;&nbsp;text += cars[i] + <span class="jsstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>} </span></div>
         <hr>
     </header>
     <main>
         <div class="feed-post">
-
+<h2>Цикл for
+</h2>
+<p>Цикл for имеет следующий синтаксис:
+</p>
+<div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+    <span class="jskeywordcolor" style="color:mediumblue">for</span> (i = <span class="jsnumbercolor" style="color:red">0</span>; i &lt; <span class="jsnumbercolor" style="color:red">5</span>; i++) {<br><span class="jsnumbercolor" style="color:red">
+    </span>&nbsp; text += <span class="jsstringcolor" style="color:brown">"Число является "</span> + i + <span class="jsstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="jsnumbercolor" style="color:red">
+    </span>}<br><span class="jsnumbercolor" style="color:red">
+    </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Цикл for/in
+            </h2>
+            <p>JavaScript оператор <code class="w3-codespan">for/in</code> перебирает свойства объекта:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> person = {fname:<span class="jsstringcolor" style="color:brown">"Щипунов"</span>, lname:<span class="jsstringcolor" style="color:brown">"Андрей"</span>, age:<span class="jsnumbercolor" style="color:red">25</span>}; <br><span class="jsnumbercolor" style="color:red">
+                </span><br>
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> text = <span class="jsstringcolor" style="color:brown">""</span>;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> x;<br><span class="jskeywordcolor" style="color:mediumblue">for</span> (x <span class="jskeywordcolor" style="color:mediumblue">in</span> person) {<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp; text += person[x];<br><span class="jsnumbercolor" style="color:red">
+                </span>} </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Цикл for/of
+            </h2>
+            <p>JavaScript оператор for/of перебирает значения итерируемых объектов.
+                <br>Цикл for/of позволяет перебирать итерируемые структуры данных, такие как массивы, строки, карты, списки узлов Node и т.д.
+                </p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> cars = [<span class="jsstringcolor" style="color:brown">"БМВ"</span>, <span class="jsstringcolor" style="color:brown">"Вольво"</span>, <span class="jsstringcolor" style="color:brown">"Мини"</span>];<br><span class="jskeywordcolor" style="color:mediumblue">var</span> x;<br><br><span class="jskeywordcolor" style="color:mediumblue">for</span> (x of cars) {<br><span class="jsnumbercolor" style="color:red">
+                    </span>&nbsp; document.<span class="jspropertycolor" style="color:black">write</span>(x + <span class="jsstringcolor" style="color:brown">"&lt;br &gt;"</span>);<br>} </span></div><br>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                        <span class="jskeywordcolor" style="color:mediumblue">var</span> txt = <span class="jsstringcolor" style="color:brown">"JavaScript"</span>;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> x;<br><br><span class="jskeywordcolor" style="color:mediumblue">for</span> (x of txt) {<br>&nbsp; 
+                        document.<span class="jspropertycolor" style="color:black">write</span>(x + <span class="jsstringcolor" style="color:brown">"&lt;br &gt;"</span>);<br>} </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Цикл For In</h2>
+            <p>JavaScript оператор for in перебирает свойства объекта:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">const</span> person = {fname:<span class="jsstringcolor" style="color:brown">"Щипунов"</span>, lname:<span class="jsstringcolor" style="color:brown">"Андрей"</span>, age:<span class="jsnumbercolor" style="color:red">25</span>};<br><br>
+                <span class="jskeywordcolor" style="color:mediumblue">let</span> text = <span class="jsstringcolor" style="color:brown">""</span>;<br><span class="jskeywordcolor" style="color:mediumblue">for</span> (<span class="jskeywordcolor" style="color:mediumblue">let</span> x <span class="jskeywordcolor" style="color:mediumblue">in</span> person) {<br>
+                text += person[x];<br><span class="jsnumbercolor" style="color:red">
+                </span>} </span></div>
+                <ul>
+                    <li>Цикл <b>for in</b> выполняет итерацию по объекту <b>person</b></li>
+                    <li>Каждая итерация возвращает <b>ключ</b> (x)</li>
+                    <li>Ключ используется для доступа к <b>значению</b> ключа</li>
+                    <li>Значение ключа равно <b>person[x]</b></li>
+                    </ul>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Метод For In над массивами
+            </h2>
+            <p>JavaScript оператор for in, также может перебирать свойства массива:
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">const</span> numbers = [<span class="jsnumbercolor" style="color:red">45</span>, <span class="jsnumbercolor" style="color:red">4</span>, <span class="jsnumbercolor" style="color:red">9</span>, <span class="jsnumbercolor" style="color:red">16</span>, <span class="jsnumbercolor" style="color:red">25</span>];<br><br>
+                <span class="jskeywordcolor" style="color:mediumblue">let</span> txt = <span class="jsstringcolor" style="color:brown">""</span>;<br>
+                <span class="jskeywordcolor" style="color:mediumblue">for</span> (<span class="jskeywordcolor" style="color:mediumblue">let</span> x <span class="jskeywordcolor" style="color:mediumblue">in</span> numbers) {<br>
+                txt += numbers[x];<br> <span class="jsnumbercolor" style="color:red">
+                </span>}<br><span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Метод массива forEach()
+            </h2>
+            <p>Метод forEach() вызывает функцию (функцию обратного вызова) один раз для каждого элемента массива.
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">const</span> numbers = [<span class="jsnumbercolor" style="color:red">45</span>, <span class="jsnumbercolor" style="color:red">4</span>, <span class="jsnumbercolor" style="color:red">9</span>, <span class="jsnumbercolor" style="color:red">16</span>, <span class="jsnumbercolor" style="color:red">25</span>];<br><br>
+                <span class="jskeywordcolor" style="color:mediumblue">let</span> txt = <span class="jsstringcolor" style="color:brown">""</span>;<br>
+                numbers.<span class="jspropertycolor" style="color:black">forEach</span>(myFunction);<br><br>
+                <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction(value, index, array) {<br> 
+                txt += value;<br><span class="jsnumbercolor" style="color:red">
+                </span>}<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Цикл For Of
+            </h2>
+            <p>JavaScript оператор <code class="w3-codespan">for of</code> перебирает значения итеративного объекта.</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">const</span> cars = [<span class="jsstringcolor" style="color:brown">"БМВ"</span>, <span class="jsstringcolor" style="color:brown">"Вольво"</span>, <span class="jsstringcolor" style="color:brown">"Мини"</span>];<br><br>
+                <span class="jskeywordcolor" style="color:mediumblue">let</span> text = <span class="jsstringcolor" style="color:brown">""</span>;<br>
+                <span class="jskeywordcolor" style="color:mediumblue">for</span> (<span class="jskeywordcolor" style="color:mediumblue">let</span> x of cars) {<br><span class="jsnumbercolor" style="color:red">
+                </span> text += x;<br><span class="jsnumbercolor" style="color:red">
+                </span>}<br><span class="jsnumbercolor" style="color:red">
+                </span> </span></div><br>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> language = <span class="jsstringcolor" style="color:brown">"JavaScript"</span>;<br><br>
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> text = <span class="jsstringcolor" style="color:brown">""</span>;<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">for</span> (<span class="jskeywordcolor" style="color:mediumblue">let</span> x of language) {<br>
+                    text += x;<br><span class="jsnumbercolor" style="color:red">
+                    </span>}<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Цикл While
+            </h2>
+            <p>Цикл <code class="w3-codespan">while</code> проходит через блок кода до тех пор, пока заданное условие истинно.</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">while</span> (i &lt; <span class="jsnumbercolor" style="color:red">10</span>) {<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp; text += <span class="jsstringcolor" style="color:brown">"Число является "</span> + i;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp; i++;<br>}<br><span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Цикл do/while
+            </h2>
+            <p>Цикл do/while является вариантом цикла while. Этот цикл будет выполнять блок кода один раз, прежде чем проверять, выполняется ли условие, а затем будет повторять цикл, пока условие выполняется.
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">do</span> {<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp; text += <span class="jsstringcolor" style="color:brown">"Число является "</span> + i;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp; i++;<br><span class="jsnumbercolor" style="color:red">
+                </span>}<br>
+                <span class="jskeywordcolor" style="color:mediumblue">while</span> (i &lt; <span class="jsnumbercolor" style="color:red">10</span>); </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Сравнение For и While</h2>
+            <p>Если вы читали предыдущую главу о цикле for, вы могли заметить, что цикл while очень похож на цикл for, но оператор 1 и оператор 3 опущены.
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span>
+                cars = [<span class="jsstringcolor" style="color:brown">"БМВ"</span>, <span class="jsstringcolor" style="color:brown">"Вольво"</span>, <span class="jsstringcolor" style="color:brown">"Сааб"</span>, <span class="jsstringcolor" style="color:brown">"Форд"</span>];<br>
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> i = <span class="jsnumbercolor" style="color:red">0</span>;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> text = <span class="jsstringcolor" style="color:brown">""</span>;<br><br>
+                <span class="jskeywordcolor" style="color:mediumblue">for</span> (;cars[i];) {<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;text += cars[i] + <span class="jsstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;
+                i++;<br><span class="jsnumbercolor" style="color:red">
+                </span>}<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
             <hr><br>
         </div>
         

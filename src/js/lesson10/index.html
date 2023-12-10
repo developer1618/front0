@@ -12,48 +12,198 @@
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">JS - Урок 10</h1>
-        
+        <h2>JavaScript Break и Continue
+        </h2>
+        <p>Оператор break "выпрыгивает" из цикла.
+
+            <br>Оператор continue "перепрыгивает" на одну итерацию в цикле.</p>
+            <p>Вы уже видели использование оператора break в предыдущей главе этого учебника. Он был использован для "выпрыгивания" из оператора switch().</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">for</span> (i = <span class="jsnumbercolor" style="color:red">0</span>; i &lt; <span class="jsnumbercolor" style="color:red">10</span>; i++) {<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;
+                <span class="jskeywordcolor" style="color:mediumblue">if</span> (i === <span class="jsnumbercolor" style="color:red">3</span>) { <span class="jskeywordcolor" style="color:mediumblue">break</span>; }<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp; text += <span class="jsstringcolor" style="color:brown">"Число является "</span> + i + <span class="jsstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>} </span></div>
         <hr>
     </header>
     <main>
         <div class="feed-post">
+<h2>Оператор continue
+</h2>
+<p>Оператор continue прерывает одну итерацию (в цикле), если выполняется указанное условие, и продолжает следующую итерацию в цикле.
+</p>
+<div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+    <span class="jskeywordcolor" style="color:mediumblue">for</span> (i = <span class="jsnumbercolor" style="color:red">0</span>; i &lt; <span class="jsnumbercolor" style="color:red">10</span>; i++) {<br><span class="jsnumbercolor" style="color:red">
+    </span>&nbsp; <span class="jskeywordcolor" style="color:mediumblue">if</span> (i === <span class="jsnumbercolor" style="color:red">3</span>) { <span class="jskeywordcolor" style="color:mediumblue">continue</span>; }<br><span class="jsnumbercolor" style="color:red">
+    </span>&nbsp; text += <span class="jsstringcolor" style="color:brown">"Число является "</span> + i + <span class="jsstringcolor" style="color:brown">"&lt;br&gt;"</span>;<br><span class="jsnumbercolor" style="color:red">
+    </span>}<span class="jsnumbercolor" style="color:red">
+    </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript Ошибки - брось и попробуй поймать
+            </h2>
+            <p>Оператор try позволяет вам проверить блок кода на наличие ошибок.
 
+               <br> Оператор catch позволяет вам обработать ошибку.
+                
+               <br> Оператор throw позволяет создавать собственные ошибки.
+                
+               <br> Оператор finally позволяет выполнить код, после того, как попытаться поймать, независимо от результата.</p>
+               <p>При выполнении кода JavaScript могут возникать разные ошибки.
+
+                <br>Ошибки могут быть ошибками кодирования, допущенны программистом, ошибками из-за неправильного ввода или другими непредвиденными ситуациями.</p>
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="demo"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>
+                    <span class="jskeywordcolor" style="color:mediumblue">try</span> {<br>&nbsp; adddlert(<span class="jsstringcolor" style="color:brown">"Добро пожаловать!"</span>);<br>}<br><span class="jskeywordcolor" style="color:mediumblue">catch</span>(err) {<br>&nbsp; 
+                    document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = err.<span class="jspropertycolor" style="color:black">message</span>;<br>}<br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Пример проверки ввода
+            </h2>
+            <p>В этом примере исследуется ввод. Если значение неверно, генерируется исключение (ошибка).
+
+                <br>Исключение (err) перехватывается оператором catch, и отображается настраиваемое сообщение об ошибке:
+                
+                </p>
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Пожалуйста, введите число от 5 до 10:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="demo"</span> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="button"</span> 
+                    onclick<span class="attributevaluecolor" style="color:mediumblue">="myFunction()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Ввод текста<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="p01"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br>&nbsp; <span class="jskeywordcolor" style="color:mediumblue">var</span> message, x;<br>&nbsp;&nbsp;message = 
+                    document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"p01"</span>);<br>&nbsp;&nbsp;message.<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">""</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span>&nbsp;&nbsp;x = 
+                    document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">value</span>;<br>&nbsp; 
+                    <span class="jskeywordcolor" style="color:mediumblue">try</span> { <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">if</span>(x == <span class="jsstringcolor" style="color:brown">""</span>) <span class="jskeywordcolor" style="color:mediumblue">throw</span> <span class="jsstringcolor" style="color:brown">"пусто"</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span>&nbsp;&nbsp;&nbsp; 
+                    <span class="jskeywordcolor" style="color:mediumblue">if</span>(isNaN(x)) <span class="jskeywordcolor" style="color:mediumblue">throw</span> <span class="jsstringcolor" style="color:brown">"не число"</span>;<br>&nbsp;&nbsp;&nbsp; 
+                    x = Number(x);<br>&nbsp;&nbsp;&nbsp; <span class="jskeywordcolor" style="color:mediumblue">if</span>(x &lt; <span class="jsnumbercolor" style="color:red">5</span>) <span class="jskeywordcolor" style="color:mediumblue">throw</span> 
+                    <span class="jsstringcolor" style="color:brown">"слишком маленькое"</span>;<br>&nbsp;&nbsp;&nbsp; <span class="jskeywordcolor" style="color:mediumblue">if</span>(x &gt; <span class="jsnumbercolor" style="color:red">10</span>) <span class="jskeywordcolor" style="color:mediumblue">throw</span> <span class="jsstringcolor" style="color:brown">"слишком 
+                    большое"</span>;<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">catch</span>(err) {<br>&nbsp;&nbsp;&nbsp; message.<span class="jspropertycolor" style="color:black">innerHTML</span> = 
+                    <span class="jsstringcolor" style="color:brown">"Вывод "</span> + err;<br>&nbsp;&nbsp;}<br>}<br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                     </div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Проверка HTML на валидность
+            </h2>
+            <p>Современные браузеры часто используют комбинацию JavaScript и встроенной проверки HTML, используя предопределенные правила проверки, определенные в атрибутах HTML:</p>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="demo"</span> type<span class="attributevaluecolor" style="color:mediumblue">="number"</span> min<span class="attributevaluecolor" style="color:mediumblue">="5"</span> max<span class="attributevaluecolor" style="color:mediumblue">="10"</span> step<span class="attributevaluecolor" style="color:mediumblue">="1"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Область действия
+            </h2>
+            <p>В JavaScript есть два типа области видимости:
+
+                <br>Локальная область действия
+                <br>Глобальная область действия
+                <br>JavaScript имеет область действия функции: каждая функция создает новую область действия.
+                
+                <br>Область действия определяет доступность (видимость) этих переменных.
+                
+                <br>Переменные, определенные внутри функции, недоступны (не видны) снаружи функции.</p>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Локальные переменные
+            </h2>
+            <p>Переменные, объявленные в функции JavaScript, становятся ЛОКАЛЬНЫМИ для функции.
+            <br>Локальные переменные имеют локальную область действия функции: к ним можно получить доступ только из функции.
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+            </span><span class="commentcolor" style="color:green">// код здесь НЕ МОЖЕТ использовать carName<br></span><br><span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br><span class="jsnumbercolor" style="color:red">
+            </span>&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">var</span> carName = <span class="jsstringcolor" style="color:brown">"Вольво"</span>;<br><br><span class="jsnumbercolor" style="color:red">
+            </span>&nbsp; <span class="commentcolor" style="color:green">// код здесь МОЖЕТ использовать carName<br></span><br>}<span class="jsnumbercolor" style="color:red">
+            </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Глобальные переменные
+            </h2>
+            <p>Переменная, объявленная вне функции, становится ГЛОБАЛЬНОЙ.
+               <br> Глобальная переменная имеет глобальную область действия функции: все сценарии и функции на веб-странице могут получить к ней доступ.
+                </p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> carName = <span class="jsstringcolor" style="color:brown">"Вольво"</span>;<br><br><span class="jsnumbercolor" style="color:red">
+                    </span><span class="commentcolor" style="color:green">// код, в котором можно использовать carName<br></span><br>
+                    <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br><br><span class="jsnumbercolor" style="color:red">
+                    </span>&nbsp;&nbsp;<span class="commentcolor" style="color:green">// код, в котором также можно использовать carName<br></span><br>}<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Строгий режим
+            </h2>
+            <p>Директива "use strict"; определяет, что код JavaScript должен выполняться в "строгом режиме".
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jsstringcolor" style="color:brown">"use strict"</span>;<br>myFunction();<br><br>
+                <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br>
+                y = <span class="jsnumbercolor" style="color:red">3.14</span>; <span class="commentcolor" style="color:green">// Это также вызовет ошибку, потому что y не объявлен<br></span>} </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript This
+            </h2>
+            <p>JavaScript Ключевое слово this относится к объекту, к которому оно принадлежит.
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> <b>person</b> = {<br><span class="jsnumbercolor" style="color:red">
+                </span> firstName: <span class="jsstringcolor" style="color:brown">"Щипунов"</span>,<br>
+                lastName : <span class="jsstringcolor" style="color:brown">"Андрей"</span>,<br><span class="jsnumbercolor" style="color:red">
+                </span> id :<span class="jsnumbercolor" style="color:red">5566</span>,<br><span class="jsnumbercolor" style="color:red">
+                </span> fullName : <span class="jskeywordcolor" style="color:mediumblue">function</span>() {<br><span class="jsnumbercolor" style="color:red">
+                </span> <span class="jskeywordcolor" style="color:mediumblue">return</span> <b><span class="jskeywordcolor" style="color:mediumblue">this</span></b>.<span class="jspropertycolor" style="color:black">firstName</span> + <span class="jsstringcolor" style="color:brown">" "</span> + <b><span class="jskeywordcolor" style="color:mediumblue">this</span></b>.<span class="jspropertycolor" style="color:black">lastName</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>}<br><span class="jsnumbercolor" style="color:red">
+                </span>};<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript срелочниые функции
+            </h2>
+<p>Стрелочные функции были введены в ES6.
+
+    <br>Функции стрелок были введены в ES6, они позволяют писать более короткий синтаксис функции:</p>
+    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+        hello = <span class="jskeywordcolor" style="color:mediumblue">function</span>() {<br> <span class="jskeywordcolor" style="color:mediumblue">return</span> <span class="jsstringcolor" style="color:brown">"Hello World!"</span>;<br>} </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Классы
+            </h2>
+            <p>Используйте ключевое слово class для создания класса.
+
+                <br>Всегда добавляйте метод с именем constructor():</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> myCar1 = <span class="jskeywordcolor" style="color:mediumblue">new</span> Car(<span class="jsstringcolor" style="color:brown">"Ford"</span>, <span class="jsnumbercolor" style="color:red">2014</span>);<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> myCar2 = <span class="jskeywordcolor" style="color:mediumblue">new</span> Car(<span class="jsstringcolor" style="color:brown">"Audi"</span>, <span class="jsnumbercolor" style="color:red">2019</span>);<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div><br>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">class</span> Car {<br><span class="jsnumbercolor" style="color:red">
+                    </span>  constructor(name, year) {<br><span class="jsnumbercolor" style="color:red">
+                    </span> <span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">name</span> = name;<br><span class="jsnumbercolor" style="color:red">
+                    </span> <span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">year</span> = year;<br><span class="jsnumbercolor" style="color:red">
+                    </span> }<br><span class="jsnumbercolor" style="color:red">
+                    </span>}<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript JSON
+            </h2>
+            <p>JSON - это формат для хранения и передачи данных.
+
+                <br>JSON часто используется, когда данные отправляются с сервера на веб-страницу.</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                </span>{<br><span class="jsstringcolor" style="color:brown">"employees"</span>:[<br><span class="jsnumbercolor" style="color:red">
+                </span>{<span class="jsstringcolor" style="color:brown">"firstName"</span>:<span class="jsstringcolor" style="color:brown">"Щипунов"</span>, <span class="jsstringcolor" style="color:brown">"lastName"</span>:<span class="jsstringcolor" style="color:brown">"Андрей"</span>}, <br><span class="jsnumbercolor" style="color:red">
+                </span>{<span class="jsstringcolor" style="color:brown">"firstName"</span>:<span class="jsstringcolor" style="color:brown">"Щипунова"</span>, <span class="jsstringcolor" style="color:brown">"lastName"</span>:<span class="jsstringcolor" style="color:brown">"Татьяна"</span>},<br><span class="jsnumbercolor" style="color:red">
+                </span>{<span class="jsstringcolor" style="color:brown">"firstName"</span>:<span class="jsstringcolor" style="color:brown">"Щипунова"</span>, <span class="jsstringcolor" style="color:brown">"lastName"</span>:<span class="jsstringcolor" style="color:brown">"Кристина"</span>}<br><span class="jsnumbercolor" style="color:red">
+                </span>]<br>}<br><span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
             <hr><br>
         </div>
         
