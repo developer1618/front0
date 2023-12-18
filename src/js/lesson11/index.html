@@ -12,48 +12,187 @@
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">JS - Урок 11</h1>
-        
+        <h2>JavaScript Отладчик кода</h2>
+        <h3>Метод console.log()</h3>
+        <p>Если ваш браузер поддерживает отладку, вы можете использовать <code class="w3-codespan">console.log()</code> для отображения значений JavaScript в окне отладчика:</p>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Моя первая веб страница<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>a = <span class="jsnumbercolor" style="color:red">5</span>;<br>b = <span class="jsnumbercolor" style="color:red">6</span>;<br>c = a + b;<br>console.<span class="jspropertycolor" style="color:black">log</span>(c);<br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
         <hr>
     </header>
     <main>
         <div class="feed-post">
+            <h2>Ключевое слово debugger</h2>
+            <p>Ключевое слово debugger останавливает выполнение JavaScript и вызывает функции отладки если, таковые имеются.
 
+                <br>Это выполняет ту же функцию, что и установка точки останова в отладчике.
+                
+                <br>Если отладка недоступна, оператор отладчика не имеет никакого эффекта.
+                
+                <br>При включенном отладчике этот код перестанет выполняться до выполнения третьей строки.</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <span class="jsnumbercolor" style="color:red">15</span> * <span class="jsnumbercolor" style="color:red">5</span>;<br><span class="jskeywordcolor" style="color:mediumblue">debugger</span>;<br>document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = x;<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Определение объекта
+            </h2>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> person = {firstName:<span class="jsstringcolor" style="color:brown">"Щипунов"</span>, lastName:<span class="jsstringcolor" style="color:brown">"Андрей"</span>, age:<span class="jsnumbercolor" style="color:red">50</span>, eyeColor:<span class="jsstringcolor" style="color:brown">"зеленый"</span>};<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Свойства объекта
+            </h2>
+            <p>JavaScript Свойства - это значения, связанные с объектом JavaScript.
+
+                <br>JavaScript Объект - это набор неупорядоченных свойств.
+                
+                <br>Свойства обычно можно изменять, добавлять и удалять, но некоторые из них доступны только для чтения.</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> person = {firstName:<span class="jsstringcolor" style="color:brown">"Щипунов"</span>, lastName:<span class="jsstringcolor" style="color:brown">"Андрей"</span>, age:<span class="jsnumbercolor" style="color:red">50</span>, eyeColor:<span class="jsstringcolor" style="color:brown">"зеленый"</span>};<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">delete</span> person.<span class="jspropertycolor" style="color:black">age</span>; <span class="commentcolor" style="color:green">// или delete person["age"]; <br></span><span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    <p>Ключевое слово delete удаляет свойство из объекта</p>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+<h2>JavaScript Методы объекта</h2>
+<p>В определении функции this относится к функции "person".
+
+   <br> В приведенном выше примере this является объект person, к которому "принадлежит" функция fullName.
+    
+   <br> Другими словами, this.firstName означает свойство firstName объекта this.</p>
+   <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+    <span class="jskeywordcolor" style="color:mediumblue">var</span> <strong>person</strong> = {<br><span class="jsnumbercolor" style="color:red">
+    </span> firstName: <span class="jsstringcolor" style="color:brown">"Щипунов"</span>,<br><span class="jsnumbercolor" style="color:red">
+    </span> lastName : <span class="jsstringcolor" style="color:brown">"Андрей"</span>,<br><span class="jsnumbercolor" style="color:red">
+    </span> id :<span class="jsnumbercolor" style="color:red">5566</span>,<br><span class="jsnumbercolor" style="color:red">
+    </span> fullName : <span class="jskeywordcolor" style="color:mediumblue">function</span>() {<br><span class="jsnumbercolor" style="color:red">
+    </span> <span class="jskeywordcolor" style="color:mediumblue">return</span> <strong><span class="jskeywordcolor" style="color:mediumblue">this</span></strong>.<span class="jspropertycolor" style="color:black">firstName</span> + <span class="jsstringcolor" style="color:brown">" "</span> + 
+    <strong><span class="jskeywordcolor" style="color:mediumblue">this</span></strong>.<span class="jspropertycolor" style="color:black">lastName</span>;<br>}<br><span class="jsnumbercolor" style="color:red">
+    </span>};<span class="jsnumbercolor" style="color:red">
+    </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Определение функций
+            </h2>
+            <p>JavaScript функции определяются с помощью ключевого слова function .
+
+                <br>Вы можете использовать функцию объявление или функцию выражение.</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction(a, b) {<br> <span class="jskeywordcolor" style="color:mediumblue">return</span> a * b;<br>}<br><br>
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = myFunction(<span class="jsnumbercolor" style="color:red">4</span>, <span class="jsnumbercolor" style="color:red">3</span>); </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Классы
+            </h2>
+            <p>Используйте ключевое слово class для создания класса.
+
+                <br>Всегда добавляйте метод с именем constructor():</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">class</span> Car {<br><span class="jsnumbercolor" style="color:red">
+                    </span>  constructor(name, year) {<br><span class="jsnumbercolor" style="color:red">
+                    </span> <span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">name</span> = name;<br><span class="jsnumbercolor" style="color:red">
+                    </span> <span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">year</span> = year;<br><span class="jsnumbercolor" style="color:red">
+                    </span>  }<br> age() {<br><span class="jsnumbercolor" style="color:red">
+                    </span> <span class="jskeywordcolor" style="color:mediumblue">let</span> date = <span class="jskeywordcolor" style="color:mediumblue">new</span> Date();<br><span class="jsnumbercolor" style="color:red">
+                    </span> <span class="jskeywordcolor" style="color:mediumblue">return</span> date.<span class="jspropertycolor" style="color:black">getFullYear</span>() - <span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">year</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span>  }<br>}<br><br>
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> myCar = <span class="jskeywordcolor" style="color:mediumblue">new</span> Car(<span class="jsstringcolor" style="color:brown">"Форд"</span>, <span class="jsnumbercolor" style="color:red">2014</span>);<br>
+                    document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> =<br>
+                    <span class="jsstringcolor" style="color:brown">"Моя машина "</span> + myCar.<span class="jspropertycolor" style="color:black">age</span>() + <span class="jsstringcolor" style="color:brown">" год."</span>;<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Асинхронный
+            </h2>
+            <p>Функции JavaScript выполняются в той последовательности, в которой они вызываются. Не в той последовательности, в которой они определены.
+
+                <br>В этом примере будет отображаться сообщение "До свидания":</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">function</span> myFirst() {<br> myDisplayer(<span class="jsstringcolor" style="color:brown">"Привет"</span>);<br>}<br><br><span class="jskeywordcolor" style="color:mediumblue">function</span> 
+                    mySecond() {<br> 
+                    myDisplayer(<span class="jsstringcolor" style="color:brown">"До свидания"</span>);<br>}<br><br>myFirst();<br>mySecond();<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript HTML DOM Введение
+            </h2>
+            <div class="w3-example">
+                <h3 class="w3-center">Дерево объектов HTML DOM</h3>
+                <div class="w3-padding w3-white w3-center w3-margin-bottom notranslate">
+                <img style="max-width:100%" src="https://www.schoolsw3.com/js/pic_htmltree.gif" alt="Дерево DOM HTML">
+                </div>
+                <p>HTML DOM - это стандартная объектная модель и программный интерфейс для HTML. Он определяет:
+                </p>
+                <ul>
+                    <li>HTML элементы как <b>объекты</b></li>
+                    <li>В <b>свойствах</b> для всех элементов HTML</li>
+                    <li><b>Методы</b>, чтобы получить доступ ко всем HTML элементам</li>
+                    <li>В <strong>событиях</strong> для всех элементов HTML</li>
+                </ul>
+                <p>Другими словами: HTML DOM - это стандарт того, как получать, изменять, добавлять или удалять элементы HTML.
+                </p>
+            </div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Window (BOM)
+            </h2>
+            <p>Там нет никаких официальных стандартов для Browser Object Model (BOM).
+
+                <br>Поскольку современные браузеры реализовали (почти) те же методы и свойства для интерактивности JavaScript, это часто называют методами и свойствами спецификации.</p>
+                <p>Объект window поддерживается всеми браузерами. Он представляет собой окно браузера.
+
+                    <br>Все глобальные объекты, функции и переменные JavaScript автоматически становятся членами объекта window.
+                    </p>
+                    <div class="w3-code w3-border notranslate jsHigh"><span class="jscolor" style="color:black">
+                        window.<span class="jspropertycolor" style="color:black">document</span>.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"header"</span>);<span class="jsnumbercolor" style="color:red">
+                        </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript Веб API Введение
+            </h2>
+            <p>API означает Application Programming Interface.
+
+                <br>Веб API - это интерфейс прикладного программирования для Интернета.
+                
+               <br> API браузера могут расширить функциональность веб браузера.
+                
+                <br>Серверный API может расширить функциональность веб сервера.</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>);<br><br>
+                    <span class="jskeywordcolor" style="color:mediumblue">function</span> getLocation() {<br><span class="jsnumbercolor" style="color:red">
+                    </span> <span class="jskeywordcolor" style="color:mediumblue">if</span> (navigator.<span class="jspropertycolor" style="color:black">geolocation</span>) {<br><span class="jsnumbercolor" style="color:red">
+                    </span> navigator.<span class="jspropertycolor" style="color:black">geolocation</span>.<span class="jspropertycolor" style="color:black">getCurrentPosition</span>(showPosition);<br><span class="jsnumbercolor" style="color:red">
+                    </span> } <span class="jskeywordcolor" style="color:mediumblue">else</span> { <br> x.<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Геолокация не поддерживается этим браузером."</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span> }<br><span class="jsnumbercolor" style="color:red">
+                    </span>}<br><br>
+                    <span class="jskeywordcolor" style="color:mediumblue">function</span> showPosition(position) {<br><span class="jsnumbercolor" style="color:red">
+                    </span> x.<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Широта: "</span> + position.<span class="jspropertycolor" style="color:black">coords</span>.<span class="jspropertycolor" style="color:black">latitude</span> + <br><span class="jsnumbercolor" style="color:red">
+                    </span> <span class="jsstringcolor" style="color:brown">"&lt;br&gt;Долгота: "</span> + position.<span class="jspropertycolor" style="color:black">coords</span>.<span class="jspropertycolor" style="color:black">longitude</span>; <br>}<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div><br>
+                    <h3>Сторонние API
+                    </h3>
+                    <p>Сторонние API не встроены в ваш браузер.
+
+                      <br> Чтобы использовать API, вам необходимо загрузить код из Интернета.
+                        
+                        </p>
+                        <ul>
+                            <li>YouTube API - позволяет отображать видео на веб сайте.</li>
+                            <li>Google API - позволяет авторизоваться на веб сайте.</li>
+                            <li>Facebook API - позволяет отображать информацию Facebook на веб сайте.</li>
+                            </ul>
             <hr><br>
         </div>
         
