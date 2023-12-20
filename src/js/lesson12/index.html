@@ -12,48 +12,152 @@
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">JS - Урок 12</h1>
-        
+        <h2>JavaScript AJAX Введение
+        </h2>
+        <p>AJAX - мечта разработчика, потому что вы можете:
+        </p>
+        <ul>
+            <li>Считывать данные с веб сервера - после загрузки страницы</li>
+            <li>Обновить веб страницу без перезагрузки страницы</li>
+            <li>Отправка данных на веб сервер - в фоновом режиме</li>
+        </ul>
+        <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="demo"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Разрешить AJAX изменить этот текст <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="button"</span> onclick<span class="attributevaluecolor" style="color:mediumblue">="loadDoc()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Изменить содержимое<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div>
         <hr>
     </header>
     <main>
         <div class="feed-post">
+            <h2>Что такое AJAX?</h2>
+            <p>AJAX = Asynchronous JavaScript AndXML.
+                <br>AJAX это не язык программирования.
+                <br>AJAX просто использует комбинацию:
+                </p>
+                <ul>
+                    <li>Встроенный <code class="w3-codespan">XMLHttpRequest</code> объект браузера (для запроса данных с веб сервера)</li>
+                    <li>JavaScript и HTML DOM (для отображения или использования данных)</li>
+                </ul>
 
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Как работает AJAX
+            </h2>
+            <p><img class="w3-image" alt="AJAX" src="https://www.schoolsw3.com/js/pic_ajax.gif"></p>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript AJAX Отправить запрос на сервер
+            </h2>
+            <p>Объект XMLHttpRequest используется для обмена данными с сервером.
+            </p>
+            <h3>GET запросы</h3>
+            <p>xhttp.open("GET", "demo_get.asp", true);
+                <br>xhttp.send();</p>
+            <hr><br>
+            <h3>POST запросы</h3>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                xhttp.<span class="jspropertycolor" style="color:black">open</span>(<span class="jsstringcolor" style="color:brown">"POST"</span>, <span class="jsstringcolor" style="color:brown">"demo_post.asp"</span>, <span class="jskeywordcolor" style="color:mediumblue">true</span>);<br>
+                xhttp.<span class="jspropertycolor" style="color:black">send</span>(); </span></div>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript AJAX Ответ сервера
+            </h2>
+            <p>Свойство readyState имеет статус XMLHttpRequest.
+
+                <br>Свойство onreadystatechange определяет функцию, которая будет выполнена, когда readyState изменяется.
+                
+                <br>Свойство status и statusText свойство имеет статус объекта XMLHttpRequest.</p>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">function</span> loadDoc() {<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> xhttp = <span class="jskeywordcolor" style="color:mediumblue">new</span> XMLHttpRequest();<br>
+                    xhttp.<span class="jspropertycolor" style="color:black">onreadystatechange</span> = <span class="jskeywordcolor" style="color:mediumblue">function</span>() {<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">readyState</span> == <span class="jsnumbercolor" style="color:red">4</span> &amp;&amp; <span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">status</span> == <span class="jsnumbercolor" style="color:red">200</span>) {<br><span class="jsnumbercolor" style="color:red">
+                    </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> =<br><span class="jsnumbercolor" style="color:red">
+                    </span> <span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">responseText</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span> }<br><span class="jsnumbercolor" style="color:red">
+                    </span>};<br>
+                    xhttp.<span class="jspropertycolor" style="color:black">open</span>(<span class="jsstringcolor" style="color:brown">"GET"</span>, <span class="jsstringcolor" style="color:brown">"ajax_info.txt"</span>, <span class="jskeywordcolor" style="color:mediumblue">true</span>);<br>
+                    xhttp.<span class="jspropertycolor" style="color:black">send</span>();<span class="jsnumbercolor" style="color:red">
+                    </span><br>}<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript AJAX Файл XML</h2>
+            <p>AJAX можно использовать для интерактивного взаимодействия с файлом XML.
+            </p>
+            <p>Когда пользователь нажимает на кнопку "Получить информацию о компакт диске" выше, loadDoc() функция выполняется.
+
+                <br>Функция loadDoc() создает XMLHttpRequest объект, добавляет функцию, которая будет выполнена, когда ответ сервера готов, и посылает запрос от к серверу.
+                
+                <br>Когда ответ сервера готов, создается таблица HTML, узлы (элементы) извлекаются из файла XML, и наконец, обновляется "demo" элемент с помощью таблицы HTML, заполненной данными XML:</p>
+                <div class="w3-example">
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">function</span> loadDoc() {<br> <span class="jskeywordcolor" style="color:mediumblue">var</span> xhttp = <span class="jskeywordcolor" style="color:mediumblue">new</span> XMLHttpRequest();<br> 
+                    xhttp.<span class="jspropertycolor" style="color:black">onreadystatechange</span> = <span class="jskeywordcolor" style="color:mediumblue">function</span>() {<br> <span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">readyState</span> <span class="jsnumbercolor" style="color:red">
+                    </span>== <span class="jsnumbercolor" style="color:red">4</span> &amp;&amp; <span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">status</span> == <span class="jsnumbercolor" style="color:red">200</span>) {<br> myFunction(<span class="jskeywordcolor" style="color:mediumblue">this</span>);<br> <span class="jsnumbercolor" style="color:red">
+                    </span>}<br> };<br> xhttp.<span class="jspropertycolor" style="color:black">open</span>(<span class="jsstringcolor" style="color:brown">"GET"</span>, <span class="jsstringcolor" style="color:brown">"cd_catalog.xml"</span>, <span class="jskeywordcolor" style="color:mediumblue">true</span>);<br> 
+                    xhttp.<span class="jspropertycolor" style="color:black">send</span>();<br>}<br><span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction(xml) {<br> 
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> i;<br> <span class="jskeywordcolor" style="color:mediumblue">var</span> xmlDoc = xml.<span class="jspropertycolor" style="color:black">responseXML</span>;<br> <span class="jskeywordcolor" style="color:mediumblue">var</span> table=<span class="jsstringcolor" style="color:brown">"&lt;tr&gt;&lt;th&gt;Artist&lt;/th&gt;&lt;th&gt;Title&lt;/th&gt;&lt;/tr&gt;"</span>;<br> 
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> x = xmlDoc.<span class="jspropertycolor" style="color:black">getElementsByTagName</span>(<span class="jsstringcolor" style="color:brown">"CD"</span>);<br> <span class="jskeywordcolor" style="color:mediumblue">for</span> (i = <span class="jsnumbercolor" style="color:red">0</span>; i &lt;x.<span class="jspropertycolor" style="color:black">length</span>; 
+                    i++) { <br> table += <span class="jsstringcolor" style="color:brown">"&lt;tr&gt;&lt;td&gt;"</span> +<br> x[i].<span class="jspropertycolor" style="color:black">getElementsByTagName</span>(<span class="jsstringcolor" style="color:brown">"ARTIST"</span>)[<span class="jsnumbercolor" style="color:red">0</span>].<span class="jspropertycolor" style="color:black">childNodes</span>[<span class="jsnumbercolor" style="color:red">0</span>].<span class="jspropertycolor" style="color:black">nodeValue</span> <span class="jsnumbercolor" style="color:red">
+                    </span>+<br> <span class="jsstringcolor" style="color:brown">"&lt;/td&gt;&lt;td&gt;"</span> +<br> x[i].<span class="jspropertycolor" style="color:black">getElementsByTagName</span>(<span class="jsstringcolor" style="color:brown">"TITLE"</span>)[<span class="jsnumbercolor" style="color:red">0</span>].<span class="jspropertycolor" style="color:black">childNodes</span>[<span class="jsnumbercolor" style="color:red">0</span>].<span class="jspropertycolor" style="color:black">nodeValue</span> <span class="jsnumbercolor" style="color:red">
+                    </span>+<br> <span class="jsstringcolor" style="color:brown">"&lt;/td&gt;&lt;/tr&gt;"</span>;<br> }<br> 
+                    document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = table;<br>}<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    </div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript AJAX Файл PHP
+            </h2>
+            <p>AJAX используется для создания более интерактивных приложений.
+            </p>
+            <p>В следующем примере показано, как веб страница может взаимодействовать с веб сервером, когда пользователь вводит символы в поле ввода:</p>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>b<span class="tagcolor" style="color:mediumblue">&gt;</span></span> Начните вводить имя в поле ввода ниже:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/b<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span> Предложения: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>span<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="txtHint"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/span<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br>Имя: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> onkeyup<span class="attributevaluecolor" style="color:mediumblue">="showHint(this.value)"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span class="jskeywordcolor" style="color:mediumblue">function</span> showHint(str) {<br><span class="jskeywordcolor" style="color:mediumblue">if</span> (str.<span class="jspropertycolor" style="color:black">length</span> == <span class="jsnumbercolor" style="color:red">0</span>) { <br>document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"txtHint"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">""</span>;<br><span class="jskeywordcolor" style="color:mediumblue">return</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span> } <span class="jskeywordcolor" style="color:mediumblue">else</span> {<br> <span class="jskeywordcolor" style="color:mediumblue">var</span> xmlhttp = <span class="jskeywordcolor" style="color:mediumblue">new</span> XMLHttpRequest();<br> xmlhttp.<span class="jspropertycolor" style="color:black">onreadystatechange</span> = <span class="jskeywordcolor" style="color:mediumblue">function</span>() {<br><span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">readyState</span> == <span class="jsnumbercolor" style="color:red">4</span> &amp;&amp; <span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">status</span> == <span class="jsnumbercolor" style="color:red">200</span>) {<br>document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"txtHint"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">responseText</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>  }<br>};<br> xmlhttp.<span class="jspropertycolor" style="color:black">open</span>(<span class="jsstringcolor" style="color:brown">"GET"</span>, <span class="jsstringcolor" style="color:brown">"gethint.php?q="</span> + str, <span class="jskeywordcolor" style="color:mediumblue">true</span>);<br><span class="jsnumbercolor" style="color:red">
+                </span> xmlhttp.<span class="jspropertycolor" style="color:black">send</span>();<br>}<br>}<br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript AJAX База данных</h2>
+            <p>AJAX можно использовать для интерактивного взаимодействия с базой данных.
+            </p>
+            <p>Когда пользователь выбирает клиента в раскрывающемся списке выше, выполняется вызываемая функция showCustomer(). Функция запускается по onchange событию:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">function</span> showCustomer(str) {<br> <span class="jskeywordcolor" style="color:mediumblue">var</span> xhttp; <br> <span class="jskeywordcolor" style="color:mediumblue">if</span> (str == <span class="jsstringcolor" style="color:brown">""</span>) {<br> 
+                document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"txtHint"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">""</span>;<br> 
+                <span class="jskeywordcolor" style="color:mediumblue">return</span>;<br> }<br> xhttp = <span class="jskeywordcolor" style="color:mediumblue">new</span> XMLHttpRequest();<br> 
+                xhttp.<span class="jspropertycolor" style="color:black">onreadystatechange</span> = <span class="jskeywordcolor" style="color:mediumblue">function</span>() {<br> <span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">readyState</span> <span class="jsnumbercolor" style="color:red">
+                </span>== <span class="jsnumbercolor" style="color:red">4</span> &amp;&amp; <span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">status</span> == <span class="jsnumbercolor" style="color:red">200</span>) {<br> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"txtHint"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> <span class="jsnumbercolor" style="color:red">
+                </span>= <span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">responseText</span>;<br> }<br> };<br> xhttp.<span class="jspropertycolor" style="color:black">open</span>(<span class="jsstringcolor" style="color:brown">"GET"</span>, 
+                <span class="jsstringcolor" style="color:brown">"getcustomer.php?q="</span>+str, <span class="jskeywordcolor" style="color:mediumblue">true</span>);<br> xhttp.<span class="jspropertycolor" style="color:black">send</span>();<br>}<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
-            <hr><br>
-        </div>
-        <div class="feed-post">
-            
-            <hr><br>
-        </div>
-        <div class="feed-post">
-            
-            <hr><br>
-        </div>
-        <div class="feed-post">
-            
+            <p>Функция showCustomer() выполняет следующие действия:
+            </p>
+            <ul>
+                <li>Проверить, выбран ли клиент</li>
+                <li>Создать объект XMLHttpRequest</li>
+                <li>Создайте функцию, которая будет выполняться, когда будет готов ответ сервера</li>
+                <li>Отправьте запрос в файл на сервере</li>
+                <li>Обратите внимание, что к URL адресу добавлен параметр (q) (с содержимым раскрывающегося списка)</li>
+                </ul>
             <hr><br>
         </div>
         

@@ -12,48 +12,162 @@
 <body style="padding: 2rem; font-size: 24px;">
     <header>
         <h1 style="text-align: center;">JS - Урок 13</h1>
-        
+        <h2>JavaScript JSON Введение
+        </h2>
+        <p>JSON: JavaScript Object Notation.
+
+            <br>JSON это синтаксис для хранения и обмена данными.
+            
+            <br>JSON это текст, написанный с помощью объектной нотации JavaScript.</p>
+        <h3>Отправка данных
+        </h3>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> myObj = {name: <span class="jsstringcolor" style="color:brown">"Щипунов"</span>, 
+                age: <span class="jsnumbercolor" style="color:red">31</span>, city: <span class="jsstringcolor" style="color:brown">"Пермь"</span>};<br><span class="jskeywordcolor" style="color:mediumblue">var</span> myJSON = 
+                JSON.<span class="jspropertycolor" style="color:black">stringify</span>(myObj);<br>window.<span class="jspropertycolor" style="color:black">location</span> = <span class="jsstringcolor" style="color:brown">"demo_json.php?x="</span> + myJSON;<br><span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+        <h3>Получение данных
+        </h3>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+            <span class="jskeywordcolor" style="color:mediumblue">var</span> myJSON =
+            <span class="jsstringcolor" style="color:brown">'{"name":"Щипунов", 
+            "age":31, "city":"Пермь"}'</span>;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> myObj = 
+            JSON.<span class="jspropertycolor" style="color:black">parse</span>(myJSON);<br>document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = myObj.<span class="jspropertycolor" style="color:black">name</span>; </span></div>
         <hr>
     </header>
     <main>
         <div class="feed-post">
+<h2>JavaScript JSON Синтаксис
+</h2>
+<p>Синтаксис JSON - это подмножество синтаксиса JavaScript.
+</p>
+<ul>
+    <li>Данные представлены парами имя/значение</li>
+    <li>Данные разделены запятыми</li>
+    <li>Фигурные скобки удерживают объекты</li>
+    <li>Квадратные скобки содержат массивы</li>
+</ul>
+<div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+</span>{ <span class="jsstringcolor" style="color:brown">"name"</span>:<span class="jsstringcolor" style="color:brown">"Щипунов"</span> }<br><span class="jsnumbercolor" style="color:red">
+</span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>Значения JSON
+            </h2>
+            <p>В JSON, значения должны быть один из следующих типов данных:
+            </p>
+            <ul>
+                <li>string</li>
+                <li>number</li>
+                <li>object (JSON объект)</li>
+                <li>array</li>
+                <li>boolean</li>
+                <li>null</li>
+            </ul>
+            <p>В JavaScript значениями могут быть все вышеперечисленное, а также любое другое допустимое выражение JavaScript, включая:</p>
+            <ul>
+                <li>function</li>
+                <li>date</li>
+                <li>undefined</li>
+                </ul>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> person = { name: <span class="jsstringcolor" style="color:brown">"Щипунов"</span>, age: <span class="jsnumbercolor" style="color:red">31</span>, city: <span class="jsstringcolor" style="color:brown">"Пермь"</span> };<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <h2>JavaScript jQuery HTML Селекторы
+            </h2>
+                <p>jQuery был создан в 2006 году Джоном Ресигом. Он был разработан для обработки <br>несовместимости браузеров и упрощения манипулирования HTML DOM, обработки <br>событий, анимации и Ajax.
+                <br>Уже более 10 лет jQuery является самой популярной библиотекой JavaScript в мире.</p>
+                <h3>Поиск элемента HTML по идентификатору
+                </h3>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> myElement = $(<span class="jsstringcolor" style="color:brown">"#id01"</span>);<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                        <span class="jskeywordcolor" style="color:mediumblue">var</span> myElement = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"id01"</span>);<span class="jsnumbercolor" style="color:red">
+                        </span> </span></div>
 
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Поиск элементов HTML по имени тега
+            </h2>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> myElements = $(<span class="jsstringcolor" style="color:brown">"p"</span>);<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> myElements = document.<span class="jspropertycolor" style="color:black">getElementsByTagName</span>(<span class="jsstringcolor" style="color:brown">"p"</span>);<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Поиск элементов HTML по имени класса
+            </h2>
+            <p>Вернуть все элементы с помощью class="intro".
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> myElements = $(<span class="jsstringcolor" style="color:brown">".intro"</span>); </span></div>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> myElements = document.<span class="jspropertycolor" style="color:black">getElementsByClassName</span>(<span class="jsstringcolor" style="color:brown">"intro"</span>); </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>Поиск элементов HTML с помощью селекторов CSS
+            </h2>
+            <p>Вернуть список всех элементов <p> с class="intro".
+            </p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> myElements = $(<span class="jsstringcolor" style="color:brown">"p.intro"</span>);<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> myElements = document.<span class="jspropertycolor" style="color:black">querySelectorAll</span>(<span class="jsstringcolor" style="color:brown">"p.intro"</span>);<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript jQuery HTML Элементы
+            </h2>
+            <p>jQuery был создан в 2006 году Джоном Ресигом. Он был разработан для обработки <br>несовместимости браузеров и упрощения манипулирования HTML DOM, обработки <br>событий, анимации и Ajax.
+            <br> Уже более 10 лет jQuery является самой популярной библиотекой JavaScript в мире.
+            <br> Однако после версии 5 версии JavaScript 5 (2009 г.) большинство утилит <br>jQuery можно решить с помощью нескольких строк стандартного JavaScript:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                myElement.<span class="jspropertycolor" style="color:black">text</span>(<span class="jsstringcolor" style="color:brown">"Привет, Россия!"</span>);<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    myElement.<span class="jspropertycolor" style="color:black">textContent</span> = <span class="jsstringcolor" style="color:brown">"Привет, Россия!"</span>;<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <h2>JavaScript jQuery CSS Стили
+            </h2>
+            <p>jQuery был создан в 2006 году Джоном Ресигом. Он был разработан для обработки <br>несовместимости браузеров и упрощения манипулирования HTML DOM, обработки <br>событий, анимации и Ajax.
+            <br>  Уже более 10 лет jQuery является самой популярной библиотекой JavaScript в мире.
+            <br>  Однако после версии 5 версии JavaScript 5 (2009 г.) большинство утилит <br>jQuery можно решить с помощью нескольких строк стандартного JavaScript:</p>
             <hr><br>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                myElement.<span class="jspropertycolor" style="color:black">hide</span>();<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    myElement.<span class="jspropertycolor" style="color:black">style</span>.<span class="jspropertycolor" style="color:black">display</span> = <span class="jsstringcolor" style="color:brown">"none"</span>;<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+
         </div>
         <div class="feed-post">
-            
-            <hr><br>
-        </div>
-        <div class="feed-post">
-            
-            <hr><br>
-        </div>
-        <div class="feed-post">
-            
-            <hr><br>
-        </div>
-        <div class="feed-post">
-            
+            <h2>JavaScript jQuery HTML DOM
+            </h2>
+            <p>jQuery был создан в 2006 году Джоном Ресигом. Он был разработан для обработки <br>несовместимости браузеров и упрощения манипулирования HTML DOM, обработки <br>событий, анимации и Ajax.
+            <br>Уже более 10 лет jQuery является самой популярной библиотекой JavaScript в мире.
+            <br> Однако после версии 5 версии JavaScript 5 (2009 г.) большинство утилит <br>jQuery можно решить с помощью нескольких строк стандартного JavaScript:</p>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                $(<span class="jsstringcolor" style="color:brown">"#id"</span>).<span class="jspropertycolor" style="color:black">remove</span>();<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    element.<span class="jspropertycolor" style="color:black">parentNode</span>.<span class="jspropertycolor" style="color:black">removeChild</span>(element);<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
             <hr><br>
         </div>
         

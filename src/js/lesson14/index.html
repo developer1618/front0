@@ -11,49 +11,470 @@
 
 <body style="padding: 2rem; font-size: 24px;">
     <header>
-        <h1 style="text-align: center;">JS - Урок 14</h1>
+        <h1 style="text-align: center;">Тестирование JavaScript</h1>
+        <p>Внутри какого HTML элемента помещается JavaScript?
+        </p>
+        <div style="position:relative;width:100%;">
+            <div id="altcontainer">
+                
+                <label class="radiocontainer" for="2">&lt;scripting&gt;
+                                    <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                </label><label class="radiocontainer" for="3">&lt;javascript&gt;
+                                    <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                </label><label class="radiocontainer" for="4">&lt;js&gt;
+                                    <input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4"><span class="checkmark"></span>
+                                </label><label class="radiocontainer" for="1">&lt;script&gt;
+                                    <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                </label>
+                
+            </div>
+        </div>
         
         <hr>
     </header>
     <main>
         <div class="feed-post">
+<p>Каков правильный синтаксис JavaScript для изменения содержимого HTML элемента ниже?</p>
+    <p id=''demo''>Это демонстрация.</p>
+    <div style="position:relative;width:100%;">
+        <div id="altcontainer">
+            
+            <label class="radiocontainer" for="4">document.getElement(''p'').innerHTML = ''Привет Мир!'';
+                                <input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4"><span class="checkmark"></span>
+                            </label><label class="radiocontainer" for="2">document.getElementByName(''p'').innerHTML = ''Привет Мир!'';
+                                <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                            </label><label class="radiocontainer" for="1">document.getElementById(''demo'').innerHTML = ''Привет Мир!'';
+                                <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                            </label><label class="radiocontainer" for="3">#demo.innerHTML = ''Привет Мир!'';
+                                <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                            </label>
+            
+        </div>
+      </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <p>Где находится правильное место для вставки JavaScript?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="2">В секции &lt;head&gt;
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="1">Как в секции &lt;head&gt; и &lt;body&gt;
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="3">В секции &lt;body&gt;
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <p>Какой правильный синтаксис для ссылки на внешний скрипт под названием ''test.js''?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="3">&lt;script name=''test.js''&gt;
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="2">&lt;script src=''test.js''&gt;
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="1">&lt;script href=''test.js''&gt;
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <p id="qtext">Внешний файл JavaScript должен содержать тег &lt;script&gt;?</p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="1">Нет
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="2">Да
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
 
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <p>Как написать ''Привет Мир'' в окне оповещения?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="4">alertBox(''Привет Мир'');
+                                        <input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="3">msg(''Привет Мир'');
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="2">msgBox(''Привет Мир'');
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="1">alert(''Привет Мир'');
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <p>Как создать функцию в JavaScript?</p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="2">function:myFunction()
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="1">function myFunction()
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="3">function = myFunction()
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
+
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <p>Как вызывать функцию с именем ''myFunction''?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="1">myFunction()
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="3">call myFunction()
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="2">call function myFunction()
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <p>Как написать оператор IF в JavaScript?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="2">if i = 5
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="3">if i == 5 then
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="4">if i = 5 then
+                                        <input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="1">if (i == 5)
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <p>Как написать оператор IF для выполнения некоторого кода, Если ''i'' не равно 5?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="2">if i =! 5 then
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="3">if (i &lt;&gt; 5)
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="1">if (i != 5)
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="4">if i &lt;&gt; 5
+                                        <input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <p>Как начинается цикл WHILE?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="1">while (i &lt;= 10; i++)
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="3">while (i &lt;= 10)
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="2">while i = 1 to 10
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <p>Как начинается цикл FOR?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="2">for (i &lt;= 5; i++)
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="4">for (i = 0; i &lt;= 5)
+                                        <input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="3">for i = 1 to 5
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="1">for (i = 0; i &lt;= 5; i++)
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <p>Как добавить комментарий в JavaScript?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="3">&lt;!--Это комментарий--&gt;
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="2">'Это комментарий
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="1">/Это комментарий
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
             <hr><br>
         </div>
         <div class="feed-post">
-            
+            <p>Как вставить комментарий, содержащий более одной строки?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="2">//Этот комментарий имеет<br>более одной строки//
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="3">&lt;!--Этот комментарий имеет<br>более одной строки--&gt;
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="1">/*Этот комментарий имеет<br>более одной строки*/
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <p>Как правильно написать массив JavaScript?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="1">var colors = [''red'', ''green'', ''blue'']
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="3">var colors = 1 = (''red''), 2 = (''green''), 3 = (''blue'')
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="2">var colors = (1:''red'', 2:''green'', 3:''blue'')
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="4">var colors = ''red'', ''green'', ''blue''
+                                        <input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <p>Как округлить число 7.25 до ближайшего целого числа?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="4">Math.rnd(7.25)
+                                        <input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="3">rnd(7.25)
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="1">Math.round(7.25)
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="2">round(7.25)
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <p>Как найти число с наибольшим значением x и y?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="1">Math.max(x, y)
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="4">Math.ceil(x, y)
+                                        <input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="3">ceil(x, y)
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="2">top(x, y)
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <p>Каков правильный синтаксис JavaScript для открытия нового окна под названием ''w2''?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="1">w2 = window.open(''http://admin.tj'');
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="2">w2 = window.new(''http://admin.tj'');
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <p>JavaScript - это то же самое, что и Java.
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="2">Да
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="1">Нет
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <p>Как вы можете определить имя браузера клиента?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="1">navigator.appName
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="2">browser.name
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="3">client.navName
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <p>Какое событие происходит, когда пользователь нажимает на HTML элемент?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="3">onmouseclick
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="1">onclick
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="4">onchange
+                                        <input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="2">onmouseover
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <p>Как вы объявляете переменную JavaScript?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="2">v carName;
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="3">variable carName;
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="1">var carName;
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <p>Какой оператор используется для присвоения значения переменной?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="2">=
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="1">*
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="4">-
+                                        <input type="radio" name="vs" id="4" onclick="clickRadio(this)" value="4"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="3">x
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <p>Что вернет следующий код: Boolean(10 > 9)
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="3">true
+                                        <input type="radio" name="vs" id="3" onclick="clickRadio(this)" value="3"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="1">false
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="2">NaN
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
+            <hr><br>
+        </div>
+        <div class="feed-post">
+            <p>Является ли JavaScript чувствительным к регистру?
+            </p>
+            <div style="position:relative;width:100%;">
+                <div id="altcontainer">
+                    
+                    <label class="radiocontainer" for="1">Да
+                                        <input type="radio" name="vs" id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+                                    </label><label class="radiocontainer" for="2">Нет
+                                        <input type="radio" name="vs" id="2" onclick="clickRadio(this)" value="2"><span class="checkmark"></span>
+                                    </label>
+                    
+                </div>
+              </div>
             <hr><br>
         </div>
         
